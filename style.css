@@ -1,0 +1,104 @@
+.blok {
+    border-radius: 8px;				/* Округление */
+    width: 100%; 				/* Ширина слоя */
+    margin-top: 0%; 					/* Значение отступов */
+    padding: 6px; 				/* Поля вокруг текста */
+    background: #333333; 			/* Цвет фона */
+   }
+A {
+	color: #cc50ff;			/* Цвет ссылок */
+	}
+A:visited {
+	color: #cc50ff;			/* Цвет посещенных ссылок */
+	}
+A:active {
+	color: #ffc800;			/* Цвет активных ссылок */
+	}
+A {
+	text-decoration: none;		/* Подчеркивание у ссылки */
+	} 
+.text {
+	font-size: 14px;		/* Размер шрифта */
+	color: #ff3333;			/* Цвет текста */
+	font-family: 'Comic Sans MS';	/* Шрифт текста */
+}
+.leftimg {
+	float:left;			/* Выравнивание по левому краю */
+	margin: 0px 0px 0px 0;		/* Отступы вокруг картинки */
+	}
+.rightimg  {
+	float: right;			/* Выравнивание по правому краю  */ 
+	margin: 0px 0 0px 0px;		/* Отступы вокруг картинки */
+	}
+	/* Меню */
+.hidden-menu {
+	font-size: 20px;						/* Размер шрифта */
+	font-family: 'Comic Sans MS';		/* Шрифт текста */
+	display: block;
+	text-align: center;
+	position: fixed;
+	list-style:none;
+	padding: 10px;
+	margin: 0;
+	box-sizing: border-box;
+	width: 200px;
+	background-color: #222222;
+	height: 100%;
+	top: 0;
+	right: -200px;
+	transition: right .2s;
+	z-index: 2;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+}
+	/* Чек бокс */
+.hidden-menu-ticker {
+  display: none;
+}
+	/* Кнопка */
+.btn-menu {
+	margin-top: 8px;
+	border-radius: 5px;
+	color: #1e1e1e;
+	background-color: #ff3333;
+	padding: 5px;
+	position: fixed;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+	transition: right .23s;
+	z-index: 3;
+	y-index: 3;
+	width: 25px;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+}
+.btn-menu span {
+  display: block;
+  height: 5px;
+  background-color: #333333;
+  margin: 5px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+}
+.btn-menu span.first {
+  margin-top: 0;
+}
+	/* Анимация кнопки */
+.hidden-menu-ticker:checked ~ .btn-menu {
+  right: 160px;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  right: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+  -webkit-transform: rotate(45deg);
+  top: 10px;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+  opacity: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+  -webkit-transform: rotate(-45deg);
+  top: -10px;
+}

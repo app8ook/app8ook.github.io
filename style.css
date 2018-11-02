@@ -84,7 +84,7 @@ A {
 .btn-menu span.first {
 	margin-top: 0;
 	}
-.hidden-menu-ticker:checked ~ .btn-menu {			/* Анимация кнопки */
+.hidden-menu-ticker:checked ~ .btn-menu {	/* Анимация кнопки */
 	right: 160px;
 	}
 .hidden-menu-ticker:checked ~ .hidden-menu {

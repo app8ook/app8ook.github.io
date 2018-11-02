@@ -1,6 +1,6 @@
 .blok {
-	border-radius: 8px;			/* Округление */
-    width: 100%; 				/* Ширина слоя */
+	border-radius: 6px;			/* Округление */
+    width: 99%; 				/* Ширина слоя */
     margin-top: 0%; 				/* Значение отступов */
     padding: 6px; 				/* Поля вокруг текста */
     background: #333333; 			/* Цвет фона */
@@ -58,13 +58,13 @@ A {
 	}
 .btn-menu {					/* Кнопка */
 	margin-top: 8px;
-	border-radius: 5px;
+	border-radius: 6px;
 	color: #1e1e1e;
 	background-color: #ff3333;
 	padding: 5px;
 	position: fixed;
 	top: 5px;
-	right: 5px;
+	right: 15px;
 	cursor: pointer;
 	transition: right .23s;
 	z-index: 3;
@@ -94,7 +94,7 @@ A {
 	-webkit-transform: rotate(45deg);
 	top: 10px;
 	}
-.hidden-menu-ticker:checked ~ .btn-menu span.second {
+	.hidden-menu-ticker:checked ~ .btn-menu span.second {
 	opacity: 0;
 	}
 .hidden-menu-ticker:checked ~ .btn-menu span.third {

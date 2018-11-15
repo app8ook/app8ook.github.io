@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:600&subset=cyrillic');
+html {
+	font-family: Montserrat Alternates;
+	}
 .blok {
 	border-radius: 6px;			/* Округление */
     width: 99%; 				/* Ширина слоя */
     margin-top: 0%; 				/* Значение отступов */
     padding: 6px; 				/* Поля вокруг текста */
     background: #333333; 			/* Цвет фона */
+	}
+.blokb {
+	border-radius: 9px;			/* Округление */
+    width: 100%; 				/* Ширина слоя */
+    margin-top: 5%; 				/* Значение отступов */
+    padding: 10px; 				/* Поля вокруг текста */
+    background: #1e1e1e; 			/* Цвет фона */
 	}
 A {
 	color: #cc50ff;				/* Цвет ссылок */
@@ -20,7 +31,6 @@ A {
 .text {
 	font-size: 14px;			/* Размер шрифта */
 	color: #ff3333;				/* Цвет текста */
-	font-family: 'Comic Sans MS';		/* Шрифт текста */
 	}
 .leftimg {
 	float:left;				/* Выравнивание по левому краю */
@@ -31,8 +41,7 @@ A {
 	margin: 0px 0 0px 0px;			/* Отступы вокруг картинки */
 	}
 .hidden-menu {					/* Меню */
-	font-size: 20px;			/* Размер шрифта */
-	font-family: 'Comic Sans MS';		/* Шрифт текста */
+	font-size: 16px;			/* Размер шрифта */
 	display: block;
 	text-align: center;
 	position: fixed;

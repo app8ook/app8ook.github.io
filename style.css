@@ -6,16 +6,16 @@ html {
 	border-radius: 6px;			/* Округление */
     width: 99%; 				/* Ширина слоя */
     margin-top: 0%; 				/* Значение отступов */
-    padding: 6px; 				/* Поля вокруг текста */
+    padding: 2px; 				/* Поля вокруг текста */
     background: #333333; 			/* Цвет фона */
 	}
 a.but {
 	display: inline-block;
 	border-radius: 9px;			/* Округление */
-    width: 120%; 				/* Ширина слоя */
-    margin-top: 5%; 				/* Значение отступов */
-    padding: 10px; 				/* Поля вокруг текста */
-    background: #1e1e1e; 			/* Цвет фона */
+    width: 15%; 				/* Ширина слоя */
+    margin-top: 0%; 				/* Значение отступов */
+    padding: 3px; 				/* Поля вокруг текста */
+    background: #333333; 			/* Цвет фона */
 	text-decoration: none;
 	user-select: none;
 	outline: none;
@@ -26,13 +26,13 @@ a.but {
 	a.but:hover { background: rgba(255,255,255,.2); }	/* При наведении */
 	a.but:active { background: gray; }			/* При нажатии */
 A {
-	color: #cc50ff;				/* Цвет ссылок */
+	color: #ff3333;				/* Цвет ссылок */
 	}
 A:visited {
-	color: #cc50ff;				/* Цвет посещенных ссылок */
+	color: #ff3333;				/* Цвет посещенных ссылок */
 	}
 A:active {
-	color: #ffc800;				/* Цвет активных ссылок */
+	color: #ff3333;				/* Цвет активных ссылок */
 	}
 A {
 	text-decoration: none;			/* Подчеркивание у ссылки */
@@ -41,15 +41,17 @@ A {
 	font-size: 14px;			/* Размер шрифта */
 	color: #ff3333;				/* Цвет текста */
 	}
+}
 TD.leftpic {
     width: 110px; /* Ширина левой колонки с рисунком */
     vertical-align: top; /* Выравнивание по верхнему краю */
     }
-	hr {
+hr {
     border: none; /* Убираем границу */
-    background-color: red; /* Цвет линии */
-    color: red; /* Цвет линии для IE6-7 */
+    background-color: #fa5858; /* Цвет линии */
+    color: #fa5858; /* Цвет линии для IE6-7 */
     height: 2px; /* Толщина линии */
+	width: 99%;
    }
 .leftimg {
 	float:left;		/* Выравнивание по левому краю */
@@ -58,71 +60,4 @@ TD.leftpic {
 .rightimg  {
 	float: right;				/* Выравнивание по правому краю  */ 
 	margin: 0px 0 0px 0px;			/* Отступы вокруг картинки */
-	}
-.hidden-menu {					/* Меню */
-	font-size: 16px;			/* Размер шрифта */
-	display: block;
-	text-align: center;
-	position: fixed;
-	list-style:none;
-	padding: 10px;
-	margin: 0;
-	box-sizing: border-box;
-	width: 200px;
-	background-color: #222222;
-	height: 100%;
-	top: 0;
-	right: -200px;
-	transition: right .2s;
-	z-index: 2;
-	-webkit-transform: translateZ(0);
-	-webkit-backface-visibility: hidden;
-	}
-.hidden-menu-ticker {				/* Чек бокс */
-	display: none;
-	}
-.btn-menu {					/* Кнопка */
-	margin-top: 8px;
-	border-radius: 6px;
-	color: #1e1e1e;
-	background-color: #ff3333;
-	padding: 5px;
-	position: fixed;
-	top: 5px;
-	right: 15px;
-	cursor: pointer;
-	transition: right .23s;
-	z-index: 3;
-	y-index: 3;
-	width: 25px;
-	-webkit-transform: translateZ(0);
-	-webkit-backface-visibility: hidden;
-	}
-.btn-menu span {
-	display: block;
-	height: 5px;
-	background-color: #333333;
-	margin: 5px 0 0;
-	transition: all .1s linear .23s;
-	position: relative;
-	}
-.btn-menu span.first {
-	margin-top: 0;
-	}
-.hidden-menu-ticker:checked ~ .btn-menu {	/* Анимация кнопки */
-	right: 160px;
-	}
-.hidden-menu-ticker:checked ~ .hidden-menu {
-	right: 0;
-	}
-.hidden-menu-ticker:checked ~ .btn-menu span.first {
-	-webkit-transform: rotate(45deg);
-	top: 10px;
-	}
-	.hidden-menu-ticker:checked ~ .btn-menu span.second {
-	opacity: 0;
-	}
-.hidden-menu-ticker:checked ~ .btn-menu span.third {
-	-webkit-transform: rotate(-45deg);
-	top: -10px;
 	}

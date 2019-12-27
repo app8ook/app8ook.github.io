@@ -12,7 +12,8 @@ html {
 a.but {
 	display: inline-block;
 	border-radius: 9px;			/* Округление */
-    width: 15%; 				/* Ширина слоя */
+    width: 12%; 				/* Ширина слоя */
+	margin-left: 1%;
     margin-top: 0%; 				/* Значение отступов */
     padding: 3px; 				/* Поля вокруг текста */
     background: #333333; 			/* Цвет фона */
@@ -41,7 +42,10 @@ A {
 	font-size: 14px;			/* Размер шрифта */
 	color: #ff3333;				/* Цвет текста */
 	}
-}
+.center {
+	margin-left: 5%;
+    margin-right: -10%;
+	}
 TD.leftpic {
     width: 110px; /* Ширина левой колонки с рисунком */
     vertical-align: top; /* Выравнивание по верхнему краю */

@@ -4,7 +4,7 @@ html {
 	}
 .blok {
 	border-radius: 6px;			/* Округление */
-    width: 99%; 				/* Ширина слоя */
+    width: 98%; 				/* Ширина слоя */
     margin-top: 0%; 				/* Значение отступов */
     padding: 2px; 				/* Поля вокруг текста */
     background: #333333; 			/* Цвет фона */
@@ -56,7 +56,7 @@ A {
 	text-decoration: none;			/* Подчеркивание у ссылки */
 	} 
 .text {
-	font-size: 14px;			/* Размер шрифта */
+	font-size: 15px;			/* Размер шрифта */
 	color: #ff3333;				/* Цвет текста */
 	}
 .center {

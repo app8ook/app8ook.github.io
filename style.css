@@ -2,20 +2,29 @@
 html {
 	font-family: Montserrat Alternates;
 	}
+::-webkit-scrollbar { /* chrome based */
+    width: 0px;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
+}
+
+html {
+    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
+}
 .blok {
 	border-radius: 6px;			/* Округление */
     width: 99%; 				/* Ширина слоя */
     margin-top: 0%; 				/* Значение отступов */
     padding: 2px; 				/* Поля вокруг текста */
     background: #333333; 			/* Цвет фона */
-	}
+}
 a.but {
 	display: inline-block;
-	border-radius: 9px;			/* Округление */
-    width: 12%; 				/* Ширина слоя */
+	border-radius: 16px;			/* Округление */
+    width: 20%; 				/* Ширина слоя */
 	margin-left: 1%;
     margin-top: 0%; 				/* Значение отступов */
-    padding: 3px; 				/* Поля вокруг текста */
+    padding: 1%; 				/* Поля вокруг текста */
     background: #333333; 			/* Цвет фона */
 	text-decoration: none;
 	user-select: none;
@@ -38,7 +47,7 @@ a.butt {
 	user-select: none;
 	outline: none;
 	transition: 0.2s;
-	color: gray;
+	color: #ff3333;
 	font-weight: 800;
 	}
 	a.butt:hover { background: rgba(255,255,255,.2); }	/* При наведении */
@@ -56,47 +65,27 @@ A {
 	text-decoration: none;			/* Подчеркивание у ссылки */
 	} 
 .text {
-	font-size: 14px;			/* Размер шрифта */
+	font-size: 15px;			/* Размер шрифта */
 	color: #ff3333;				/* Цвет текста */
 	}
-.center {
-	margin-left: 10%;
-    margin-right: 0%;
+.kbut {
+	margin-left: 0%;
+    margin-right: 100%;
+	margin-bottom: -3%;
+    bottom: 0;
+    width: 0%;
 	}
-.stihi {
-	width: 99%;
-	border: 0%;
-	cellpadding: 0px;
-	cellspacing: 0px;
-	padding-bottom: 0%;
-	table-layout: fixed;
-	text-align: top;
-   }
+.upbut {
+	margin-left: 96%;
+    margin-right: 0%;
+	margin-bottom: -3%;
+    bottom: 0;
+    width: 0%;
+	}
 hr {
     border: none; /* Убираем границу */
     background-color: #fa5858; /* Цвет линии */
     color: #fa5858; /* Цвет линии для IE6-7 */
     height: 2px; /* Толщина линии */
 	width: 99%;
-   }
-.leftimg {
-	float:left;		/* Выравнивание по левому краю */
-	margin: 2px 2px 2px 0;			/* Отступы вокруг картинки */
-	}
-.rightimg  {
-	float: right;				/* Выравнивание по правому краю  */ 
-	margin: 0px 0 0px 0px;			/* Отступы вокруг картинки */
-	}
-.spoiler input, .spoiler div  { 
-    display: none;						 /* Скрываем содержимое */
-   }
-   .spoiler label::before {
-    content: '►'; 						/* Текст перед заголовком */
-    margin-right: 5px;				 /* Расстояние до текста */
-   }
-												/* Открытый спойлер */
-   .spoiler :checked + label::before { content: '▼'; }
-   .spoiler :checked ~ div {
-    display: block; 				/* Показываем спойлер */
-    padding: 5px; 				/* Поля вокруг текста */
    }

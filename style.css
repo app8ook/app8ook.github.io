@@ -21,7 +21,7 @@ html {
 a.but {
 	display: inline-block;
 	border-radius: 16px;			/* Округление */
-    width: 20%; 				/* Ширина слоя */
+    width: 15%; 				/* Ширина слоя */
 	margin-left: 1%;
     margin-top: 0%; 				/* Значение отступов */
     padding: 1%; 				/* Поля вокруг текста */
@@ -76,7 +76,7 @@ A {
     width: 0%;
 	}
 .upbut {
-	margin-left: 96%;
+	margin-left: 98%;
     margin-right: 0%;
 	margin-bottom: -3%;
     bottom: 0;

@@ -68,24 +68,11 @@ A {
 	font-size: 15px;			/* Размер шрифта */
 	color: #ff3333;				/* Цвет текста */
 	}
-.kbut {
-	margin-left: 0%;
-    margin-right: 100%;
-	margin-bottom: -3%;
-    bottom: 0;
-    width: 0%;
-	}
-.upbut {
-	margin-left: 98%;
-    margin-right: 0%;
-	margin-bottom: -3%;
-    bottom: 0;
-    width: 0%;
-	}
 hr {
     border: none; /* Убираем границу */
     background-color: #fa5858; /* Цвет линии */
     color: #fa5858; /* Цвет линии для IE6-7 */
     height: 2px; /* Толщина линии */
 	width: 99%;
+	margin-left: 0%;
    }

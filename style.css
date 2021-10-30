@@ -14,7 +14,7 @@ html {
 	background-attachment: Fixed;
 	background-image: url("pics/OFFAPPS.png");
 	background-position: center top;
-    background-repeat: norepeat;
+    background-repeat: no-repeat;
    }
 .blok {
 	border-radius: 6px;			/* Округление */

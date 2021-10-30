@@ -1,27 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:600&subset=cyrillic');
 html {
 	font-family: Montserrat Alternates;
-	}
+}
 ::-webkit-scrollbar { /* chrome based */
     width: 0px;  /* ширина scrollbar'a */
     background: transparent;  /* опционально */
 }
-
 html {
     -ms-overflow-style: none;  /* IE 10+ */
     scrollbar-width: none; /* Firefox */
 }
+}
+   body {
+	background-attachment: Fixed;
+	background-image: url("pics/OFFAPPS.png");
+	background-position: center top;
+    background-repeat: norepeat;
+   }
 .blok {
 	border-radius: 6px;			/* Округление */
-    width: 99%; 				/* Ширина слоя */
+    width: 98%; 				/* Ширина слоя */
     margin-top: 0%; 				/* Значение отступов */
-    padding: 0%; 				/* Поля вокруг текста */
+    padding: 1%; 				/* Поля вокруг текста */
     background: #333333; 			/* Цвет фона */
+	font-size: 16px;			/* Размер шрифта */
+	color: #ff3333;
 }
 a.but {
 	display: inline-block;
 	border-radius: 16px;			/* Округление */
-    width: 15%; 				/* Ширина слоя */
+    width: 60%; 				/* Ширина слоя */
 	margin-left: 1%;
     margin-top: 0%; 				/* Значение отступов */
     padding: 1%; 				/* Поля вокруг текста */
@@ -38,7 +46,7 @@ a.but {
 a.butt {
 	display: inline-block;
 	border-radius: 9px;			/* Округление */
-    width: 99%; 				/* Ширина слоя */
+    width: 98%; 				/* Ширина слоя */
 	margin-left: 0%;
     margin-top: 0%; 				/* Значение отступов */
     padding: 3px; 				/* Поля вокруг текста */
@@ -73,6 +81,71 @@ hr {
     background-color: #fa5858; /* Цвет линии */
     color: #fa5858; /* Цвет линии для IE6-7 */
     height: 2px; /* Толщина линии */
-	width: 99%;
+	width: 98%;
 	margin-left: 0%;
    }
+
+
+
+.button {
+  display: inline-block;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px; 
+  margin: 0%;
+  padding: 0%;
+  background: #333333;
+  border: 30% solid;
+  font-size: 200%;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #808080;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 25% auto;
+  font-size: 120%;
+  padding: 1%;
+  background: #333333;
+  border-radius: 3%;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  line-height: 3.0;
+}
+.popup .close {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  transition: all 200ms;
+  font-size: 300%;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ff3333;
+}
+.popup .close:hover {
+  color: #808080;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}

@@ -10,12 +10,6 @@ html {
     -ms-overflow-style: none;  /* IE 10+ */
     scrollbar-width: none; /* Firefox */
 }
-   body {
-	background-attachment: Fixed;
-	background-image: url("pics/OFFAPPS.png");
-	background-position: center top;
-    background-repeat: no-repeat;
-   }
 .blok {
 	border-radius: 6px;			/* Округление */
     width: 98%; 				/* Ширина слоя */

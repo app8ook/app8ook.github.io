@@ -9,21 +9,25 @@ html {
 html {
     -ms-overflow-style: none;  /* IE 10+ */
     scrollbar-width: none; /* Firefox */
+	background-image: url(pics/bg.png);
+	background-size: 100%;
+	background-repeat: repeat;
 }
 .blok {
 	border-radius: 6px;			/* Округление */
-    width: 98%; 				/* Ширина слоя */
-    margin-top: 0%; 				/* Значение отступов */
+    width: 60%; 				/* Ширина слоя */
+    margin-right: auto; 				/* Значение отступов */
+	margin-left: auto;
     padding: 1%; 				/* Поля вокруг текста */
     background: #333333; 			/* Цвет фона */
 	font-size: 16px;			/* Размер шрифта */
-	color: #ff3333;
+	color: #ff5555;
 }
 a.but {
 	display: inline-block;
 	border-radius: 16px;			/* Округление */
-    width: 60%; 				/* Ширина слоя */
-	margin-left: 1%;
+    width: 55%; 				/* Ширина слоя */
+	margin-left: 0%;
     margin-top: 0%; 				/* Значение отступов */
     padding: 1%; 				/* Поля вокруг текста */
     background: #333333; 			/* Цвет фона */
@@ -39,47 +43,36 @@ a.but {
 a.butt {
 	display: inline-block;
 	border-radius: 9px;			/* Округление */
-    width: 98%; 				/* Ширина слоя */
+    width: 90%; 				/* Ширина слоя */
 	margin-left: 0%;
     margin-top: 0%; 				/* Значение отступов */
-    padding: 3px; 				/* Поля вокруг текста */
+    padding: 0.5%; 				/* Поля вокруг текста */
     background: #333333; 			/* Цвет фона */
 	text-decoration: none;
 	user-select: none;
 	outline: none;
 	transition: 0.2s;
-	color: #ff3333;
+	color: #ff5555;
 	font-weight: 800;
 	}
 	a.butt:hover { background: rgba(255,255,255,.2); }	/* При наведении */
 	a.butt:active { background: gray; }			/* При нажатии */
 A {
-	color: #ff3333;				/* Цвет ссылок */
+	color: #ff5555;				/* Цвет ссылок */
 	}
 A:visited {
-	color: #ff3333;				/* Цвет посещенных ссылок */
+	color: #ff5555;				/* Цвет посещенных ссылок */
 	}
 A:active {
-	color: #ff3333;				/* Цвет активных ссылок */
+	color: #ff5555;				/* Цвет активных ссылок */
 	}
 A {
 	text-decoration: none;			/* Подчеркивание у ссылки */
 	} 
 .text {
-	font-size: 15px;			/* Размер шрифта */
-	color: #ff3333;				/* Цвет текста */
+	font-size: 100%;			/* Размер шрифта */
+	color: #ff5555;				/* Цвет текста */
 	}
-hr {
-    border: none; /* Убираем границу */
-    background-color: #fa5858; /* Цвет линии */
-    color: #fa5858; /* Цвет линии для IE6-7 */
-    height: 2px; /* Толщина линии */
-	width: 98%;
-	margin-left: 0%;
-   }
-
-
-
 .button {
   display: inline-block;
   border-radius: 50%;
@@ -133,7 +126,7 @@ hr {
   font-size: 300%;
   font-weight: bold;
   text-decoration: none;
-  color: #ff3333;
+  color: #ff5555;
 }
 .popup .close:hover {
   color: #808080;

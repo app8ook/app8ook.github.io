@@ -25,7 +25,7 @@ html {
 }
 .bblok {
 	border-radius: 9px;			/* Округление */
-    width: 50%; 				/* Ширина слоя */
+    width: 60%; 				/* Ширина слоя */
 	opacity: 80%;
     padding: 1%; 				/* Поля вокруг текста */
     background: #444444; 			/* Цвет фона */

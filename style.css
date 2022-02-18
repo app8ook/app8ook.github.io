@@ -15,7 +15,7 @@ html {
 }
 .blok {
 	border-radius: 6px;			/* Округление */
-    width: 70%; 				/* Ширина слоя */
+    width: 60%; 				/* Ширина слоя */
     margin-right: auto; 				/* Значение отступов */
 	margin-left: auto;
     padding: 1%; 				/* Поля вокруг текста */
@@ -25,12 +25,22 @@ html {
 }
 .bblok {
 	border-radius: 9px;			/* Округление */
-    width: 60%; 				/* Ширина слоя */
+    width: 50%; 				/* Ширина слоя */
 	opacity: 80%;
     padding: 1%; 				/* Поля вокруг текста */
     background: #444444; 			/* Цвет фона */
 	margin-right: auto; 				/* Значение отступов */
 	margin-left: auto;
+}
+.bbblok {
+	border-radius: 9px;			/* Округление */
+    width: 30%; 				/* Ширина слоя */
+	opacity: 80%;
+    padding: 1%; 				/* Поля вокруг текста */
+    background: #444444; 			/* Цвет фона */
+	margin-right: auto; 				/* Значение отступов */
+	margin-left: auto;
+	margin-top: -3%;
 }
 a.but {
 	display: inline-block;
@@ -82,141 +92,16 @@ A {
 	font-size: 100%;			/* Размер шрифта */
 	color: #ff5555;				/* Цвет текста */
 	}
-	
-/* MENU */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-html, body {
-  height: 100%;
-}
-body {
-  content: "";
-  display: block;
-  height: 50%;
-}
-/* MAIN VARIABLES FOR CUSTOMIZATION */
-/* -------------------------------- */
-.nav {
-  overflow: hidden;
-  position: absolute;
-  left: 50%;
-  top: 2%;
-  width: auto;
-  height: 8%;
-  background: #333333;
-  border-radius: 9px;
-  transform: translate3d(-50%, 0, 0);
-}
-.nav__cb {
-  z-index: -1000;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  pointer-events: none;
-}
-.nav__content {
-  position: relative;
-  width: 80px;
-  height: 90%;
-  transition: width 1s cubic-bezier(0.49, -0.3, 0.68, 1.23);
-}
-.nav__cb:checked ~ .nav__content {
-  transition: width 1s cubic-bezier(0.48, 0.43, 0.29, 1.3);
-  width: 500px;
-}
-.nav__items {
-  position: relative;
-  top: -35%;
-  width: 500px;
-  height: 100%;
-  padding-left: 20px;
-  padding-right: 90px;
-  list-style-type: none;
-  font-size: 0;
-}
-.nav__item {
+.button {
   display: inline-block;
-  vertical-align: top;
-  width: auto;
-  text-align: center;
-  color: #ff5555;
-  font-size: 14px;
-  line-height: 90px;
-  transition: color 0.3s;
+  border-radius: 6%;
+  margin: 1%;
+  padding: 3%;
+  background: #333333;
+  text-decoration: none;
   cursor: pointer;
+  transition: all 0.3s ease-out;
 }
-.nav__item:hover {
-  color: #ff8888;
-}
-.nav__item-text {
-  display: block;
-  height: 100%;
-  transform: rotateY(-70deg);
-  opacity: 0;
-  transition: transform 0.7s cubic-bezier(0.48, 0.43, 0.7, 2.5), opacity 0.7s;
-}
-.nav__cb:checked ~ .nav__content .nav__item-text {
-  transform: rotateY(0);
-  opacity: 1;
-  transition: transform 0.7s cubic-bezier(0.48, 0.43, 0.7, 2.5), opacity 0.2s;
-}
-.nav__item:nth-child(1) .nav__item-text {
-  transition-delay: 0.3s;
-}
-.nav__cb:checked ~ .nav__content .nav__item:nth-child(1) .nav__item-text {
-  transition-delay: 0s;
-}
-.nav__item:nth-child(2) .nav__item-text {
-  transition-delay: 0.2s;
-}
-.nav__cb:checked ~ .nav__content .nav__item:nth-child(2) .nav__item-text {
-  transition-delay: 0.1s;
-}
-.nav__item:nth-child(3) .nav__item-text {
-  transition-delay: 0.1s;
-}
-.nav__cb:checked ~ .nav__content .nav__item:nth-child(3) .nav__item-text {
-  transition-delay: 0.2s;
-}
-.nav__item:nth-child(4) .nav__item-text {
-  transition-delay: 0s;
-}
-.nav__cb:checked ~ .nav__content .nav__item:nth-child(4) .nav__item-text {
-  transition-delay: 0.3s;
-}
-.nav__btn {
-  position: absolute;
-  right: 0%;
-  top: 0%;
-  width: 90px;
-  height: 90px;
-  padding: 18px 50px;
-  cursor: pointer;
-}
-.nav__btn:before, .nav__btn:after {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 4px;
-  border-radius: 2px;
-  background: #ff5555;
-  transform-origin: 50% 50%;
-  transition: transform 1s cubic-bezier(0.48, 0.43, 0.29, 1.3), background-color 0.3s;
-}
-.nav__btn:before {
-  margin-bottom: 10px;
-}
-.nav__btn:hover:before, .nav__btn:hover:after {
-  background: #ff8888;
-}
-.nav__cb:checked ~ .nav__btn:before {
-  transform: translateY(7px) rotate(-225deg);
-}
-.nav__cb:checked ~ .nav__btn:after {
-  transform: translateY(-7px) rotate(225deg);
+.button:hover {
+  background: #808080;
 }

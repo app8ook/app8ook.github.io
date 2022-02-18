@@ -34,9 +34,9 @@ html {
 }
 .bbblok {
 	border-radius: 9px;			/* Округление */
-    width: 30%; 				/* Ширина слоя */
+    width: 70%; 				/* Ширина слоя */
 	opacity: 80%;
-    padding: 1%; 				/* Поля вокруг текста */
+    padding: 0%; 				/* Поля вокруг текста */
     background: #444444; 			/* Цвет фона */
 	margin-right: auto; 				/* Значение отступов */
 	margin-left: auto;
@@ -94,9 +94,10 @@ A {
 	}
 .button {
   display: inline-block;
+  width: auto;
   border-radius: 6%;
   margin: 1%;
-  padding: 3%;
+  padding: 1%;
   background: #333333;
   text-decoration: none;
   cursor: pointer;

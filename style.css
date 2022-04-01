@@ -20,7 +20,7 @@ html {
 	margin-left: auto;
     padding: 1%; 				/* Поля вокруг текста */
     background: #333333; 			/* Цвет фона */
-	font-size: 16px;			/* Размер шрифта */
+	font-size: 120%;			/* Размер шрифта */
 	color: #ff5555;
 }
 .bblok {
@@ -56,6 +56,7 @@ a.but {
 	transition: 0.2s;
 	color: gray;
 	font-weight: 800;
+	font-size: 100%;
 	}
 	a.but:hover { background: rgba(255,255,255,.2); }	/* При наведении */
 	a.but:active { background: gray; }			/* При нажатии */
@@ -73,6 +74,7 @@ a.butt {
 	transition: 0.2s;
 	color: #ff5555;
 	font-weight: 800;
+	font-size: 100%;
 	}
 	a.butt:hover { background: rgba(255,255,255,.2); }	/* При наведении */
 	a.butt:active { background: gray; }			/* При нажатии */

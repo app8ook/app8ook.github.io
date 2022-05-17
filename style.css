@@ -1,21 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:600&subset=cyrillic');
 html {
 	font-family: Montserrat Alternates;
-}
-::-webkit-scrollbar { /* chrome based */
-    width: 0px;  /* ширина scrollbar'a */
-    background: transparent;  /* опционально */
-}
-html {
-    -ms-overflow-style: none;  /* IE 10+ */
-    scrollbar-width: none; /* Firefox */
 	background-image: url(pics/bg.png);
 	background-size: 100%;
 	background-repeat: repeat;
 }
 .blok {
 	border-radius: 6px;			/* Округление */
-    width: 60%; 				/* Ширина слоя */
+    width: 70%; 				/* Ширина слоя */
     margin-right: auto; 				/* Значение отступов */
 	margin-left: auto;
     padding: 1%; 				/* Поля вокруг текста */
@@ -25,7 +17,7 @@ html {
 }
 .bblok {
 	border-radius: 9px;			/* Округление */
-    width: 60%; 				/* Ширина слоя */
+    width: 70%; 				/* Ширина слоя */
 	opacity: 80%;
     padding: 1%; 				/* Поля вокруг текста */
     background: #444444; 			/* Цвет фона */
@@ -34,7 +26,7 @@ html {
 }
 .bbblok {
 	border-radius: 9px;			/* Округление */
-    width: 70%; 				/* Ширина слоя */
+    width: 95%; 				/* Ширина слоя */
 	opacity: 80%;
     padding: 0%; 				/* Поля вокруг текста */
     background: #444444; 			/* Цвет фона */
@@ -42,10 +34,20 @@ html {
 	margin-left: auto;
 	margin-top: -3%;
 }
+.bbbblok {
+	border-radius: 6px;			/* Округление */
+    width: 90%; 				/* Ширина слоя */
+    margin-right: auto; 				/* Значение отступов */
+	margin-left: auto;
+    padding: 1%; 				/* Поля вокруг текста */
+    background: #333333; 			/* Цвет фона */
+	font-size: 110%;			/* Размер шрифта */
+	color: #ff5555;
+}
 a.but {
 	display: inline-block;
 	border-radius: 16px;			/* Округление */
-    width: 55%; 				/* Ширина слоя */
+    width: 50%; 				/* Ширина слоя */
 	margin-left: 0%;
     margin-top: 0%; 				/* Значение отступов */
     padding: 1%; 				/* Поля вокруг текста */
@@ -63,7 +65,7 @@ a.but {
 a.butt {
 	display: inline-block;
 	border-radius: 9px;			/* Округление */
-    width: 90%; 				/* Ширина слоя */
+    width: 95%; 				/* Ширина слоя */
 	margin-left: 0%;
     margin-top: 0%; 				/* Значение отступов */
     padding: 1%; 				/* Поля вокруг текста */
@@ -98,8 +100,8 @@ A {
   display: inline-block;
   width: auto;
   border-radius: 6%;
-  margin: 1%;
-  padding: 1%;
+  margin: 1.5%;
+  padding: 1.5%;
   background: #333333;
   text-decoration: none;
   cursor: pointer;

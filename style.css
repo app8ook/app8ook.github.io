@@ -44,6 +44,16 @@ html {
 	font-size: 110%;			/* Размер шрифта */
 	color: #ff5555;
 }
+.blo {
+	border-radius: 9px;			/* Округление */
+    width: 30%; 				/* Ширина слоя */
+    margin-right: auto; 				/* Значение отступов */
+	margin-left: auto;
+    padding: 0%; 				/* Поля вокруг текста */
+    background: #333333; 			/* Цвет фона */
+	font-size: 80%;			/* Размер шрифта */
+	color: #ff5555;
+}
 a.but {
 	display: inline-block;
 	border-radius: 16px;			/* Округление */

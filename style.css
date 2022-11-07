@@ -12,12 +12,12 @@ html {
 	margin-left: auto;
     padding: 1%; 				/* Поля вокруг текста */
     background: #333333; 			/* Цвет фона */
-	font-size: 120%;			/* Размер шрифта */
-	color: #ff5555;
+	font-size: 100%;			/* Размер шрифта */
+	color: #ff6666;
 }
 .bblok {
 	border-radius: 9px;			/* Округление */
-    width: 70%; 				/* Ширина слоя */
+    width: 80%; 				/* Ширина слоя */
 	opacity: 80%;
     padding: 1%; 				/* Поля вокруг текста */
     background: #444444; 			/* Цвет фона */
@@ -26,7 +26,7 @@ html {
 }
 .bbblok {
 	border-radius: 9px;			/* Округление */
-    width: 95%; 				/* Ширина слоя */
+    width: 90%; 				/* Ширина слоя */
 	opacity: 80%;
     padding: 0%; 				/* Поля вокруг текста */
     background: #444444; 			/* Цвет фона */
@@ -42,7 +42,7 @@ html {
     padding: 1%; 				/* Поля вокруг текста */
     background: #333333; 			/* Цвет фона */
 	font-size: 110%;			/* Размер шрифта */
-	color: #ff5555;
+	color: #ff6666;
 }
 .blo {
 	border-radius: 9px;			/* Округление */
@@ -52,7 +52,7 @@ html {
     padding: 0%; 				/* Поля вокруг текста */
     background: #333333; 			/* Цвет фона */
 	font-size: 80%;			/* Размер шрифта */
-	color: #ff5555;
+	color: #ff6666;
 }
 a.but {
 	display: inline-block;
@@ -66,7 +66,7 @@ a.but {
 	user-select: none;
 	outline: none;
 	transition: 0.2s;
-	color: gray;
+	color: #ff6666;
 	font-weight: 800;
 	font-size: 100%;
 	}
@@ -84,32 +84,32 @@ a.butt {
 	user-select: none;
 	outline: none;
 	transition: 0.2s;
-	color: #ff5555;
+	color: #ff6666;
 	font-weight: 800;
 	font-size: 100%;
 	}
 	a.butt:hover { background: rgba(255,255,255,.2); }	/* При наведении */
 	a.butt:active { background: gray; }			/* При нажатии */
 A {
-	color: #ff5555;				/* Цвет ссылок */
+	color: #ff6666;				/* Цвет ссылок */
 	}
 A:visited {
-	color: #ff5555;				/* Цвет посещенных ссылок */
+	color: #ff6666;				/* Цвет посещенных ссылок */
 	}
 A:active {
-	color: #ff5555;				/* Цвет активных ссылок */
+	color: #ff3333;				/* Цвет активных ссылок */
 	}
 A {
 	text-decoration: none;			/* Подчеркивание у ссылки */
 	} 
 .text {
-	font-size: 130%;			/* Размер шрифта */
-	color: #ff5555;				/* Цвет текста */
+	font-size: 120%;			/* Размер шрифта */
+	color: #ff6666;				/* Цвет текста */
 	}
 .button {
   display: inline-block;
   width: auto;
-  border-radius: 6%;
+  border-radius: 50%;
   margin: 1.5%;
   padding: 1.5%;
   background: #333333;

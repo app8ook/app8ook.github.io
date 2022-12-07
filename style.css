@@ -14,6 +14,17 @@ html {
     background: #333333; 			/* Цвет фона */
 	font-size: 100%;			/* Размер шрифта */
 	color: #ff6666;
+	opacity: 90%;
+}
+.slok {
+	border-radius: 6px;			/* Округление */
+    width: 50%; 				/* Ширина слоя */
+    margin-right: auto; 				/* Значение отступов */
+	margin-left: auto;
+    padding: 1%; 				/* Поля вокруг текста */
+    background: #333333; 			/* Цвет фона */
+	font-size: 100%;			/* Размер шрифта */
+	color: #ff6666;
 }
 .bblok {
 	border-radius: 9px;			/* Округление */
@@ -26,13 +37,13 @@ html {
 }
 .bbblok {
 	border-radius: 9px;			/* Округление */
-    width: 90%; 				/* Ширина слоя */
+    width: 58%; 				/* Ширина слоя */
 	opacity: 80%;
     padding: 0%; 				/* Поля вокруг текста */
     background: #444444; 			/* Цвет фона */
 	margin-right: auto; 				/* Значение отступов */
 	margin-left: auto;
-	margin-top: -3%;
+	margin-top: 1.5%;
 }
 .bbbblok {
 	border-radius: 6px;			/* Округление */
@@ -53,13 +64,14 @@ html {
     background: #333333; 			/* Цвет фона */
 	font-size: 80%;			/* Размер шрифта */
 	color: #ff6666;
+	opacity: 80%;
 }
 a.but {
 	display: inline-block;
 	border-radius: 16px;			/* Округление */
-    width: 50%; 				/* Ширина слоя */
+    width: 40%; 				/* Ширина слоя */
 	margin-left: 0%;
-    margin-top: 0%; 				/* Значение отступов */
+    margin-top: -0.5%; 				/* Значение отступов */
     padding: 1%; 				/* Поля вокруг текста */
     background: #333333; 			/* Цвет фона */
 	text-decoration: none;
@@ -75,9 +87,10 @@ a.but {
 a.butt {
 	display: inline-block;
 	border-radius: 9px;			/* Округление */
-    width: 95%; 				/* Ширина слоя */
-	margin-left: 0%;
-    margin-top: 0%; 				/* Значение отступов */
+    width: 94%; 				/* Ширина слоя */
+	margin-left: 2%;
+	margin-right: 2%;
+    margin-top: -1%; 				/* Значение отступов */
     padding: 1%; 				/* Поля вокруг текста */
     background: #333333; 			/* Цвет фона */
 	text-decoration: none;

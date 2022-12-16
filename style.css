@@ -8,72 +8,72 @@ html {
 .blok {
 	border-radius: 6px;			/* Округление */
     width: 70%; 				/* Ширина слоя */
-    margin-right: auto; 				/* Значение отступов */
+    margin-right: auto; 		/* Значение отступов */
 	margin-left: auto;
     padding: 1%; 				/* Поля вокруг текста */
-    background: #333333; 			/* Цвет фона */
+    background: #333333;	   /* Цвет фона */
 	font-size: 100%;			/* Размер шрифта */
 	color: #ff6666;
 	opacity: 90%;
 }
 .slok {
-	border-radius: 6px;			/* Округление */
-    width: 50%; 				/* Ширина слоя */
-    margin-right: auto; 				/* Значение отступов */
+	border-radius: 6px;
+    width: 50%;
+    margin-right: auto;
 	margin-left: auto;
-    padding: 1%; 				/* Поля вокруг текста */
-    background: #333333; 			/* Цвет фона */
-	font-size: 100%;			/* Размер шрифта */
+    padding: 1%;
+    background: #333333;
+	font-size: 100%;
 	color: #ff6666;
 }
 .bblok {
-	border-radius: 9px;			/* Округление */
-    width: 80%; 				/* Ширина слоя */
+	border-radius: 9px;
+    width: 80%;
 	opacity: 80%;
-    padding: 1%; 				/* Поля вокруг текста */
-    background: #444444; 			/* Цвет фона */
-	margin-right: auto; 				/* Значение отступов */
+    padding: 1%;
+    background: #444444;
+	margin-right: auto;
 	margin-left: auto;
 }
 .bbblok {
-	border-radius: 9px;			/* Округление */
-    width: 58%; 				/* Ширина слоя */
+	border-radius: 9px;
+    width: 58%;
 	opacity: 80%;
-    padding: 0%; 				/* Поля вокруг текста */
-    background: #444444; 			/* Цвет фона */
-	margin-right: auto; 				/* Значение отступов */
+    padding: 0%;
+    background: #444444;
+	margin-right: auto;
 	margin-left: auto;
 	margin-top: 1.5%;
 }
 .bbbblok {
-	border-radius: 6px;			/* Округление */
-    width: 90%; 				/* Ширина слоя */
-    margin-right: auto; 				/* Значение отступов */
+	border-radius: 6px;
+    width: 90%;
+    margin-right: auto;
 	margin-left: auto;
-    padding: 1%; 				/* Поля вокруг текста */
-    background: #333333; 			/* Цвет фона */
-	font-size: 110%;			/* Размер шрифта */
+    padding: 1%;
+    background: #333333;
+	font-size: 110%;
 	color: #ff6666;
 }
 .blo {
-	border-radius: 9px;			/* Округление */
-    width: 30%; 				/* Ширина слоя */
-    margin-right: auto; 				/* Значение отступов */
+	border-radius: 9px;
+    width: 30%;
+    margin-right: auto;
 	margin-left: auto;
-    padding: 0%; 				/* Поля вокруг текста */
-    background: #333333; 			/* Цвет фона */
-	font-size: 80%;			/* Размер шрифта */
+    padding: 0%;
+    background: #333333;
+	font-size: 80%;
 	color: #ff6666;
 	opacity: 80%;
 }
 a.but {
 	display: inline-block;
 	border-radius: 16px;			/* Округление */
-    width: 40%; 				/* Ширина слоя */
+    width: 40%; 					/* Ширина слоя */
 	margin-left: 0%;
     margin-top: -0.5%; 				/* Значение отступов */
-    padding: 1%; 				/* Поля вокруг текста */
-    background: #333333; 			/* Цвет фона */
+    padding: 1%; 					/* Поля вокруг текста */
+    background: #333333;		   /* Цвет фона */
 	text-decoration: none;
 	user-select: none;
 	outline: none;
@@ -82,17 +82,17 @@ a.but {
 	font-weight: 800;
 	font-size: 100%;
 	}
-	a.but:hover { background: rgba(255,255,255,.2); }	/* При наведении */
-	a.but:active { background: gray; }			/* При нажатии */
+	a.but:hover { background: rgba(255,255,255,.2); }		/* При наведении */
+	a.but:active { background: gray; }						/* При нажатии */
 a.butt {
 	display: inline-block;
 	border-radius: 9px;			/* Округление */
     width: 94%; 				/* Ширина слоя */
 	margin-left: 2%;
 	margin-right: 2%;
-    margin-top: -1%; 				/* Значение отступов */
+    margin-top: -1%; 			/* Значение отступов */
     padding: 1%; 				/* Поля вокруг текста */
-    background: #333333; 			/* Цвет фона */
+    background: #333333; 	   /* Цвет фона */
 	text-decoration: none;
 	user-select: none;
 	outline: none;
@@ -101,8 +101,8 @@ a.butt {
 	font-weight: 800;
 	font-size: 100%;
 	}
-	a.butt:hover { background: rgba(255,255,255,.2); }	/* При наведении */
-	a.butt:active { background: gray; }			/* При нажатии */
+	a.butt:hover { background: rgba(255,255,255,.2); }		/* При наведении */
+	a.butt:active { background: gray; }					/* При нажатии */
 A {
 	color: #ff6666;				/* Цвет ссылок */
 	}
@@ -116,8 +116,8 @@ A {
 	text-decoration: none;			/* Подчеркивание у ссылки */
 	} 
 .text {
-	font-size: 120%;			/* Размер шрифта */
-	color: #ff6666;				/* Цвет текста */
+	font-size: 120%;				/* Размер шрифта */
+	color: #ff6666;			   /* Цвет текста */
 	}
 .button {
   display: inline-block;

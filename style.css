@@ -154,8 +154,8 @@ A {
   display: inline-block;
   width: auto;
   border-radius: 50%;
-  margin: 0%;
-  padding: 0.5%;
+  margin: 1%;
+  padding: 0.3%;
   background: #1e1e1e;
   text-decoration: none;
   cursor: pointer;
@@ -172,7 +172,7 @@ A {
 
 [data-hint]::after {
     opacity: 0;
-    width: max-content;
+    width: 3000%;
     color: #FF6666;
     background-color: rgba(0,0,0,.7);
     border-radius: 10px;
@@ -180,7 +180,7 @@ A {
     content: attr(data-hint);
     font-size: 90%;
     position: absolute;
-    top: -5px;
+    top: 420%;
     left: 50%;
     transform: translate(-50%, -100%);
     pointer-events: none;
@@ -189,4 +189,15 @@ A {
 
 [data-hint]:hover::after {
     opacity: 1;
+}
+.bloktoo {
+	border-radius: 10px;			/* Округление */
+    width: 40%; 				/* Ширина слоя */
+	margin-right: auto; 		/* Значение отступов */
+	margin-left: auto;
+    padding: 1%; 				/* Поля вокруг текста */
+    background: #333333;	   /* Цвет фона */
+	font-size: 100%;			/* Размер шрифта */
+	color: #ff6666;
+	opacity: 80%;
 }

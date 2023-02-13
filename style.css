@@ -133,3 +133,60 @@ A {
 .button:hover {
   background: #808080;
 }
+.dotbut {
+  display: inline-block;
+  width: auto;
+  border-radius: 9%;
+  margin: 0%;
+  padding: 0.3%;
+  background: #444444;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.dotbut:hover {
+  background: #808080;
+}
+
+ /* Подсказки */
+ 
+.dotbutoo {
+  display: inline-block;
+  width: auto;
+  border-radius: 50%;
+  margin: 0%;
+  padding: 0.5%;
+  background: #1e1e1e;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.dotbut:hover {
+  background: #808080;
+}
+
+[data-hint] {
+  position: relative;
+  cursor: hint;
+}
+
+[data-hint]::after {
+    opacity: 0;
+    width: max-content;
+    color: #FF6666;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 10px;
+    padding: 20%;
+    content: attr(data-hint);
+    font-size: 90%;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+[data-hint]:hover::after {
+    opacity: 1;
+}

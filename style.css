@@ -38,6 +38,7 @@ html {
 .bbblok {
 	border-radius: 9px;
     width: 58%;
+	height: 8%;
 	opacity: 80%;
     padding: 0%;
     background: #444444;
@@ -166,25 +167,25 @@ A {
 }
 
 [data-hint] {
-  position: relative;
+  position: static;
   cursor: hint;
 }
 
 [data-hint]::after {
     opacity: 0;
-    width: 3000%;
+    width: 99%;
+	height: 7%;
     color: #FF6666;
-    background-color: rgba(0,0,0,.7);
-    border-radius: 10px;
-    padding: 20%;
+    background-color: #000000;
+    padding: 1%;
     content: attr(data-hint);
     font-size: 90%;
-    position: absolute;
-    top: 420%;
+    position: fixed;
+    margin-top: -3%;
     left: 50%;
     transform: translate(-50%, -100%);
     pointer-events: none;
-    transition: opacity 0.2s;
+    transition: opacity 0.3s;
 }
 
 [data-hint]:hover::after {
@@ -192,7 +193,7 @@ A {
 }
 .bloktoo {
 	border-radius: 10px;			/* Округление */
-    width: 40%; 				/* Ширина слоя */
+    width: 80%; 				/* Ширина слоя */
 	margin-right: auto; 		/* Значение отступов */
 	margin-left: auto;
     padding: 1%; 				/* Поля вокруг текста */

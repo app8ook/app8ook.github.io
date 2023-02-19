@@ -6,75 +6,75 @@ html {
 	background-repeat: repeat;
 }
 .blok {
-	border-radius: 6px;			/* Округление */
-    width: 70%; 				/* Ширина слоя */
-    margin-right: auto; 		/* Значение отступов */
+	border-radius: 6px;
+	width: 70%;
+	margin-right: auto;
 	margin-left: auto;
-    padding: 1%; 				/* Поля вокруг текста */
-    background: #333333;	   /* Цвет фона */
-	font-size: 100%;			/* Размер шрифта */
+	padding: 1%;
+	background: #333333;
+	font-size: 100%;
 	color: #ff6666;
 	opacity: 90%;
 }
 .slok {
 	border-radius: 6px;
-    width: 50%;
-    margin-right: auto;
+	width: 50%;
+	margin-right: auto;
 	margin-left: auto;
-    padding: 1%;
-    background: #333333;
+	padding: 1%;
+	background: #333333;
 	font-size: 100%;
 	color: #ff6666;
 }
 .bblok {
 	border-radius: 9px;
-    width: 80%;
+	width: 80%;
 	opacity: 80%;
-    padding: 1%;
-    background: #444444;
+	padding: 1%;
+	background: #444444;
 	margin-right: auto;
 	margin-left: auto;
 }
 .bbblok {
 	border-radius: 9px;
-    width: 58%;
+	width: 58%;
 	height: 8%;
 	opacity: 80%;
-    padding: 0%;
-    background: #444444;
+	padding: 0%;
+	background: #444444;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 1.5%;
 }
 .bbbblok {
 	border-radius: 6px;
-    width: 90%;
-    margin-right: auto;
+	width: 90%;
+	margin-right: auto;
 	margin-left: auto;
-    padding: 1%;
-    background: #333333;
+	padding: 1%;
+	background: #333333;
 	font-size: 110%;
 	color: #ff6666;
 }
 .blo {
 	border-radius: 9px;
-    width: 30%;
-    margin-right: auto;
+	width: 30%;
+	margin-right: auto;
 	margin-left: auto;
-    padding: 0%;
-    background: #333333;
+	padding: 0%;
+	background: #333333;
 	font-size: 80%;
 	color: #ff6666;
 	opacity: 80%;
 }
 a.but {
 	display: inline-block;
-	border-radius: 16px;			/* Округление */
-    width: 40%; 					/* Ширина слоя */
+	border-radius: 16px;
+	width: 40%;
 	margin-left: 0%;
-    margin-top: -0.5%; 				/* Значение отступов */
-    padding: 1%; 					/* Поля вокруг текста */
-    background: #333333;		   /* Цвет фона */
+	margin-top: -0.5%;
+	padding: 1%;
+	background: #333333;
 	text-decoration: none;
 	user-select: none;
 	outline: none;
@@ -82,18 +82,18 @@ a.but {
 	color: #ff6666;
 	font-weight: 800;
 	font-size: 100%;
-	}
-	a.but:hover { background: rgba(255,255,255,.2); }		/* При наведении */
-	a.but:active { background: gray; }						/* При нажатии */
+}
+	a.but:hover { background: rgba(255,255,255,.2); }
+	a.but:active { background: gray; }
 a.butt {
 	display: inline-block;
-	border-radius: 9px;			/* Округление */
-    width: 94%; 				/* Ширина слоя */
+	border-radius: 9px;
+	width: 94%;
 	margin-left: 2%;
 	margin-right: 2%;
-    margin-top: -1%; 			/* Значение отступов */
-    padding: 1%; 				/* Поля вокруг текста */
-    background: #333333; 	   /* Цвет фона */
+	margin-top: -1%;
+	padding: 1%;
+	background: #333333;
 	text-decoration: none;
 	user-select: none;
 	outline: none;
@@ -101,104 +101,101 @@ a.butt {
 	color: #ff6666;
 	font-weight: 800;
 	font-size: 100%;
-	}
-	a.butt:hover { background: rgba(255,255,255,.2); }		/* При наведении */
-	a.butt:active { background: gray; }					/* При нажатии */
+}
+	a.butt:hover { background: rgba(255,255,255,.2); }
+	a.butt:active { background: gray; }
 A {
-	color: #ff6666;				/* Цвет ссылок */
-	}
+	color: #ff6666;
+}
 A:visited {
-	color: #ff6666;				/* Цвет посещенных ссылок */
-	}
+	color: #ff6666;
+}
 A:active {
-	color: #ff3333;				/* Цвет активных ссылок */
-	}
+	color: #ff3333;
+}
 A {
-	text-decoration: none;			/* Подчеркивание у ссылки */
-	} 
+	text-decoration: none;
+} 
 .text {
-	font-size: 120%;				/* Размер шрифта */
-	color: #ff6666;			   /* Цвет текста */
-	}
+	font-size: 120%;
+	color: #ff6666;
+}
 .button {
-  display: inline-block;
-  width: auto;
-  border-radius: 50%;
-  margin: 1.5%;
-  padding: 1.5%;
-  background: #333333;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
+	display: inline-block;
+	width: auto;
+	border-radius: 50%;
+	margin: 1.5%;
+	padding: 1.5%;
+	background: #333333;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
 }
 .button:hover {
-  background: #808080;
+	background: #808080;
 }
 .dotbut {
-  display: inline-block;
-  width: auto;
-  border-radius: 9%;
-  margin: 0%;
-  padding: 0.3%;
-  background: #444444;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
+	display: inline-block;
+	width: auto;
+	border-radius: 9%;
+	margin: 0%;
+	padding: 0.3%;
+	background: #444444;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
 }
 .dotbut:hover {
-  background: #808080;
+	background: #808080;
 }
 
  /* Подсказки */
  
 .dotbutoo {
-  display: inline-block;
-  width: auto;
-  border-radius: 50%;
-  margin: 1%;
-  padding: 0.3%;
-  background: #1e1e1e;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
+	display: inline-block;
+	width: auto;
+	border-radius: 50%;
+	margin: 1%;
+	padding: 0.3%;
+	background: #1e1e1e;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
 }
 .dotbut:hover {
-  background: #808080;
+	background: #808080;
 }
-
 [data-hint] {
-  position: static;
-  cursor: hint;
+	position: static;
+	cursor: hint;
 }
-
 [data-hint]::after {
-    opacity: 0;
-    width: 99%;
+	opacity: 0;
+	width: 99%;
 	height: 5%;
-    color: #FF6666;
-    background-color: #202020;
-    padding: 1%;
-    content: attr(data-hint);
-    font-size: 90%;
-    position: fixed;
-    top: 9%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    pointer-events: none;
-    transition: opacity 0.3s;
+	color: #FF6666;
+	background-color: #202020;
+	padding: 1%;
+	content: attr(data-hint);
+	font-size: 90%;
+	position: fixed;
+	top: 9%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	pointer-events: none;
+	transition: opacity 0.3s;
 }
-
 [data-hint]:hover::after {
-    opacity: 1;
+	opacity: 1;
 }
 .bloktoo {
-	border-radius: 10px;			/* Округление */
-    width: 80%; 				/* Ширина слоя */
-	margin-right: auto; 		/* Значение отступов */
+	border-radius: 10px;
+	width: 80%;
+	margin-right: auto;
 	margin-left: auto;
-    padding: 1%; 				/* Поля вокруг текста */
-    background: #333333;	   /* Цвет фона */
-	font-size: 100%;			/* Размер шрифта */
+	padding: 1%;
+	background: #333333;
+	font-size: 100%;
 	color: #ff6666;
 	opacity: 90%;
 }

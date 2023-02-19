@@ -176,7 +176,7 @@ A {
     width: 99%;
 	height: 6%;
     color: #FF6666;
-    background-color: #000000;
+    background-color: #202020;
     padding: 1%;
     content: attr(data-hint);
     font-size: 90%;
@@ -200,5 +200,5 @@ A {
     background: #333333;	   /* Цвет фона */
 	font-size: 100%;			/* Размер шрифта */
 	color: #ff6666;
-	opacity: 80%;
+	opacity: 90%;
 }

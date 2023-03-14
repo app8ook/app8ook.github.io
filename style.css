@@ -104,6 +104,25 @@ a.butt {
 }
 	a.butt:hover { background: rgba(255,255,255,.2); }
 	a.butt:active { background: gray; }
+a.buutt {
+	display: inline-block;
+	border-radius: 9px;
+	width: 30%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-top: 0%;
+	padding: 0.3%;
+	background: #333333;
+	text-decoration: none;
+	user-select: none;
+	outline: none;
+	transition: 0.2s;
+	color: #ff6666;
+	font-weight: 800;
+	font-size: 100%;
+}
+	a.buutt:hover { background: rgba(255,255,255,.2); }
+	a.buutt:active { background: gray; }
 A {
 	color: #ff6666;
 }

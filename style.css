@@ -56,6 +56,17 @@ html {
 	font-size: 110%;
 	color: #ff6666;
 }
+.qrlok {
+	border-radius: 6px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 1%;
+	background: #333333;
+	font-size: 100%;
+	color: #ff6666;
+	opacity: 90%;
+}
 .blo {
 	border-radius: 9px;
 	width: 30%;
@@ -218,3 +229,6 @@ A {
 	color: #ff6666;
 	opacity: 90%;
 }
+table {
+	width: 99%;
+	align: center;

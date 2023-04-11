@@ -118,7 +118,7 @@ a.butt {
 a.buutt {
 	display: inline-block;
 	border-radius: 9px;
-	width: 50%;
+	width: 80%;
 	margin-left: 1%;
 	margin-right: 1%;
 	margin-top: 0%;
@@ -129,8 +129,7 @@ a.buutt {
 	outline: none;
 	transition: 0.2s;
 	color: #ff6666;
-	font-weight: 800;
-	font-size: 100%;
+	font-size: 90%;
 }
 	a.buutt:hover { background: rgba(255,255,255,.2); }
 	a.buutt:active { background: gray; }

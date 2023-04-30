@@ -58,7 +58,7 @@ html {
 }
 .qrlok {
 	border-radius: 6px;
-	width: 100%;
+	width: 110%;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 1%;
@@ -118,7 +118,7 @@ a.butt {
 a.buutt {
 	display: inline-block;
 	border-radius: 9px;
-	width: 80%;
+	width: 60%;
 	margin-left: 1%;
 	margin-right: 1%;
 	margin-top: 0%;

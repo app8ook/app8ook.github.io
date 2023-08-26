@@ -6,6 +6,7 @@ html {
 	background-image: url(pics/bg.png);
 	background-size: 100%;
 	background-repeat: repeat;
+	overflow:  hidden;
 }
 .text {
 	font-size: 120%;

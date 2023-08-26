@@ -6,7 +6,17 @@ html {
 	background-image: url(pics/bg.png);
 	background-size: 100%;
 	background-repeat: repeat;
-	overflow:  hidden;
+	overflow-y:scroll;  /*для вертикального*/
+	overflow-x:hidden;  /*для горизонтального*/
+}
+body::-webkit-scrollbar {
+    width:20px;
+    background:#FF5555;
+}
+body::-webkit-scrollbar-thumb {
+    width:20px;
+    background:#333333;
+	border-radius: 15px;
 }
 .text {
 	font-size: 120%;

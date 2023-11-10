@@ -82,10 +82,7 @@ content: "";
 details[open] summary:before {
 content: "";
 }
-@keyframes slide {
-  0%    { opacity: 0; transform:  translate(0, 0px); }
-  100%  { opacity: 1; transform:  translate(0, 0); }
-}
+
 /* Стилизация */
 
 details summary, details summary:focus {
@@ -133,7 +130,7 @@ details summary:hover, details summary:active {
 	margin-right: auto;
 	margin-left: auto;
 	padding: 2%;
-	background: #2b2b2b;
+	background: #363636;
 	font-size: 100%;
 	color: #ff6666;
 	opacity: 100%;

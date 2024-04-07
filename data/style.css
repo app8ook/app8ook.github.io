@@ -1,0 +1,503 @@
+ /*_________________________________________________________________________________________________________________*/
+
+ /* Сток */
+
+ @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:600&subset=cyrillic');
+
+ html {
+   font-family: Montserrat Alternates;
+   overflow-y: scroll;
+   /*для вертикального*/
+   overflow-x: hidden;
+   /*для горизонтального*/
+   background-image: var(--bgimg);
+   background-size: 100%;
+   background-repeat: repeat;
+ }
+
+ html,
+ body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   font-size: 125%;
+ }
+
+ .text {
+   color: var(--text);
+ }
+
+ A {
+   color: var(--text);
+   text-decoration: none;
+   font-family: Montserrat Alternates;
+ }
+
+ A:visited {
+   color: var(--text);
+ }
+
+ A:active {
+   color: var(--text);
+ }
+
+ * {
+   margin: 0;
+   padding: 0;
+ }
+
+ /* Цвета */
+
+ :root {
+   --bgimg: url(/pics/bgd.png);
+   --bg: #444444;
+   --bg-2: #2b2b2b;
+   --bg-3: #333333;
+   --text: #FF6666;
+   --active-text: #ffbb66;
+   --border: #FF6666;
+   --active-hover: #1e1e1e;
+   --scrollbar-track-color: #FF6666;
+   --scrollbar-thumb-color: #333333;
+   --scrollbar-thumb-hover-color: #555555;
+ }
+
+ .light-theme {
+   --bgimg: url(/pics/bgl.png);
+   --bg: #ffffff;
+   --bg-2: #FFA566;
+   --bg-3: #ffbe8f;
+   --text: #500000;
+   --active-text: #6b0000;
+   --border: #9e0505;
+   --active-hover: #ff8d3b;
+   --scrollbar-track-color: #500000;
+   --scrollbar-thumb-color: #FFA566;
+   --scrollbar-thumb-hover-color: #ffbb66;
+ }
+
+ /*_________________________________________________________________________________________________________________*/
+
+ /* Основное */
+
+ .bg {
+   /* Фон-блок */
+   border-radius: 9px;
+   width: 92%;
+   padding: 1%;
+   background: var(--bg);
+   margin-right: auto;
+   margin-left: auto;
+ }
+
+ .bgl {
+   /* Фон-блок-лента */
+   width: 100%;
+   padding: 1%;
+   background: var(--bg);
+   display: inline-block;
+   position: relative;
+   top: -1%;
+   left: 0;
+   width: 100%;
+   height: 20%;
+ }
+
+ .nav {
+  width: 10%;
+
+}
+
+.search-container {
+  width: 100%;
+  margin-right: 10%;
+}
+
+.checkbox-container {
+  width: 20%;
+  margin-right: 5%;
+  margin-top: 1%;
+}
+
+ /* ------Выпадающее меню------ */
+
+ #nav {
+   display: inline-block;
+   width: 20%;
+   margin-left: 2%;
+   margin-right: auto;
+   margin-top: 1%;
+   border: 3px solid var(--active-hover);
+   border-radius: 9px 9px 9px 9px;
+ }
+
+ #nav ul {
+   list-style: none;
+   width: 100%;
+ }
+
+ #nav>ul>li {
+   position: relative;
+ }
+
+ #nav li a {
+   display: block;
+   background: var(--bg-2);
+   color: var(--text);
+   padding: 3%;
+   text-align: left;
+   text-decoration: none;
+ }
+
+ #nav li a:hover {
+   background: var(--active-hover);
+   color: var(--active-text);
+   transition: 0.5s;
+ }
+
+ #nav li .second {
+   display: none;
+   position: absolute;
+   top: 100%;
+ }
+
+ #nav li:hover .second {
+   display: block;
+   border: 3px solid var(--active-hover);
+   border-radius: 0 0 9px 9px;
+   width: 100%;
+   right: -1%;
+ }
+
+ #nav li li {
+   width: 100%;
+ }
+
+ /* Поиск */
+
+ form {
+  position: fixed;
+  width: 40%;
+  margin-top: 1%;
+  left: 30%;
+  right: 30%;
+}
+
+input {
+  background-color: var(--bg-2);
+  padding: 12px 8px;
+  border: 3px solid var(--active-hover);
+  border-radius: 9px;
+  font-size: 22px;
+  font-family: Montserrat Alternates;
+  color: var(--text);
+  outline: var(--active-hover);
+  width: 100%;
+}
+
+.search-container {
+  position: relative;
+}
+
+.clear-btn {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  color: var(--text);
+  cursor: pointer;
+  display: none;
+}
+
+ /* Кнопка смены темы */
+
+ .toggle {
+   --width: 140px;
+   --height: calc(var(--width) / 3);
+   position: relative;
+   display: inline-block;
+   width: var(--width);
+   height: var(--height);
+   border-radius: var(--height);
+   cursor: pointer;
+   right: 1%;
+   border: 3px solid var(--active-hover);
+ }
+
+ .toggle input {
+   display: none;
+ }
+
+ .toggle .slider {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: var(--height);
+   background-color: var(--bg-2);
+   transition: all 0.4s ease-in-out;
+ }
+
+ .toggle .slider::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: calc(var(--height));
+   height: calc(var(--height));
+   border-radius: calc(var(--height) / 2);
+   background-color: var(--text);
+   transition: all 0.4s ease-in-out;
+ }
+
+ .toggle input:checked+.slider {
+   background-color: var(--bg-2);
+ }
+
+ .toggle input:checked+.slider::before {
+   transform: translateX(calc(var(--width) - var(--height)));
+ }
+
+ .toggle .labels {
+   position: absolute;
+   top: 12px;
+   left: 2px;
+   right: 2px;
+   width: 100%;
+   height: 100%;
+   font-size: 20px;
+   transition: all 0.4s ease-in-out;
+ }
+
+ .toggle .labels::after {
+   content: attr(data-off);
+   position: absolute;
+   right: 20%;
+   color: var(--text);
+   opacity: 1;
+   transition: all 0.4s ease-in-out;
+ }
+
+ .toggle .labels::before {
+   content: attr(data-on);
+   position: absolute;
+   left: 20%;
+   color: var(--text);
+   opacity: 0;
+   transition: all 0.4s ease-in-out;
+ }
+
+ .toggle input:checked~.labels::after {
+   opacity: 0;
+ }
+
+ .toggle input:checked~.labels::before {
+   opacity: 1;
+ }
+
+ /* Спойлер */
+
+ .spoiler {
+   /* Спойлер / заголовок */
+   border-radius: 6px;
+   width: 100%;
+   padding: 1%;
+   margin-right: auto;
+   margin-left: auto;
+   background: var(--bg-2);
+   color: var(--text);
+   opacity: 100%;
+ }
+
+ details summary::-webkit-details-marker {
+   /* Скрытие стрелочки и анимация */
+   display: none;
+ }
+
+ details :focus {
+   outline: 0;
+ }
+
+ details,
+ summary {
+   display: block;
+ }
+
+ details summary:before {
+   content: "";
+ }
+
+ details[open] summary:before {
+   content: "";
+ }
+
+ details summary,
+ details summary:focus {
+   /* Спойлер / Стилизация */
+   cursor: pointer;
+   border: 3px solid var(--bg-2);
+   width: 90%;
+   height: 10%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 9px;
+   transition: 1s;
+ }
+
+ details summary:hover,
+ details summary:active {
+   opacity: 100%;
+   border: 3px solid var(--border);
+ }
+
+ /* ------Таблица------ */
+
+ .tblcol {
+   width: 100%;
+   height: 100%;
+ }
+
+ table {
+   width: 99%;
+   height: 100%;
+   margin-right: 1%;
+   margin-left: 1%;
+ }
+
+ td {
+   padding: 9px;
+   width: 33.33%;
+   text-align: left;
+ }
+
+ a.butt {
+   display: inline-block;
+   border-radius: 9px;
+   border: 2px solid var(--bg-2);
+   width: 90%;
+   height: 180px;
+   padding: 5%;
+   background: var(--bg-2);
+   text-decoration: none;
+   user-select: none;
+   outline: none;
+   transition: 0.2s;
+   color: var(--text);
+   font-weight: 800;
+   overflow: hidden;
+   transition: 1s;
+ }
+
+ a.butt:hover {
+   background: var(--active-hover);
+   color: var(--active-text);
+   border: 2px solid var(--border);
+ }
+
+ a.butt:active {
+   background: var(--bg);
+ }
+
+ /* Футер */
+
+ .content {
+   flex-grow: 1;
+ }
+
+ .bglf {
+   width: 100%;
+   padding: 2%;
+   background: var(--bg);
+   position: relative;
+   left: 0;
+   height: auto;
+ }
+
+ .textbox {
+   border-radius: 9px;
+   width: 88%;
+   margin-right: 2%;
+   margin-left: 2%;
+   padding: 2%;
+   background: var(--bg-3);
+   color: var(--text);
+   opacity: 100%;
+ }
+
+ .footer-links {
+   text-align: center;
+ }
+
+ .footer-links a.halfbutt {
+   display: inline-block;
+   border-radius: 9px;
+   border: 3px solid var(--bg-2);
+   width: 40%;
+   margin-left: 1%;
+   margin-right: 5%;
+   margin-top: 0%;
+   padding: 1%;
+   background: var(--bg-2);
+   text-decoration: none;
+   user-select: none;
+   outline: none;
+   transition: 0.2s;
+   color: var(--text);
+   overflow: hidden;
+   transition: 1s;
+ }
+
+ .footer-links a.halfbutt:hover {
+   background: var(--active-hover);
+   border: 3px solid var(--border);
+ }
+
+ .footer-links a.halfbutt:active {
+   background: var(--bg);
+ }
+
+ /* Прочее */
+
+ body::-webkit-scrollbar {
+   /* Скролбар */
+   width: 20px;
+   background-color: var(--scrollbar-track-color);
+ }
+
+ body::-webkit-scrollbar-thumb {
+   width: 20px;
+   background-color: var(--scrollbar-thumb-color);
+   border-radius: 15px;
+ }
+
+ body::-webkit-scrollbar-thumb:hover {
+   background-color: var(--scrollbar-thumb-hover-color);
+ }
+
+ img {
+   /* Настройки пикчи */
+   margin-right: auto;
+   margin-left: 20%;
+   margin-bottom: auto;
+   margin-top: 1%;
+   padding: 1%;
+ }
+
+ .pic {
+   margin-left: 2%;
+   margin-right: 8%;
+   padding: 2%;
+ }
+
+ .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ /*_________________________________________________________________________________________________________________*/

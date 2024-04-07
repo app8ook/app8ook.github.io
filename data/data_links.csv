@@ -1,0 +1,65 @@
+﻿Спойлер;Ссылка;Название;Описание
+;Фильмы/Сериалы;;
+mov;https://kinoland.biz;Kinoland;Просмотр фильмов и сериалов (Бывший Zfilm)(vpn)
+mov;https://lord.lordfilm1.li;LordFilm;Не менее классный чем zfilm, сайт для просмотра фильмов (vpn)
+mov;https://big.lordseriall.com;LordSerial;Не менее классный чем zfilm, сайт для просмотра сериалов (vpn)
+mov;https://vk.com/zetfliks;Zetflix;Просмотр фильмов и сериалов NetFlix и не только (vpn)
+mov;https://m.anwap.love;Anwap;Просмотр и скачивание фильмов и сериалов (vpn)
+;;;
+;Программы;;
+progs;https://1progs.pro;1progs;Репаки программ (или ключи к ним)
+progs;https://allrepack.ru;AllRepack;Репаки множества программ
+progs;https://positiverecords.ru/;PositiveRecords;Репаки множества программ от популярных компаний
+progs;https://lrepacks.net;Lrepacks;Репаки множества программ от ELCHUPACABRA
+progs;https://diakov.net;DiakovNet;Репаки программ от Diakov
+progs;https://strannikmodz.me;StrannikModz;Моды программ (На андроид) от автора Strannik
+;;;
+;ИИ;;
+ai;https://labs.perplexity.ai;Perplexity labs;Несколько чатов с нейросетями (Вторичные но быстрые)
+ai;https://chat.lmsys.org;Chat.lmsys;Чаты с нейросетями (GPT, cloud и др.)
+ai;https://maxtext.ru;Maxtext;Генератор текста и работа с ИИ
+ai;https://www.perplexity.ai;Perplexity;ИИ чат и поисковик
+ai;https://you.com;You;Еще один ИИ чат и поисковик
+ai;https://www.suno.ai;Suno;Нейросетка для создания музыки
+ai;https://www.krea.ai;Krea;Нейросетка с генерацией картинок (В реальном времени)
+ai;https://ideogram.ai;Ideogram;Нейросетка с генерацией картинок
+ai;https://github.com/Danily07/Translumo;Translumo;Нейросетка для создания субтитров игр и фильмов
+;;;
+;Важные инструменты;;
+impotls;https://mega.nz;MEGA;Облачное хранилище (50гб бесплатно + SyncApp)
+impotls;https://4pda.to;4PDA;Форум о технологиях, науке, так же игры и программы для смартфонов
+impotls;https://123apps.com/ru/;123apps;Сервис с множеством веб-инструментов
+impotls;https://telegra.ph/;Telegraph;Сервис для быстрого создания своей страницы в интернете
+impotls;https://onecompiler.com;Onecompiler;Онлайн компилятор кода на различных языках программирования
+impotls;https://mail.gw/en/;MailGW;Сервис временных почт
+impotls;https://www.vccgenerator.org/ru/;VCCgenerator;Генератор кредитных карт (Естественно без денег)
+impotls;https://u.to/;U.to;Сервис сокращения ссылок
+impotls;https://www.dll.ru;DLL;Поиск и скачивание файлов DLL
+impotls;https://convertio.co/ru/;Convertio;Сервис по конвертации файлов
+;;;
+;Медиа инструменты;;
+mediatls;https://www.bestmp3converter.com/;YouTube to mp3 converter;Сервис для конвертации видео с Ютуба в файл mp3
+mediatls;https://kissvk.com;KissVk;Скачивание музыки из вк
+mediatls;http://a.flibusta.is;Flibusta;Скачивание и чтение книг (Без демо режимов)(vpn)
+mediatls;https://www.myinstants.com;MyInstants;Множество кнопок со звуками (SoundPad)
+mediatls;https://www.flaticon.com;FlatIcon;Разнообразные иконки и ярлыки
+mediatls;https://voicemaker.in/;Voicemaker;Сервис Text to Speech
+mediatls;https://ru.imgbb.com;Imgbb;Хостинг картинок
+mediatls;https://faststream.online;Faststream;Замена плееру в Ютуб и с других ресурсов на более удобный и функциональный
+;;;
+;Игровые инструменты;;
+gametls;https://ggsel.com;GGSEL;Магазин аккаунтов и ключей
+gametls;https://kupikod.com;Kupikod;Магазин аккаунтов и ключей (+Пополнение стим)
+gametls;https://steambalance.ru/;Steambalance;Быстрый способ пополнить баланс стим
+gametls;https://freesteam.ru;Freesteam;Раздачи игр для игровых клиентов (Так же есть группа вк)
+gametls;https://keysok.ru/akcii/;Keysok;Ключи к программам и тренеры для игр
+gametls;http://steamworkshop.download;SteamWD;Скачивание работ из Steam workshop
+gametls;https://gamebanana.com;GameBanana;Моды, плагины, скрипты, скины для различных игр
+gametls;https://aimrage.com;AIMrage;Тренировка скорости и ловкости движения мыши
+;;;
+;Прочие инструменты;;
+othertls;https://teletype.in;Teletype;Наипростейший, но в то же время удобный блог
+othertls;https://telegra.ph/Kakie-sushchestvuyut-poiskovye-sistemy-09-01;Лента с поисковиками;Интересная инфа по различным поисковикам
+othertls;https://chromewebstore.google.com/detail/lumina-night-mode/ccemhgcpobolddhpebenclgpohlkegdg;Lumina;Ночной режим для всех страниц интернета
+othertls;https://7themes.su;7themes;Украшение и настройка ОС Windows
+othertls;https://technical.city;Technicalcity;Проверка игр на совместимость с вашим ПК, сравнение компонентов от разных производителей

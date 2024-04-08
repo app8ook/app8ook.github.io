@@ -159,37 +159,3 @@ themeToggle.addEventListener('change', toggleTheme);
 
 // Устанавливаем начальную тему
 setInitialTheme();
-
-// FIX меню на мобилках
-
-// Обработчик события touchstart для меню
-document.addEventListener('touchstart', function(event) {
-  var target = event.target;
-  if (target.matches('#nav > ul > li > a:not([href^="index.html"])')) {
-    event.preventDefault();
-    target.classList.toggle('active');
-    target.nextElementSibling.classList.toggle('show');
-  } else {
-    var activeLinks = document.querySelectorAll('#nav > ul > li > a.active');
-    activeLinks.forEach(function(link) {
-      link.classList.remove('active');
-      link.nextElementSibling.classList.remove('show');
-    });
-  }
-});
-
-// Обработчик события click для меню
-document.addEventListener('click', function(event) {
-  var target = event.target;
-  if (target.matches('#nav > ul > li > a:not([href^="index.html"])')) {
-    event.preventDefault();
-    target.classList.toggle('active');
-    target.nextElementSibling.classList.toggle('show');
-  } else {
-    var activeLinks = document.querySelectorAll('#nav > ul > li > a.active');
-    activeLinks.forEach(function(link) {
-      link.classList.remove('active');
-      link.nextElementSibling.classList.remove('show');
-    });
-  }
-});

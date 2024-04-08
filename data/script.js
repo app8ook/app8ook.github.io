@@ -165,7 +165,7 @@ setInitialTheme();
 // Обработчик события touchstart для меню
 document.addEventListener('touchstart', function(event) {
   var target = event.target;
-  if (target.matches('#nav > ul > li > a')) {
+  if (target.matches('#nav > ul > li > a:not([href^="index.html"])')) {
     event.preventDefault();
     target.classList.toggle('active');
     target.nextElementSibling.classList.toggle('show');
@@ -181,7 +181,7 @@ document.addEventListener('touchstart', function(event) {
 // Обработчик события click для меню
 document.addEventListener('click', function(event) {
   var target = event.target;
-  if (target.matches('#nav > ul > li > a')) {
+  if (target.matches('#nav > ul > li > a:not([href^="index.html"])')) {
     event.preventDefault();
     target.classList.toggle('active');
     target.nextElementSibling.classList.toggle('show');

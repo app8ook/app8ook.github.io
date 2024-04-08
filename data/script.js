@@ -159,3 +159,60 @@ themeToggle.addEventListener('change', toggleTheme);
 
 // Устанавливаем начальную тему
 setInitialTheme();
+
+// FIX меню на мобилках
+
+// Функция для проверки, открыт ли сайт на мобильном устройстве
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+// Получаем элементы меню
+const navMenu = document.querySelector('#nav');
+const navToggle = navMenu.querySelector('a');
+const navItems = navMenu.querySelectorAll('li .second');
+
+// Проверяем, открыт ли сайт на мобильном устройстве
+if (isMobileDevice()) {
+  // Изменяем функциональность меню для мобильных устройств
+  navToggle.addEventListener('click', (event) => {
+    event.preventDefault(); // Отменяем стандартное поведение ссылки
+    navMenu.classList.toggle('open'); // Добавляем/удаляем класс 'open' для меню
+  });
+
+  navItems.forEach((item) => {
+    item.addEventListener('click', (event) => {
+      event.stopPropagation(); // Останавливаем всплытие события
+      const link = item.querySelector('a');
+      if (link) {
+        navMenu.classList.remove('open'); // Закрываем меню
+        window.location.href = link.href; // Переходим по ссылке
+      }
+    });
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!navMenu.contains(event.target) && navMenu.classList.contains('open')) {
+      navMenu.classList.remove('open'); // Закрываем меню, если клик произошел вне меню
+    }
+  });
+} else {
+  // Оставляем стандартную функциональность меню для ПК
+  navMenu.addEventListener('mouseover', () => {
+    navMenu.classList.add('open');
+  });
+
+  navMenu.addEventListener('mouseout', () => {
+    navMenu.classList.remove('open');
+  });
+
+  navItems.forEach((item) => {
+    item.addEventListener('click', (event) => {
+      event.stopPropagation(); // Останавливаем всплытие события
+      const link = item.querySelector('a');
+      if (link) {
+        window.location.href = link.href; // Переходим по ссылке
+      }
+    });
+  });
+}

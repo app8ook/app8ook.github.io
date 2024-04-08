@@ -90,18 +90,6 @@ function createTableRows(data, page) {
   return rows;
 }
 
-// Чтение CSV-файла и сохранение данных
-readCSV('data/data_games.csv', data => {
-  csvData = data;
-  const details = document.querySelectorAll('details');
-  details.forEach(detail => {
-    const page = detail.getAttribute('data-page');
-    const table = detail.querySelector('tbody');
-    const rows = createTableRows(data, page);
-    rows.forEach(row => table.appendChild(row));
-  });
-});
-
 // Добавляем обработчик события на ввод в поле поиска
 searchInput.addEventListener('input', function() {
   const searchTerm = this.value.toLowerCase();

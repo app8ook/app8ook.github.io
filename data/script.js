@@ -174,10 +174,17 @@ const navItems = navMenu.querySelectorAll('li .second');
 
 // Проверяем, открыт ли сайт на мобильном устройстве
 if (isMobileDevice()) {
-  // Изменяем функциональность меню для мобильных устройств
+  let isMenuOpen = false; // Флаг для отслеживания состояния меню
+
   navToggle.addEventListener('click', (event) => {
     event.preventDefault(); // Отменяем стандартное поведение ссылки
     navMenu.classList.toggle('open'); // Добавляем/удаляем класс 'open' для меню
+    isMenuOpen = !isMenuOpen; // Обновляем состояние меню
+
+    if (!isMenuOpen) {
+      // Если меню закрыто, переходим на главную страницу
+      window.location.href = navToggle.href;
+    }
   });
 
   navItems.forEach((item) => {
@@ -194,6 +201,7 @@ if (isMobileDevice()) {
   document.addEventListener('click', (event) => {
     if (!navMenu.contains(event.target) && navMenu.classList.contains('open')) {
       navMenu.classList.remove('open'); // Закрываем меню, если клик произошел вне меню
+      isMenuOpen = false; // Обновляем состояние меню
     }
   });
 } else {

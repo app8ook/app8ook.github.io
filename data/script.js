@@ -162,35 +162,34 @@ setInitialTheme();
 
 // FIX меню на мобилках
 
-// Проверяем, является ли устройство мобильным
-function isMobileDevice() {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-}
+// Обработчик события touchstart для меню
+document.addEventListener('touchstart', function(event) {
+  var target = event.target;
+  if (target.matches('#nav > ul > li > a')) {
+    event.preventDefault();
+    target.classList.toggle('active');
+    target.nextElementSibling.classList.toggle('show');
+  } else {
+    var activeLinks = document.querySelectorAll('#nav > ul > li > a.active');
+    activeLinks.forEach(function(link) {
+      link.classList.remove('active');
+      link.nextElementSibling.classList.remove('show');
+    });
+  }
+});
 
 // Обработчик события click для меню
 document.addEventListener('click', function(event) {
   var target = event.target;
   if (target.matches('#nav > ul > li > a')) {
-    if (isMobileDevice()) {
-      event.preventDefault();
-      var parentLi = target.parentElement;
-      if (parentLi.classList.contains('open')) {
-        parentLi.classList.remove('open');
-      } else {
-        var openMenus = document.querySelectorAll('#nav > ul > li.open');
-        openMenus.forEach(function(menu) {
-          menu.classList.remove('open');
-        });
-        parentLi.classList.add('open');
-      }
-    } else {
-      // Поведение для ПК
-      target.nextElementSibling.classList.toggle('show');
-    }
+    event.preventDefault();
+    target.classList.toggle('active');
+    target.nextElementSibling.classList.toggle('show');
   } else {
-    var openMenus = document.querySelectorAll('#nav > ul > li.open');
-    openMenus.forEach(function(menu) {
-      menu.classList.remove('open');
+    var activeLinks = document.querySelectorAll('#nav > ul > li > a.active');
+    activeLinks.forEach(function(link) {
+      link.classList.remove('active');
+      link.nextElementSibling.classList.remove('show');
     });
   }
 });

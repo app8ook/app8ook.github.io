@@ -183,8 +183,9 @@
   display: block;
 }
 
-#nav li.open .second {
-  display: block;
+#nav li a.active {
+  background: var(--active-hover);
+  color: var(--active-text);
 }
 
  /* Поиск */

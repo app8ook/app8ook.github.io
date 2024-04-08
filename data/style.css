@@ -175,6 +175,15 @@
    width: 100%;
  }
 
+#nav li .second.show {
+  display: block;
+}
+
+#nav li a.active {
+  background: var(--active-hover);
+  color: var(--active-text);
+}
+
  /* Поиск */
 
  form {

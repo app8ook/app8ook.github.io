@@ -14,22 +14,39 @@ function filterContent() {
     const page = detail.getAttribute('data-page');
     const table = detail.querySelector('tbody');
     const links = table.querySelectorAll('a');
+    table.innerHTML = ''; // Очищаем содержимое таблицы
+
     let hasMatch = false;
+    const filteredData = csvData.filter(row => row[0].toLowerCase() === page.toLowerCase() && row.some(cell => cell.toLowerCase().includes(searchTerm)));
 
-    links.forEach(function(link) {
-      if (searchTerm.trim() !== '' && link.textContent.toLowerCase().includes(searchTerm)) {
-        link.parentElement.parentElement.style.display = 'table-row';
-        hasMatch = true;
-      } else {
-        link.parentElement.parentElement.style.display = 'none';
+    for (let i = 0; i < filteredData.length; i += 3) {
+      const row = document.createElement('tr');
+      const chunk = filteredData.slice(i, i + 3);
+
+      for (let j = 0; j < chunk.length; j++) {
+        const cell = document.createElement('td');
+        const link = document.createElement('div');
+        link.className = 'tblcol';
+
+        if (chunk[j] && chunk[j].length >= 4) {
+          const anchor = document.createElement('a');
+          anchor.href = chunk[j][1];
+          anchor.target = '_blank';
+          anchor.className = 'butt';
+          anchor.innerHTML = `${chunk[j][2]}<br><br>${chunk[j][3]}`;
+          link.appendChild(anchor);
+        }
+
+        cell.appendChild(link);
+        row.appendChild(cell);
       }
-    });
 
-    if (searchTerm.trim() !== '' && (hasMatch || detail.querySelector('summary').textContent.toLowerCase().includes(searchTerm))) {
-      detail.open = true;
-    } else {
-      detail.open = false;
+      table.appendChild(row);
+      hasMatch = true;
     }
+
+    detail.open = hasMatch;
+    detail.style.display = hasMatch ? 'block' : 'none';
   });
 }
 
@@ -98,6 +115,7 @@ searchInput.addEventListener('input', function() {
     const details = document.querySelectorAll('details');
     details.forEach(detail => {
       detail.open = false;
+      detail.style.display = 'block';
     });
   } else {
     filterContent();

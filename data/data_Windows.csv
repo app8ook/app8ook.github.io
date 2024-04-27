@@ -26,6 +26,7 @@ impotools;https://mega.nz/file/9hRGEJDa#bBrqrflZqciAtHTe9inPuZziITW-J7B3y4V-vasI
 impotools;https://app.prntscr.com/build/setup-lightshot.exe;Lightshot;Программа для удобной работы со скриншотами
 ;;;
 ;Прочие инструменты;;
+othertools;https://windhawk.net;WindHawk;Модульный расширяемый твикер для Windows
 othertools;https://mega.nz/file/sghQEbqQ#bStDsgI-dCcp7WpbJoqqGyEpdvwz1V18ZcFU38FFmjw;WBPV;Инструмент для просмотра паролей с браузеров на ПК
 othertools;https://keepassxc.org/download/;Keepassxc;Программа для хранения паролей в зашифрованном виде
 othertools;https://mega.nz/file/4xIRDAAI#CZj78GQiHgxPfuf8CJaRt9_PXQ8SBTWRBGdAKyZ7crs;TinyWall;Маленький но удобный и простой файрволл
@@ -42,7 +43,7 @@ othertools;https://mega.nz/file/N8BRyRyb#B3x66sOW8eR8EsYa3zXQ6Bxxf_HAU3pvXUeIH7m
 ;Офисное/текст редакторы;;
 officetext;https://mega.nz/file/Bk43HSIY#1Oph8seIrxmk8MrOrr2YbA-E3oOcusAlBu98R3PRKFI;MS office 2010;Пакет продуктов Ms office (crack)
 officetext;https://mega.nz/file/c8AmSZZZ#Zw9zmUNWIqrW-ioNaZKXCVFJglimpQbIo9YQmIK33g8;MS office 2013-2021;Онлайн установщик продуктов Ms office (crack)
-officetext;https://mega.nz/file/hpQHxBKK#1mLnNI74_uJXK8Sxj7-xTzaXTx_ozODSj6vZ_IgTMHg;Office Installer+;Простая утилита для установки и активации офиса 2016/2019/2021/2024
+officetext;https://mega.nz/file/Q9JXjJKK#_tMSAi30TUrdBMYqMNnc3INJi0oLA1SUG6X97to8aUs;Office Installer+;Простая утилита для установки и активации офиса 2016/2019/2021/2024
 officetext;https://mega.nz/file/JwhBCBRZ#mjBfYhPuWjTxxtv6IglaBQ2ugu25QZV-Bo4ETZk17Q4;OfficeRtool;Консольная простая утилита для установки и активации офиса 2016/2019/2021
 officetext;https://www.libreoffice.org/download/download-libreoffice/;LibreOffice;Программа 3в1 - Word, PowerPoint, Exel (Простой аналог MSoffice)
 officetext;https://vscodium.com;VScodium;Тот же Visual Studio Code от MS но с вырезанной слежкой и прочим хламом
@@ -64,7 +65,7 @@ optisoft;https://mega.nz/file/ttpCBIhR#VqAdHHBaM7s-LNoYZgo2N-X-64GBizK56HI-1lDBX
 mediap;https://www.aimp.ru/?do=download.file&id=4;AIMP;Аудиоплеер
 mediap;https://mediaplayerclassic.ru/download_Media-Player-Classic.html;Media Player Classic;Классический медиа плеер
 mediap;https://mega.nz/file/E9pmWKLD#EH9oJCKfJKaJrtOPf0qvwce3g8-6_qOVZHv7r75pP64;GOM player;Простой и красивый медиаплеер (Crack)
-mediap;https://ytmdesktop.app;Ytmdesktop;Неофициальное десктопное приложение YoutubeMusic
+mediap;https://youtube-music.app;Ytmdesktop;Неофициальное десктопное приложение YoutubeMusic
 mediap;https://mega.nz/file/loxwlSwa#tmTvkPahKp3p_G8OFV-KvLZ3kT2cw9zUh6Eq85XW92g;YaMusic;Неофициальная, немного взломанная, Яндекс музыка и радио
 mediap;https://mega.nz/file/klhTTJQa#oqxxOBziIzj3pDzJRSQONrIlSOgapdfDIdgQIuR39AQ;Musify;Программа для скачивания музыки из различных сервисов (crack)
 mediap;https://mega.nz/file/k8ATFDDZ#E7R4Q5j-Un8Joh8n-w4ohPcAMDfxpEx4BhokysEwqLg;KeepBeats;Программа для скачивания музыки из различных музыкальных сервисов
@@ -101,6 +102,7 @@ social;https://www.whatsapp.com/download?lang=ru;WhatsApp;Клиент whatsapp 
 ;Ремонт/Восстановление;;
 fixrec;https://mega.nz/file/NhYViQqT#l6RYBPX8zhEXIsUnbRuo8K8tIwGEtkVxHn7QC2D6fm8;AIDA64;Функциональная программа для обзора начинки компьютера (Crack)
 fixrec;https://mega.nz/file/QlgySRSb#GJRhao6mIkBh1STOu1Q6FVhu1Rx_ID4ab2xGiIgMVbQ;Victoria;Программа для тестирования и мелкого ремонта жёстких дисков
+fixrec;https://disktest.ru;Bulldog;Программа основаная на Victoria, для тестирования флеш накопителей
 fixrec;https://mega.nz/file/dtBDBRKB#jW6m4-ikDx8UVmhd-VfYs7uLf6PiPyFdxYSN6z1EpMI;MiniTool PW;Инструмент для работы с жестким диском
 fixrec;https://www.memtest86.com/download.htm;Memtest86;Утилита для тестирования ОЗУ (С флешки)
 fixrec;https://mega.nz/file/JkYhhQLC#8kIJO1mIfCotlMVBORraPPavvKm4I0if-NCGCKD6qcg;EDRW;Восстановление файлов с флеш и жестких дисков

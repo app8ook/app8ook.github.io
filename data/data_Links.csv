@@ -24,6 +24,7 @@ ai;https://www.suno.ai;Suno;Нейросетка для создания муз�
 ai;https://www.krea.ai;Krea;Нейросетка с генерацией картинок (В реальном времени)
 ai;https://ideogram.ai;Ideogram;Нейросетка с генерацией картинок
 ai;https://github.com/Danily07/Translumo;Translumo;Нейросетка для создания субтитров игр и фильмов
+ai;https://toolbaz.com;ToolBaz;Большая база ИИ инструментов
 ;;;
 ;Важные инструменты;;
 impotls;https://windowspro.ru;Windowspro;Сайт со сборками Windows, а так же полезных и нужных программ
@@ -41,9 +42,12 @@ impotls;https://www.vccgenerator.org/ru/;VCCgenerator;Генератор кре�
 impotls;https://u.to/;U.to;Сервис сокращения ссылок
 impotls;https://www.dll.ru;DLL;Поиск и скачивание файлов DLL
 impotls;https://convertio.co/ru/;Convertio;Сервис по конвертации файлов
+impotls;https://t.me/s/ProxyMTProto;ProxyMTProto;Группа телеграм с бесплатными прокси для самого телеграма
 ;;;
 ;Медиа инструменты;;
 mediatls;https://www.bestmp3converter.com/;YouTube to mp3 converter;Сервис для конвертации видео с Ютуба в файл mp3
+mediatls;https://presaver.com/1/download;220YouTube;Скачивание видео с Ютуба
+mediatls;https://ddownr.app/ru/;DDownr.app;Скачивание плейлистов с Ютуба
 mediatls;https://kissvk.com;KissVk;Скачивание музыки из вк
 mediatls;http://a.flibusta.is;Flibusta;Скачивание и чтение книг (Без демо режимов)(vpn)
 mediatls;https://www.myinstants.com;MyInstants;Множество кнопок со звуками (SoundPad)
@@ -68,3 +72,8 @@ othertls;https://telegra.ph/Kakie-sushchestvuyut-poiskovye-sistemy-09-01;Лен�
 othertls;https://chromewebstore.google.com/detail/lumina-night-mode/ccemhgcpobolddhpebenclgpohlkegdg;Lumina;Ночной режим для всех страниц интернета
 othertls;https://7themes.su;7themes;Украшение и настройка ОС Windows
 othertls;https://technical.city;Technicalcity;Проверка игр на совместимость с вашим ПК, сравнение компонентов от разных производителей
+othertls;https://untrap.app;Untrap;Расширение браузера для настройки YouTube
+othertls;https://www.narakeet.com/app/text-to-audio/;TTA от Narakeet;Озвучка текста
+othertls;http://palettemaker.com/;Palette Maker;Генерация цветовой палитры для работы с графическим дизайном
+othertls;https://ai-icon.top/;Ai Icon Generator;Генератор иконок с прозрачным фоном
+othertls;https://panel.spaceproxy.net;SpaceProxy;Недорогие сервера впн и прокси

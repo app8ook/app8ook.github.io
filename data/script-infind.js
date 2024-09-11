@@ -42,7 +42,7 @@ function filterContent() {
       });
 
       if (!hasMatch) {
-        container.style.display = 'block';
+        container.style.display = 'none';
       } else {
         container.style.display = 'block';
       }

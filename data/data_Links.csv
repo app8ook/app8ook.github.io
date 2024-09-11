@@ -1,79 +1,85 @@
-п»їРЎРїРѕР№Р»РµСЂ;РЎСЃС‹Р»РєР°;РќР°Р·РІР°РЅРёРµ;РћРїРёСЃР°РЅРёРµ
-;Р¤РёР»СЊРјС‹/РЎРµСЂРёР°Р»С‹;;
-mov;https://kinoland.biz;Kinoland;РџСЂРѕСЃРјРѕС‚СЂ С„РёР»СЊРјРѕРІ Рё СЃРµСЂРёР°Р»РѕРІ (Р‘С‹РІС€РёР№ Zfilm)(vpn)
-mov;https://lord.lordfilm1.li;LordFilm;РќРµ РјРµРЅРµРµ РєР»Р°СЃСЃРЅС‹Р№ С‡РµРј zfilm, СЃР°Р№С‚ РґР»СЏ РїСЂРѕСЃРјРѕС‚СЂР° С„РёР»СЊРјРѕРІ (vpn)
-mov;https://big.lordseriall.com;LordSerial;РќРµ РјРµРЅРµРµ РєР»Р°СЃСЃРЅС‹Р№ С‡РµРј zfilm, СЃР°Р№С‚ РґР»СЏ РїСЂРѕСЃРјРѕС‚СЂР° СЃРµСЂРёР°Р»РѕРІ (vpn)
-mov;https://vk.com/zetfliks;Zetflix;РџСЂРѕСЃРјРѕС‚СЂ С„РёР»СЊРјРѕРІ Рё СЃРµСЂРёР°Р»РѕРІ NetFlix Рё РЅРµ С‚РѕР»СЊРєРѕ (vpn)
-mov;https://m.anwap.love;Anwap;РџСЂРѕСЃРјРѕС‚СЂ Рё СЃРєР°С‡РёРІР°РЅРёРµ С„РёР»СЊРјРѕРІ Рё СЃРµСЂРёР°Р»РѕРІ (vpn)
+Спойлер;Ссылка;Название;Описание
+;Фильмы/Сериалы;;
+mov;https://kinoland.biz;Kinoland;Просмотр фильмов и сериалов (Бывший Zfilm)(vpn)
+mov;https://lord.lordfilm1.li;LordFilm;Не менее классный чем zfilm, сайт для просмотра фильмов (vpn)
+mov;https://big.lordseriall.com;LordSerial;Не менее классный чем zfilm, сайт для просмотра сериалов (vpn)
+mov;https://vk.com/zetfliks;Zetflix;Просмотр фильмов и сериалов NetFlix и не только (vpn)
+mov;https://m.anwap.love;Anwap;Просмотр и скачивание фильмов и сериалов (vpn)
 ;;;
-;РџСЂРѕРіСЂР°РјРјС‹;;
-progs;https://1progs.pro;1progs;Р РµРїР°РєРё РїСЂРѕРіСЂР°РјРј (РёР»Рё РєР»СЋС‡Рё Рє РЅРёРј)
-progs;https://allrepack.ru;AllRepack;Р РµРїР°РєРё РјРЅРѕР¶РµСЃС‚РІР° РїСЂРѕРіСЂР°РјРј
-progs;https://positiverecords.ru/;PositiveRecords;Р РµРїР°РєРё РјРЅРѕР¶РµСЃС‚РІР° РїСЂРѕРіСЂР°РјРј РѕС‚ РїРѕРїСѓР»СЏСЂРЅС‹С… РєРѕРјРїР°РЅРёР№
-progs;https://lrepacks.net;Lrepacks;Р РµРїР°РєРё РјРЅРѕР¶РµСЃС‚РІР° РїСЂРѕРіСЂР°РјРј РѕС‚ ELCHUPACABRA
-progs;https://diakov.net;DiakovNet;Р РµРїР°РєРё РїСЂРѕРіСЂР°РјРј РѕС‚ Diakov
-progs;https://strannikmodz.me;StrannikModz;РњРѕРґС‹ РїСЂРѕРіСЂР°РјРј (РќР° Р°РЅРґСЂРѕРёРґ) РѕС‚ Р°РІС‚РѕСЂР° Strannik
+;Программы;;
+progs;https://1progs.pro;1progs;Репаки программ (или ключи к ним)
+progs;https://allrepack.ru;AllRepack;Репаки множества программ
+progs;https://positiverecords.ru/;PositiveRecords;Репаки множества программ от популярных компаний
+progs;https://lrepacks.net;Lrepacks;Репаки множества программ от ELCHUPACABRA
+progs;https://diakov.net;DiakovNet;Репаки программ от Diakov
+progs;https://strannikmodz.me;StrannikModz;Моды программ (На андроид) от автора Strannik
 ;;;
-;РР;;
-ai;https://labs.perplexity.ai;Perplexity labs;РќРµСЃРєРѕР»СЊРєРѕ С‡Р°С‚РѕРІ СЃ РЅРµР№СЂРѕСЃРµС‚СЏРјРё (Р’С‚РѕСЂРёС‡РЅС‹Рµ РЅРѕ Р±С‹СЃС‚СЂС‹Рµ)
-ai;https://chat.lmsys.org;Chat.lmsys;Р§Р°С‚С‹ СЃ РЅРµР№СЂРѕСЃРµС‚СЏРјРё (GPT, cloud Рё РґСЂ.)
-ai;https://maxtext.ru;Maxtext;Р“РµРЅРµСЂР°С‚РѕСЂ С‚РµРєСЃС‚Р° Рё СЂР°Р±РѕС‚Р° СЃ РР
-ai;https://www.perplexity.ai;Perplexity;РР С‡Р°С‚ Рё РїРѕРёСЃРєРѕРІРёРє
-ai;https://you.com;You;Р•С‰Рµ РѕРґРёРЅ РР С‡Р°С‚ Рё РїРѕРёСЃРєРѕРІРёРє
-ai;https://www.suno.ai;Suno;РќРµР№СЂРѕСЃРµС‚РєР° РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РјСѓР·С‹РєРё
-ai;https://www.krea.ai;Krea;РќРµР№СЂРѕСЃРµС‚РєР° СЃ РіРµРЅРµСЂР°С†РёРµР№ РєР°СЂС‚РёРЅРѕРє (Р’ СЂРµР°Р»СЊРЅРѕРј РІСЂРµРјРµРЅРё)
-ai;https://ideogram.ai;Ideogram;РќРµР№СЂРѕСЃРµС‚РєР° СЃ РіРµРЅРµСЂР°С†РёРµР№ РєР°СЂС‚РёРЅРѕРє
-ai;https://github.com/Danily07/Translumo;Translumo;РќРµР№СЂРѕСЃРµС‚РєР° РґР»СЏ СЃРѕР·РґР°РЅРёСЏ СЃСѓР±С‚РёС‚СЂРѕРІ РёРіСЂ Рё С„РёР»СЊРјРѕРІ
-ai;https://toolbaz.com;ToolBaz;Р‘РѕР»СЊС€Р°СЏ Р±Р°Р·Р° РР РёРЅСЃС‚СЂСѓРјРµРЅС‚РѕРІ
+;ИИ;;
+ai;https://labs.perplexity.ai;Perplexity labs;Несколько чатов с нейросетями (Вторичные но быстрые)
+ai;https://chat.lmsys.org;Chat.lmsys;Чаты с нейросетями (GPT, cloud и др.)
+ai;https://maxtext.ru;Maxtext;Генератор текста и работа с ИИ
+ai;https://www.perplexity.ai;Perplexity;ИИ чат и поисковик
+ai;https://you.com;You;Еще один ИИ чат и поисковик
+ai;https://www.suno.ai;Suno;Нейросетка для создания музыки
+ai;https://www.camb.ai;Chamb.ai;Нейронка для клонирования голоса и дальнейшей генерации аудио (TTS)
+ai;https://www.krea.ai;Krea;Нейросетка с генерацией картинок (В реальном времени)
+ai;https://ideogram.ai;Ideogram;Нейросетка с генерацией картинок
+ai;https://github.com/Danily07/Translumo;Translumo;Нейросетка для создания субтитров игр и фильмов
+ai;https://www.justfree.io;Justfree;Сборник большого количества нейросетей и инструментов
+ai;https://toolbaz.com;ToolBaz;Большая база ИИ инструментов
+ai;https://ailist.ru;Ailist;Большая база российских ИИ инструментов
 ;;;
-;Р’Р°Р¶РЅС‹Рµ РёРЅСЃС‚СЂСѓРјРµРЅС‚С‹;;
-impotls;https://windowspro.ru;Windowspro;РЎР°Р№С‚ СЃРѕ СЃР±РѕСЂРєР°РјРё Windows, Р° С‚Р°Рє Р¶Рµ РїРѕР»РµР·РЅС‹С… Рё РЅСѓР¶РЅС‹С… РїСЂРѕРіСЂР°РјРј
-impotls;https://mega.nz/folder/VgA2Abja#Oss2jPkzIwnE7s4sCpjjHg;WIN;РџР°РїРєР° РЅР° РјРѕРµР№ РјРµРіРµ СЃ С‚РѕСЂСЂРµРЅС‚Р°РјРё С…РѕСЂРѕС€РёС… СЃР±РѕСЂРѕРє OS
-impotls;https://win-torrent.net/;WinTorrent;РЎР°Р№С‚ СЃРѕ СЃР±РѕСЂРєР°РјРё Windows
-impotls;https://driver.ru;DriverRu;РџРѕРёСЃРє Рё СЃРєР°С‡РёРІР°РЅРёРµ РґСЂР°Р№РІРµСЂРѕРІ
-impotls;https://driverslab.ru/;DriverslabRu;РџРѕРёСЃРє Рё СЃРєР°С‡РёРІР°РЅРёРµ РґСЂР°Р№РІРµСЂРѕРІ
-impotls;https://mega.nz;MEGA;РћР±Р»Р°С‡РЅРѕРµ С…СЂР°РЅРёР»РёС‰Рµ (50РіР± Р±РµСЃРїР»Р°С‚РЅРѕ + SyncApp)
-impotls;https://4pda.to;4PDA;Р¤РѕСЂСѓРј Рѕ С‚РµС…РЅРѕР»РѕРіРёСЏС…, РЅР°СѓРєРµ, С‚Р°Рє Р¶Рµ РёРіСЂС‹ Рё РїСЂРѕРіСЂР°РјРјС‹ РґР»СЏ СЃРјР°СЂС‚С„РѕРЅРѕРІ
-impotls;https://123apps.com/ru/;123apps;РЎРµСЂРІРёСЃ СЃ РјРЅРѕР¶РµСЃС‚РІРѕРј РІРµР±-РёРЅСЃС‚СЂСѓРјРµРЅС‚РѕРІ
-impotls;https://telegra.ph/;Telegraph;РЎРµСЂРІРёСЃ РґР»СЏ Р±С‹СЃС‚СЂРѕРіРѕ СЃРѕР·РґР°РЅРёСЏ СЃРІРѕРµР№ СЃС‚СЂР°РЅРёС†С‹ РІ РёРЅС‚РµСЂРЅРµС‚Рµ
-impotls;https://onecompiler.com;Onecompiler;РћРЅР»Р°Р№РЅ РєРѕРјРїРёР»СЏС‚РѕСЂ РєРѕРґР° РЅР° СЂР°Р·Р»РёС‡РЅС‹С… СЏР·С‹РєР°С… РїСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёСЏ
-impotls;https://mail.gw/en/;MailGW;РЎРµСЂРІРёСЃ РІСЂРµРјРµРЅРЅС‹С… РїРѕС‡С‚
-impotls;https://www.vccgenerator.org/ru/;VCCgenerator;Р“РµРЅРµСЂР°С‚РѕСЂ РєСЂРµРґРёС‚РЅС‹С… РєР°СЂС‚ (Р•СЃС‚РµСЃС‚РІРµРЅРЅРѕ Р±РµР· РґРµРЅРµРі)
-impotls;https://u.to/;U.to;РЎРµСЂРІРёСЃ СЃРѕРєСЂР°С‰РµРЅРёСЏ СЃСЃС‹Р»РѕРє
-impotls;https://www.dll.ru;DLL;РџРѕРёСЃРє Рё СЃРєР°С‡РёРІР°РЅРёРµ С„Р°Р№Р»РѕРІ DLL
-impotls;https://convertio.co/ru/;Convertio;РЎРµСЂРІРёСЃ РїРѕ РєРѕРЅРІРµСЂС‚Р°С†РёРё С„Р°Р№Р»РѕРІ
-impotls;https://t.me/s/ProxyMTProto;ProxyMTProto;Р“СЂСѓРїРїР° С‚РµР»РµРіСЂР°Рј СЃ Р±РµСЃРїР»Р°С‚РЅС‹РјРё РїСЂРѕРєСЃРё РґР»СЏ СЃР°РјРѕРіРѕ С‚РµР»РµРіСЂР°РјР°
+;Важные инструменты;;
+impotls;https://windowspro.ru;Windowspro;Сайт со сборками Windows, а так же полезных и нужных программ
+impotls;https://mega.nz/folder/VgA2Abja#Oss2jPkzIwnE7s4sCpjjHg;WIN;Папка на моей меге с торрентами хороших сборок OS
+impotls;https://win-torrent.net/;WinTorrent;Сайт со сборками Windows
+impotls;https://driver.ru;DriverRu;Поиск и скачивание драйверов
+impotls;https://driverslab.ru/;DriverslabRu;Поиск и скачивание драйверов
+impotls;https://mega.nz;MEGA;Облачное хранилище (50гб бесплатно + SyncApp)
+impotls;https://4pda.to;4PDA;Форум о технологиях, науке, так же игры и программы для смартфонов
+impotls;https://123apps.com/ru/;123apps;Сервис с множеством веб-инструментов
+impotls;https://telegra.ph/;Telegraph;Сервис для быстрого создания своей страницы в интернете
+impotls;https://onecompiler.com;Onecompiler;Онлайн компилятор кода на различных языках программирования
+impotls;https://mail.gw/en/;MailGW;Сервис временных почт
+impotls;https://www.vccgenerator.org/ru/;VCCgenerator;Генератор кредитных карт (Естественно без денег)
+impotls;https://u.to/;U.to;Сервис сокращения ссылок
+impotls;https://www.dll.ru;DLL;Поиск и скачивание файлов DLL
+impotls;https://convertio.co/ru/;Convertio;Сервис по конвертации файлов
+impotls;https://t.me/s/ProxyMTProto;ProxyMTProto;Группа телеграм с бесплатными прокси для самого телеграма
 ;;;
-;РњРµРґРёР° РёРЅСЃС‚СЂСѓРјРµРЅС‚С‹;;
-mediatls;https://www.bestmp3converter.com/;YouTube to mp3 converter;РЎРµСЂРІРёСЃ РґР»СЏ РєРѕРЅРІРµСЂС‚Р°С†РёРё РІРёРґРµРѕ СЃ Р®С‚СѓР±Р° РІ С„Р°Р№Р» mp3
-mediatls;https://presaver.com/1/download;220YouTube;РЎРєР°С‡РёРІР°РЅРёРµ РІРёРґРµРѕ СЃ Р®С‚СѓР±Р°
-mediatls;https://ddownr.app/ru/;DDownr.app;РЎРєР°С‡РёРІР°РЅРёРµ РїР»РµР№Р»РёСЃС‚РѕРІ СЃ Р®С‚СѓР±Р°
-mediatls;https://kissvk.com;KissVk;РЎРєР°С‡РёРІР°РЅРёРµ РјСѓР·С‹РєРё РёР· РІРє
-mediatls;http://a.flibusta.is;Flibusta;РЎРєР°С‡РёРІР°РЅРёРµ Рё С‡С‚РµРЅРёРµ РєРЅРёРі (Р‘РµР· РґРµРјРѕ СЂРµР¶РёРјРѕРІ)(vpn)
-mediatls;https://www.myinstants.com;MyInstants;РњРЅРѕР¶РµСЃС‚РІРѕ РєРЅРѕРїРѕРє СЃРѕ Р·РІСѓРєР°РјРё (SoundPad)
-mediatls;https://www.flaticon.com;FlatIcon;Р Р°Р·РЅРѕРѕР±СЂР°Р·РЅС‹Рµ РёРєРѕРЅРєРё Рё СЏСЂР»С‹РєРё
-mediatls;https://voicemaker.in/;Voicemaker;РЎРµСЂРІРёСЃ Text to Speech
-mediatls;https://ru.imgbb.com;Imgbb;РҐРѕСЃС‚РёРЅРі РєР°СЂС‚РёРЅРѕРє
-mediatls;https://faststream.online;Faststream;Р—Р°РјРµРЅР° РїР»РµРµСЂСѓ РІ Р®С‚СѓР± Рё СЃ РґСЂСѓРіРёС… СЂРµСЃСѓСЂСЃРѕРІ РЅР° Р±РѕР»РµРµ СѓРґРѕР±РЅС‹Р№ Рё С„СѓРЅРєС†РёРѕРЅР°Р»СЊРЅС‹Р№
+;Медиа инструменты;;
+mediatls;https://www.bestmp3converter.com/;YouTube to mp3 converter;Сервис для конвертации видео с Ютуба в файл mp3
+mediatls;https://presaver.com/1/download;220YouTube;Скачивание видео с Ютуба
+mediatls;https://ddownr.app/ru/;DDownr.app;Скачивание плейлистов с Ютуба
+mediatls;https://kissvk.com;KissVk;Скачивание музыки из вк
+mediatls;http://a.flibusta.is;Flibusta;Скачивание и чтение книг (Без демо режимов)(vpn)
+mediatls;https://www.myinstants.com;MyInstants;Множество кнопок со звуками (SoundPad)
+mediatls;https://www.flaticon.com;FlatIcon;Разнообразные иконки и ярлыки
+mediatls;https://voicemaker.in/;Voicemaker;Сервис Text to Speech
+mediatls;https://ru.imgbb.com;Imgbb;Хостинг картинок
+mediatls;https://faststream.online;Faststream;Замена плееру в Ютуб и с других ресурсов на более удобный и функциональный
 ;;;
-;РРіСЂРѕРІС‹Рµ РёРЅСЃС‚СЂСѓРјРµРЅС‚С‹;;
-gametls;https://ggsel.com;GGSEL;РњР°РіР°Р·РёРЅ Р°РєРєР°СѓРЅС‚РѕРІ Рё РєР»СЋС‡РµР№
-gametls;https://kupikod.com;Kupikod;РњР°РіР°Р·РёРЅ Р°РєРєР°СѓРЅС‚РѕРІ Рё РєР»СЋС‡РµР№ (+РџРѕРїРѕР»РЅРµРЅРёРµ СЃС‚РёРј)
-gametls;https://steambalance.ru/;Steambalance;Р‘С‹СЃС‚СЂС‹Р№ СЃРїРѕСЃРѕР± РїРѕРїРѕР»РЅРёС‚СЊ Р±Р°Р»Р°РЅСЃ СЃС‚РёРј
-gametls;https://freesteam.ru;Freesteam;Р Р°Р·РґР°С‡Рё РёРіСЂ РґР»СЏ РёРіСЂРѕРІС‹С… РєР»РёРµРЅС‚РѕРІ (РўР°Рє Р¶Рµ РµСЃС‚СЊ РіСЂСѓРїРїР° РІРє)
-gametls;https://keysok.ru/akcii/;Keysok;РљР»СЋС‡Рё Рє РїСЂРѕРіСЂР°РјРјР°Рј Рё С‚СЂРµРЅРµСЂС‹ РґР»СЏ РёРіСЂ
-gametls;http://steamworkshop.download;SteamWD;РЎРєР°С‡РёРІР°РЅРёРµ СЂР°Р±РѕС‚ РёР· Steam workshop
-gametls;https://gamebanana.com;GameBanana;РњРѕРґС‹, РїР»Р°РіРёРЅС‹, СЃРєСЂРёРїС‚С‹, СЃРєРёРЅС‹ РґР»СЏ СЂР°Р·Р»РёС‡РЅС‹С… РёРіСЂ
-gametls;https://aimrage.com;AIMrage;РўСЂРµРЅРёСЂРѕРІРєР° СЃРєРѕСЂРѕСЃС‚Рё Рё Р»РѕРІРєРѕСЃС‚Рё РґРІРёР¶РµРЅРёСЏ РјС‹С€Рё
+;Игровые инструменты;;
+gametls;https://ggsel.com;GGSEL;Магазин аккаунтов и ключей
+gametls;https://kupikod.com;Kupikod;Магазин аккаунтов и ключей (+Пополнение стим)
+gametls;https://steambalance.ru/;Steambalance;Быстрый способ пополнить баланс стим
+gametls;https://freesteam.ru;Freesteam;Раздачи игр для игровых клиентов (Так же есть группа вк)
+gametls;https://keysok.ru/akcii/;Keysok;Ключи к программам и тренеры для игр
+gametls;https://ggntw.com/steam;Ggnetwork;Скачивание работ из Steam workshop
+gametls;https://gamebanana.com;GameBanana;Моды, плагины, скрипты, скины для различных игр
+gametls;https://aimrage.com;AIMrage;Тренировка скорости и ловкости движения мыши
 ;;;
-;РџСЂРѕС‡РёРµ РёРЅСЃС‚СЂСѓРјРµРЅС‚С‹;;
-othertls;https://teletype.in;Teletype;РќР°РёРїСЂРѕСЃС‚РµР№С€РёР№, РЅРѕ РІ С‚Рѕ Р¶Рµ РІСЂРµРјСЏ СѓРґРѕР±РЅС‹Р№ Р±Р»РѕРі
-othertls;https://telegra.ph/Kakie-sushchestvuyut-poiskovye-sistemy-09-01;Р›РµРЅС‚Р° СЃ РїРѕРёСЃРєРѕРІРёРєР°РјРё;РРЅС‚РµСЂРµСЃРЅР°СЏ РёРЅС„Р° РїРѕ СЂР°Р·Р»РёС‡РЅС‹Рј РїРѕРёСЃРєРѕРІРёРєР°Рј
-othertls;https://chromewebstore.google.com/detail/lumina-night-mode/ccemhgcpobolddhpebenclgpohlkegdg;Lumina;РќРѕС‡РЅРѕР№ СЂРµР¶РёРј РґР»СЏ РІСЃРµС… СЃС‚СЂР°РЅРёС† РёРЅС‚РµСЂРЅРµС‚Р°
-othertls;https://7themes.su;7themes;РЈРєСЂР°С€РµРЅРёРµ Рё РЅР°СЃС‚СЂРѕР№РєР° РћРЎ Windows
-othertls;https://technical.city;Technicalcity;РџСЂРѕРІРµСЂРєР° РёРіСЂ РЅР° СЃРѕРІРјРµСЃС‚РёРјРѕСЃС‚СЊ СЃ РІР°С€РёРј РџРљ, СЃСЂР°РІРЅРµРЅРёРµ РєРѕРјРїРѕРЅРµРЅС‚РѕРІ РѕС‚ СЂР°Р·РЅС‹С… РїСЂРѕРёР·РІРѕРґРёС‚РµР»РµР№
-othertls;https://untrap.app;Untrap;Р Р°СЃС€РёСЂРµРЅРёРµ Р±СЂР°СѓР·РµСЂР° РґР»СЏ РЅР°СЃС‚СЂРѕР№РєРё YouTube
-othertls;https://www.narakeet.com/app/text-to-audio/;TTA РѕС‚ Narakeet;РћР·РІСѓС‡РєР° С‚РµРєСЃС‚Р°
-othertls;http://palettemaker.com/;Palette Maker;Р“РµРЅРµСЂР°С†РёСЏ С†РІРµС‚РѕРІРѕР№ РїР°Р»РёС‚СЂС‹ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ РіСЂР°С„РёС‡РµСЃРєРёРј РґРёР·Р°Р№РЅРѕРј
-othertls;https://ai-icon.top/;Ai Icon Generator;Р“РµРЅРµСЂР°С‚РѕСЂ РёРєРѕРЅРѕРє СЃ РїСЂРѕР·СЂР°С‡РЅС‹Рј С„РѕРЅРѕРј
-othertls;https://panel.spaceproxy.net;SpaceProxy;РќРµРґРѕСЂРѕРіРёРµ СЃРµСЂРІРµСЂР° РІРїРЅ Рё РїСЂРѕРєСЃРё
+;Прочие инструменты;;
+othertls;https://teletype.in;Teletype;Наипростейший, но в то же время удобный блог
+othertls;https://telegra.ph/Kakie-sushchestvuyut-poiskovye-sistemy-09-01;Лента с поисковиками;Интересная инфа по различным поисковикам
+othertls;https://chromewebstore.google.com/detail/lumina-night-mode/ccemhgcpobolddhpebenclgpohlkegdg;Lumina;Ночной режим для всех страниц интернета
+othertls;https://7themes.su;7themes;Украшение и настройка ОС Windows
+othertls;https://technical.city;Technicalcity;Проверка игр на совместимость с вашим ПК, сравнение компонентов от разных производителей
+othertls;https://untrap.app;Untrap;Расширение браузера для настройки YouTube
+othertls;https://www.narakeet.com/app/text-to-audio/;TTA от Narakeet;Озвучка текста (TTS)
+othertls;https://gram.ax;Gram.ax;Организация знаний/база знаний
+othertls;http://palettemaker.com/;Palette Maker;Генерация цветовой палитры для работы с графическим дизайном
+othertls;https://ai-icon.top/;Ai Icon Generator;Генератор иконок с прозрачным фоном
+othertls;https://carve.photos;Carve.Photos;Инструмент для автоматического удаления фона с картинки
+othertls;https://panel.spaceproxy.net;SpaceProxy;Недорогие сервера впн и прокси
+othertls;https://hotkeycheatsheet.com/ru;Hotkey ch;Информация по горячим клавишам в программах

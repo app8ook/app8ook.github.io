@@ -1,141 +1,141 @@
-Спойлер;Ссылка;Название;Описание
-;Браузеры;;
-browsers;https://vivaldi.com/ru/download;Vivaldi;Хороший браузер от ребят из компании Opera
-browsers;https://www.opera.com/gx;OperaGX;Браузер для геймеров
-browsers;https://u.to/UMLWGw;Google;Самый прожорливый, но так же и самый распространенный браузер
-browsers;https://www.mozilla.org/firefox/download/thanks/;Firefox;Браузер на движке Quantum
-browsers;https://browser.yandex.ru/download?banerid=6302000000&statpromo=true&bitness=64;Яндекс;Русский аналог хрому. На движке хрома.
-browsers;https://www.falkon.org;Falkon;Легкий браузер для слабых компьютеров
-browsers;https://floorp.app/en/;Floorp;Хороший браузер на базе Firefox'a с уклоном в гибкость и анонимность
-browsers;https://mega.nz/file/px4xmSzY#UxEMT-QV4cKp_JdOzLX2w6vVF9o-Ob7IfV4iFTRKwPE;Tor;Анонимный браузер
-browsers;https://ungoogled-software.github.io/ungoogled-chromium-binaries/;Ungoogled Chromium;Тот же Гугл но без слежки и прочего ненужного хлама от самого гугл
+п»їРЎРїРѕР№Р»РµСЂ;РЎСЃС‹Р»РєР°;РќР°Р·РІР°РЅРёРµ;РћРїРёСЃР°РЅРёРµ
+;Р‘СЂР°СѓР·РµСЂС‹;;
+browsers;https://vivaldi.com/ru/download;Vivaldi;РҐРѕСЂРѕС€РёР№ Р±СЂР°СѓР·РµСЂ РѕС‚ СЂРµР±СЏС‚ РёР· РєРѕРјРїР°РЅРёРё Opera
+browsers;https://www.opera.com/gx;OperaGX;Р‘СЂР°СѓР·РµСЂ РґР»СЏ РіРµР№РјРµСЂРѕРІ
+browsers;https://u.to/UMLWGw;Google;РЎР°РјС‹Р№ РїСЂРѕР¶РѕСЂР»РёРІС‹Р№, РЅРѕ С‚Р°Рє Р¶Рµ Рё СЃР°РјС‹Р№ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРЅС‹Р№ Р±СЂР°СѓР·РµСЂ
+browsers;https://www.mozilla.org/firefox/download/thanks/;Firefox;Р‘СЂР°СѓР·РµСЂ РЅР° РґРІРёР¶РєРµ Quantum
+browsers;https://browser.yandex.ru/download?banerid=6302000000&statpromo=true&bitness=64;РЇРЅРґРµРєСЃ;Р СѓСЃСЃРєРёР№ Р°РЅР°Р»РѕРі С…СЂРѕРјСѓ. РќР° РґРІРёР¶РєРµ С…СЂРѕРјР°.
+browsers;https://www.falkon.org;Falkon;Р›РµРіРєРёР№ Р±СЂР°СѓР·РµСЂ РґР»СЏ СЃР»Р°Р±С‹С… РєРѕРјРїСЊСЋС‚РµСЂРѕРІ
+browsers;https://floorp.app/en/;Floorp;РҐРѕСЂРѕС€РёР№ Р±СЂР°СѓР·РµСЂ РЅР° Р±Р°Р·Рµ Firefox'a СЃ СѓРєР»РѕРЅРѕРј РІ РіРёР±РєРѕСЃС‚СЊ Рё Р°РЅРѕРЅРёРјРЅРѕСЃС‚СЊ
+browsers;https://mega.nz/file/px4xmSzY#UxEMT-QV4cKp_JdOzLX2w6vVF9o-Ob7IfV4iFTRKwPE;Tor;РђРЅРѕРЅРёРјРЅС‹Р№ Р±СЂР°СѓР·РµСЂ
+browsers;https://ungoogled-software.github.io/ungoogled-chromium-binaries/;Ungoogled Chromium;РўРѕС‚ Р¶Рµ Р“СѓРіР» РЅРѕ Р±РµР· СЃР»РµР¶РєРё Рё РїСЂРѕС‡РµРіРѕ РЅРµРЅСѓР¶РЅРѕРіРѕ С…Р»Р°РјР° РѕС‚ СЃР°РјРѕРіРѕ РіСѓРіР»
 ;;;
-;Важные инструменты;;
-impotools;https://mega.nz/file/t9h3TKwL#qkpiaEmPUjwisx-rcrfVgcsHv-EYG0j8AnNrxtnoVZ0;WinRar;Программа архиватор (crack)
-impotools;https://www.7-zip.org;7zip;Простая программа архиватор
-impotools;https://github.com/mcmilk/7-Zip-zstd;7zip zstd (Улучшеный);Улучшеный 7zip с дополнительными типами архивации и поддержкой RAR
-impotools;https://mega.nz/file/UtxAWRpC#lPRlvZNTGCttNPgdMRNDe-UDWrUpz2d9Km8E8b2kOl4;VisualC Pack;Пачка Visual C++ в одном файле
-impotools;https://mega.nz/file/csIxGIhC#A6BzYOGFhWiJuI3Xs0Eq-n7MUp7nQRweU0-1zEGxKo8;DirectX;Оффлайн установщик
-impotools;https://sourceforge.net/projects/framework-3-offline/;NetFramework 3;Offline инсталяторы на все версии Windows
-impotools;https://www.java.com/ru/download/windows-64bit.jsp;Java 8;Инструмент, необходим для работы некоторых программ/игр
-impotools;https://mega.nz/file/R4QgSByZ#1u1HZfQZdbok5nXwlVFiaYPfMZOMo819E3_ztdNBFBM;CPUZ;Утилита для отображения тех. информации о ПК
-impotools;https://mega.nz/file/VtZjBSYa#M9sdSlyUWqgNVAbgkZ0nO_yGG-WDVBfd63Ih3PS1zDI;Speccy;Утилита для отображения более детальной информации о ПК
-impotools;https://www.radmin-vpn.com;RadminVPN;Программа для создания защищенной сети
-impotools;https://mega.nz/file/0xA1zayZ#V_SKCAIGqKbHow6j3_oxtr54x71MrP7lwPL-UW94qi8;qBitTorrent 4.5;Более приближенная альтернатива uTorrent (crack)
-impotools;https://mega.nz/file/U9wSkRCR#cFOM5BMzO1wFWF38Yq_Z4fWq7_T8TedQWXT5ooGAYb8;AzTorrent;Альтернатива uTorrent (crack)
-impotools;https://mega.nz/file/9hRGEJDa#bBrqrflZqciAtHTe9inPuZziITW-J7B3y4V-vasI_5I;Thunderbird;Самый простой и бесплатный почтовый клиент от Firefox
-impotools;https://app.prntscr.com/build/setup-lightshot.exe;Lightshot;Программа для удобной работы со скриншотами
+;Р’Р°Р¶РЅС‹Рµ РёРЅСЃС‚СЂСѓРјРµРЅС‚С‹;;
+impotools;https://mega.nz/file/t9h3TKwL#qkpiaEmPUjwisx-rcrfVgcsHv-EYG0j8AnNrxtnoVZ0;WinRar;РџСЂРѕРіСЂР°РјРјР° Р°СЂС…РёРІР°С‚РѕСЂ (crack)
+impotools;https://www.7-zip.org;7zip;РџСЂРѕСЃС‚Р°СЏ РїСЂРѕРіСЂР°РјРјР° Р°СЂС…РёРІР°С‚РѕСЂ
+impotools;https://github.com/mcmilk/7-Zip-zstd;7zip zstd (РЈР»СѓС‡С€РµРЅС‹Р№);РЈР»СѓС‡С€РµРЅС‹Р№ 7zip СЃ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹РјРё С‚РёРїР°РјРё Р°СЂС…РёРІР°С†РёРё Рё РїРѕРґРґРµСЂР¶РєРѕР№ RAR
+impotools;https://mega.nz/file/UtxAWRpC#lPRlvZNTGCttNPgdMRNDe-UDWrUpz2d9Km8E8b2kOl4;VisualC Pack;РџР°С‡РєР° Visual C++ РІ РѕРґРЅРѕРј С„Р°Р№Р»Рµ
+impotools;https://mega.nz/file/csIxGIhC#A6BzYOGFhWiJuI3Xs0Eq-n7MUp7nQRweU0-1zEGxKo8;DirectX;РћС„С„Р»Р°Р№РЅ СѓСЃС‚Р°РЅРѕРІС‰РёРє
+impotools;https://sourceforge.net/projects/framework-3-offline/;NetFramework 3;Offline РёРЅСЃС‚Р°Р»СЏС‚РѕСЂС‹ РЅР° РІСЃРµ РІРµСЂСЃРёРё Windows
+impotools;https://www.java.com/ru/download/windows-64bit.jsp;Java 8;РРЅСЃС‚СЂСѓРјРµРЅС‚, РЅРµРѕР±С…РѕРґРёРј РґР»СЏ СЂР°Р±РѕС‚С‹ РЅРµРєРѕС‚РѕСЂС‹С… РїСЂРѕРіСЂР°РјРј/РёРіСЂ
+impotools;https://mega.nz/file/R4QgSByZ#1u1HZfQZdbok5nXwlVFiaYPfMZOMo819E3_ztdNBFBM;CPUZ;РЈС‚РёР»РёС‚Р° РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ С‚РµС…. РёРЅС„РѕСЂРјР°С†РёРё Рѕ РџРљ
+impotools;https://mega.nz/file/VtZjBSYa#M9sdSlyUWqgNVAbgkZ0nO_yGG-WDVBfd63Ih3PS1zDI;Speccy;РЈС‚РёР»РёС‚Р° РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ Р±РѕР»РµРµ РґРµС‚Р°Р»СЊРЅРѕР№ РёРЅС„РѕСЂРјР°С†РёРё Рѕ РџРљ
+impotools;https://www.radmin-vpn.com;RadminVPN;РџСЂРѕРіСЂР°РјРјР° РґР»СЏ СЃРѕР·РґР°РЅРёСЏ Р·Р°С‰РёС‰РµРЅРЅРѕР№ СЃРµС‚Рё
+impotools;https://mega.nz/file/0xA1zayZ#V_SKCAIGqKbHow6j3_oxtr54x71MrP7lwPL-UW94qi8;qBitTorrent 4.5;Р‘РѕР»РµРµ РїСЂРёР±Р»РёР¶РµРЅРЅР°СЏ Р°Р»СЊС‚РµСЂРЅР°С‚РёРІР° uTorrent (crack)
+impotools;https://mega.nz/file/U9wSkRCR#cFOM5BMzO1wFWF38Yq_Z4fWq7_T8TedQWXT5ooGAYb8;AzTorrent;РђР»СЊС‚РµСЂРЅР°С‚РёРІР° uTorrent (crack)
+impotools;https://mega.nz/file/9hRGEJDa#bBrqrflZqciAtHTe9inPuZziITW-J7B3y4V-vasI_5I;Thunderbird;РЎР°РјС‹Р№ РїСЂРѕСЃС‚РѕР№ Рё Р±РµСЃРїР»Р°С‚РЅС‹Р№ РїРѕС‡С‚РѕРІС‹Р№ РєР»РёРµРЅС‚ РѕС‚ Firefox
+impotools;https://app.prntscr.com/build/setup-lightshot.exe;Lightshot;РџСЂРѕРіСЂР°РјРјР° РґР»СЏ СѓРґРѕР±РЅРѕР№ СЂР°Р±РѕС‚С‹ СЃРѕ СЃРєСЂРёРЅС€РѕС‚Р°РјРё
 ;;;
-;Прочие инструменты;;
-othertools;https://windhawk.net;WindHawk;Модульный расширяемый твикер для Windows
-othertools;https://mega.nz/file/sghQEbqQ#bStDsgI-dCcp7WpbJoqqGyEpdvwz1V18ZcFU38FFmjw;WBPV;Инструмент для просмотра паролей с браузеров на ПК
-othertools;https://keepassxc.org/download/;Keepassxc;Программа для хранения паролей в зашифрованном виде
-othertools;https://mega.nz/file/4xIRDAAI#CZj78GQiHgxPfuf8CJaRt9_PXQ8SBTWRBGdAKyZ7crs;TinyWall;Маленький но удобный и простой файрволл
-othertools;https://mega.nz/file/ogJESZTC#hqD9BgI9dKhdniKp6EHIZUU9I9td97pi8xcBZvfK42k;VMware;Программное обеспечение виртуализации
-othertools;https://mega.nz/file/hwxRBAAJ#ghj80rrhIOygFttzSIENOHg5GqMjpZ9xD5PDwcWT5LU;AnyDesk;Программа управления удаленным рабочим столом
-othertools;https://rustdesk.com;RustDesk;Аналог AnyDesk, но Open Source
-othertools;https://ninite.com;Ninite;Утилита для массовой установки программ
-othertools;https://mega.nz/file/E1InxJpY#cn12-Gf-dIf_bvqJNbmHblU6cNRadECVgHzA3CnSug4;Flux;Утилита регулирующяя цветовую температуру
-othertools;https://mega.nz/file/Z8wRWKiQ#HYdLO7V-Eduxqg6UHpLjfs1TvkGcjAMH5XXJLkJ-0s0;Stardock Start11;"Менеджер для перенастройки меню ""Пуск"" (crack)"
-othertools;https://www.bluestacks.com/ru/index.html;BlueStacks;Эмулятор андроида для пк
-othertools;https://4pda.to/forum/index.php?s=&showtopic=99949&view=findpost&p=2141050;KEmulator;Эмулятор java для пк
-othertools;https://mega.nz/file/N8BRyRyb#B3x66sOW8eR8EsYa3zXQ6Bxxf_HAU3pvXUeIH7mMMCY;SoundPad;Программа для передачи звуков в микрофон (crack)
-othertools;https://www.letasoft.com/sound-booster-download/;SoundBooster;Утилита для усиления звука
-othertools;https://github.com/anfragment/zen;Zen;Блокировщик рекламы
-othertools;https://www.cyberscarecrow.com/download;Cyberscarecrow;Отпугиватель вирусов (Механизм работы описан на сайте)
+;РџСЂРѕС‡РёРµ РёРЅСЃС‚СЂСѓРјРµРЅС‚С‹;;
+othertools;https://windhawk.net;WindHawk;РњРѕРґСѓР»СЊРЅС‹Р№ СЂР°СЃС€РёСЂСЏРµРјС‹Р№ С‚РІРёРєРµСЂ РґР»СЏ Windows
+othertools;https://mega.nz/file/sghQEbqQ#bStDsgI-dCcp7WpbJoqqGyEpdvwz1V18ZcFU38FFmjw;WBPV;РРЅСЃС‚СЂСѓРјРµРЅС‚ РґР»СЏ РїСЂРѕСЃРјРѕС‚СЂР° РїР°СЂРѕР»РµР№ СЃ Р±СЂР°СѓР·РµСЂРѕРІ РЅР° РџРљ
+othertools;https://keepassxc.org/download/;Keepassxc;РџСЂРѕРіСЂР°РјРјР° РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РїР°СЂРѕР»РµР№ РІ Р·Р°С€РёС„СЂРѕРІР°РЅРЅРѕРј РІРёРґРµ
+othertools;https://mega.nz/file/4xIRDAAI#CZj78GQiHgxPfuf8CJaRt9_PXQ8SBTWRBGdAKyZ7crs;TinyWall;РњР°Р»РµРЅСЊРєРёР№ РЅРѕ СѓРґРѕР±РЅС‹Р№ Рё РїСЂРѕСЃС‚РѕР№ С„Р°Р№СЂРІРѕР»Р»
+othertools;https://mega.nz/file/ogJESZTC#hqD9BgI9dKhdniKp6EHIZUU9I9td97pi8xcBZvfK42k;VMware;РџСЂРѕРіСЂР°РјРјРЅРѕРµ РѕР±РµСЃРїРµС‡РµРЅРёРµ РІРёСЂС‚СѓР°Р»РёР·Р°С†РёРё
+othertools;https://mega.nz/file/hwxRBAAJ#ghj80rrhIOygFttzSIENOHg5GqMjpZ9xD5PDwcWT5LU;AnyDesk;РџСЂРѕРіСЂР°РјРјР° СѓРїСЂР°РІР»РµРЅРёСЏ СѓРґР°Р»РµРЅРЅС‹Рј СЂР°Р±РѕС‡РёРј СЃС‚РѕР»РѕРј
+othertools;https://rustdesk.com;RustDesk;РђРЅР°Р»РѕРі AnyDesk, РЅРѕ Open Source
+othertools;https://ninite.com;Ninite;РЈС‚РёР»РёС‚Р° РґР»СЏ РјР°СЃСЃРѕРІРѕР№ СѓСЃС‚Р°РЅРѕРІРєРё РїСЂРѕРіСЂР°РјРј
+othertools;https://mega.nz/file/E1InxJpY#cn12-Gf-dIf_bvqJNbmHblU6cNRadECVgHzA3CnSug4;Flux;РЈС‚РёР»РёС‚Р° СЂРµРіСѓР»РёСЂСѓСЋС‰СЏСЏ С†РІРµС‚РѕРІСѓСЋ С‚РµРјРїРµСЂР°С‚СѓСЂСѓ
+othertools;https://mega.nz/file/Z8wRWKiQ#HYdLO7V-Eduxqg6UHpLjfs1TvkGcjAMH5XXJLkJ-0s0;Stardock Start11;"РњРµРЅРµРґР¶РµСЂ РґР»СЏ РїРµСЂРµРЅР°СЃС‚СЂРѕР№РєРё РјРµРЅСЋ ""РџСѓСЃРє"" (crack)"
+othertools;https://www.bluestacks.com/ru/index.html;BlueStacks;Р­РјСѓР»СЏС‚РѕСЂ Р°РЅРґСЂРѕРёРґР° РґР»СЏ РїРє
+othertools;https://4pda.to/forum/index.php?s=&showtopic=99949&view=findpost&p=2141050;KEmulator;Р­РјСѓР»СЏС‚РѕСЂ java РґР»СЏ РїРє
+othertools;https://mega.nz/file/N8BRyRyb#B3x66sOW8eR8EsYa3zXQ6Bxxf_HAU3pvXUeIH7mMMCY;SoundPad;РџСЂРѕРіСЂР°РјРјР° РґР»СЏ РїРµСЂРµРґР°С‡Рё Р·РІСѓРєРѕРІ РІ РјРёРєСЂРѕС„РѕРЅ (crack)
+othertools;https://www.letasoft.com/sound-booster-download/;SoundBooster;РЈС‚РёР»РёС‚Р° РґР»СЏ СѓСЃРёР»РµРЅРёСЏ Р·РІСѓРєР°
+othertools;https://github.com/anfragment/zen;Zen;Р‘Р»РѕРєРёСЂРѕРІС‰РёРє СЂРµРєР»Р°РјС‹
+othertools;https://www.cyberscarecrow.com/download;Cyberscarecrow;РћС‚РїСѓРіРёРІР°С‚РµР»СЊ РІРёСЂСѓСЃРѕРІ (РњРµС…Р°РЅРёР·Рј СЂР°Р±РѕС‚С‹ РѕРїРёСЃР°РЅ РЅР° СЃР°Р№С‚Рµ)
 ;;;
-;Офисное/текст редакторы;;
-officetext;https://mega.nz/file/Bk43HSIY#1Oph8seIrxmk8MrOrr2YbA-E3oOcusAlBu98R3PRKFI;MS office 2010;Пакет продуктов Ms office (crack)
-officetext;https://mega.nz/file/c8AmSZZZ#Zw9zmUNWIqrW-ioNaZKXCVFJglimpQbIo9YQmIK33g8;MS office 2013-2021;Онлайн установщик продуктов Ms office (crack)
-officetext;https://mega.nz/file/Q9JXjJKK#_tMSAi30TUrdBMYqMNnc3INJi0oLA1SUG6X97to8aUs;Office Installer+;Простая утилита для установки и активации офиса 2016/2019/2021/2024
-officetext;https://mega.nz/file/JwhBCBRZ#mjBfYhPuWjTxxtv6IglaBQ2ugu25QZV-Bo4ETZk17Q4;OfficeRtool;Консольная простая утилита для установки и активации офиса 2016/2019/2021
-officetext;https://www.libreoffice.org/download/download-libreoffice/;LibreOffice;Программа 3в1 - Word, PowerPoint, Exel (Простой аналог MSoffice)
-officetext;https://vscodium.com;VScodium;Тот же Visual Studio Code от MS но с вырезанной слежкой и прочим хламом
-officetext;https://notepad-plus-plus.org/downloads/;Notepad++;Простой и удобный текстовый редактор
-officetext;https://github.com/atom/atom/releases/tag/v1.61.0-beta0;Atom;Редакор кода, удобная и упрощенная альтернатива VScode
+;РћС„РёСЃРЅРѕРµ/С‚РµРєСЃС‚ СЂРµРґР°РєС‚РѕСЂС‹;;
+officetext;https://mega.nz/file/Bk43HSIY#1Oph8seIrxmk8MrOrr2YbA-E3oOcusAlBu98R3PRKFI;MS office 2010;РџР°РєРµС‚ РїСЂРѕРґСѓРєС‚РѕРІ Ms office (crack)
+officetext;https://mega.nz/file/c8AmSZZZ#Zw9zmUNWIqrW-ioNaZKXCVFJglimpQbIo9YQmIK33g8;MS office 2013-2021;РћРЅР»Р°Р№РЅ СѓСЃС‚Р°РЅРѕРІС‰РёРє РїСЂРѕРґСѓРєС‚РѕРІ Ms office (crack)
+officetext;https://mega.nz/file/Q9JXjJKK#_tMSAi30TUrdBMYqMNnc3INJi0oLA1SUG6X97to8aUs;Office Installer+;РџСЂРѕСЃС‚Р°СЏ СѓС‚РёР»РёС‚Р° РґР»СЏ СѓСЃС‚Р°РЅРѕРІРєРё Рё Р°РєС‚РёРІР°С†РёРё РѕС„РёСЃР° 2016/2019/2021/2024
+officetext;https://mega.nz/file/JwhBCBRZ#mjBfYhPuWjTxxtv6IglaBQ2ugu25QZV-Bo4ETZk17Q4;OfficeRtool;РљРѕРЅСЃРѕР»СЊРЅР°СЏ РїСЂРѕСЃС‚Р°СЏ СѓС‚РёР»РёС‚Р° РґР»СЏ СѓСЃС‚Р°РЅРѕРІРєРё Рё Р°РєС‚РёРІР°С†РёРё РѕС„РёСЃР° 2016/2019/2021
+officetext;https://www.libreoffice.org/download/download-libreoffice/;LibreOffice;РџСЂРѕРіСЂР°РјРјР° 3РІ1 - Word, PowerPoint, Exel (РџСЂРѕСЃС‚РѕР№ Р°РЅР°Р»РѕРі MSoffice)
+officetext;https://vscodium.com;VScodium;РўРѕС‚ Р¶Рµ Visual Studio Code РѕС‚ MS РЅРѕ СЃ РІС‹СЂРµР·Р°РЅРЅРѕР№ СЃР»РµР¶РєРѕР№ Рё РїСЂРѕС‡РёРј С…Р»Р°РјРѕРј
+officetext;https://notepad-plus-plus.org/downloads/;Notepad++;РџСЂРѕСЃС‚РѕР№ Рё СѓРґРѕР±РЅС‹Р№ С‚РµРєСЃС‚РѕРІС‹Р№ СЂРµРґР°РєС‚РѕСЂ
+officetext;https://github.com/atom/atom/releases/tag/v1.61.0-beta0;Atom;Р РµРґР°РєРѕСЂ РєРѕРґР°, СѓРґРѕР±РЅР°СЏ Рё СѓРїСЂРѕС‰РµРЅРЅР°СЏ Р°Р»СЊС‚РµСЂРЅР°С‚РёРІР° VScode
 ;;;
-;Оптимизация системы;;
-optisoft;https://mega.nz/file/0sYyWLTR#NvkBaTkh3Nq4wWBbXASkXaaUaFnybQRpQHz0-8gqLcw;Advanced SystemCare;Многофункциональная программа для очистки и оптимизации системы
-optisoft;https://mega.nz/file/dgoQCJ6T#VeMu9Oq8aveBYV2CxVFqybLTtnuz7u2gwyuC9EoDFTE;OneSafePCCleaner;Программа для очистки системы
-optisoft;https://mega.nz/file/8l42wYyQ#Wys2XvWTLCGkV1aW8aynPeQeu_dJekBh1T00eLncSVg;Optimizer;Программка которая поможет оптимизировать вашу систему
-optisoft;https://mega.nz/file/hhhTAbiS#PtQdx697jZ3CNFkEGPRD7YuUPrSovHbMpMXPlx_xWEc;WinUtilities;Коллекция утилит, для настройки и оптимизации ОС
-optisoft;https://mega.nz/file/hpwXSB7A#2Bn4TARSu3UTBSh1gsFklzZMb3eRJQFgJcai0jnB1UE;WRC;Программа для очистки реестра системы
-optisoft;https://mega.nz/file/dhJBwYyA#zOQtAYHGI_xFEq75MNw3x51Hp8gL-wUTcjKFCCPfaec;ESO;Инструмент для работы со службами ОС Windows
-optisoft;https://mega.nz/file/xkpUQChS#Qa7KCh9G86-0vpiYBaycMULPRdxrfTvyU3ZqgLbpJT4;IObit Uninstaller;Более удобная программа для деинсталяции программ и игр (crack)
-optisoft;https://mega.nz/file/4tQGlZCC#XVSerO3pCoAmfVcKTolc0cb4p6QW7LZSF6XYmn-Hxp8;Revo Uninstaller;Программа для деинсталяции программ и игр (crack)
-optisoft;https://mega.nz/file/ttpCBIhR#VqAdHHBaM7s-LNoYZgo2N-X-64GBizK56HI-1lDBX7Q;Unlocker;Инструмент для удаления неудаляемого
-optisoft;https://mega.nz/file/Y85GjYab#eldzpZhLXKHi8shDB6BT4rGtJnpKdn0NrAM5hI186Lc;Glary Utilities;Комплект системных твикеров и утилит (Crack)
+;РћРїС‚РёРјРёР·Р°С†РёСЏ СЃРёСЃС‚РµРјС‹;;
+optisoft;https://mega.nz/file/0sYyWLTR#NvkBaTkh3Nq4wWBbXASkXaaUaFnybQRpQHz0-8gqLcw;Advanced SystemCare;РњРЅРѕРіРѕС„СѓРЅРєС†РёРѕРЅР°Р»СЊРЅР°СЏ РїСЂРѕРіСЂР°РјРјР° РґР»СЏ РѕС‡РёСЃС‚РєРё Рё РѕРїС‚РёРјРёР·Р°С†РёРё СЃРёСЃС‚РµРјС‹
+optisoft;https://mega.nz/file/dgoQCJ6T#VeMu9Oq8aveBYV2CxVFqybLTtnuz7u2gwyuC9EoDFTE;OneSafePCCleaner;РџСЂРѕРіСЂР°РјРјР° РґР»СЏ РѕС‡РёСЃС‚РєРё СЃРёСЃС‚РµРјС‹
+optisoft;https://mega.nz/file/8l42wYyQ#Wys2XvWTLCGkV1aW8aynPeQeu_dJekBh1T00eLncSVg;Optimizer;РџСЂРѕРіСЂР°РјРјРєР° РєРѕС‚РѕСЂР°СЏ РїРѕРјРѕР¶РµС‚ РѕРїС‚РёРјРёР·РёСЂРѕРІР°С‚СЊ РІР°С€Сѓ СЃРёСЃС‚РµРјСѓ
+optisoft;https://mega.nz/file/hhhTAbiS#PtQdx697jZ3CNFkEGPRD7YuUPrSovHbMpMXPlx_xWEc;WinUtilities;РљРѕР»Р»РµРєС†РёСЏ СѓС‚РёР»РёС‚, РґР»СЏ РЅР°СЃС‚СЂРѕР№РєРё Рё РѕРїС‚РёРјРёР·Р°С†РёРё РћРЎ
+optisoft;https://mega.nz/file/hpwXSB7A#2Bn4TARSu3UTBSh1gsFklzZMb3eRJQFgJcai0jnB1UE;WRC;РџСЂРѕРіСЂР°РјРјР° РґР»СЏ РѕС‡РёСЃС‚РєРё СЂРµРµСЃС‚СЂР° СЃРёСЃС‚РµРјС‹
+optisoft;https://mega.nz/file/dhJBwYyA#zOQtAYHGI_xFEq75MNw3x51Hp8gL-wUTcjKFCCPfaec;ESO;РРЅСЃС‚СЂСѓРјРµРЅС‚ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃРѕ СЃР»СѓР¶Р±Р°РјРё РћРЎ Windows
+optisoft;https://mega.nz/file/xkpUQChS#Qa7KCh9G86-0vpiYBaycMULPRdxrfTvyU3ZqgLbpJT4;IObit Uninstaller;Р‘РѕР»РµРµ СѓРґРѕР±РЅР°СЏ РїСЂРѕРіСЂР°РјРјР° РґР»СЏ РґРµРёРЅСЃС‚Р°Р»СЏС†РёРё РїСЂРѕРіСЂР°РјРј Рё РёРіСЂ (crack)
+optisoft;https://mega.nz/file/4tQGlZCC#XVSerO3pCoAmfVcKTolc0cb4p6QW7LZSF6XYmn-Hxp8;Revo Uninstaller;РџСЂРѕРіСЂР°РјРјР° РґР»СЏ РґРµРёРЅСЃС‚Р°Р»СЏС†РёРё РїСЂРѕРіСЂР°РјРј Рё РёРіСЂ (crack)
+optisoft;https://mega.nz/file/ttpCBIhR#VqAdHHBaM7s-LNoYZgo2N-X-64GBizK56HI-1lDBX7Q;Unlocker;РРЅСЃС‚СЂСѓРјРµРЅС‚ РґР»СЏ СѓРґР°Р»РµРЅРёСЏ РЅРµСѓРґР°Р»СЏРµРјРѕРіРѕ
+optisoft;https://mega.nz/file/Y85GjYab#eldzpZhLXKHi8shDB6BT4rGtJnpKdn0NrAM5hI186Lc;Glary Utilities;РљРѕРјРїР»РµРєС‚ СЃРёСЃС‚РµРјРЅС‹С… С‚РІРёРєРµСЂРѕРІ Рё СѓС‚РёР»РёС‚ (Crack)
 ;;;
-;Медиа плееры;;
-mediap;https://www.aimp.ru/?do=download.file&id=4;AIMP;Аудиоплеер
-mediap;https://mediaplayerclassic.ru/download_Media-Player-Classic.html;Media Player Classic;Классический медиа плеер
-mediap;https://mega.nz/file/R0IAxbDZ#GOhvZnQC3zhyoFFEESBuVwnanXJgnphFat5dWgHvrVw;GOM player;Простой и красивый медиаплеер (Crack)
-mediap;https://youtube-music.app;Ytmdesktop;Неофициальное десктопное приложение YoutubeMusic
-mediap;https://mega.nz/file/loxwlSwa#tmTvkPahKp3p_G8OFV-KvLZ3kT2cw9zUh6Eq85XW92g;YaMusic;Неофициальная, немного взломанная, Яндекс музыка и радио
-mediap;https://mega.nz/file/klhTTJQa#oqxxOBziIzj3pDzJRSQONrIlSOgapdfDIdgQIuR39AQ;Musify;Программа для скачивания музыки из различных сервисов (crack)
-mediap;https://mega.nz/file/k8ATFDDZ#E7R4Q5j-Un8Joh8n-w4ohPcAMDfxpEx4BhokysEwqLg;KeepBeats;Программа для скачивания музыки из различных музыкальных сервисов
+;РњРµРґРёР° РїР»РµРµСЂС‹;;
+mediap;https://www.aimp.ru/?do=download.file&id=4;AIMP;РђСѓРґРёРѕРїР»РµРµСЂ
+mediap;https://mediaplayerclassic.ru/download_Media-Player-Classic.html;Media Player Classic;РљР»Р°СЃСЃРёС‡РµСЃРєРёР№ РјРµРґРёР° РїР»РµРµСЂ
+mediap;https://mega.nz/file/R0IAxbDZ#GOhvZnQC3zhyoFFEESBuVwnanXJgnphFat5dWgHvrVw;GOM player;РџСЂРѕСЃС‚РѕР№ Рё РєСЂР°СЃРёРІС‹Р№ РјРµРґРёР°РїР»РµРµСЂ (Crack)
+mediap;https://youtube-music.app;Ytmdesktop;РќРµРѕС„РёС†РёР°Р»СЊРЅРѕРµ РґРµСЃРєС‚РѕРїРЅРѕРµ РїСЂРёР»РѕР¶РµРЅРёРµ YoutubeMusic
+mediap;https://mega.nz/file/loxwlSwa#tmTvkPahKp3p_G8OFV-KvLZ3kT2cw9zUh6Eq85XW92g;YaMusic;РќРµРѕС„РёС†РёР°Р»СЊРЅР°СЏ, РЅРµРјРЅРѕРіРѕ РІР·Р»РѕРјР°РЅРЅР°СЏ, РЇРЅРґРµРєСЃ РјСѓР·С‹РєР° Рё СЂР°РґРёРѕ
+mediap;https://mega.nz/file/klhTTJQa#oqxxOBziIzj3pDzJRSQONrIlSOgapdfDIdgQIuR39AQ;Musify;РџСЂРѕРіСЂР°РјРјР° РґР»СЏ СЃРєР°С‡РёРІР°РЅРёСЏ РјСѓР·С‹РєРё РёР· СЂР°Р·Р»РёС‡РЅС‹С… СЃРµСЂРІРёСЃРѕРІ (crack)
+mediap;https://mega.nz/file/k8ATFDDZ#E7R4Q5j-Un8Joh8n-w4ohPcAMDfxpEx4BhokysEwqLg;KeepBeats;РџСЂРѕРіСЂР°РјРјР° РґР»СЏ СЃРєР°С‡РёРІР°РЅРёСЏ РјСѓР·С‹РєРё РёР· СЂР°Р·Р»РёС‡РЅС‹С… РјСѓР·С‹РєР°Р»СЊРЅС‹С… СЃРµСЂРІРёСЃРѕРІ
 ;;;
-;Медиа редакторы;;
-mediar;https://mega.nz/file/JlBDiIpQ#ob4lIttDFUntXro2LZU4fGxTksIhjy0lPPpo1VWIIw4;Davichi resolve;Видео, аудио монтаж, очень удобный софт содержащий в себе все нужное от Adobe (Crack)
+;РњРµРґРёР° СЂРµРґР°РєС‚РѕСЂС‹;;
+mediar;https://mega.nz/file/JlBDiIpQ#ob4lIttDFUntXro2LZU4fGxTksIhjy0lPPpo1VWIIw4;Davichi resolve;Р’РёРґРµРѕ, Р°СѓРґРёРѕ РјРѕРЅС‚Р°Р¶, РѕС‡РµРЅСЊ СѓРґРѕР±РЅС‹Р№ СЃРѕС„С‚ СЃРѕРґРµСЂР¶Р°С‰РёР№ РІ СЃРµР±Рµ РІСЃРµ РЅСѓР¶РЅРѕРµ РѕС‚ Adobe (Crack)
 mediar;https://mega.nz/folder/M8w2Hb7K#ivNxgmhzXm-zbidTLBAWgw;Adobe 2023;Adobe Photoshop, Premiere, After Effects, InDesign, Animate (crack)
-mediar;https://mega.nz/file/h9RhnCbB#88XfA6C-GLCle1u_hrVM8bt8q0VtpUN6tapcsQCoLsw;SonyVegasPro13;Видеоредактор (crack)
-mediar;https://mega.nz/file/NtZizJYC#BaE1240-hhMK-V7WBUIC1Jir491Lakp1L6CtzsNJ1wk;AudioMaster;Аудиоредактор (crack)
-mediar;https://www.audacityteam.org;Audacity;Простой аудиоредактор
-mediar;https://mega.nz/file/4gIhmTrQ#ABuMw3rShKlpm9IsacofHRvyxpbn1u2ovc-zVhE0eXk;VideoShow;Простой Видеоредактор (crack)
-mediar;https://www.getpaint.net/download.html#download;Paint.net;Упрощенный фотошоп
-mediar;https://mega.nz/file/54RS3IaT#ryiR8cWyms3u-c1XjIusqOu60BRZQeTbw2g_4QyAhls;Aseprite;Простая программа для пиксель арта (crack)
+mediar;https://mega.nz/file/h9RhnCbB#88XfA6C-GLCle1u_hrVM8bt8q0VtpUN6tapcsQCoLsw;SonyVegasPro13;Р’РёРґРµРѕСЂРµРґР°РєС‚РѕСЂ (crack)
+mediar;https://mega.nz/file/NtZizJYC#BaE1240-hhMK-V7WBUIC1Jir491Lakp1L6CtzsNJ1wk;AudioMaster;РђСѓРґРёРѕСЂРµРґР°РєС‚РѕСЂ (crack)
+mediar;https://www.audacityteam.org;Audacity;РџСЂРѕСЃС‚РѕР№ Р°СѓРґРёРѕСЂРµРґР°РєС‚РѕСЂ
+mediar;https://mega.nz/file/4gIhmTrQ#ABuMw3rShKlpm9IsacofHRvyxpbn1u2ovc-zVhE0eXk;VideoShow;РџСЂРѕСЃС‚РѕР№ Р’РёРґРµРѕСЂРµРґР°РєС‚РѕСЂ (crack)
+mediar;https://www.getpaint.net/download.html#download;Paint.net;РЈРїСЂРѕС‰РµРЅРЅС‹Р№ С„РѕС‚РѕС€РѕРї
+mediar;https://mega.nz/file/54RS3IaT#ryiR8cWyms3u-c1XjIusqOu60BRZQeTbw2g_4QyAhls;Aseprite;РџСЂРѕСЃС‚Р°СЏ РїСЂРѕРіСЂР°РјРјР° РґР»СЏ РїРёРєСЃРµР»СЊ Р°СЂС‚Р° (crack)
 ;;;
-;Инструменты для игр;;
-gametools;https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe;Steam;Игровой клиент Valve
-gametools;https://store.epicgames.com/en-US/download;EGS;Игровой клиент EpicGames
-gametools;https://www.gog.com/galaxy;GOG galaxy 2.0;Игровой клиент CD Projekt
-gametools;https://www.ea.com/ea-app;EA app;Игровой клиент EA
-gametools;https://ubi.li/4vxt9;UbisoftConnect;Игровой клиент Ubisoft
-gametools;https://www.overwolf.com/appstore/;Overwolf;Оверлей, маркет приложений и расширений для игр
-gametools;https://blitz.gg;Blitz;Игротрекер но без овервульфа
-gametools;https://medal.tv;Medal;Outplayed но без овервульфа + ютуб для геймеров
-gametools;https://obsproject.com/ru/download;OBS;Программа для записи и стриминга с экрана
-gametools;https://mega.nz/file/4khz2QYT#XpGXjKzdLEPqWWp3w5CX7VFIlaSoFS4EmpPGL9ApUJc;XmouseBC;Программа - биндер для мыши
-gametools;https://steelseries.com/gg/sonar;Sonar;Универсальная программа для настройки микрофона и наушников с нейросетью (От SteelSeries)
-gametools;https://github.com/hydralauncher/hydra/releases/;HydraLauncher;Игровой пиратский клиент для простого скачивания и отслеживания своей библиотеки игр
+;РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РґР»СЏ РёРіСЂ;;
+gametools;https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe;Steam;РРіСЂРѕРІРѕР№ РєР»РёРµРЅС‚ Valve
+gametools;https://store.epicgames.com/en-US/download;EGS;РРіСЂРѕРІРѕР№ РєР»РёРµРЅС‚ EpicGames
+gametools;https://www.gog.com/galaxy;GOG galaxy 2.0;РРіСЂРѕРІРѕР№ РєР»РёРµРЅС‚ CD Projekt
+gametools;https://www.ea.com/ea-app;EA app;РРіСЂРѕРІРѕР№ РєР»РёРµРЅС‚ EA
+gametools;https://ubi.li/4vxt9;UbisoftConnect;РРіСЂРѕРІРѕР№ РєР»РёРµРЅС‚ Ubisoft
+gametools;https://www.overwolf.com/appstore/;Overwolf;РћРІРµСЂР»РµР№, РјР°СЂРєРµС‚ РїСЂРёР»РѕР¶РµРЅРёР№ Рё СЂР°СЃС€РёСЂРµРЅРёР№ РґР»СЏ РёРіСЂ
+gametools;https://blitz.gg;Blitz;РРіСЂРѕС‚СЂРµРєРµСЂ РЅРѕ Р±РµР· РѕРІРµСЂРІСѓР»СЊС„Р°
+gametools;https://medal.tv;Medal;Outplayed РЅРѕ Р±РµР· РѕРІРµСЂРІСѓР»СЊС„Р° + СЋС‚СѓР± РґР»СЏ РіРµР№РјРµСЂРѕРІ
+gametools;https://obsproject.com/ru/download;OBS;РџСЂРѕРіСЂР°РјРјР° РґР»СЏ Р·Р°РїРёСЃРё Рё СЃС‚СЂРёРјРёРЅРіР° СЃ СЌРєСЂР°РЅР°
+gametools;https://mega.nz/file/4khz2QYT#XpGXjKzdLEPqWWp3w5CX7VFIlaSoFS4EmpPGL9ApUJc;XmouseBC;РџСЂРѕРіСЂР°РјРјР° - Р±РёРЅРґРµСЂ РґР»СЏ РјС‹С€Рё
+gametools;https://steelseries.com/gg/sonar;Sonar;РЈРЅРёРІРµСЂСЃР°Р»СЊРЅР°СЏ РїСЂРѕРіСЂР°РјРјР° РґР»СЏ РЅР°СЃС‚СЂРѕР№РєРё РјРёРєСЂРѕС„РѕРЅР° Рё РЅР°СѓС€РЅРёРєРѕРІ СЃ РЅРµР№СЂРѕСЃРµС‚СЊСЋ (РћС‚ SteelSeries)
+gametools;https://github.com/hydralauncher/hydra/releases/;HydraLauncher;РРіСЂРѕРІРѕР№ РїРёСЂР°С‚СЃРєРёР№ РєР»РёРµРЅС‚ РґР»СЏ РїСЂРѕСЃС‚РѕРіРѕ СЃРєР°С‡РёРІР°РЅРёСЏ Рё РѕС‚СЃР»РµР¶РёРІР°РЅРёСЏ СЃРІРѕРµР№ Р±РёР±Р»РёРѕС‚РµРєРё РёРіСЂ
 ;;;
-;Социальное;;
-social;https://desktop.telegram.org/;Telegram;Официальный десктопный клиент Телеграм
-social;https://mega.nz/file/o4BjAQZD#pUcpbFH4HHv9yOnyuIe_GpCvZL_ffTv_XjBfJfd2_Jw;Kotatogram;Неофициальный десктопный, настраиваемый мод Телеграм
-social;https://discordapp.com/api/download?platform=win;Discord;Мессенеджер для гейминга
-social;https://betterdiscord.app;BetterDiscord;Модификация Дискорд (Поверх самого приложения)
-social;https://allinone.im/;AllInOne app;Приложение обьединяющее мессенеджеры для удобства
-social;https://www.whatsapp.com/download?lang=ru;WhatsApp;Клиент whatsapp для ПК
+;РЎРѕС†РёР°Р»СЊРЅРѕРµ;;
+social;https://desktop.telegram.org/;Telegram;РћС„РёС†РёР°Р»СЊРЅС‹Р№ РґРµСЃРєС‚РѕРїРЅС‹Р№ РєР»РёРµРЅС‚ РўРµР»РµРіСЂР°Рј
+social;https://mega.nz/file/o4BjAQZD#pUcpbFH4HHv9yOnyuIe_GpCvZL_ffTv_XjBfJfd2_Jw;Kotatogram;РќРµРѕС„РёС†РёР°Р»СЊРЅС‹Р№ РґРµСЃРєС‚РѕРїРЅС‹Р№, РЅР°СЃС‚СЂР°РёРІР°РµРјС‹Р№ РјРѕРґ РўРµР»РµРіСЂР°Рј
+social;https://discordapp.com/api/download?platform=win;Discord;РњРµСЃСЃРµРЅРµРґР¶РµСЂ РґР»СЏ РіРµР№РјРёРЅРіР°
+social;https://betterdiscord.app;BetterDiscord;РњРѕРґРёС„РёРєР°С†РёСЏ Р”РёСЃРєРѕСЂРґ (РџРѕРІРµСЂС… СЃР°РјРѕРіРѕ РїСЂРёР»РѕР¶РµРЅРёСЏ)
+social;https://allinone.im/;AllInOne app;РџСЂРёР»РѕР¶РµРЅРёРµ РѕР±СЊРµРґРёРЅСЏСЋС‰РµРµ РјРµСЃСЃРµРЅРµРґР¶РµСЂС‹ РґР»СЏ СѓРґРѕР±СЃС‚РІР°
+social;https://www.whatsapp.com/download?lang=ru;WhatsApp;РљР»РёРµРЅС‚ whatsapp РґР»СЏ РџРљ
 ;;;
-;Ремонт/Восстановление;;
-fixrec;https://mega.nz/file/NhYViQqT#l6RYBPX8zhEXIsUnbRuo8K8tIwGEtkVxHn7QC2D6fm8;AIDA64;Функциональная программа для обзора начинки компьютера (Crack)
-fixrec;https://mega.nz/file/QlgySRSb#GJRhao6mIkBh1STOu1Q6FVhu1Rx_ID4ab2xGiIgMVbQ;Victoria;Программа для тестирования и мелкого ремонта жёстких дисков
-fixrec;https://disktest.ru;Bulldog;Программа основаная на Victoria, для тестирования флеш накопителей
-fixrec;https://mega.nz/file/dtBDBRKB#jW6m4-ikDx8UVmhd-VfYs7uLf6PiPyFdxYSN6z1EpMI;MiniTool PW;Инструмент для работы с жестким диском
-fixrec;https://www.memtest86.com/download.htm;Memtest86;Утилита для тестирования ОЗУ (С флешки)
-fixrec;https://mega.nz/file/JkYhhQLC#8kIJO1mIfCotlMVBORraPPavvKm4I0if-NCGCKD6qcg;EDRW;Восстановление файлов с флеш и жестких дисков
-fixrec;https://mega.nz/file/pkIRlaxK#V9dawJfpJEipHheIbWXshu-Gw65l-fX97JTBK9z1rXI;DiskDigger;Небольшая утилита для восстановления файлов с любых носителей (Crack)
-fixrec;https://mega.nz/file/5hJVVAaT#FsgCrTTLVU6ijDPBvTKml-lUAnrkiraRSwBG9tEH6Rc;Restore Point Creator;Утилита для извлечения файлов из точек восстановления
-fixrec;https://mega.nz/file/hpoSXJyZ#HeNB3ZeuqpJuB7GZLDGmP9zf_flxqfcSP1UHoLT54bk;Shield Antivirus;Программка антивирус (Crack)
-fixrec;https://geeks3d.com/furmark/downloads/;FURmark;Утилита для стресстеста видеокарт
-fixrec;https://mega.nz/file/Jo5yRDzY#3T8j4Z7HixH8RMuOCUOr3-rcGfDGYWPeq_vM8GPFjzI;ОССТ;Проверка и тестирование стабильности и производительности компьютера
-fixrec;https://github.com/builtbybel/Appcopier/releases/;AppCopier;Opensource Программа для бэкапа системы
-fixrec;https://mega.nz/file/MxZCybhR#vxaQzwunlh1b0NadIua4X2-EJLbrPqlld6tqTGcsjTk;R-Studio;Программа для восстановления файлов на жестком диске
-fixrec;https://mega.nz/file/NwhlATpb#Hax-tnMBGSWgDiIgk---SAAlGNc8wnGrqWRUSEs5EF0;Recuva;Программа для восстановления удаленных файлов (Crack)
-fixrec;https://github.com/BlendLog/MinerSearch/releases;MinerSearch;Консольная утилита для поиска майнеров на своем компьютере
-fixrec;https://mega.nz/file/QkwkzCqK#8p-6yznSbuLALSMcw_6rs7KJ-7TMvfarewHYW4NO1Go;DroidKit;Утилита - помощник для смартфонов (Восстановление, разблокировка, фиксы, чистка)
+;Р РµРјРѕРЅС‚/Р’РѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРµ;;
+fixrec;https://mega.nz/file/NhYViQqT#l6RYBPX8zhEXIsUnbRuo8K8tIwGEtkVxHn7QC2D6fm8;AIDA64;Р¤СѓРЅРєС†РёРѕРЅР°Р»СЊРЅР°СЏ РїСЂРѕРіСЂР°РјРјР° РґР»СЏ РѕР±Р·РѕСЂР° РЅР°С‡РёРЅРєРё РєРѕРјРїСЊСЋС‚РµСЂР° (Crack)
+fixrec;https://mega.nz/file/QlgySRSb#GJRhao6mIkBh1STOu1Q6FVhu1Rx_ID4ab2xGiIgMVbQ;Victoria;РџСЂРѕРіСЂР°РјРјР° РґР»СЏ С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ Рё РјРµР»РєРѕРіРѕ СЂРµРјРѕРЅС‚Р° Р¶С‘СЃС‚РєРёС… РґРёСЃРєРѕРІ
+fixrec;https://disktest.ru;Bulldog;РџСЂРѕРіСЂР°РјРјР° РѕСЃРЅРѕРІР°РЅР°СЏ РЅР° Victoria, РґР»СЏ С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ С„Р»РµС€ РЅР°РєРѕРїРёС‚РµР»РµР№
+fixrec;https://mega.nz/file/dtBDBRKB#jW6m4-ikDx8UVmhd-VfYs7uLf6PiPyFdxYSN6z1EpMI;MiniTool PW;РРЅСЃС‚СЂСѓРјРµРЅС‚ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ Р¶РµСЃС‚РєРёРј РґРёСЃРєРѕРј
+fixrec;https://www.memtest86.com/download.htm;Memtest86;РЈС‚РёР»РёС‚Р° РґР»СЏ С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ РћР—РЈ (РЎ С„Р»РµС€РєРё)
+fixrec;https://mega.nz/file/JkYhhQLC#8kIJO1mIfCotlMVBORraPPavvKm4I0if-NCGCKD6qcg;EDRW;Р’РѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРµ С„Р°Р№Р»РѕРІ СЃ С„Р»РµС€ Рё Р¶РµСЃС‚РєРёС… РґРёСЃРєРѕРІ
+fixrec;https://mega.nz/file/pkIRlaxK#V9dawJfpJEipHheIbWXshu-Gw65l-fX97JTBK9z1rXI;DiskDigger;РќРµР±РѕР»СЊС€Р°СЏ СѓС‚РёР»РёС‚Р° РґР»СЏ РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёСЏ С„Р°Р№Р»РѕРІ СЃ Р»СЋР±С‹С… РЅРѕСЃРёС‚РµР»РµР№ (Crack)
+fixrec;https://mega.nz/file/5hJVVAaT#FsgCrTTLVU6ijDPBvTKml-lUAnrkiraRSwBG9tEH6Rc;Restore Point Creator;РЈС‚РёР»РёС‚Р° РґР»СЏ РёР·РІР»РµС‡РµРЅРёСЏ С„Р°Р№Р»РѕРІ РёР· С‚РѕС‡РµРє РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёСЏ
+fixrec;https://mega.nz/file/hpoSXJyZ#HeNB3ZeuqpJuB7GZLDGmP9zf_flxqfcSP1UHoLT54bk;Shield Antivirus;РџСЂРѕРіСЂР°РјРјРєР° Р°РЅС‚РёРІРёСЂСѓСЃ (Crack)
+fixrec;https://geeks3d.com/furmark/downloads/;FURmark;РЈС‚РёР»РёС‚Р° РґР»СЏ СЃС‚СЂРµСЃСЃС‚РµСЃС‚Р° РІРёРґРµРѕРєР°СЂС‚
+fixrec;https://mega.nz/file/Jo5yRDzY#3T8j4Z7HixH8RMuOCUOr3-rcGfDGYWPeq_vM8GPFjzI;РћРЎРЎРў;РџСЂРѕРІРµСЂРєР° Рё С‚РµСЃС‚РёСЂРѕРІР°РЅРёРµ СЃС‚Р°Р±РёР»СЊРЅРѕСЃС‚Рё Рё РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊРЅРѕСЃС‚Рё РєРѕРјРїСЊСЋС‚РµСЂР°
+fixrec;https://github.com/builtbybel/Appcopier/releases/;AppCopier;Opensource РџСЂРѕРіСЂР°РјРјР° РґР»СЏ Р±СЌРєР°РїР° СЃРёСЃС‚РµРјС‹
+fixrec;https://mega.nz/file/MxZCybhR#vxaQzwunlh1b0NadIua4X2-EJLbrPqlld6tqTGcsjTk;R-Studio;РџСЂРѕРіСЂР°РјРјР° РґР»СЏ РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёСЏ С„Р°Р№Р»РѕРІ РЅР° Р¶РµСЃС‚РєРѕРј РґРёСЃРєРµ
+fixrec;https://mega.nz/file/NwhlATpb#Hax-tnMBGSWgDiIgk---SAAlGNc8wnGrqWRUSEs5EF0;Recuva;РџСЂРѕРіСЂР°РјРјР° РґР»СЏ РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёСЏ СѓРґР°Р»РµРЅРЅС‹С… С„Р°Р№Р»РѕРІ (Crack)
+fixrec;https://github.com/BlendLog/MinerSearch/releases;MinerSearch;РљРѕРЅСЃРѕР»СЊРЅР°СЏ СѓС‚РёР»РёС‚Р° РґР»СЏ РїРѕРёСЃРєР° РјР°Р№РЅРµСЂРѕРІ РЅР° СЃРІРѕРµРј РєРѕРјРїСЊСЋС‚РµСЂРµ
+fixrec;https://mega.nz/file/QkwkzCqK#8p-6yznSbuLALSMcw_6rs7KJ-7TMvfarewHYW4NO1Go;DroidKit;РЈС‚РёР»РёС‚Р° - РїРѕРјРѕС‰РЅРёРє РґР»СЏ СЃРјР°СЂС‚С„РѕРЅРѕРІ (Р’РѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРµ, СЂР°Р·Р±Р»РѕРєРёСЂРѕРІРєР°, С„РёРєСЃС‹, С‡РёСЃС‚РєР°)
 ;;;
-;Переустановка windows;;
-winr;https://windowspro.ru;Windowspro;Сайт со сборками Windows, а так же полезных и нужных программ
-winr;https://mega.nz/folder/VgA2Abja#Oss2jPkzIwnE7s4sCpjjHg;WIN;Папка на моей меге с торрентами хороших сборок OS
-winr;https://win-torrent.net/;WinTorrent;Сайт со сборками Windows
-winr;https://rufus.ie/downloads/;Rufus;Программа для записи образа на флеш накопитель
-winr;https://flashr.ru;Flashr;Более простая программа для записи образа на флеш накопитель
-winr;https://www.ventoy.net/en/download.html;Ventoy;Более функциональная программа для записи образов (Так же нескольких на один накопитель)
-winr;https://mega.nz/file/lhgCETzL#_MiaUwWpcxrpt34CfbmBaqHaFMBzhu9OSTGQKQDOmUo;AAct;Программа для активации Windows и MS office
-winr;https://massgrave.dev/;MAS;Скрипт для активации, а так же ссылки на офф сборки винды и офисов
-winr;https://mega.nz/file/Ax4wlBrb#ZatThKBEKD0jg9QE2bM7wDqpUmPZEflzM3e11I3dVB8;ATT;Консольная утилита, набор инструментов, активация, установка базовых программ
-winr;https://mega.nz/file/V4RE2LIL#nUFu5WhVHV-5RzeJOao2wQx6utz3RX-E4t-t207QhBs;Driver Booster;Программа для поиска и установки драйверов (crack)
-winr;https://mega.nz/file/whhklIQK#oUw831AWZHu5PZpiAEJtoc1PQyUaOsq27zOwEHn1TsE;Driver Easy;Простая программа для поиска и установки драйверов (crack)
-winr;https://mega.nz/file/EhREwKDK#Gh9bcZPdixOcDipl3DaP4aJ6m6F73_guceJ6AqpgbOA;Snappy Driver;Довольно старая программа автоустановки драйверов
-winr;https://mega.nz/file/RwJwjIBT#MV0kmWxUrR_V9YawenJTXAR192r0XZOz-Pwki_3TMMw;Driver Updater;Ходят слухи, что некоторые люди еще это юзают (crack)
+;РџРµСЂРµСѓСЃС‚Р°РЅРѕРІРєР° windows;;
+winr;https://windowspro.ru;Windowspro;РЎР°Р№С‚ СЃРѕ СЃР±РѕСЂРєР°РјРё Windows, Р° С‚Р°Рє Р¶Рµ РїРѕР»РµР·РЅС‹С… Рё РЅСѓР¶РЅС‹С… РїСЂРѕРіСЂР°РјРј
+winr;https://mega.nz/folder/VgA2Abja#Oss2jPkzIwnE7s4sCpjjHg;WIN;РџР°РїРєР° РЅР° РјРѕРµР№ РјРµРіРµ СЃ С‚РѕСЂСЂРµРЅС‚Р°РјРё С…РѕСЂРѕС€РёС… СЃР±РѕСЂРѕРє OS
+winr;https://win-torrent.net/;WinTorrent;РЎР°Р№С‚ СЃРѕ СЃР±РѕСЂРєР°РјРё Windows
+winr;https://rufus.ie/downloads/;Rufus;РџСЂРѕРіСЂР°РјРјР° РґР»СЏ Р·Р°РїРёСЃРё РѕР±СЂР°Р·Р° РЅР° С„Р»РµС€ РЅР°РєРѕРїРёС‚РµР»СЊ
+winr;https://flashr.ru;Flashr;Р‘РѕР»РµРµ РїСЂРѕСЃС‚Р°СЏ РїСЂРѕРіСЂР°РјРјР° РґР»СЏ Р·Р°РїРёСЃРё РѕР±СЂР°Р·Р° РЅР° С„Р»РµС€ РЅР°РєРѕРїРёС‚РµР»СЊ
+winr;https://www.ventoy.net/en/download.html;Ventoy;Р‘РѕР»РµРµ С„СѓРЅРєС†РёРѕРЅР°Р»СЊРЅР°СЏ РїСЂРѕРіСЂР°РјРјР° РґР»СЏ Р·Р°РїРёСЃРё РѕР±СЂР°Р·РѕРІ (РўР°Рє Р¶Рµ РЅРµСЃРєРѕР»СЊРєРёС… РЅР° РѕРґРёРЅ РЅР°РєРѕРїРёС‚РµР»СЊ)
+winr;https://mega.nz/file/lhgCETzL#_MiaUwWpcxrpt34CfbmBaqHaFMBzhu9OSTGQKQDOmUo;AAct;РџСЂРѕРіСЂР°РјРјР° РґР»СЏ Р°РєС‚РёРІР°С†РёРё Windows Рё MS office
+winr;https://massgrave.dev/;MAS;РЎРєСЂРёРїС‚ РґР»СЏ Р°РєС‚РёРІР°С†РёРё, Р° С‚Р°Рє Р¶Рµ СЃСЃС‹Р»РєРё РЅР° РѕС„С„ СЃР±РѕСЂРєРё РІРёРЅРґС‹ Рё РѕС„РёСЃРѕРІ
+winr;https://mega.nz/file/Ax4wlBrb#ZatThKBEKD0jg9QE2bM7wDqpUmPZEflzM3e11I3dVB8;ATT;РљРѕРЅСЃРѕР»СЊРЅР°СЏ СѓС‚РёР»РёС‚Р°, РЅР°Р±РѕСЂ РёРЅСЃС‚СЂСѓРјРµРЅС‚РѕРІ, Р°РєС‚РёРІР°С†РёСЏ, СѓСЃС‚Р°РЅРѕРІРєР° Р±Р°Р·РѕРІС‹С… РїСЂРѕРіСЂР°РјРј
+winr;https://mega.nz/file/V4RE2LIL#nUFu5WhVHV-5RzeJOao2wQx6utz3RX-E4t-t207QhBs;Driver Booster;РџСЂРѕРіСЂР°РјРјР° РґР»СЏ РїРѕРёСЃРєР° Рё СѓСЃС‚Р°РЅРѕРІРєРё РґСЂР°Р№РІРµСЂРѕРІ (crack)
+winr;https://mega.nz/file/whhklIQK#oUw831AWZHu5PZpiAEJtoc1PQyUaOsq27zOwEHn1TsE;Driver Easy;РџСЂРѕСЃС‚Р°СЏ РїСЂРѕРіСЂР°РјРјР° РґР»СЏ РїРѕРёСЃРєР° Рё СѓСЃС‚Р°РЅРѕРІРєРё РґСЂР°Р№РІРµСЂРѕРІ (crack)
+winr;https://mega.nz/file/EhREwKDK#Gh9bcZPdixOcDipl3DaP4aJ6m6F73_guceJ6AqpgbOA;Snappy Driver;Р”РѕРІРѕР»СЊРЅРѕ СЃС‚Р°СЂР°СЏ РїСЂРѕРіСЂР°РјРјР° Р°РІС‚РѕСѓСЃС‚Р°РЅРѕРІРєРё РґСЂР°Р№РІРµСЂРѕРІ
+winr;https://mega.nz/file/RwJwjIBT#MV0kmWxUrR_V9YawenJTXAR192r0XZOz-Pwki_3TMMw;Driver Updater;РҐРѕРґСЏС‚ СЃР»СѓС…Рё, С‡С‚Рѕ РЅРµРєРѕС‚РѕСЂС‹Рµ Р»СЋРґРё РµС‰Рµ СЌС‚Рѕ СЋР·Р°СЋС‚ (crack)

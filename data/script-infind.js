@@ -29,7 +29,7 @@ function filterContent() {
 
     linkContainers.forEach(container => {
       const links = Array.from(container.querySelectorAll('a.butt'));
-      let hasMatch = false;
+      let hasMatch = true;
 
       links.forEach(link => {
         if (link.textContent.toLowerCase().includes(searchTerm)) {

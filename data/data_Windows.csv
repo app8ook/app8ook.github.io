@@ -28,9 +28,6 @@ impotools;https://app.prntscr.com/build/setup-lightshot.exe;Lightshot;Прогр
 ;;;
 ;Прочие инструменты;;
 othertools;https://windhawk.net;WindHawk;Модульный расширяемый твикер для Windows
-othertools;https://mega.nz/file/sghQEbqQ#bStDsgI-dCcp7WpbJoqqGyEpdvwz1V18ZcFU38FFmjw;WBPV;Инструмент для просмотра паролей с браузеров на ПК
-othertools;https://keepassxc.org/download/;Keepassxc;Программа для хранения паролей в зашифрованном виде
-othertools;https://mega.nz/file/4xIRDAAI#CZj78GQiHgxPfuf8CJaRt9_PXQ8SBTWRBGdAKyZ7crs;TinyWall;Маленький но удобный и простой файрволл
 othertools;https://mega.nz/file/ogJESZTC#hqD9BgI9dKhdniKp6EHIZUU9I9td97pi8xcBZvfK42k;VMware;Программное обеспечение виртуализации
 othertools;https://mega.nz/file/hwxRBAAJ#ghj80rrhIOygFttzSIENOHg5GqMjpZ9xD5PDwcWT5LU;AnyDesk;Программа управления удаленным рабочим столом
 othertools;https://rustdesk.com;RustDesk;Аналог AnyDesk, но Open Source
@@ -41,9 +38,9 @@ othertools;https://www.bluestacks.com/ru/index.html;BlueStacks;Эмулятор 
 othertools;https://4pda.to/forum/index.php?s=&showtopic=99949&view=findpost&p=2141050;KEmulator;Эмулятор java для пк
 othertools;https://mega.nz/file/N8BRyRyb#B3x66sOW8eR8EsYa3zXQ6Bxxf_HAU3pvXUeIH7mMMCY;SoundPad;Программа для передачи звуков в микрофон (crack)
 othertools;https://www.letasoft.com/sound-booster-download/;SoundBooster;Утилита для усиления звука
-othertools;https://github.com/anfragment/zen;Zen;Блокировщик рекламы
-othertools;https://www.cyberscarecrow.com/download;Cyberscarecrow;Отпугиватель вирусов (Механизм работы описан на сайте)
 othertools;https://github.com/sirWest/AudioSwitch;AudioSwitch;Удобный переключатель аудиоустройств, если имеются проблемы со стандартным
+othertools;https://www.flowlauncher.com;Flowlauncher;Шустрый виджет поисковик по системе и интернету с плагинами и темами
+othertools;https://nmkd.itch.io/flowframes;Flowframes;Программа использующая AI для генерации кадров на видео (Хавает GPU)
 ;;;
 ;Офисное/текст редакторы;;
 officetext;https://mega.nz/file/Bk43HSIY#1Oph8seIrxmk8MrOrr2YbA-E3oOcusAlBu98R3PRKFI;MS office 2010;Пакет продуктов Ms office (crack)
@@ -54,6 +51,15 @@ officetext;https://www.libreoffice.org/download/download-libreoffice/;LibreOffic
 officetext;https://vscodium.com;VScodium;Тот же Visual Studio Code от MS но с вырезанной слежкой и прочим хламом
 officetext;https://notepad-plus-plus.org/downloads/;Notepad++;Простой и удобный текстовый редактор
 officetext;https://github.com/atom/atom/releases/tag/v1.61.0-beta0;Atom;Редакор кода, удобная и упрощенная альтернатива VScode
+;;;
+;Безопасность;;
+secure;https://mega.nz/file/sghQEbqQ#bStDsgI-dCcp7WpbJoqqGyEpdvwz1V18ZcFU38FFmjw;WBPV;Инструмент для просмотра паролей с браузеров на ПК
+secure;https://keepassxc.org/download/;Keepassxc;Программа для хранения паролей в зашифрованном виде
+secure;https://mega.nz/file/4xIRDAAI#CZj78GQiHgxPfuf8CJaRt9_PXQ8SBTWRBGdAKyZ7crs;TinyWall;Маленький но удобный и простой файрволл
+secure;https://github.com/anfragment/zen;Zen;Блокировщик рекламы
+secure;https://www.cyberscarecrow.com/download;Cyberscarecrow;Отпугиватель вирусов (Механизм работы описан на сайте)
+secure;https://mega.nz/file/hpoSXJyZ#HeNB3ZeuqpJuB7GZLDGmP9zf_flxqfcSP1UHoLT54bk;Shield Antivirus;Программка антивирус (Crack)
+secure;https://github.com/BlendLog/MinerSearch/releases;MinerSearch;Консольная утилита для поиска майнеров на своем компьютере
 ;;;
 ;Оптимизация системы;;
 optisoft;https://mega.nz/file/0sYyWLTR#NvkBaTkh3Nq4wWBbXASkXaaUaFnybQRpQHz0-8gqLcw;Advanced SystemCare;Многофункциональная программа для очистки и оптимизации системы
@@ -118,13 +124,11 @@ fixrec;https://www.memtest86.com/download.htm;Memtest86;Утилита для т
 fixrec;https://mega.nz/file/JkYhhQLC#8kIJO1mIfCotlMVBORraPPavvKm4I0if-NCGCKD6qcg;EDRW;Восстановление файлов с флеш и жестких дисков
 fixrec;https://mega.nz/file/pkIRlaxK#V9dawJfpJEipHheIbWXshu-Gw65l-fX97JTBK9z1rXI;DiskDigger;Небольшая утилита для восстановления файлов с любых носителей (Crack)
 fixrec;https://mega.nz/file/5hJVVAaT#FsgCrTTLVU6ijDPBvTKml-lUAnrkiraRSwBG9tEH6Rc;Restore Point Creator;Утилита для извлечения файлов из точек восстановления
-fixrec;https://mega.nz/file/hpoSXJyZ#HeNB3ZeuqpJuB7GZLDGmP9zf_flxqfcSP1UHoLT54bk;Shield Antivirus;Программка антивирус (Crack)
 fixrec;https://geeks3d.com/furmark/downloads/;FURmark;Утилита для стресстеста видеокарт
 fixrec;https://mega.nz/file/Jo5yRDzY#3T8j4Z7HixH8RMuOCUOr3-rcGfDGYWPeq_vM8GPFjzI;ОССТ;Проверка и тестирование стабильности и производительности компьютера
 fixrec;https://github.com/builtbybel/Appcopier/releases/;AppCopier;Opensource Программа для бэкапа системы
 fixrec;https://mega.nz/file/MxZCybhR#vxaQzwunlh1b0NadIua4X2-EJLbrPqlld6tqTGcsjTk;R-Studio;Программа для восстановления файлов на жестком диске
 fixrec;https://mega.nz/file/NwhlATpb#Hax-tnMBGSWgDiIgk---SAAlGNc8wnGrqWRUSEs5EF0;Recuva;Программа для восстановления удаленных файлов (Crack)
-fixrec;https://github.com/BlendLog/MinerSearch/releases;MinerSearch;Консольная утилита для поиска майнеров на своем компьютере
 fixrec;https://mega.nz/file/QkwkzCqK#8p-6yznSbuLALSMcw_6rs7KJ-7TMvfarewHYW4NO1Go;DroidKit;Утилита - помощник для смартфонов (Восстановление, разблокировка, фиксы, чистка)
 ;;;
 ;Переустановка windows;;

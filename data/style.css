@@ -346,8 +346,20 @@ input {
    border: 3px solid var(--border);
  }
 
+ /* ------Выделение важного из текста------ */
+.smablock, .smblock {
+    display: inline-block; /* Позволяет элементу занимать только необходимое пространство */
+    padding: 3px 3px; /* Внутренние отступы для создания пространства вокруг текста */
+    background-color: var(--bg-2); /* Цвет фона блока */
+    border: 2px solid var(--bg-2); /* Серый обвод */
+    border-radius: 9px; /* Скругление углов (по желанию) */
+}
+ .smablock:hover,
+ .smablock:active {
+    background-color: var(--active-hover); /* Цвет фона блока */
+    border: 2px solid var(--active-hover); /* Серый обвод */
+ }
  /* ------Таблица------ */
-
  .tblcol {
    width: 100%;
    height: 100%;

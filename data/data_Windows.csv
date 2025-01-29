@@ -12,7 +12,7 @@ browsers;https://ungoogled-software.github.io/ungoogled-chromium-binaries/;Ungoo
 ;;;
 ;Важные инструменты;;
 impotools;https://mega.nz/file/t9h3TKwL#qkpiaEmPUjwisx-rcrfVgcsHv-EYG0j8AnNrxtnoVZ0;WinRar;Программа архиватор (crack)
-impotools;https://www.7-zip.org;7zip;Простая программа архиватор
+impotools;https://peazip.github.io/index.html;PeaZip;Простая opensorce программа архиватор
 impotools;https://github.com/mcmilk/7-Zip-zstd;7zip zstd (Улучшеный);Улучшеный 7zip с дополнительными типами архивации и поддержкой RAR
 impotools;https://mega.nz/file/UtxAWRpC#lPRlvZNTGCttNPgdMRNDe-UDWrUpz2d9Km8E8b2kOl4;VisualC Pack;Пачка Visual C++ в одном файле
 impotools;https://mega.nz/file/csIxGIhC#A6BzYOGFhWiJuI3Xs0Eq-n7MUp7nQRweU0-1zEGxKo8;DirectX;Оффлайн установщик
@@ -21,7 +21,7 @@ impotools;https://www.java.com/ru/download/windows-64bit.jsp;Java 8;Инстру
 impotools;https://mega.nz/file/R4QgSByZ#1u1HZfQZdbok5nXwlVFiaYPfMZOMo819E3_ztdNBFBM;CPUZ;Утилита для отображения тех. информации о ПК
 impotools;https://mega.nz/file/VtZjBSYa#M9sdSlyUWqgNVAbgkZ0nO_yGG-WDVBfd63Ih3PS1zDI;Speccy;Утилита для отображения более детальной информации о ПК
 impotools;https://www.radmin-vpn.com;RadminVPN;Программа для создания защищенной сети
-impotools;https://mega.nz/file/0xA1zayZ#V_SKCAIGqKbHow6j3_oxtr54x71MrP7lwPL-UW94qi8;qBitTorrent 4.5;Более приближенная альтернатива uTorrent (crack)
+impotools;https://www.qbittorrent.org/download;qBitTorrent;Более приближенная opensorce альтернатива uTorrent
 impotools;https://mega.nz/file/U9wSkRCR#cFOM5BMzO1wFWF38Yq_Z4fWq7_T8TedQWXT5ooGAYb8;AzTorrent;Альтернатива uTorrent (crack)
 impotools;https://mega.nz/file/9hRGEJDa#bBrqrflZqciAtHTe9inPuZziITW-J7B3y4V-vasI_5I;Thunderbird;Самый простой и бесплатный почтовый клиент от Firefox
 impotools;https://app.prntscr.com/build/setup-lightshot.exe;Lightshot;Программа для удобной работы со скриншотами
@@ -33,7 +33,7 @@ othertools;https://mega.nz/file/hwxRBAAJ#ghj80rrhIOygFttzSIENOHg5GqMjpZ9xD5PDwcW
 othertools;https://rustdesk.com;RustDesk;Аналог AnyDesk, но Open Source
 othertools;https://ninite.com;Ninite;Утилита для массовой установки программ
 othertools;https://mega.nz/file/E1InxJpY#cn12-Gf-dIf_bvqJNbmHblU6cNRadECVgHzA3CnSug4;Flux;Утилита регулирующяя цветовую температуру
-othertools;https://mega.nz/file/Z8wRWKiQ#HYdLO7V-Eduxqg6UHpLjfs1TvkGcjAMH5XXJLkJ-0s0;Stardock Start11;"Менеджер для перенастройки меню ""Пуск"" (crack)"
+othertools;https://developer.android.com/games/playgames/emulator;GP games for PC;Эмулятор Андроид на Windows (Оффициальный от Google)
 othertools;https://www.bluestacks.com/ru/index.html;BlueStacks;Эмулятор андроида для пк
 othertools;https://4pda.to/forum/index.php?s=&showtopic=99949&view=findpost&p=2141050;KEmulator;Эмулятор java для пк
 othertools;https://mega.nz/file/N8BRyRyb#B3x66sOW8eR8EsYa3zXQ6Bxxf_HAU3pvXUeIH7mMMCY;SoundPad;Программа для передачи звуков в микрофон (crack)
@@ -41,6 +41,11 @@ othertools;https://www.letasoft.com/sound-booster-download/;SoundBooster;Ути�
 othertools;https://github.com/sirWest/AudioSwitch;AudioSwitch;Удобный переключатель аудиоустройств, если имеются проблемы со стандартным
 othertools;https://www.flowlauncher.com;Flowlauncher;Шустрый виджет поисковик по системе и интернету с плагинами и темами
 othertools;https://nmkd.itch.io/flowframes;Flowframes;Программа использующая AI для генерации кадров на видео (Хавает GPU)
+othertools;https://github.com/eythaann/Seelen-UI;Seelen-UI;Кастомизируемый лаунчер для Windows 10/11
+othertools;https://github.com/amnweb/yasb;YASB;Кастомизируемая панель как на MAC для Windows
+othertools;https://mega.nz/file/FkJDwJqT#s8PUiHhC3LergWHwd3uUQJ5m7yQJx4QrX_8PXjIfcXs;FxSound;Удобный эквалайзер с улучшением звука (crack)
+othertools;https://getfancontrol.com;FanControl;Утилита позволяющая настраивать различные аспекты куллеров ПК
+othertools;https://mega.nz/file/Z8wRWKiQ#HYdLO7V-Eduxqg6UHpLjfs1TvkGcjAMH5XXJLkJ-0s0;Stardock Start11;"Менеджер для перенастройки меню ""Пуск"" (crack)"
 ;;;
 ;Офисное/текст редакторы;;
 officetext;https://mega.nz/file/Bk43HSIY#1Oph8seIrxmk8MrOrr2YbA-E3oOcusAlBu98R3PRKFI;MS office 2010;Пакет продуктов Ms office (crack)
@@ -51,6 +56,7 @@ officetext;https://www.libreoffice.org/download/download-libreoffice/;LibreOffic
 officetext;https://vscodium.com;VScodium;Тот же Visual Studio Code от MS но с вырезанной слежкой и прочим хламом
 officetext;https://notepad-plus-plus.org/downloads/;Notepad++;Простой и удобный текстовый редактор
 officetext;https://github.com/atom/atom/releases/tag/v1.61.0-beta0;Atom;Редакор кода, удобная и упрощенная альтернатива VScode
+officetext;https://mega.nz/file/YxxTAZqR#TKJDTkdAYQKhgKpNenBpCPg4L1j6URAzAozcBkJCYdQ;PilotEdit;Текстовый редактор способный работать с огромными файлами без проблем (crack)
 ;;;
 ;Безопасность;;
 secure;https://mega.nz/file/sghQEbqQ#bStDsgI-dCcp7WpbJoqqGyEpdvwz1V18ZcFU38FFmjw;WBPV;Инструмент для просмотра паролей с браузеров на ПК
@@ -65,18 +71,25 @@ secure;https://github.com/BlendLog/MinerSearch/releases;MinerSearch;Консол
 optisoft;https://mega.nz/file/0sYyWLTR#NvkBaTkh3Nq4wWBbXASkXaaUaFnybQRpQHz0-8gqLcw;Advanced SystemCare;Многофункциональная программа для очистки и оптимизации системы
 optisoft;https://mega.nz/file/dgoQCJ6T#VeMu9Oq8aveBYV2CxVFqybLTtnuz7u2gwyuC9EoDFTE;OneSafePCCleaner;Программа для очистки системы
 optisoft;https://mega.nz/file/8l42wYyQ#Wys2XvWTLCGkV1aW8aynPeQeu_dJekBh1T00eLncSVg;Optimizer;Программка которая поможет оптимизировать вашу систему
+optisoft;https://mega.nz/file/15BzABSA#EbXBKcOy72qFPX24Jc0FdFs7ye3RoZDejEsu-NF4w1Y;IObit Smart Defrag;Инструмент для проведения дефрагментации дисков (crack)
 optisoft;https://mega.nz/file/hhhTAbiS#PtQdx697jZ3CNFkEGPRD7YuUPrSovHbMpMXPlx_xWEc;WinUtilities;Коллекция утилит, для настройки и оптимизации ОС
 optisoft;https://mega.nz/file/hpwXSB7A#2Bn4TARSu3UTBSh1gsFklzZMb3eRJQFgJcai0jnB1UE;WRC;Программа для очистки реестра системы
 optisoft;https://mega.nz/file/dhJBwYyA#zOQtAYHGI_xFEq75MNw3x51Hp8gL-wUTcjKFCCPfaec;ESO;Инструмент для работы со службами ОС Windows
 optisoft;https://mega.nz/file/xkpUQChS#Qa7KCh9G86-0vpiYBaycMULPRdxrfTvyU3ZqgLbpJT4;IObit Uninstaller;Более удобная программа для деинсталяции программ и игр (crack)
 optisoft;https://mega.nz/file/4tQGlZCC#XVSerO3pCoAmfVcKTolc0cb4p6QW7LZSF6XYmn-Hxp8;Revo Uninstaller;Программа для деинсталяции программ и игр (crack)
 optisoft;https://mega.nz/file/ttpCBIhR#VqAdHHBaM7s-LNoYZgo2N-X-64GBizK56HI-1lDBX7Q;Unlocker;Инструмент для удаления неудаляемого
+optisoft;https://www.coderbag.com/product/quickcpu;Quick CPU;Утилита для точной настройки и мониторинга производительности процессора
 optisoft;https://mega.nz/file/Y85GjYab#eldzpZhLXKHi8shDB6BT4rGtJnpKdn0NrAM5hI186Lc;Glary Utilities;Комплект системных твикеров и утилит (Crack)
 optisoft;https://github.com/qarmin/czkawka;Czkawka;Утилита для чистки компьютера от временных и мусорных файлов, дубликатов и поврежденных файлов
+optisoft;https://mega.nz/file/Q8AnSAbI#CsT27pUh8rzwed6i_EfQ-vRJrhvu43IMCoUGT5255ag;Crystal Info & Mark;Легковесный набор инструментов для тестирования компонентов ПК
+optisoft;https://github.com/IridiumIO/CompactGUI;CompactGUI;Опенсорс утилита для сжимания данных игр или толстых программ
+optisoft;https://mega.nz/file/d9YVTbTT#lg5qwZpQ3CBw9QZU-64VdqjA58BeJy8gyxXH1paqilA;HDCleaner;Легковесный софт для очистки системы
+optisoft;https://kurtzimmermann.com/files/TweakPower.exe;TweakPower;Комплекс утилит в программе по оптимизации системы (Тот же разработчик что и у HDCleaner)
+;;;
 ;;;
 ;Медиа плееры;;
 mediap;https://www.aimp.ru/?do=download.file&id=4;AIMP;Аудиоплеер
-mediap;https://mediaplayerclassic.ru/download_Media-Player-Classic.html;Media Player Classic;Классический медиа плеер
+mediap;https://github.com/Aleksoid1978/MPC-BE;Media Player Classic;Классический медиа плеер (Fork by Aleksoid1978)
 mediap;https://mega.nz/file/R0IAxbDZ#GOhvZnQC3zhyoFFEESBuVwnanXJgnphFat5dWgHvrVw;GOM player;Простой и красивый медиаплеер (Crack)
 mediap;https://youtube-music.app;Ytmdesktop;Неофициальное десктопное приложение YoutubeMusic
 mediap;https://mega.nz/file/loxwlSwa#tmTvkPahKp3p_G8OFV-KvLZ3kT2cw9zUh6Eq85XW92g;YaMusic;Неофициальная, немного взломанная, Яндекс музыка и радио
@@ -92,6 +105,8 @@ mediar;https://www.audacityteam.org;Audacity;Простой аудиоредак
 mediar;https://mega.nz/file/4gIhmTrQ#ABuMw3rShKlpm9IsacofHRvyxpbn1u2ovc-zVhE0eXk;VideoShow;Простой Видеоредактор (crack)
 mediar;https://www.getpaint.net/download.html#download;Paint.net;Упрощенный фотошоп
 mediar;https://mega.nz/file/54RS3IaT#ryiR8cWyms3u-c1XjIusqOu60BRZQeTbw2g_4QyAhls;Aseprite;Простая программа для пиксель арта (crack)
+mediar;https://www.blockbench.net;Blockbench;Бесплатный редактор низкополигональных моделей
+mediar;https://www.blender.org/download/;Blender;Бесплатный редактор 3D моделей
 ;;;
 ;Инструменты для игр;;
 gametools;https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe;Steam;Игровой клиент Valve
@@ -99,13 +114,14 @@ gametools;https://store.epicgames.com/en-US/download;EGS;Игровой клие
 gametools;https://www.gog.com/galaxy;GOG galaxy 2.0;Игровой клиент CD Projekt
 gametools;https://www.ea.com/ea-app;EA app;Игровой клиент EA
 gametools;https://ubi.li/4vxt9;UbisoftConnect;Игровой клиент Ubisoft
+gametools;https://github.com/hydralauncher/hydra/releases/;HydraLauncher;Игровой пиратский клиент для простого скачивания и отслеживания своей библиотеки игр
 gametools;https://www.overwolf.com/appstore/;Overwolf;Оверлей, маркет приложений и расширений для игр
 gametools;https://blitz.gg;Blitz;Игротрекер но без овервульфа
 gametools;https://medal.tv;Medal;Outplayed но без овервульфа + ютуб для геймеров
 gametools;https://obsproject.com/ru/download;OBS;Программа для записи и стриминга с экрана
 gametools;https://mega.nz/file/4khz2QYT#XpGXjKzdLEPqWWp3w5CX7VFIlaSoFS4EmpPGL9ApUJc;XmouseBC;Программа - биндер для мыши
 gametools;https://steelseries.com/gg/sonar;Sonar;Универсальная программа для настройки микрофона и наушников с нейросетью (От SteelSeries)
-gametools;https://github.com/hydralauncher/hydra/releases/;HydraLauncher;Игровой пиратский клиент для простого скачивания и отслеживания своей библиотеки игр
+gametools;https://github.com/mtkennerly/ludusavi;Ludusavi;Опенсорс бекапер игровых сохранений
 ;;;
 ;Социальное;;
 social;https://desktop.telegram.org/;Telegram;Официальный десктопный клиент Телеграм
@@ -130,6 +146,8 @@ fixrec;https://github.com/builtbybel/Appcopier/releases/;AppCopier;Opensource П
 fixrec;https://mega.nz/file/MxZCybhR#vxaQzwunlh1b0NadIua4X2-EJLbrPqlld6tqTGcsjTk;R-Studio;Программа для восстановления файлов на жестком диске
 fixrec;https://mega.nz/file/NwhlATpb#Hax-tnMBGSWgDiIgk---SAAlGNc8wnGrqWRUSEs5EF0;Recuva;Программа для восстановления удаленных файлов (Crack)
 fixrec;https://mega.nz/file/QkwkzCqK#8p-6yznSbuLALSMcw_6rs7KJ-7TMvfarewHYW4NO1Go;DroidKit;Утилита - помощник для смартфонов (Восстановление, разблокировка, фиксы, чистка)
+fixrec;https://mega.nz/file/MlI1SLIS#gvqcs2eX3tPUJU0r1IDb0m97VYQiuhpCnms81pK1UA8;Aiseesoft iPhone Unlocker;Программа помогает удалить Apple ID и вернуть девайс к заводским настройкам
+fixrec;https://mega.nz/file/kxZjzaSB#ylVuYheNj3Z7NRYZ8ZKhF93ognG_DHbOCAprDPa7N58;Tenorshare 4DDiG;Инструмент для восстановления данных с ноутбука / ПК, внешнего диска или USB-накопителя
 ;;;
 ;Переустановка windows;;
 winr;https://windowspro.ru;Windowspro;Сайт со сборками Windows, а так же полезных и нужных программ
@@ -145,5 +163,11 @@ winr;https://mega.nz/file/N5IygLiB#plcw5KVyN7Nb-U-vSri1_QXO-rbe_92Es-48zR-auAc;D
 winr;https://mega.nz/file/whhklIQK#oUw831AWZHu5PZpiAEJtoc1PQyUaOsq27zOwEHn1TsE;Driver Easy;Простая программа для поиска и установки драйверов (crack)
 winr;https://mega.nz/file/EhREwKDK#Gh9bcZPdixOcDipl3DaP4aJ6m6F73_guceJ6AqpgbOA;Snappy Driver;Довольно старая программа автоустановки драйверов
 winr;https://mega.nz/file/RwJwjIBT#MV0kmWxUrR_V9YawenJTXAR192r0XZOz-Pwki_3TMMw;Driver Updater;Ходят слухи, что некоторые люди еще это юзают (crack)
+winr;https://www.techpowerup.com/download/drivers/;Techpowerup;Можно скачать тяжелые дрова, если не качаются с офф сайтов
+winr;https://www.nvidia.com/en-us/drivers/;NVIDIA drivers;Офф сайт NVIDIA, поиск драйверов
+winr;https://www.amd.com/en/support/download/drivers.html;AMD drivers;Офф сайт AMD, поиск драйверов
+winr;https://uupdump.net;UUPdump;Получить максимально нетронутую, девственную сборку винды
 winr;https://github.com/rcmaehl/WhyNotWin11/releases/;WhyNotWin11;Утилита чекер на поддержку Win11 вашей системой
+winr;https://github.com/lostindark/DriverStoreExplorer;DSE;Опенсорс утилита для обзора и управления драйверами системы
+;;;
 ;;;

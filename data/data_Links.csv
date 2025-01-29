@@ -13,6 +13,7 @@ progs;https://positiverecords.ru/;PositiveRecords;Репаки множеств�
 progs;https://lrepacks.net;Lrepacks;Репаки множества программ от ELCHUPACABRA
 progs;https://diakov.net;DiakovNet;Репаки программ от Diakov
 progs;https://strannikmodz.me;StrannikModz;Моды программ (На андроид) от автора Strannik
+progs;https://github.com/Axorax/awesome-free-apps?tab=readme-ov-file;Axorax Awesome;Каталог программ собранных энтузиастами на github
 ;;;
 ;ИИ;;
 ai;https://labs.perplexity.ai;Perplexity labs;Несколько чатов с нейросетями (Вторичные но быстрые)
@@ -24,15 +25,23 @@ ai;https://www.suno.ai;Suno;Нейросетка для создания муз�
 ai;https://www.camb.ai;Chamb.ai;Нейронка для клонирования голоса и дальнейшей генерации аудио (TTS)
 ai;https://www.krea.ai;Krea;Нейросетка с генерацией картинок (В реальном времени)
 ai;https://ideogram.ai;Ideogram;Нейросетка с генерацией картинок
+ai;https://pornworks.ai/ru/;Pornworks;Нейронка позволяющая генерировать 18+ картинки
 ai;https://github.com/Danily07/Translumo;Translumo;Нейросетка для создания субтитров игр и фильмов
 ai;https://www.justfree.io;Justfree;Сборник большого количества нейросетей и инструментов
 ai;https://toolbaz.com;ToolBaz;Большая база ИИ инструментов
+ai;https://www.aibasket.me/ru;AIbasket;Еще один сборник различных нейросетей
 ai;https://ailist.ru;Ailist;Большая база российских ИИ инструментов
 ai;https://www.tripo3d.ai;Tripo;Нейронка для создания 3D моделей
+ai;https://trellis3d.co/ru;Trellis;Еще одна нейронка для создания 3D моделей
 ai;https://huggingface.co/spaces/fffiloni/diffusers-image-outpaint;DIO;Маленькая нейронка которая расширяет края изображений делая их больше и полнее
 ai;https://www.i2img.com;i2img;Коллекция инструментов ИИ по работе с изображениями
 ai;https://pika.art/home;Pika;Генерация видео с помощью нейронки
 ai;https://subtitles.fframes.studio;sfs;Сервис нейросети для создания субтитров в любом видео
+ai;https://chat.mathsolver.top;MathSolver;Нейросеть решающая математические задачи по картинкам или запросу
+ai;https://justbuildthings.com;JBT;Набор полезных сервисов и ИИ
+ai;https://llamaocr.com;Llama OCR;Opensorce нейронка по распознаванию изображений
+ai;https://jpgrm.com;JPGrm;Нейросеть, позволяющая убирать указанные обьекты с фото или картинок
+ai;https://www.recraft.ai;Recraft;Нейросеть с большим уклоном в работу с изображениями
 ;;;
 ;Важные инструменты;;
 impotls;https://windowspro.ru;Windowspro;Сайт со сборками Windows, а так же полезных и нужных программ
@@ -77,10 +86,8 @@ gametls;https://aimrage.com;AIMrage;Тренировка скорости и л�
 ;Прочие инструменты;;
 othertls;https://teletype.in;Teletype;Наипростейший, но в то же время удобный блог
 othertls;https://telegra.ph/Kakie-sushchestvuyut-poiskovye-sistemy-09-01;Лента с поисковиками;Интересная инфа по различным поисковикам
-othertls;https://chromewebstore.google.com/detail/lumina-night-mode/ccemhgcpobolddhpebenclgpohlkegdg;Lumina;Ночной режим для всех страниц интернета
 othertls;https://7themes.su;7themes;Украшение и настройка ОС Windows
 othertls;https://technical.city;Technicalcity;Проверка игр на совместимость с вашим ПК, сравнение компонентов от разных производителей
-othertls;https://untrap.app;Untrap;Расширение браузера для настройки YouTube
 othertls;https://www.narakeet.com/app/text-to-audio/;TTA от Narakeet;Озвучка текста (TTS)
 othertls;https://gram.ax;Gram.ax;Организация знаний/база знаний
 othertls;http://palettemaker.com/;Palette Maker;Генерация цветовой палитры для работы с графическим дизайном
@@ -89,4 +96,20 @@ othertls;https://carve.photos;Carve.Photos;Инструмент для авто�
 othertls;https://panel.spaceproxy.net;SpaceProxy;Недорогие сервера впн и прокси
 othertls;https://hotkeycheatsheet.com/ru;Hotkey ch;Информация по горячим клавишам в программах
 othertls;https://free-for.dev/#/;FreeForDev;Большая библиотека сайтов/сервисов для разработчиков
+othertls;https://gsett.ru;gsett;Автор тестирует различные настройки графики в играх и предлагает оптимальные
+othertls;https://huly.io;huly;Альтернатива Asana, сервис для работы в коллективе
+othertls;https://obsidian.md;Obsidian;Еще одна opensorce Workspace платформа с нодами, графиками и т.д. 
+othertls;https://www.speedtest.net;SpeedTest;Проверка скорости соединения интернета
+othertls;https://www.speedtest.net/apps/cli;SpeedTest CLI;Консольная проверка скорости соединения интернета для разработчиков
+othertls;https://itoa.hex.dance;ITOA;Веб инструмент преобразующий изображение в ASCII арт (В картинку из символов)
+othertls;https://distrosea.com;DistroSea;Каталог дистрибутивов Линукс, которые можно пощупать с помощью удаленного доступа
+;;;
+;Расширения для браузеров;;
+extbrows;https://chromewebstore.google.com/detail/lumina-night-mode/ccemhgcpobolddhpebenclgpohlkegdg;Lumina;Ночной режим для всех страниц интернета
+extbrows;https://untrap.app;Untrap;Дополнительные настройки YouTube
+extbrows;https://chromewebstore.google.com/detail/bardeen-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B8%D1%80%D1%83%D0%B9%D1%82%D0%B5-%D0%BC/ihhkmalpkhkoedlmcnilbbhhbhnicjga;Bardeen;Автоматизируйте монотонную работу
+extbrows;https://chromewebstore.google.com/detail/text-blaze-templates-and/idgadaccgipmpannjkmfddolnnhmeklj;Text Blaze;Шаблонизация ответов в чатах
+extbrows;https://chromewebstore.google.com/detail/%D0%B8%D0%BC%D0%BC%D0%B5%D1%80%D1%81%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%B4%D0%B2%D1%83%D1%8F/bpoadfkcbjbfhfodiogcnhhhpibjhbnh;Immersive Translate;Перевод документов, веб страниц или PDF прямо в браузере
+extbrows;https://chromewebstore.google.com/detail/couponbirds-smartcoupon-c/pnedebpjhiaidlbbhmogocmffpdolnek;CouponBirds;Находит купоны или коды при покупке им применяет их для скидок
+extbrows;https://chromewebstore.google.com/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en;Stylish;Кастомизация почти любого сайта на ваш вкус
 ;;;

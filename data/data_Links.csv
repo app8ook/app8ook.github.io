@@ -1,5 +1,6 @@
 ﻿Спойлер;Ссылка;Название;Описание
 ;Фильмы/Сериалы;;
+mov;https://zfilms-hd.by;Zfilm;Самый кайфовый сайт с сериалами и фильмами (vpn/обход)
 mov;https://kinoland.biz;Kinoland;Просмотр фильмов и сериалов (Бывший Zfilm)(vpn)
 mov;https://lord.lordfilm1.li;LordFilm;Не менее классный чем zfilm, сайт для просмотра фильмов (vpn)
 mov;https://big.lordseriall.com;LordSerial;Не менее классный чем zfilm, сайт для просмотра сериалов (vpn)
@@ -15,7 +16,7 @@ progs;https://diakov.net;DiakovNet;Репаки программ от Diakov
 progs;https://strannikmodz.me;StrannikModz;Моды программ (На андроид) от автора Strannik
 progs;https://github.com/Axorax/awesome-free-apps?tab=readme-ov-file;Axorax Awesome;Каталог программ собранных энтузиастами на github
 ;;;
-;ИИ;;
+;ИИ Прочее;;
 ai;https://labs.perplexity.ai;Perplexity labs;Несколько чатов с нейросетями (Вторичные но быстрые)
 ai;https://chat.lmsys.org;Chat.lmsys;Чаты с нейросетями (GPT, cloud и др.)
 ai;https://maxtext.ru;Maxtext;Генератор текста и работа с ИИ
@@ -42,6 +43,12 @@ ai;https://justbuildthings.com;JBT;Набор полезных сервисов 
 ai;https://llamaocr.com;Llama OCR;Opensorce нейронка по распознаванию изображений
 ai;https://jpgrm.com;JPGrm;Нейросеть, позволяющая убирать указанные обьекты с фото или картинок
 ai;https://www.recraft.ai;Recraft;Нейросеть с большим уклоном в работу с изображениями
+ai;https://mistral.ai;Mistral;Еще одна хорошая opensorce нейронка
+ai;https://chat.qwen.ai;Qwen;Еще одна нейронка подомно Llama или Mistral
+ai;https://auphonic.com;Auphonic;Нейрнка для улучшения качества звука в медиа
+ai;https://youscriptor.com;Youscriptor;Speech to text для видео с ютуба
+ai;https://www.cursor.com;Cursor;Нейросетка для написания кода
+ai;https://github.com/VAST-AI-Research/MIDI-3D;MIDI-3D;Opensource нейросетка для генерации 3D моделей
 ;;;
 ;Важные инструменты;;
 impotls;https://windowspro.ru;Windowspro;Сайт со сборками Windows, а так же полезных и нужных программ
@@ -82,6 +89,7 @@ gametls;https://keysok.ru/akcii/;Keysok;Ключи к программам и т
 gametls;https://ggntw.com/steam;Ggnetwork;Скачивание работ из Steam workshop
 gametls;https://gamebanana.com;GameBanana;Моды, плагины, скрипты, скины для различных игр
 gametls;https://aimrage.com;AIMrage;Тренировка скорости и ловкости движения мыши
+gametls;https://www.protondb.com;Protondb;Проверяем совместимость игр из Steam с Linux через Proton
 ;;;
 ;Прочие инструменты;;
 othertls;https://teletype.in;Teletype;Наипростейший, но в то же время удобный блог
@@ -112,4 +120,6 @@ extbrows;https://chromewebstore.google.com/detail/text-blaze-templates-and/idgad
 extbrows;https://chromewebstore.google.com/detail/%D0%B8%D0%BC%D0%BC%D0%B5%D1%80%D1%81%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%B4%D0%B2%D1%83%D1%8F/bpoadfkcbjbfhfodiogcnhhhpibjhbnh;Immersive Translate;Перевод документов, веб страниц или PDF прямо в браузере
 extbrows;https://chromewebstore.google.com/detail/couponbirds-smartcoupon-c/pnedebpjhiaidlbbhmogocmffpdolnek;CouponBirds;Находит купоны или коды при покупке им применяет их для скидок
 extbrows;https://chromewebstore.google.com/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en;Stylish;Кастомизация почти любого сайта на ваш вкус
+extbrows;https://chromewebstore.google.com/detail/switchsearch/fmhncjaheleephdddbbjondoglignpfd;SwitchSearch;Переключение поискового запроса на другой поисковик
+;;;
 ;;;

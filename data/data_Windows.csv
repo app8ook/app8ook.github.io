@@ -92,6 +92,7 @@ optisoft;https://mega.nz/file/hwhyEKTA#eKuJ9cPQzuxhHE2g-WKMHWAihtzS-iKCfdEO_W3yV
 optisoft;https://winscript.cc;WinScript;Инструмент с открытым кодом для настройки и очистки Windows 10 и 11
 optisoft;https://lossless-scaling.com;Lossless Scaling;Масштабирование и генерация кадров в играх (Если нет встроеного DLSS или FSR)
 optisoft;https://www.ntlite.com;NTlite;Инструмент для настройки и оптимизации Windows
+optisoft;https://github.com/tsgrgo/windows-update-disabler;Win Update Disabler;Простой bat скрипт для полного отключения обновлений Windows
 ;;;
 ;Медиа плееры;;
 mediap;https://www.aimp.ru/?do=download.file&id=4;AIMP;Аудиоплеер
@@ -113,6 +114,7 @@ mediar;https://www.getpaint.net/download.html#download;Paint.net;Упрощен�
 mediar;https://mega.nz/file/54RS3IaT#ryiR8cWyms3u-c1XjIusqOu60BRZQeTbw2g_4QyAhls;Aseprite;Простая программа для пиксель арта (crack)
 mediar;https://www.blockbench.net;Blockbench;Бесплатный редактор низкополигональных моделей
 mediar;https://www.blender.org/download/;Blender;Бесплатный редактор 3D моделей
+mediar;https://github.com/PintaProject;Pinta;Opensource редактор изображений
 ;;;
 ;Инструменты для игр;;
 gametools;https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe;Steam;Игровой клиент Valve
@@ -138,7 +140,7 @@ social;https://allinone.im/;AllInOne app;Приложение обьединяю
 social;https://www.whatsapp.com/download?lang=ru;WhatsApp;Клиент whatsapp для ПК
 ;;;
 ;Ремонт/Восстановление;;
-fixrec;https://mega.nz/file/NhYViQqT#l6RYBPX8zhEXIsUnbRuo8K8tIwGEtkVxHn7QC2D6fm8;AIDA64;Функциональная программа для обзора начинки компьютера (Crack)
+fixrec;https://mega.nz/file/E0Yynb6T#sCU9ThS2hf_jpOJtnPqGS5OMsJpmmJxyePtSOcM4RKE;AIDA64;Функциональная программа для обзора начинки компьютера (Crack)
 fixrec;https://mega.nz/file/QlgySRSb#GJRhao6mIkBh1STOu1Q6FVhu1Rx_ID4ab2xGiIgMVbQ;Victoria;Программа для тестирования и мелкого ремонта жёстких дисков
 fixrec;https://disktest.ru;Bulldog;Программа основаная на Victoria, для тестирования флеш накопителей
 fixrec;https://mega.nz/file/dtBDBRKB#jW6m4-ikDx8UVmhd-VfYs7uLf6PiPyFdxYSN6z1EpMI;MiniTool PW;Инструмент для работы с жестким диском

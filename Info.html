@@ -190,6 +190,27 @@ irm https://get.activated.win | iex<br>
 Второй сервис декомпилирует уже .pyc файлы в обычный .py с вашим исходным кодом<br>
 </details>
 
+<br><details><summary><div class="spoiler" align="center">Пересборка бутлоадера Pyinstaller</div></summary><br>
+<div class="textbox" align="left">
+Из за использования данной библиотеки, для простой компиляции своего кода, мошенниками,<br>
+антивирусы часто триггерятся из за того что при сборке был использован стоковый бутлоадер который используют и мошенники.<br>
+Что бы решить эту проблему, можно пересобрать бутлоадер без установки полного пакета C++ или прочих тяжелых инструментов<br>
+<br>
+1. Скачиваем простую и легкую утилиту - <b><a href="https://github.com/skeeto/w64devkit" target="_blank">w64devkit</a></b><br>
+2. Распакуйте архив в любую папку (например, D:\dev\w64devkit)<br>
+3. Запустите w64devkit.exe — откроется консоль с уже настроенным окружением (GCC, make, sh и т.д.)<br>
+<br>
+4. Клонируйте PyInstaller (если ещё не клонировали) и перейдите в каталог с bootloader:<br>
+git clone https://github.com/pyinstaller/pyinstaller<br>
+cd pyinstaller/bootloader<br>
+<br>
+5. Пересобираем бутлоадер:<br>
+python ./waf distclean all<br>
+или (если python не в PATH, укажите полный путь):<br>
+C:/path/to/python.exe ./waf distclean all<br>
+<br>
+</details>
+
 <br><details><summary><div class="spoiler" align="center">Отключение автоустановки драйвера через gpedit или regedit</div></summary><br>  
 <div class="textbox" align="left">
 Если ваша система по какой то причине ставит несовместимый с оборудованием драйвер, из за чего возникают проблемы или ошибки<br>

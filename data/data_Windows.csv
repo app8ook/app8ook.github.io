@@ -49,6 +49,12 @@ othertools;https://getfancontrol.com;FanControl;Утилита позволяю�
 othertools;https://mega.nz/file/Z8wRWKiQ#HYdLO7V-Eduxqg6UHpLjfs1TvkGcjAMH5XXJLkJ-0s0;Stardock Start11;"Менеджер для перенастройки меню ""Пуск"" (crack)"
 othertools;https://github.com/Clats97/ClatScope;ClatScope Info Tool;это инструмент для OSINT (Подробнее на странице автора)
 othertools;https://diakov.net/15834-idownergo-930.html;iDownerGo;Утилита для загрузки медиа с более чем 10к ресурсов с конвертацией форматов (crack)
+othertools;https://felixrieseberg.github.io/clippy/;Clippy;"Возвращение ""Скрепыша"" в виде ИИ ассистента"
+othertools;https://brandonyoung.dev/blog/introducing-tldx/;Tldx;Инструмент для поиска свободных доменов
+othertools;https://github.com/microsoft/WSL;WSL;Opensorce WSL
+othertools;https://github.com/mulaRahul/keyviz;Keyviz;Удобная визуализация нажатий клавиш
+othertools;https://sqlitestudio.pl;SQLiteStudio;Очень удобная opensorce программа для работы с SQlite DB
+othertools;https://filezilla.ru;FileZilla;Простой и бесплатный FTP клиент
 ;;;
 ;Офисное/текст редакторы;;
 officetext;https://mega.nz/file/Bk43HSIY#1Oph8seIrxmk8MrOrr2YbA-E3oOcusAlBu98R3PRKFI;MS office 2010;Пакет продуктов Ms office (crack)
@@ -56,9 +62,11 @@ officetext;https://mega.nz/file/c8AmSZZZ#Zw9zmUNWIqrW-ioNaZKXCVFJglimpQbIo9YQmIK
 officetext;https://mega.nz/file/csRjWYAY#LszIheyC_cd-9m_unttusEOFvqpybH8rZhivXXzj9XE;Office Installer+;Простая утилита для установки и активации офиса 2016/2019/2021/2024
 officetext;https://mega.nz/file/JwhBCBRZ#mjBfYhPuWjTxxtv6IglaBQ2ugu25QZV-Bo4ETZk17Q4;OfficeRtool;Консольная простая утилита для установки и активации офиса 2016/2019/2021
 officetext;https://www.libreoffice.org/download/download-libreoffice/;LibreOffice;Программа 3в1 - Word, PowerPoint, Exel (Простой аналог MSoffice)
+officetext;https://www.onlyoffice.com;OnlyOffice;Серверное opensorce решение для совместной работы в офисной среде
 officetext;https://vscodium.com;VScodium;Тот же Visual Studio Code от MS но с вырезанной слежкой и прочим хламом
+officetext;https://www.qt.io/offline-installers;Qt Creator;Кроссплатформенная opensorce IDE
 officetext;https://notepad-plus-plus.org/downloads/;Notepad++;Простой и удобный текстовый редактор
-officetext;https://github.com/atom/atom/releases/tag/v1.61.0-beta0;Atom;Редакор кода, удобная и упрощенная альтернатива VScode
+officetext;https://github.com/Alex313031/atom-ng;Atom;Редакор кода, удобная и упрощенная альтернатива VScode (Fork by Alex313031)
 officetext;https://mega.nz/file/YxxTAZqR#TKJDTkdAYQKhgKpNenBpCPg4L1j6URAzAozcBkJCYdQ;PilotEdit;Текстовый редактор способный работать с огромными файлами без проблем (crack)
 ;;;
 ;Безопасность;;
@@ -69,6 +77,8 @@ secure;https://github.com/anfragment/zen;Zen;Блокировщик реклам
 secure;https://www.cyberscarecrow.com/download;Cyberscarecrow;Отпугиватель вирусов (Механизм работы описан на сайте)
 secure;https://mega.nz/file/hpoSXJyZ#HeNB3ZeuqpJuB7GZLDGmP9zf_flxqfcSP1UHoLT54bk;Shield Antivirus;Программка антивирус (Crack)
 secure;https://github.com/BlendLog/MinerSearch/releases;MinerSearch;Консольная утилита для поиска майнеров на своем компьютере
+secure;https://www.wireshark.org/download.html;Wireshark;Популярная утилита для мониторинга сетевого трафика
+secure;https://www.softperfect.com/products/networx/;NetWorx;Удобный мониторинг сетевого трафика
 ;;;
 ;Оптимизация системы;;
 optisoft;https://mega.nz/file/0sYyWLTR#NvkBaTkh3Nq4wWBbXASkXaaUaFnybQRpQHz0-8gqLcw;Advanced SystemCare;Многофункциональная программа для очистки и оптимизации системы
@@ -102,6 +112,8 @@ mediap;https://th-ch.github.io/youtube-music/;Ytmdesktop;Неофициальн�
 mediap;https://mega.nz/file/loxwlSwa#tmTvkPahKp3p_G8OFV-KvLZ3kT2cw9zUh6Eq85XW92g;YaMusic;Неофициальная, немного взломанная, Яндекс музыка и радио
 mediap;https://mega.nz/file/klhTTJQa#oqxxOBziIzj3pDzJRSQONrIlSOgapdfDIdgQIuR39AQ;Musify;Программа для скачивания музыки из различных сервисов (crack)
 mediap;https://mega.nz/file/k8ATFDDZ#E7R4Q5j-Un8Joh8n-w4ohPcAMDfxpEx4BhokysEwqLg;KeepBeats;Программа для скачивания музыки из различных музыкальных сервисов
+mediap;https://github.com/Ruben2776/PicView;PicView;Быстрый просмотрщик изображений на замену стандартному
+mediap;https://github.com/ModuleArt/quick-picture-viewer;QPV;Быстрый просмотрщик изображений и гифок на замену стандартному
 ;;;
 ;Медиа редакторы;;
 mediar;https://mega.nz/file/JlBDiIpQ#ob4lIttDFUntXro2LZU4fGxTksIhjy0lPPpo1VWIIw4;Davichi resolve;Видео, аудио монтаж, очень удобный софт содержащий в себе все нужное от Adobe (Crack)
@@ -115,6 +127,9 @@ mediar;https://mega.nz/file/54RS3IaT#ryiR8cWyms3u-c1XjIusqOu60BRZQeTbw2g_4QyAhls
 mediar;https://www.blockbench.net;Blockbench;Бесплатный редактор низкополигональных моделей
 mediar;https://www.blender.org/download/;Blender;Бесплатный редактор 3D моделей
 mediar;https://github.com/PintaProject;Pinta;Opensource редактор изображений
+mediar;https://github.com/Sigil-Ebook/Sigil/;Sigil;Кроссплатформеный редактор электронных книг
+mediar;https://jliljebl.github.io/flowblade/;Flowblade;Opensource видеоредактор
+mediar;https://github.com/limafresh/Brushshe/;Brushshe;Компактный графический редактор (Opensource)
 ;;;
 ;Инструменты для игр;;
 gametools;https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe;Steam;Игровой клиент Valve
@@ -134,6 +149,7 @@ gametools;https://github.com/mtkennerly/ludusavi;Ludusavi;Опенсорс бе�
 ;Социальное;;
 social;https://desktop.telegram.org/;Telegram;Официальный десктопный клиент Телеграм
 social;https://mega.nz/file/o4BjAQZD#pUcpbFH4HHv9yOnyuIe_GpCvZL_ffTv_XjBfJfd2_Jw;Kotatogram;Неофициальный десктопный, настраиваемый мод Телеграм
+social;https://github.com/AyuGram/AyuGramDesktop;AyuGram;Неофициальный кроссплатформеный, настраиваемый мод Телеграм
 social;https://discordapp.com/api/download?platform=win;Discord;Мессенеджер для гейминга
 social;https://vencord.dev;VenCord;Модификация Дискорд (Поверх самого приложения)
 social;https://allinone.im/;AllInOne app;Приложение обьединяющее мессенеджеры для удобства
@@ -141,6 +157,7 @@ social;https://www.whatsapp.com/download?lang=ru;WhatsApp;Клиент whatsapp 
 ;;;
 ;Ремонт/Восстановление;;
 fixrec;https://mega.nz/file/E0Yynb6T#sCU9ThS2hf_jpOJtnPqGS5OMsJpmmJxyePtSOcM4RKE;AIDA64;Функциональная программа для обзора начинки компьютера (Crack)
+fixrec;https://a1ive.github.io/nwinfo/;NWinfo ;Удобная и простая opensorce утилита для обзора начинки компьютера
 fixrec;https://mega.nz/file/QlgySRSb#GJRhao6mIkBh1STOu1Q6FVhu1Rx_ID4ab2xGiIgMVbQ;Victoria;Программа для тестирования и мелкого ремонта жёстких дисков
 fixrec;https://disktest.ru;Bulldog;Программа основаная на Victoria, для тестирования флеш накопителей
 fixrec;https://mega.nz/file/dtBDBRKB#jW6m4-ikDx8UVmhd-VfYs7uLf6PiPyFdxYSN6z1EpMI;MiniTool PW;Инструмент для работы с жестким диском
@@ -156,6 +173,9 @@ fixrec;https://mega.nz/file/NwhlATpb#Hax-tnMBGSWgDiIgk---SAAlGNc8wnGrqWRUSEs5EF0
 fixrec;https://mega.nz/file/QkwkzCqK#8p-6yznSbuLALSMcw_6rs7KJ-7TMvfarewHYW4NO1Go;DroidKit;Утилита - помощник для смартфонов (Восстановление, разблокировка, фиксы, чистка)
 fixrec;https://mega.nz/file/MlI1SLIS#gvqcs2eX3tPUJU0r1IDb0m97VYQiuhpCnms81pK1UA8;Aiseesoft iPhone Unlocker;Программа помогает удалить Apple ID и вернуть девайс к заводским настройкам
 fixrec;https://mega.nz/file/kxZjzaSB#ylVuYheNj3Z7NRYZ8ZKhF93ognG_DHbOCAprDPa7N58;Tenorshare 4DDiG;Инструмент для восстановления данных с ноутбука / ПК, внешнего диска или USB-накопителя
+fixrec;https://mega.nz/file/1sADyZyA#Ro4iB72FPqcCH2zIGElJg97iUTtpCX2ieBpA0wGy-o0;4DDiG DLL Fixer;Инструмент позволяющий решить проблемы с отсутствием нужных DLL библиотек (Crack)
+fixrec;https://mega.nz/file/w1oB1QSb#G0Md8ENF5SVcZf312h_eTERYuYG5iy-28OEYveIGmX4;Partition Assistant Technician;Мощная программа для работы с жёстким диском
+fixrec;https://mega.nz/file/B453naab#tOwPyG-iEpkvJD1oSC1M3YePldA8zqswwq4QIvZ2oNo;Stellar Data Recovery;Восстановление потерянных, удаленных или недоступных файлов
 ;;;
 ;Переустановка windows;;
 winr;https://windowspro.ru;Windowspro;Сайт со сборками Windows, а так же полезных и нужных программ
@@ -168,7 +188,7 @@ winr;https://mega.nz/file/lhgCETzL#_MiaUwWpcxrpt34CfbmBaqHaFMBzhu9OSTGQKQDOmUo;A
 winr;https://massgrave.dev/;MAS;Скрипт для активации, а так же ссылки на офф сборки винды и офисов
 winr;https://mega.nz/file/Ax4wlBrb#ZatThKBEKD0jg9QE2bM7wDqpUmPZEflzM3e11I3dVB8;ATT;Консольная утилита, набор инструментов, активация, установка базовых программ
 winr;https://mega.nz/file/N5IygLiB#plcw5KVyN7Nb-U-vSri1_QXO-rbe_92Es-48zR-auAc;Driver Booster;Программа для поиска и установки драйверов (crack)
-winr;https://mega.nz/file/whhklIQK#oUw831AWZHu5PZpiAEJtoc1PQyUaOsq27zOwEHn1TsE;Driver Easy;Простая программа для поиска и установки драйверов (crack)
+winr;https://mega.nz/file/xwQXlS7S#aa9fTjdYBlWUbpcfkp8Bxw88dSRyOJyawX2nPb_rHBg;Driver Easy;Простая программа для поиска и установки драйверов (crack)
 winr;https://mega.nz/file/EhREwKDK#Gh9bcZPdixOcDipl3DaP4aJ6m6F73_guceJ6AqpgbOA;Snappy Driver;Довольно старая программа автоустановки драйверов
 winr;https://mega.nz/file/R0BgiIja#fH__hovX70jGyWUUPTyTgOfkklTjiaHwfubB6p09cnw;Driver Updater;Ходят слухи, что некоторые люди еще это юзают (crack)
 winr;https://www.techpowerup.com/download/drivers/;Techpowerup;Можно скачать тяжелые дрова, если не качаются с офф сайтов
@@ -177,5 +197,6 @@ winr;https://www.amd.com/en/support/download/drivers.html;AMD drivers;Офф с�
 winr;https://uupdump.net;UUPdump;Получить максимально нетронутую, девственную сборку винды
 winr;https://github.com/rcmaehl/WhyNotWin11/releases/;WhyNotWin11;Утилита чекер на поддержку Win11 вашей системой
 winr;https://github.com/lostindark/DriverStoreExplorer;DSE;Опенсорс утилита для обзора и управления драйверами системы
+winr;https://github.com/builtbybel/Flyby11;Flyby11;Утилита для обхода системных требований для сборки Windows 11
 ;;;
 ;;;

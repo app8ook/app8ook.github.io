@@ -49,6 +49,8 @@ ai;https://auphonic.com;Auphonic;Нейрнка для улучшения кач
 ai;https://youscriptor.com;Youscriptor;Speech to text для видео с ютуба
 ai;https://www.cursor.com;Cursor;Нейросетка для написания кода
 ai;https://github.com/VAST-AI-Research/MIDI-3D;MIDI-3D;Opensource нейросетка для генерации 3D моделей
+ai;https://www.camb.ai;Camb.ai;Реалистичная генерация голоса для любых задач
+ai;https://magichour.ai/;Magic Hour;Сервис для генерации и редактирования фото
 ;;;
 ;Важные инструменты;;
 impotls;https://windowspro.ru;Windowspro;Сайт со сборками Windows, а так же полезных и нужных программ
@@ -56,7 +58,8 @@ impotls;https://mega.nz/folder/VgA2Abja#Oss2jPkzIwnE7s4sCpjjHg;WIN;Папка н
 impotls;https://win-torrent.net/;WinTorrent;Сайт со сборками Windows
 impotls;https://driver.ru;DriverRu;Поиск и скачивание драйверов
 impotls;https://driverslab.ru/;DriverslabRu;Поиск и скачивание драйверов
-impotls;https://mega.nz;MEGA;Облачное хранилище (50гб бесплатно + SyncApp)
+impotls;https://mega.nz;MEGA;Облачное хранилище (20гб бесплатно + SyncApp)
+impotls;https://ente.io/;Ente;Защищенное облако с E2E-шифрованием (10гб бесплатно)
 impotls;https://4pda.to;4PDA;Форум о технологиях, науке, так же игры и программы для смартфонов
 impotls;https://123apps.com/ru/;123apps;Сервис с множеством веб-инструментов
 impotls;https://telegra.ph/;Telegraph;Сервис для быстрого создания своей страницы в интернете
@@ -67,6 +70,7 @@ impotls;https://u.to/;U.to;Сервис сокращения ссылок
 impotls;https://www.dll.ru;DLL;Поиск и скачивание файлов DLL
 impotls;https://convertio.co/ru/;Convertio;Сервис по конвертации файлов
 impotls;https://t.me/s/ProxyMTProto;ProxyMTProto;Группа телеграм с бесплатными прокси для самого телеграма
+impotls;https://freeapis.io;Free APIs;Бесплатные API для разработки и тестирования
 ;;;
 ;Медиа инструменты;;
 mediatls;https://y2mate.mx;Y2mate;Сервис для скачивания контента с ютуб
@@ -79,6 +83,9 @@ mediatls;https://www.flaticon.com;FlatIcon;Разнообразные иконк
 mediatls;https://voicemaker.in/;Voicemaker;Сервис Text to Speech
 mediatls;https://ru.imgbb.com;Imgbb;Хостинг картинок
 mediatls;https://faststream.online;Faststream;Замена плееру в Ютуб и с других ресурсов на более удобный и функциональный
+mediatls;https://www.squeezevid.com/ru/compress-video/;SqueezeVid;Сжатие видео без потери качества
+mediatls;https://huggingface.co/spaces/ByteDance/Dolphin;Dolphin;Преобразование PDF в редактируемые документы
+mediatls;https://ffmpeg.org;FFmpeg;Кроссплатформенное ядро для работы с аудио и видео
 ;;;
 ;Игровые инструменты;;
 gametls;https://ggsel.com;GGSEL;Магазин аккаунтов и ключей
@@ -90,9 +97,12 @@ gametls;https://ggntw.com/steam;Ggnetwork;Скачивание работ из S
 gametls;https://gamebanana.com;GameBanana;Моды, плагины, скрипты, скины для различных игр
 gametls;https://aimrage.com;AIMrage;Тренировка скорости и ловкости движения мыши
 gametls;https://www.protondb.com;Protondb;Проверяем совместимость игр из Steam с Linux через Proton
+gametls;https://meme-police.ru/bg;MemePolice;Множество настольных игр для компании
 ;;;
 ;Прочие инструменты;;
 othertls;https://teletype.in;Teletype;Наипростейший, но в то же время удобный блог
+othertls;https://telegra.ph;Telegra.ph;Публикация простой страницы в интернете
+othertls;https://teletype.in/@andrii.kisielov/Telegraph-podrobnaya-instrukciya-01-11;Гайд по Telegra.ph;Подробная инфа по сервису быстрой публикации страниц
 othertls;https://telegra.ph/Kakie-sushchestvuyut-poiskovye-sistemy-09-01;Лента с поисковиками;Интересная инфа по различным поисковикам
 othertls;https://7themes.su;7themes;Украшение и настройка ОС Windows
 othertls;https://technical.city;Technicalcity;Проверка игр на совместимость с вашим ПК, сравнение компонентов от разных производителей
@@ -107,6 +117,7 @@ othertls;https://free-for.dev/#/;FreeForDev;Большая библиотека 
 othertls;https://gsett.ru;gsett;Автор тестирует различные настройки графики в играх и предлагает оптимальные
 othertls;https://huly.io;huly;Альтернатива Asana, сервис для работы в коллективе
 othertls;https://obsidian.md;Obsidian;Еще одна opensorce Workspace платформа с нодами, графиками и т.д. 
+othertls;https://karakeep.app;Karakeep;Менеджер для хранения ссылок и документов
 othertls;https://www.speedtest.net;SpeedTest;Проверка скорости соединения интернета
 othertls;https://www.speedtest.net/apps/cli;SpeedTest CLI;Консольная проверка скорости соединения интернета для разработчиков
 othertls;https://itoa.hex.dance;ITOA;Веб инструмент преобразующий изображение в ASCII арт (В картинку из символов)

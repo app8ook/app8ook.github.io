@@ -10,12 +10,12 @@ browsers;https://mega.nz/file/UkQSBDwI#cv_rHPzasKC7vastID4CwN30hm50LRTlKOuTXXaba
 browsers;https://mega.nz/file/g0BCRLYI#1n5H7z8v-G1cmYIsbnREc1PXHU5dcaYNbX5N_KZsCxs;XBrowser;Очень быстрый, настраеваемый и легкий браузер
 ;;;
 ;Социальное;;
-social;https://telegram.org/android?setln=ru;Telegram;Оффициальный клиент Telegram
-social;https://mega.nz/file/9h5jhaTS#ixYpxxneRXjm5xd7KJ2rJZKx1vuS8JGYxWIE7vDkLTU;Turbotel;Неофициальный и настраиваемый мод Telegram
+social;https://telegram.org/android?setln=ru;Telegram;Официальная клиент Telegram (Block)
+social;https://mega.nz/file/9h5jhaTS#ixYpxxneRXjm5xd7KJ2rJZKx1vuS8JGYxWIE7vDkLTU;Turbotel;Неофициальный и настраиваемый мод Telegram (Block)
 social;https://mega.nz/file/ghJ2kKRS#tOre-qYF3WmHUWYzFumSjvno1v_HuvG1jJKM89UT2BM;VKmp3;Неофициальный и настраиваемый мод вконтакте
-social;https://discord.com/download;Discord;Мессенеджер для гейминга
+social;https://discord.com/download;Discord;Мессенджер для гейминга (Block)
 social;https://media.steampowered.com/steamlink/android/latest/steamlink-android.apk;Steam;Коды для входа в игровой лаунчер и отслеживание своего аккаунта
-social;https://www.whatsapp.com/download?lang=ru;Whatsapp;Оффициальный клиент Whatsapp
+social;https://www.whatsapp.com/download?lang=ru;Whatsapp;Официальный клиент Whatsapp (Block)
 ;;;
 ;Медиа плееры (Локальные);;
 medial;https://mega.nz/file/Mh4lEabL#lSyt8E7vevLocdVWACAqrhoZJXcqKr20HnKt_R-l6QY;VLC;Медиаплеер
@@ -23,13 +23,15 @@ medial;https://mega.nz/file/1hBjXJ5K#OhulRaXzqts06guGpE8UlLy-qzdQ7mfOhVP-VbhjnqA
 medial;http://www.aimp.ru/index.php;AIMP;Аудиооплеер
 ;;;
 ;Медиа плееры (Онлайн);;
-mediao;https://mega.nz/file/Z8hShZob#sDRCfKmOVvv93LNezTJ9wQ2JOApSzxobddZeKoc8X8Q;YT ReVanced;Модифицированный клиент Youtube (Mod)
+mediao;https://mega.nz/file/Z8hShZob#sDRCfKmOVvv93LNezTJ9wQ2JOApSzxobddZeKoc8X8Q;YT ReVanced;Модифицированный клиент Youtube (Mod) (Block)
 mediao;https://mega.nz/file/c9hCGaRY#MDrw76ICVTdkshJf_F4CffLoUfCkMmj-rX_y1F_0CAw;MicroG;Программа необходимая для корректной работы YTRevanced и YTMRevanced
 mediao;https://mega.nz/file/9hRCkaRI#As6QeigChzSKY2hK7c8UGLy0FIBKUqDM6zi-Grns94g;YTM ReVanced;Модифицированный клиент YoutubeMusic (Mod)
-mediao;https://mega.nz/file/spZCDYJA#1lNprqaXOW2WfP-YFMGJRJZ5sBBgLO84jnA7guTAn0M;YaMusic;Ломаная Яндех музыка (Mod)
+mediao;https://mega.nz/file/spZCDYJA#1lNprqaXOW2WfP-YFMGJRJZ5sBBgLO84jnA7guTAn0M;YaMusic;Ломаная Яндех музыка (Mod) (Block)
 mediao;https://mega.nz/file/BpgyzYqR#xq25B9Y1m8e-RPQ2N-K6tT5UCec3kheOKNx9AEz3Y_U;ShikimoriApp;Удобный способ просмотра аниме с сайта Shikimori
 mediao;https://tachiyomi.org/download/;Tachiyomi;Удобный и настраиваемый мангаридер
 mediao;https://mega.nz/file/xgADFJpL#ezKz6gb4W8zRvmTQbJmm266LMu_p_-ATZ2TzmbzfKr8;LMD;Программа для скачивания или просмотра фильмов (Mod)
+mediao;https://github.com/BlackHatDevX/openspot-music-app;OneSpot;Кроссплатформенный opensource музыкальный сервис, аналог Spotify
+mediao;https://www.stremio.com/;Stremio;Кроссплатформенный медиацентр с аддонами
 ;;;
 ;Медиа редакторы;;
 mediar;https://mega.nz/file/opA11DZb#zhnND4ooKiZ5ooFrNCbqqUIrTJvPEeIblorIMxJTLnY;MStudio;Редактор музыки (Mod)
@@ -45,6 +47,7 @@ tools;https://mega.nz/file/RthE1ZAJ#ucqfgw4AeMzJMebaLIL8umfBvtVtiBQMu5O8x6jAS58;
 tools;https://mega.nz/file/l4ARDA6Q#K7q8H83G2dhhZNT6t2HFFLgZPtdKrh670kfPD6TZmis;4pda App&Game;Удобный способ обновления программ с 4pda по типу GP
 tools;https://mega.nz/file/w84iiahT#lZdIM7Ffk8cy08YMpiVYkPjut4JTCJmHr35zQ1j884g;MacroDroid;Приложение для автоматизации задач и конфигурации
 tools;https://mega.nz/file/osgFnRQY#FCwUhT42f8xCPpXF4fc9lNmfapLcxceJbgGKoq0D1h4;Dr.Fone;Восстановление данных на телефоне
+tools;https://github.com/MatsuriDayo/NekoBoxForAndroid;Nekobox;Opensource клиент для изменения трафика или IP через конфиги
 ;;;
 ;Кастомизация;;
 custom;https://mega.nz/file/Apg2AB4B#EGNaYcUoD9on6nEhIi2R6w5Nev0_ZPwI9TcUlFsqmVo;Nova;Широкий в настройке лаунчер (Mod)

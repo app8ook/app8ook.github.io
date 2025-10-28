@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>ANDROID</title>
+<title>SEARCH</title>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="data/style.css">
 <link rel="shortcut icon" href="pics/Kosou.png" type="image/x-icon">
@@ -45,53 +45,11 @@
 
 <div class="bg" align="center">
 
-<br><details data-page="browsers"><summary><div class="spoiler" align="center">Браузеры</div></summary>
-    <br><table align="center"><col width="33%"><col width="33%"><col width="33%">
-      <tbody id="resource-table-browsers"></tbody>
-    </table>
-  </details>
-
-<br><details data-page="social"><summary><div class="spoiler" align="center">Социальное</div></summary>
-    <br><table align="center"><col width="33%"><col width="33%"><col width="33%">
-      <tbody id="resource-table-social"></tbody>
-    </table>
-  </details>
-
-<br><details data-page="medial"><summary><div class="spoiler" align="center">Медиа плееры (Локал)</div></summary>
-    <br><table align="center"><col width="33%"><col width="33%"><col width="33%">
-      <tbody id="resource-table-medial"></tbody>
-    </table>
-  </details>
-
-<br><details data-page="mediao"><summary><div class="spoiler" align="center">Медиа плееры (Онлайн)</div></summary>
-    <br><table align="center"><col width="33%"><col width="33%"><col width="33%">
-      <tbody id="resource-table-mediao"></tbody>
-    </table>
-  </details>
-
-<br><details data-page="mediar"><summary><div class="spoiler" align="center">Медиа редакторы</div></summary>
-    <br><table align="center"><col width="33%"><col width="33%"><col width="33%">
-      <tbody id="resource-table-mediar"></tbody>
-    </table>
-  </details>
-
-<br><details data-page="tools"><summary><div class="spoiler" align="center">Инструменты</div></summary>
-    <br><table align="center"><col width="33%"><col width="33%"><col width="33%">
-      <tbody id="resource-table-tools"></tbody>
-    </table>
-  </details>
-
-<br><details data-page="custom"><summary><div class="spoiler" align="center">Кастомизация</div></summary>
-    <br><table align="center"><col width="33%"><col width="33%"><col width="33%">
-      <tbody id="resource-table-custom"></tbody>
-    </table>
-  </details>
-
-<br><details data-page="other"><summary><div class="spoiler" align="center">Прочее</div></summary>
-    <br><table align="center"><col width="33%"><col width="33%"><col width="33%">
-      <tbody id="resource-table-other"></tbody>
-    </table>
-  </details><br>
+<br><div class="textbox">Результаты поиска:</div>
+<br><div id="search-results">
+  <!-- Сюда добавляются таблицы по категориям -->
+</div><br><br>
+</div>
 
 <br>
 </div>
@@ -109,11 +67,4 @@
 
 </div>
 <script src="data/script.js"></script>
-<script>
-  window.addEventListener('load', function() {
-    readCSV('/data/data_Android.csv', data => {
-      restoreSpoilers(data);
-    });
-  });
-</script>
 </body></html>

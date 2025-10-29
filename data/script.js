@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const value = searchInput.value.trim();
       if (value.length >= 2
       ) {
-        window.location.href = '/search.html?query=' + encodeURIComponent(value);
+        window.location.href = '/Search.html?query=' + encodeURIComponent(value);
       }
     });
     // Дополнительно: при нажатии Enter на инпуте
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.key === 'Enter') {
         e.preventDefault();
         if (searchInput.value.trim().length >= 2) {
-          window.location.href = '/search.html?query=' + encodeURIComponent(searchInput.value.trim());
+          window.location.href = '/Search.html?query=' + encodeURIComponent(searchInput.value.trim());
         }
       }
     });
@@ -311,4 +311,5 @@ if (isMobileDevice()) {
       }
     });
   });
+
 }

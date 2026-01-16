@@ -1,0 +1,142 @@
+{
+    "data": {
+        "Windows": {
+            "Browsers": [
+                [
+                    "Google Chrome",
+                    "Гугл браузер223232",
+                    "https://google.com",
+                    "открытый код, бесплатно",
+                    "16.01.2026 18:00"
+                ],
+                [
+                    "Yandex Browser",
+                    "Яндекс браузер",
+                    "https://browser.yandex.ru",
+                    "поисковик, веб",
+                    "16.01.2026 18:01"
+                ],
+                [
+                    "Firefox",
+                    "Файрфокс",
+                    "https://mozilla.org",
+                    "открытый код,приватность",
+                    "14.01.2026 16:45:11"
+                ]
+            ],
+            "Office": [
+                [
+                    "Microsoft Word",
+                    "Ворд",
+                    "https://office.com",
+                    "документы",
+                    "12.01.2026 09:20:33"
+                ],
+                [
+                    "LibreOffice Writer",
+                    "Либре офис",
+                    "https://libreoffice.org",
+                    "бесплатный,открытый код",
+                    "13.01.2026 14:10:55"
+                ]
+            ]
+        },
+        "Android": {
+            "Apps": [
+                [
+                    "Telegram",
+                    "Телеграм мессенджер",
+                    "https://telegram.org",
+                    "мессенджер,чат",
+                    "16.01.2026 11:05:44"
+                ],
+                [
+                    "VK",
+                    "ВКонтакте",
+                    "https://vk.com",
+                    "социальная сеть",
+                    "15.01.2026 18:22:17"
+                ]
+            ],
+            "Games": [
+                [
+                    "Call of Duty Mobile",
+                    "COD Mobile",
+                    "https://play.google.com/cod",
+                    "шутер,мультиплеер",
+                    "16.01.2026 10:30:22"
+                ]
+            ]
+        },
+        "Links": {
+            "Useful": [
+                [
+                    "GitHub",
+                    "Гитхаб",
+                    "https://github.com/app8ook",
+                    "исходники,проекты",
+                    "16.01.2026 09:15:33"
+                ],
+                [
+                    "Discord",
+                    "Дискорд",
+                    "https://discord.com",
+                    "чат,комьюнити",
+                    "15.01.2026 20:45:12"
+                ]
+            ]
+        }
+    },
+    "mydata": {
+        "Donate": {
+            "Platforms": [
+                [
+                    "Boosty",
+                    "Бусты",
+                    "https://boosty.to/app8ook",
+                    "подписка,донат",
+                    "16.01.2026 12:00:00"
+                ],
+                [
+                    "DonationAlerts",
+                    "Донат алерты",
+                    "https://www.donationalerts.ru",
+                    "стримы,донаты",
+                    "14.01.2026 17:30:45"
+                ],
+                [
+                    "12312312",
+                    "2423423423",
+                    "252523523",
+                    "",
+                    "16.01.2026 18:03"
+                ]
+            ]
+        },
+        "Soft": {
+            "Editors": [
+                [
+                    "VS Code",
+                    "Вискод",
+                    "https://code.visualstudio.com",
+                    "редактор кода",
+                    "16.01.2026 08:20:11"
+                ],
+                [
+                    "PyCharm",
+                    "Пайчарм",
+                    "https://jetbrains.com/pycharm",
+                    "python IDE",
+                    "15.01.2026 13:55:22"
+                ]
+            ]
+        }
+    },
+    "FAQ": "https://raw.githubusercontent.com/app8ook/site/main/faq.md",
+    "info": "https://raw.githubusercontent.com/app8ook/site/main/info.txt",
+    "dateupdate": "16.01.2026 18:03",
+    "TAGS": {
+        "Windows": "открытый код, бесплатно, приватно, безопасность, поисковик, веб",
+        "Android": "открытый код, бесплатно, приватно, безопасность, поисковик"
+    }
+}

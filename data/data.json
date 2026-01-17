@@ -3186,8 +3186,8 @@
             ]
         }
     },
-    "FAQ": "https://raw.githubusercontent.com/app8ook/site/main/faq.md",
-    "info": "https://raw.githubusercontent.com/app8ook/site/main/info.txt",
+    "FAQ": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/faq.md",
+    "info": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/info.md",
     "dateupdate": "18.01.2026 00:12",
     "TAGS": {
         "Windows": "открытый код, бесплатно, приватно, безопасность, поисковик, веб",

@@ -122,9 +122,10 @@ ________________________________________________________________________________
 - - c. Далее скачиваем и устанавливаем драйвер. Обычно в виде файла установки, в случае если вы видите непонятные файлы без расширения exe, то вернитесь к пункту -a, но на этапе ПКМ по нужному устройству, нажимаем обновить драйвер, "найти драйверы на этом компьютере", указываем папку к скачаному драйверу. Готово.
 
 
-<b><a href="https://mega.nz/file/FwwjhIJS#d56yLxKxq1zDVQkTcp-rUiTZZRRjXfaXd7J8nFFq3tw" target="_blank">Driver Booster</a></b> - Программа для поиска и установки драйверов (crack)
-<b><a href="https://mega.nz/file/whhklIQK#oUw831AWZHu5PZpiAEJtoc1PQyUaOsq27zOwEHn1TsE" target="_blank">Driver Easy</a></b> - Простая программа для поиска и установки драйверов (crack)
-<b><a href="https://mega.nz/file/EhREwKDK#Gh9bcZPdixOcDipl3DaP4aJ6m6F73_guceJ6AqpgbOA" target="_blank">SnappyDriver</a></b> - Довольно старая программа автоустановки драйверов
+    [Driver Booster](https://mega.nz/file/FwwjhIJS#d56yLxKxq1zDVQkTcp-rUiTZZRRjXfaXd7J8nFFq3tw) - Программа для поиска и установки драйверов (crack)
+    [Driver Easy](https://mega.nz/file/whhklIQK#oUw831AWZHu5PZpiAEJtoc1PQyUaOsq27zOwEHn1TsE) - Простая программа для поиска и установки драйверов (crack)
+    [SnappyDriver](https://mega.nz/file/EhREwKDK#Gh9bcZPdixOcDipl3DaP4aJ6m6F73_guceJ6AqpgbOA) - Довольно старая программа автоустановки драйверов
+
 
 9. Устанавливаем необходимые для себя программы, игры и восстанавливаем свои предварительно сохраненные файлы, настраиваем систему на свой вкус и цвет
 ГОТОВО

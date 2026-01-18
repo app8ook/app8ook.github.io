@@ -123,8 +123,8 @@ ________________________________________________________________________________
 
 
     [Driver Booster](https://mega.nz/file/FwwjhIJS#d56yLxKxq1zDVQkTcp-rUiTZZRRjXfaXd7J8nFFq3tw) - Программа для поиска и установки драйверов (crack)
-    [Driver Easy](https://mega.nz/file/whhklIQK#oUw831AWZHu5PZpiAEJtoc1PQyUaOsq27zOwEHn1TsE) - Простая программа для поиска и установки драйверов (crack)
-    [SnappyDriver](https://mega.nz/file/EhREwKDK#Gh9bcZPdixOcDipl3DaP4aJ6m6F73_guceJ6AqpgbOA) - Довольно старая программа автоустановки драйверов
+    [Driver Easy - Простая программа для поиска и установки драйверов (crack)](https://mega.nz/file/whhklIQK#oUw831AWZHu5PZpiAEJtoc1PQyUaOsq27zOwEHn1TsE)
+[SnappyDriver](https://mega.nz/file/EhREwKDK#Gh9bcZPdixOcDipl3DaP4aJ6m6F73_guceJ6AqpgbOA) - Довольно старая программа автоустановки драйверов
 
 
 9. Устанавливаем необходимые для себя программы, игры и восстанавливаем свои предварительно сохраненные файлы, настраиваем систему на свой вкус и цвет
@@ -331,4 +331,5 @@ SHIFT + DEL - удалить файл мимо Корзины.
 CTRL + SHIFT + ESC - открыть Диспетчер задач.
 WIN + SHIFT + S - открыть Ножницы и сразу сделать скрин области.
 ALT + TAB - быстро перемещаться между открытыми окнами.
+
 ALT + ENTER - открыть свойства файла.

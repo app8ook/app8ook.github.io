@@ -3230,7 +3230,7 @@
         }
     },
     "MDs": {
-        "index": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/index.md",
+        "/": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/index.md",
         "info": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/info.md"
     },
     "TAGS": {
@@ -3240,4 +3240,5 @@
         "Games": "RPG, Шутер, Online, Co-op, Стратегия, Симмулятор, Выживание, Зомби, Гонки, Открытый мир, Бесплатно, Для слабых ПК"
     },
     "dateupdate": "21.01.2026 15:54"
+
 }

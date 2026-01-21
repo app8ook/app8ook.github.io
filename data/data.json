@@ -4,10 +4,31 @@
             "Браузеры": [
                 [
                     "Vivaldi",
-                    "Хороший браузер от ребят из компании Opera",
+                    "Хороший и удобный браузер от выходцев из компании Opera (На базе Chromium)",
                     "https://vivaldi.com/ru/download",
-                    "Рекомендуемое, Интернет, Приватность",
-                    "19.01.2026 19:08"
+                    "Рекомендуемое, Интернет, Приватность, Кроссплатформа",
+                    "21.01.2026 12:24"
+                ],
+                [
+                    "Firefox",
+                    "Браузер на движке Quantum",
+                    "https://www.mozilla.org/firefox/download/thanks/",
+                    "OpenSource, Интернет, Приватность, Кроссплатформа",
+                    "21.01.2026 12:19"
+                ],
+                [
+                    "Ungoogled Chromium",
+                    "Тот же браузер от Google но без слежки и прочего ненужного хлама",
+                    "https://ungoogled-software.github.io/ungoogled-chromium-binaries/",
+                    "OpenSource, Интернет, Приватность",
+                    "21.01.2026 12:27"
+                ],
+                [
+                    "Floorp",
+                    "Хороший браузер на базе Firefox с уклоном в гибкость и анонимность",
+                    "https://floorp.app",
+                    "OpenSource, Интернет, Приватность",
+                    "21.01.2026 12:22"
                 ],
                 [
                     "OperaGX",
@@ -18,52 +39,347 @@
                 ],
                 [
                     "Google",
-                    "Самый прожорливый, но так же и самый распространенный браузер",
+                    "Популярный браузер",
                     "https://u.to/UMLWGw",
-                    "Интернет",
-                    "19.01.2026 19:08"
-                ],
-                [
-                    "Firefox",
-                    "Браузер на движке Quantum",
-                    "https://www.mozilla.org/firefox/download/thanks/",
-                    "OpenSource, Интернет, Приватность",
-                    "19.01.2026 19:09"
-                ],
-                [
-                    "Яндекс",
-                    "Русский аналог хрому. На движке хрома.",
-                    "https://browser.yandex.ru/download?banerid=6302000000&statpromo=true&bitness=64",
-                    "Интернет",
-                    "19.01.2026 19:09"
+                    "Интернет, Кроссплатформа",
+                    "21.01.2026 12:24"
                 ],
                 [
                     "Falkon",
                     "Легкий браузер для слабых компьютеров",
                     "https://www.falkon.org",
                     "Интернет, Легковесное",
-                    "19.01.2026 19:10"
-                ],
-                [
-                    "Floorp",
-                    "Хороший браузер на базе Firefox с уклоном в гибкость и анонимность",
-                    "https://floorp.app",
-                    "OpenSource, Интернет, Приватность",
-                    "19.01.2026 19:15"
+                    "21.01.2026 12:21"
                 ],
                 [
                     "Tor",
                     "Анонимный браузер",
-                    "https://mega.nz/file/px4xmSzY#UxEMT-QV4cKp_JdOzLX2w6vVF9o-Ob7IfV4iFTRKwPE",
-                    "Block, Интернет, Приватность",
-                    "19.01.2026 19:40"
+                    "https://www.torproject.org/download/",
+                    "Интернет, Приватность, Кроссплатформа",
+                    "21.01.2026 12:18"
                 ],
                 [
-                    "Ungoogled Chromium",
-                    "Тот же Гугл но без слежки и прочего ненужного хлама от самого гугл",
-                    "https://ungoogled-software.github.io/ungoogled-chromium-binaries/",
-                    "OpenSource, Интернет, Приватность",
-                    "19.01.2026 19:15"
+                    "Яндекс",
+                    "Русский аналог браузера Google Chrome. На движке Chromium.",
+                    "https://browser.yandex.ru/download?banerid=6302000000&statpromo=true&bitness=64",
+                    "Интернет, Кроссплатформа",
+                    "21.01.2026 12:25"
+                ]
+            ],
+            "Медиаплееры": [
+                [
+                    "AIMP",
+                    "Популярный аудиоплеер",
+                    "https://www.aimp.ru",
+                    "Аудио, Файлы, Кроссплатформа",
+                    "21.01.2026 14:50"
+                ],
+                [
+                    "Media Player Classic",
+                    "Классический медиаплеер (Fork by Aleksoid1978)",
+                    "https://github.com/Aleksoid1978/MPC-BE",
+                    "Аудио, Видео, Рекомендуемое, Файлы",
+                    "21.01.2026 15:54"
+                ],
+                [
+                    "GOM player",
+                    "Простой и красивый медиаплеер",
+                    "https://mega.nz/file/R0IAxbDZ#GOhvZnQC3zhyoFFEESBuVwnanXJgnphFat5dWgHvrVw",
+                    "Аудио, Видео, Crack, Файлы",
+                    "21.01.2026 15:11"
+                ],
+                [
+                    "Pear",
+                    "Неофициальное десктопное приложение YoutubeMusic",
+                    "https://github.com/pear-devs/pear-desktop",
+                    "OpenSource, Аудио, Рекомендуемое, Интернет",
+                    "21.01.2026 15:35"
+                ],
+                [
+                    "YaMusic",
+                    "Неофициальная десктопная Яндекс музыка и радио",
+                    "https://github.com/dedpnd/yaradio-yamusic",
+                    "OpenSource, Аудио, Интернет, Кроссплатформа",
+                    "21.01.2026 15:35"
+                ],
+                [
+                    "Musify",
+                    "Программа для скачивания музыки из различных сервисов",
+                    "https://mega.nz/file/klhTTJQa#oqxxOBziIzj3pDzJRSQONrIlSOgapdfDIdgQIuR39AQ",
+                    "Аудио, Crack, Интернет, Файлы",
+                    "21.01.2026 15:39"
+                ],
+                [
+                    "PicView",
+                    "Быстрый просмотрщик изображений на замену стандартному",
+                    "https://github.com/Ruben2776/PicView",
+                    "OpenSource, Изображения",
+                    "21.01.2026 15:45"
+                ],
+                [
+                    "QPV",
+                    "Быстрый просмотрщик изображений и гифок на замену стандартному",
+                    "https://github.com/ModuleArt/quick-picture-viewer",
+                    "OpenSource, Изображения",
+                    "21.01.2026 15:46"
+                ],
+                [
+                    "OneSpot",
+                    "Музыкальный сервис, аналог Spotify",
+                    "https://github.com/BlackHatDevX/openspot-music-app",
+                    "OpenSource, Аудио, Интернет",
+                    "21.01.2026 15:54"
+                ],
+                [
+                    "Stremio",
+                    "Медиацентр с аддонами",
+                    "https://www.stremio.com/",
+                    "Аудио, Видео, Развлечения, Интернет, Файлы, Кроссплатформа",
+                    "21.01.2026 15:53"
+                ]
+            ],
+            "Медиаредакторы": [
+                [
+                    "Davichi Resolve 18",
+                    "Видео, аудио монтаж, очень удобный софт содержащий в себе все нужное от Adobe (Crack)",
+                    "https://mega.nz/file/JlBDiIpQ#ob4lIttDFUntXro2LZU4fGxTksIhjy0lPPpo1VWIIw4",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Adobe 2023",
+                    "Adobe Photoshop, Premiere, After Effects, InDesign, Animate (crack)",
+                    "https://mega.nz/folder/M8w2Hb7K#ivNxgmhzXm-zbidTLBAWgw",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "SonyVegasPro13",
+                    "Видеоредактор (crack)",
+                    "https://mega.nz/file/h9RhnCbB#88XfA6C-GLCle1u_hrVM8bt8q0VtpUN6tapcsQCoLsw",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "AudioMaster",
+                    "Аудиоредактор (crack)",
+                    "https://mega.nz/file/NtZizJYC#BaE1240-hhMK-V7WBUIC1Jir491Lakp1L6CtzsNJ1wk",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Audacity",
+                    "Простой аудиоредактор",
+                    "https://www.audacityteam.org",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "VideoShow",
+                    "Простой Видеоредактор (crack)",
+                    "https://mega.nz/file/4gIhmTrQ#ABuMw3rShKlpm9IsacofHRvyxpbn1u2ovc-zVhE0eXk",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Paint.net",
+                    "Упрощенный фотошоп",
+                    "https://www.getpaint.net/download.html#download",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Aseprite",
+                    "Простая программа для пиксель арта (crack)",
+                    "https://mega.nz/file/54RS3IaT#ryiR8cWyms3u-c1XjIusqOu60BRZQeTbw2g_4QyAhls",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Blockbench",
+                    "Бесплатный редактор низкополигональных моделей",
+                    "https://www.blockbench.net",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Blender",
+                    "Бесплатный редактор 3D моделей",
+                    "https://www.blender.org/download/",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Pinta",
+                    "Opensource редактор изображений",
+                    "https://github.com/PintaProject",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Sigil",
+                    "Кроссплатформенный редактор электронных книг",
+                    "https://github.com/Sigil-Ebook/Sigil/",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Flowblade",
+                    "Opensource видеоредактор",
+                    "https://jliljebl.github.io/flowblade/",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Brushshe",
+                    "Компактный графический редактор (Opensource)",
+                    "https://github.com/limafresh/Brushshe/",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "CorelDRAW",
+                    "Графический редактор векторной графики",
+                    "https://mega.nz/file/1h5WWAJB#EU78LybaTk8uRZOBAbv2Gann8Za1LoeJGHu8pYCCVAk",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "FL Studio",
+                    "Продвинутое создание и редактирование аудио и музыки",
+                    "https://mega.nz/file/QpY3AAwJ#ob-_yrPy5ygJrTRX_NYdfVSktTFx6QpLErroByzXcjw",
+                    "",
+                    "18.01.2026 00:55:23"
+                ]
+            ],
+            "Социалное": [
+                [
+                    "Telegram",
+                    "Официальный десктопный клиент Телеграм (Block)",
+                    "https://desktop.telegram.org/",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Kotatogram",
+                    "Неофициальный десктопный, настраиваемый мод Телеграм (Block)",
+                    "https://mega.nz/file/o4BjAQZD#pUcpbFH4HHv9yOnyuIe_GpCvZL_ffTv_XjBfJfd2_Jw",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "AyuGram",
+                    "Неофициальный кроссплатформенный, настраиваемый мод Телеграм (Block)",
+                    "https://github.com/AyuGram/AyuGramDesktop",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Discord",
+                    "Мессенджер для гейминга (Block)",
+                    "https://discordapp.com/api/download?platform=win",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "VenCord",
+                    "Модификация Дискорд (Поверх самого приложения)",
+                    "https://vencord.dev",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "AllInOne app",
+                    "Приложение обьединяющее мессенджеры для удобства",
+                    "https://allinone.im/",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "WhatsApp",
+                    "Клиент whatsapp для ПК (Block)",
+                    "https://www.whatsapp.com/download?lang=ru",
+                    "",
+                    "18.01.2026 00:55:23"
+                ]
+            ],
+            "Офис/текст": [
+                [
+                    "MS office 2010",
+                    "Пакет продуктов Ms office",
+                    "https://mega.nz/file/Bk43HSIY#1Oph8seIrxmk8MrOrr2YbA-E3oOcusAlBu98R3PRKFI",
+                    "Файлы",
+                    "21.01.2026 13:33"
+                ],
+                [
+                    "Office Installer+",
+                    "Простая утилита для установки и активации офиса 2016/2019/2021/2024 (На программу ругается антивирус, из за фичи активации)",
+                    "https://mega.nz/file/csRjWYAY#LszIheyC_cd-9m_unttusEOFvqpybH8rZhivXXzj9XE",
+                    "Default, Crack, Рекомендуемое, Файлы",
+                    "21.01.2026 13:20"
+                ],
+                [
+                    "OfficeRtool",
+                    "Консольная простая утилита для установки и активации офиса 2016/2019/2021",
+                    "https://github.com/seeumail/OfficeRTool",
+                    "OpenSource, Файлы",
+                    "21.01.2026 13:22"
+                ],
+                [
+                    "LibreOffice",
+                    "Программа 3в1 - Word, PowerPoint, Exel (Простой аналог MS office)",
+                    "https://www.libreoffice.org/download/download-libreoffice/",
+                    "OpenSource, Файлы",
+                    "21.01.2026 13:38"
+                ],
+                [
+                    "OnlyOffice",
+                    "Серверное решение для совместной работы в офисной среде",
+                    "https://www.onlyoffice.com",
+                    "Условно бесплатно, Интернет, Файлы, Мультитул",
+                    "21.01.2026 13:49"
+                ],
+                [
+                    "VS Code",
+                    "Популярная IDE от Microsoft",
+                    "https://code.visualstudio.com",
+                    "Файлы, Программирование",
+                    "21.01.2026 13:52"
+                ],
+                [
+                    "VScodium",
+                    "Тот же IDE от Microsoft но с вырезанной слежкой и прочим хламом",
+                    "https://vscodium.com",
+                    "OpenSource, Рекомендуемое, Файлы, Программирование",
+                    "21.01.2026 13:55"
+                ],
+                [
+                    "Qt Creator",
+                    "IDE от компании Qt",
+                    "https://www.qt.io/offline-installers",
+                    "OpenSource, Файлы, Программирование, Кроссплатформа",
+                    "21.01.2026 13:57"
+                ],
+                [
+                    "Notepad++",
+                    "Простой и удобный текстовый редактор",
+                    "https://notepad-plus-plus.org/downloads/",
+                    "OpenSource, Файлы",
+                    "21.01.2026 13:58"
+                ],
+                [
+                    "Atom",
+                    "Редакор кода, удобная и упрощенная альтернатива VScode (Fork by Alex313031)",
+                    "https://github.com/Alex313031/atom-ng",
+                    "OpenSource, Файлы",
+                    "21.01.2026 13:57"
+                ],
+                [
+                    "PilotEdit",
+                    "Текстовый редактор способный работать с огромными файлами без проблем",
+                    "https://mega.nz/file/YxxTAZqR#TKJDTkdAYQKhgKpNenBpCPg4L1j6URAzAozcBkJCYdQ",
+                    "Crack, Файлы",
+                    "21.01.2026 13:58"
                 ]
             ],
             "Важные инструменты": [
@@ -85,8 +401,8 @@
                     "7zip zstd",
                     "Улучшеный 7zip с дополнительными типами архивации и поддержкой RAR",
                     "https://github.com/mcmilk/7-Zip-zstd",
-                    "OpenSource, Файлы, Легковесное",
-                    "19.01.2026 19:19"
+                    "OpenSource, Файлы",
+                    "21.01.2026 12:28"
                 ],
                 [
                     "VisualC Pack",
@@ -125,31 +441,24 @@
                 ],
                 [
                     "Glow",
-                    "Opensourse утилита для отображения более детальной информации о ПК",
+                    "Утилита для отображения более детальной информации о ПК",
                     "https://github.com/turkaysoftware/glow/",
-                    "Система",
-                    "19.01.2026 19:24"
+                    "OpenSource, Рекомендуемое, Система",
+                    "21.01.2026 12:32"
                 ],
                 [
                     "Radmin",
-                    "Программа для создания защищенной сети",
+                    "Программа для создания защищенной сети (В основном исползуется для создания локальной сети между устройствами)",
                     "https://www.radmin-vpn.com",
-                    "Развлечения, Интернет",
-                    "19.01.2026 19:24"
+                    "Развлечения, Интернет, Система",
+                    "21.01.2026 12:33"
                 ],
                 [
                     "qBitTorrent",
-                    "Более приближенная opensource альтернатива uTorrent",
+                    "Улучшенная альтернатива uTorrent",
                     "https://www.qbittorrent.org/download",
                     "OpenSource, Default, Рекомендуемое, Интернет, Файлы",
-                    "19.01.2026 19:25"
-                ],
-                [
-                    "AzTorrent",
-                    "Альтернатива uTorrent",
-                    "https://mega.nz/file/U9wSkRCR#cFOM5BMzO1wFWF38Yq_Z4fWq7_T8TedQWXT5ooGAYb8",
-                    "OpenSource, Интернет, Файлы",
-                    "19.01.2026 19:43"
+                    "21.01.2026 12:41"
                 ],
                 [
                     "File Centipede",
@@ -160,10 +469,10 @@
                 ],
                 [
                     "Thunderbird",
-                    "Самый простой и бесплатный почтовый клиент от Firefox",
-                    "https://mega.nz/file/9hRGEJDa#bBrqrflZqciAtHTe9inPuZziITW-J7B3y4V-vasI_5I",
-                    "OpenSource, Интернет, Файлы",
-                    "19.01.2026 19:31"
+                    "Самый простой и бесплатный почтовый клиент от Mozilla",
+                    "https://www.thunderbird.net",
+                    "OpenSource, Условно бесплатно, Интернет, Файлы, Кроссплатформа",
+                    "21.01.2026 12:40"
                 ],
                 [
                     "Lightshot",
@@ -174,10 +483,10 @@
                 ],
                 [
                     "Flameshot",
-                    "Opensource аналог Lightshot",
+                    "Программа для скриншотов, аналог Lightshot",
                     "https://flameshot.org/#download",
                     "OpenSource, Изображения",
-                    "19.01.2026 19:34"
+                    "21.01.2026 12:41"
                 ],
                 [
                     "Nekoray",
@@ -185,320 +494,6 @@
                     "https://github.com/MatsuriDayo/nekoray",
                     "OpenSource, Интернет, Приватность, Кроссплатформа",
                     "19.01.2026 19:33"
-                ]
-            ],
-            "Прочие инструменты": [
-                [
-                    "WindHawk",
-                    "Модульный расширяемый твикер для Windows",
-                    "https://windhawk.net",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "VMware",
-                    "Программное обеспечение виртуализации",
-                    "https://mega.nz/file/ogJESZTC#hqD9BgI9dKhdniKp6EHIZUU9I9td97pi8xcBZvfK42k",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "AnyDesk",
-                    "Программа управления удаленным рабочим столом",
-                    "https://mega.nz/file/hwxRBAAJ#ghj80rrhIOygFttzSIENOHg5GqMjpZ9xD5PDwcWT5LU",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "RustDesk",
-                    "Аналог AnyDesk, но Open Source",
-                    "https://rustdesk.com",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Ninite",
-                    "Утилита для массовой установки программ",
-                    "https://ninite.com",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Flux",
-                    "Утилита регулирующяя цветовую температуру",
-                    "https://mega.nz/file/E1InxJpY#cn12-Gf-dIf_bvqJNbmHblU6cNRadECVgHzA3CnSug4",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "GP games for PC",
-                    "Эмулятор Андроид на Windows (Оффициальный от Google)",
-                    "https://developer.android.com/games/playgames/emulator",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "BlueStacks",
-                    "Эмулятор андроида для пк",
-                    "https://www.bluestacks.com/ru/index.html",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "KEmulator",
-                    "Эмулятор java для пк",
-                    "https://4pda.to/forum/index.php?s=&showtopic=99949&view=findpost&p=2141050",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "SoundPad",
-                    "Программа для передачи звуков в микрофон (crack)",
-                    "https://mega.nz/file/N8BRyRyb#B3x66sOW8eR8EsYa3zXQ6Bxxf_HAU3pvXUeIH7mMMCY",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "SoundBooster",
-                    "Утилита для усиления звука",
-                    "https://www.letasoft.com/sound-booster-download/",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "AudioSwitch",
-                    "Удобный переключатель аудиоустройств, если имеются проблемы со стандартным",
-                    "https://github.com/sirWest/AudioSwitch",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "AQUA",
-                    "Простой Opensourse Эквалайзер на ПК",
-                    "https://github.com/h39s/AQUA",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Flowlauncher",
-                    "Шустрый виджет поисковик по системе и интернету с плагинами и темами",
-                    "https://www.flowlauncher.com",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Flowframes",
-                    "Программа использующая AI для генерации кадров на видео (Хавает GPU)",
-                    "https://nmkd.itch.io/flowframes",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Seelen-UI",
-                    "Кастомизируемый лаунчер для Windows 10/11",
-                    "https://github.com/eythaann/Seelen-UI",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "YASB",
-                    "Кастомизируемая панель как на MAC для Windows",
-                    "https://github.com/amnweb/yasb",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "FxSound",
-                    "Удобный эквалайзер с улучшением звука (crack)",
-                    "https://mega.nz/file/h1h2gARK#yLXsVhBLU05XqRi35UwJb5TnJAZ2HtBK-ZvxYEF7y_w",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "FanControl",
-                    "Утилита позволяющая настраивать различные аспекты куллеров ПК",
-                    "https://getfancontrol.com",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Stardock Start11",
-                    "\"Менеджер для перенастройки меню \"\"Пуск\"\" (crack)\"",
-                    "https://mega.nz/file/Z8wRWKiQ#HYdLO7V-Eduxqg6UHpLjfs1TvkGcjAMH5XXJLkJ-0s0",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "ClatScope Info Tool",
-                    "это инструмент для OSINT (Подробнее на странице автора)",
-                    "https://github.com/Clats97/ClatScope",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "iDownerGo",
-                    "Утилита для загрузки медиа с более чем 10к ресурсов с конвертацией форматов (crack)",
-                    "https://diakov.net/15834-idownergo-930.html",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Clippy",
-                    "\"Возвращение \"\"Скрепыша\"\" в виде ИИ ассистента\"",
-                    "https://felixrieseberg.github.io/clippy/",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Tldx",
-                    "Инструмент для поиска свободных доменов",
-                    "https://brandonyoung.dev/blog/introducing-tldx/",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "WSL",
-                    "Opensource WSL",
-                    "https://github.com/microsoft/WSL",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Keyviz",
-                    "Удобная визуализация нажатий клавиш",
-                    "https://github.com/mulaRahul/keyviz",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "SQLiteStudio",
-                    "Очень удобная opensource программа для работы с SQlite DB",
-                    "https://sqlitestudio.pl",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "FileZilla",
-                    "Простой и бесплатный FTP клиент",
-                    "https://filezilla.ru",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "ConvertX",
-                    "Opensource конвертер файлов",
-                    "https://github.com/C4illin/ConvertX",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Monolith",
-                    "CLI Инструмент для сохранения веб страниц в одном файле",
-                    "https://crates.io/crates/monolith",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "CopyParty",
-                    "Легкий opensource файловый FTP сервер на Python",
-                    "https://github.com/9001/copyparty/",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "AllDup",
-                    "Инструмент для поиска и работы с дубликатами",
-                    "https://www.allsync.de/en_download_alldup.php",
-                    "",
-                    "18.01.2026 00:55:23"
-                ]
-            ],
-            "Офис/текст": [
-                [
-                    "MS office 2010",
-                    "Пакет продуктов Ms office (crack)",
-                    "https://mega.nz/file/Bk43HSIY#1Oph8seIrxmk8MrOrr2YbA-E3oOcusAlBu98R3PRKFI",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "MS office 2013-2021",
-                    "Онлайн установщик продуктов Ms office (crack)",
-                    "https://mega.nz/file/c8AmSZZZ#Zw9zmUNWIqrW-ioNaZKXCVFJglimpQbIo9YQmIK33g8",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Office Installer+",
-                    "Простая утилита для установки и активации офиса 2016/2019/2021/2024",
-                    "https://mega.nz/file/csRjWYAY#LszIheyC_cd-9m_unttusEOFvqpybH8rZhivXXzj9XE",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "OfficeRtool",
-                    "Консольная простая утилита для установки и активации офиса 2016/2019/2021",
-                    "https://mega.nz/file/JwhBCBRZ#mjBfYhPuWjTxxtv6IglaBQ2ugu25QZV-Bo4ETZk17Q4",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "LibreOffice",
-                    "Программа 3в1 - Word, PowerPoint, Exel (Простой аналог MSoffice)",
-                    "https://www.libreoffice.org/download/download-libreoffice/",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "OnlyOffice",
-                    "Серверное opensorce решение для совместной работы в офисной среде",
-                    "https://www.onlyoffice.com",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "VScodium",
-                    "Тот же Visual Studio Code от MS но с вырезанной слежкой и прочим хламом",
-                    "https://vscodium.com",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Qt Creator",
-                    "Кроссплатформенная opensource IDE",
-                    "https://www.qt.io/offline-installers",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Notepad++",
-                    "Простой и удобный текстовый редактор",
-                    "https://notepad-plus-plus.org/downloads/",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Atom",
-                    "Редакор кода, удобная и упрощенная альтернатива VScode (Fork by Alex313031)",
-                    "https://github.com/Alex313031/atom-ng",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "PilotEdit",
-                    "Текстовый редактор способный работать с огромными файлами без проблем (crack)",
-                    "https://mega.nz/file/YxxTAZqR#TKJDTkdAYQKhgKpNenBpCPg4L1j6URAzAozcBkJCYdQ",
-                    "",
-                    "18.01.2026 00:55:23"
-                ]
-            ],
-            "Безопасность": [
-                [
-                    "WBPV",
-                    "Инструмент для просмотра паролей с браузеров на ПК",
-                    "https://mega.nz/file/sghQEbqQ#bStDsgI-dCcp7WpbJoqqGyEpdvwz1V18ZcFU38FFmjw",
-                    "",
-                    "18.01.2026 00:55:23"
                 ],
                 [
                     "Keepassxc",
@@ -508,23 +503,9 @@
                     "18.01.2026 00:55:23"
                 ],
                 [
-                    "TinyWall",
-                    "Маленький но удобный и простой файрвол",
-                    "https://mega.nz/file/4xIRDAAI#CZj78GQiHgxPfuf8CJaRt9_PXQ8SBTWRBGdAKyZ7crs",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
                     "Zen",
                     "Блокировщик рекламы",
                     "https://github.com/anfragment/zen",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Cyberscarecrow",
-                    "Отпугиватель вирусов (Механизм работы описан на сайте)",
-                    "https://www.cyberscarecrow.com/download",
                     "",
                     "18.01.2026 00:55:23"
                 ],
@@ -560,6 +541,374 @@
                     "Auslogics Anti-Malware",
                     "Простое антивирусное ПО (Crack)",
                     "https://mega.nz/file/4koxXZrJ#Nj9OHHf_NPDf4_aHxHBUBiWHqCNoP4SIsI4YrifdVmU",
+                    "",
+                    "18.01.2026 00:55:23"
+                ]
+            ],
+            "Прочие инструменты": [
+                [
+                    "WindHawk",
+                    "Модульный расширяемый твикер для Windows",
+                    "https://windhawk.net",
+                    "OpenSource, Система, Кастомизация",
+                    "21.01.2026 12:09"
+                ],
+                [
+                    "VMware",
+                    "Программное обеспечение виртуализации",
+                    "https://mega.nz/file/ogJESZTC#hqD9BgI9dKhdniKp6EHIZUU9I9td97pi8xcBZvfK42k",
+                    "Crack, Программирование, Система",
+                    "21.01.2026 12:10"
+                ],
+                [
+                    "AnyDesk",
+                    "Программа управления удаленным рабочим столом",
+                    "https://anydesk.com/ru/downloads",
+                    "Интернет, Система, Кроссплатформа",
+                    "21.01.2026 12:44"
+                ],
+                [
+                    "RustDesk",
+                    "Аналог AnyDesk, но Open Source",
+                    "https://rustdesk.com",
+                    "OpenSource, Интернет, Система, Кроссплатформа",
+                    "21.01.2026 12:11"
+                ],
+                [
+                    "Ninite",
+                    "Утилита для массовой установки программ",
+                    "https://ninite.com",
+                    "Условно бесплатно, Файлы, Система, Мультитул",
+                    "21.01.2026 12:14"
+                ],
+                [
+                    "Flux",
+                    "Утилита регулирующяя цветовую температуру",
+                    "https://justgetflux.com/dlwin.html",
+                    "Легковесное, Система, Кастомизация",
+                    "21.01.2026 12:16"
+                ],
+                [
+                    "GP games for PC",
+                    "Эмулятор Андроид на Windows (Оффициальный от Google)",
+                    "https://developer.android.com/games/playgames/emulator",
+                    "Развлечения, Кроссплатформа",
+                    "21.01.2026 12:46"
+                ],
+                [
+                    "BlueStacks",
+                    "Эмулятор андроида для пк",
+                    "https://www.bluestacks.com/ru/index.html",
+                    "Развлечения, Кроссплатформа",
+                    "21.01.2026 12:47"
+                ],
+                [
+                    "KEmulator",
+                    "Эмулятор java (платформы старых кнопочных телефонов) для пк",
+                    "https://4pda.to/forum/index.php?s=&showtopic=99949&view=findpost&p=2141050",
+                    "Развлечения",
+                    "21.01.2026 12:47"
+                ],
+                [
+                    "SoundPad",
+                    "Программа для передачи звуков в микрофон",
+                    "https://mega.nz/file/N8BRyRyb#B3x66sOW8eR8EsYa3zXQ6Bxxf_HAU3pvXUeIH7mMMCY",
+                    "Аудио, Развлечения, Crack",
+                    "21.01.2026 12:51"
+                ],
+                [
+                    "SoundBooster",
+                    "Утилита для усиления звука",
+                    "https://www.letasoft.com/sound-booster-download/",
+                    "Аудио, Легковесное, Система",
+                    "21.01.2026 12:48"
+                ],
+                [
+                    "AudioSwitch",
+                    "Удобный переключатель аудиоустройств, если имеются проблемы со стандартным",
+                    "https://github.com/sirWest/AudioSwitch",
+                    "OpenSource, Аудио, Легковесное, Система",
+                    "21.01.2026 12:49"
+                ],
+                [
+                    "FxSound",
+                    "Удобный эквалайзер с улучшением звука",
+                    "https://www.fxsound.com/download",
+                    "OpenSource, Аудио, Рекомендуемое, Система",
+                    "21.01.2026 12:52"
+                ],
+                [
+                    "AQUA",
+                    "Простой Эквалайзер на ПК",
+                    "https://github.com/h39s/AQUA",
+                    "OpenSource, Аудио, Легковесное, Система",
+                    "21.01.2026 12:52"
+                ],
+                [
+                    "Flowlauncher",
+                    "Шустрый виджет поисковик по системе и интернету с плагинами и темами",
+                    "https://www.flowlauncher.com",
+                    "OpenSource, Интернет, Файлы, Система, Кастомизация",
+                    "21.01.2026 12:54"
+                ],
+                [
+                    "Flowframes",
+                    "Программа использующая AI для генерации кадров на видео (Хавает GPU)",
+                    "https://nmkd.itch.io/flowframes",
+                    "Видео, Файлы",
+                    "21.01.2026 12:55"
+                ],
+                [
+                    "Seelen-UI",
+                    "Кастомизируемый лаунчер для Windows 10/11",
+                    "https://github.com/eythaann/Seelen-UI",
+                    "OpenSource, Система, Кастомизация",
+                    "21.01.2026 12:56"
+                ],
+                [
+                    "YASB",
+                    "Кастомизируемая панель как на MAC для Windows",
+                    "https://github.com/amnweb/yasb",
+                    "OpenSource, Система, Кастомизация",
+                    "21.01.2026 12:59"
+                ],
+                [
+                    "FanControl",
+                    "Утилита позволяющая настраивать различные аспекты куллеров ПК",
+                    "https://getfancontrol.com",
+                    "OpenSource, Легковесное, Система",
+                    "21.01.2026 12:57"
+                ],
+                [
+                    "ClatScope Info Tool",
+                    "Инструмент для OSINT (Подробнее на странице автора)",
+                    "https://github.com/Clats97/ClatScope",
+                    "OpenSource, Развлечения, Интернет, Приватность, Программирование",
+                    "21.01.2026 13:00"
+                ],
+                [
+                    "iDownerGo",
+                    "Утилита для загрузки медиа с более чем 10к ресурсов с конвертацией форматов",
+                    "https://diakov.net/15834-idownergo-930.html",
+                    "Развлечения, Crack, Интернет, Файлы",
+                    "21.01.2026 13:02"
+                ],
+                [
+                    "Clippy",
+                    "\"Возвращение \"\"Скрепыша\"\" в виде ИИ ассистента\"",
+                    "https://felixrieseberg.github.io/clippy/",
+                    "OpenSource, Развлечения, Интернет, Кастомизация",
+                    "21.01.2026 13:03"
+                ],
+                [
+                    "Tldx",
+                    "Инструмент для поиска свободных доменов",
+                    "https://brandonyoung.dev/blog/introducing-tldx/",
+                    "OpenSource, Интернет, Легковесное, Программирование",
+                    "21.01.2026 13:04"
+                ],
+                [
+                    "WSL",
+                    "Opensource WSL",
+                    "https://github.com/microsoft/WSL",
+                    "OpenSource, Программирование, Система, Кроссплатформа",
+                    "21.01.2026 13:04"
+                ],
+                [
+                    "Keyviz",
+                    "Удобная визуализация нажатий клавиш",
+                    "https://github.com/mulaRahul/keyviz",
+                    "OpenSource, Развлечения, Легковесное, Кастомизация",
+                    "21.01.2026 13:05"
+                ],
+                [
+                    "SQLiteStudio",
+                    "Очень удобная программа для работы с SQlite DB",
+                    "https://sqlitestudio.pl",
+                    "OpenSource, Файлы, Программирование",
+                    "21.01.2026 13:06"
+                ],
+                [
+                    "FileZilla",
+                    "Простой и бесплатный FTP клиент",
+                    "https://filezilla.ru",
+                    "Интернет, Файлы, Программирование",
+                    "21.01.2026 13:07"
+                ],
+                [
+                    "WinSCP",
+                    "SFTP, SCP, S3, FTP клиент",
+                    "https://winscp.net/eng/download.php",
+                    "OpenSource, Интернет, Программирование",
+                    "21.01.2026 13:10"
+                ],
+                [
+                    "ConvertX",
+                    "Конвертер форматов файлов",
+                    "https://github.com/C4illin/ConvertX",
+                    "OpenSource, Аудио, Видео, Изображения, Файлы, Мультитул",
+                    "21.01.2026 13:12"
+                ],
+                [
+                    "Monolith",
+                    "CLI Инструмент для сохранения веб страниц в одном файле",
+                    "https://crates.io/crates/monolith",
+                    "OpenSource, Интернет, Файлы, Программирование",
+                    "21.01.2026 13:14"
+                ],
+                [
+                    "CopyParty",
+                    "Легкий opensource файловый FTP сервер на Python",
+                    "https://github.com/9001/copyparty/",
+                    "OpenSource, Интернет, Файлы, Легковесное, Программирование",
+                    "21.01.2026 13:16"
+                ],
+                [
+                    "AllDup",
+                    "Инструмент для поиска и работы с дубликатами",
+                    "https://www.allsync.de/en_download_alldup.php",
+                    "Файлы, Легковесное",
+                    "21.01.2026 13:17"
+                ],
+                [
+                    "WBPV",
+                    "Инструмент для просмотра паролей с браузеров на ПК",
+                    "https://mega.nz/file/sghQEbqQ#bStDsgI-dCcp7WpbJoqqGyEpdvwz1V18ZcFU38FFmjw",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "TinyWall",
+                    "Маленький но удобный и простой файрвол",
+                    "https://mega.nz/file/4xIRDAAI#CZj78GQiHgxPfuf8CJaRt9_PXQ8SBTWRBGdAKyZ7crs",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Cyberscarecrow",
+                    "Отпугиватель вирусов (Механизм работы описан на сайте)",
+                    "https://www.cyberscarecrow.com/download",
+                    "",
+                    "18.01.2026 00:55:23"
+                ]
+            ],
+            "Игровые инструменты": [
+                [
+                    "Steam",
+                    "Игровой клиент Valve",
+                    "https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "EGS",
+                    "Игровой клиент EpicGames",
+                    "https://store.epicgames.com/en-US/download",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "GOG galaxy 2.0",
+                    "Игровой клиент CD Projekt",
+                    "https://www.gog.com/galaxy",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "EA app",
+                    "Игровой клиент EA",
+                    "https://www.ea.com/ea-app",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "UbisoftConnect",
+                    "Игровой клиент Ubisoft",
+                    "https://ubi.li/4vxt9",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Xbox App",
+                    "Игровой клиент Microsoft",
+                    "https://www.xbox.com/en-us/apps/xbox-app-on-pc",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "HydraLauncher",
+                    "Игровой пиратский клиент для простого скачивания и отслеживания своей библиотеки игр",
+                    "https://github.com/hydralauncher/hydra/releases/",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Overwolf",
+                    "Оверлей, маркет приложений и расширений для игр",
+                    "https://www.overwolf.com/appstore/",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Blitz",
+                    "Игротрекер но без овервульфа",
+                    "https://blitz.gg",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Medal",
+                    "Outplayed но без овервульфа + ютуб для геймеров",
+                    "https://medal.tv",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "OBS",
+                    "Программа для записи и стриминга с экрана",
+                    "https://obsproject.com/ru/download",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "XmouseBC",
+                    "Программа - биндер для мыши",
+                    "https://mega.nz/file/4khz2QYT#XpGXjKzdLEPqWWp3w5CX7VFIlaSoFS4EmpPGL9ApUJc",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Sonar",
+                    "Универсальная программа для настройки микрофона и наушников с нейросетью (От SteelSeries)",
+                    "https://steelseries.com/gg/sonar",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Ludusavi",
+                    "Opensource бекапер игровых сохранений",
+                    "https://github.com/mtkennerly/ludusavi",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "Wabbajack",
+                    "Opensource менеджер модов для игр",
+                    "https://www.wabbajack.org/",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "r2modman",
+                    "Еще один opensource менеджер модов для игр",
+                    "https://r2modman.com",
+                    "",
+                    "18.01.2026 00:55:23"
+                ],
+                [
+                    "DiscordQuestCompleter",
+                    "Небольшой opensource инструмент для эмуляции запуска различных игр",
+                    "https://github.com/markterence/discord-quest-completer",
                     "",
                     "18.01.2026 00:55:23"
                 ]
@@ -730,371 +1079,6 @@
                     "RAMMap",
                     "Небольшая утилита для очистки оперативной памяти",
                     "https://mega.nz/file/0whywbIC#FozjUgkWtJUlv2dVrv5xuT_dPqaqYdEElurXaRzjG4s",
-                    "",
-                    "18.01.2026 00:55:23"
-                ]
-            ],
-            "Медиаплееры": [
-                [
-                    "AIMP",
-                    "Аудиоплеер",
-                    "https://www.aimp.ru/?do=download.file&id=4",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Media Player Classic",
-                    "Классический медиа плеер (Fork by Aleksoid1978)",
-                    "https://github.com/Aleksoid1978/MPC-BE",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "GOM player",
-                    "Простой и красивый медиаплеер (Crack)",
-                    "https://mega.nz/file/R0IAxbDZ#GOhvZnQC3zhyoFFEESBuVwnanXJgnphFat5dWgHvrVw",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Ytmdesktop",
-                    "Неофициальное десктопное приложение YoutubeMusic",
-                    "https://th-ch.github.io/youtube-music/",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "YaMusic",
-                    "Неофициальная, немного взломанная, Яндекс музыка и радио",
-                    "https://mega.nz/file/loxwlSwa#tmTvkPahKp3p_G8OFV-KvLZ3kT2cw9zUh6Eq85XW92g",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Musify",
-                    "Программа для скачивания музыки из различных сервисов (crack)",
-                    "https://mega.nz/file/klhTTJQa#oqxxOBziIzj3pDzJRSQONrIlSOgapdfDIdgQIuR39AQ",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "KeepBeats",
-                    "Программа для скачивания музыки из различных музыкальных сервисов",
-                    "https://mega.nz/file/k8ATFDDZ#E7R4Q5j-Un8Joh8n-w4ohPcAMDfxpEx4BhokysEwqLg",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "PicView",
-                    "Быстрый просмотрщик изображений на замену стандартному",
-                    "https://github.com/Ruben2776/PicView",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "QPV",
-                    "Быстрый просмотрщик изображений и гифок на замену стандартному",
-                    "https://github.com/ModuleArt/quick-picture-viewer",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "OneSpot",
-                    "Кроссплатформенный opensource музыкальный сервис, аналог Spotify",
-                    "https://github.com/BlackHatDevX/openspot-music-app",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Stremio",
-                    "Кроссплатформенный медиацентр с аддонами",
-                    "https://www.stremio.com/",
-                    "",
-                    "18.01.2026 00:55:23"
-                ]
-            ],
-            "Медиаредакторы": [
-                [
-                    "Davichi Resolve 18",
-                    "Видео, аудио монтаж, очень удобный софт содержащий в себе все нужное от Adobe (Crack)",
-                    "https://mega.nz/file/JlBDiIpQ#ob4lIttDFUntXro2LZU4fGxTksIhjy0lPPpo1VWIIw4",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Adobe 2023",
-                    "Adobe Photoshop, Premiere, After Effects, InDesign, Animate (crack)",
-                    "https://mega.nz/folder/M8w2Hb7K#ivNxgmhzXm-zbidTLBAWgw",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "SonyVegasPro13",
-                    "Видеоредактор (crack)",
-                    "https://mega.nz/file/h9RhnCbB#88XfA6C-GLCle1u_hrVM8bt8q0VtpUN6tapcsQCoLsw",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "AudioMaster",
-                    "Аудиоредактор (crack)",
-                    "https://mega.nz/file/NtZizJYC#BaE1240-hhMK-V7WBUIC1Jir491Lakp1L6CtzsNJ1wk",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Audacity",
-                    "Простой аудиоредактор",
-                    "https://www.audacityteam.org",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "VideoShow",
-                    "Простой Видеоредактор (crack)",
-                    "https://mega.nz/file/4gIhmTrQ#ABuMw3rShKlpm9IsacofHRvyxpbn1u2ovc-zVhE0eXk",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Paint.net",
-                    "Упрощенный фотошоп",
-                    "https://www.getpaint.net/download.html#download",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Aseprite",
-                    "Простая программа для пиксель арта (crack)",
-                    "https://mega.nz/file/54RS3IaT#ryiR8cWyms3u-c1XjIusqOu60BRZQeTbw2g_4QyAhls",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Blockbench",
-                    "Бесплатный редактор низкополигональных моделей",
-                    "https://www.blockbench.net",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Blender",
-                    "Бесплатный редактор 3D моделей",
-                    "https://www.blender.org/download/",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Pinta",
-                    "Opensource редактор изображений",
-                    "https://github.com/PintaProject",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Sigil",
-                    "Кроссплатформенный редактор электронных книг",
-                    "https://github.com/Sigil-Ebook/Sigil/",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Flowblade",
-                    "Opensource видеоредактор",
-                    "https://jliljebl.github.io/flowblade/",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Brushshe",
-                    "Компактный графический редактор (Opensource)",
-                    "https://github.com/limafresh/Brushshe/",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "CorelDRAW",
-                    "Графический редактор векторной графики",
-                    "https://mega.nz/file/1h5WWAJB#EU78LybaTk8uRZOBAbv2Gann8Za1LoeJGHu8pYCCVAk",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "FL Studio",
-                    "Продвинутое создание и редактирование аудио и музыки",
-                    "https://mega.nz/file/QpY3AAwJ#ob-_yrPy5ygJrTRX_NYdfVSktTFx6QpLErroByzXcjw",
-                    "",
-                    "18.01.2026 00:55:23"
-                ]
-            ],
-            "Игровые инструменты": [
-                [
-                    "Steam",
-                    "Игровой клиент Valve",
-                    "https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "EGS",
-                    "Игровой клиент EpicGames",
-                    "https://store.epicgames.com/en-US/download",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "GOG galaxy 2.0",
-                    "Игровой клиент CD Projekt",
-                    "https://www.gog.com/galaxy",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "EA app",
-                    "Игровой клиент EA",
-                    "https://www.ea.com/ea-app",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "UbisoftConnect",
-                    "Игровой клиент Ubisoft",
-                    "https://ubi.li/4vxt9",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Xbox App",
-                    "Игровой клиент Microsoft",
-                    "https://www.xbox.com/en-us/apps/xbox-app-on-pc",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "HydraLauncher",
-                    "Игровой пиратский клиент для простого скачивания и отслеживания своей библиотеки игр",
-                    "https://github.com/hydralauncher/hydra/releases/",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Overwolf",
-                    "Оверлей, маркет приложений и расширений для игр",
-                    "https://www.overwolf.com/appstore/",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Blitz",
-                    "Игротрекер но без овервульфа",
-                    "https://blitz.gg",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Medal",
-                    "Outplayed но без овервульфа + ютуб для геймеров",
-                    "https://medal.tv",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "OBS",
-                    "Программа для записи и стриминга с экрана",
-                    "https://obsproject.com/ru/download",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "XmouseBC",
-                    "Программа - биндер для мыши",
-                    "https://mega.nz/file/4khz2QYT#XpGXjKzdLEPqWWp3w5CX7VFIlaSoFS4EmpPGL9ApUJc",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Sonar",
-                    "Универсальная программа для настройки микрофона и наушников с нейросетью (От SteelSeries)",
-                    "https://steelseries.com/gg/sonar",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Ludusavi",
-                    "Opensource бекапер игровых сохранений",
-                    "https://github.com/mtkennerly/ludusavi",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Wabbajack",
-                    "Opensource менеджер модов для игр",
-                    "https://www.wabbajack.org/",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "r2modman",
-                    "Еще один opensource менеджер модов для игр",
-                    "https://r2modman.com",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "DiscordQuestCompleter",
-                    "Небольшой opensource инструмент для эмуляции запуска различных игр",
-                    "https://github.com/markterence/discord-quest-completer",
-                    "",
-                    "18.01.2026 00:55:23"
-                ]
-            ],
-            "Социалное": [
-                [
-                    "Telegram",
-                    "Официальный десктопный клиент Телеграм (Block)",
-                    "https://desktop.telegram.org/",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Kotatogram",
-                    "Неофициальный десктопный, настраиваемый мод Телеграм (Block)",
-                    "https://mega.nz/file/o4BjAQZD#pUcpbFH4HHv9yOnyuIe_GpCvZL_ffTv_XjBfJfd2_Jw",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "AyuGram",
-                    "Неофициальный кроссплатформенный, настраиваемый мод Телеграм (Block)",
-                    "https://github.com/AyuGram/AyuGramDesktop",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "Discord",
-                    "Мессенджер для гейминга (Block)",
-                    "https://discordapp.com/api/download?platform=win",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "VenCord",
-                    "Модификация Дискорд (Поверх самого приложения)",
-                    "https://vencord.dev",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "AllInOne app",
-                    "Приложение обьединяющее мессенджеры для удобства",
-                    "https://allinone.im/",
-                    "",
-                    "18.01.2026 00:55:23"
-                ],
-                [
-                    "WhatsApp",
-                    "Клиент whatsapp для ПК (Block)",
-                    "https://www.whatsapp.com/download?lang=ru",
                     "",
                     "18.01.2026 00:55:23"
                 ]
@@ -1587,6 +1571,13 @@
                     "https://www.stremio.com/",
                     "",
                     "18.01.2026 00:46:14"
+                ],
+                [
+                    "Musify",
+                    "Музыкальный сервис обьединяющий популярные стриминговые платформы в одном плеере",
+                    "https://github.com/gokadzev/Musify",
+                    "OpenSource, Аудио, Интернет",
+                    "21.01.2026 15:44"
                 ]
             ],
             "Медиаредакторы": [
@@ -3041,6 +3032,14 @@
                     "18.01.2026 00:56:54"
                 ]
             ]
+        },
+        "Apple": {
+            "Phone": [],
+            "Mac": [],
+            "Pad": []
+        },
+        "Linux": {
+            "Контента пока нет": []
         }
     },
     "mydata": {
@@ -3230,13 +3229,15 @@
             ]
         }
     },
-    "FAQ": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/faq.md",
-    "info": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/info.md",
-    "dateupdate": "19.01.2026 19:44",
+    "MDs": {
+        "index": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/index.md",
+        "info": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/info.md"
+    },
     "TAGS": {
         "Windows": "OpenSource, Условно бесплатно, Аудио, Видео, Изображения, Безопасность, Развлечения, Default, Crack, Block, Рекомендуемое, Интернет, Файлы, Приватность, Легковесное, Программирование, Система, Мультитул, Кастомизация, Кроссплатформа",
         "Android": "OpenSource, Условно бесплатно, Аудио, Видео, Изображения, Безопасность, Развлечения, Mod, Block, Рекомендуемое, Интернет, Файлы, Приватность, Легковесное, Система, Мультитул, Кастомизация, Кроссплатформа",
         "Links": "Условно бесплатно, Аудио, Видео, Изображения, Безопасность, Развлечения, Block, Рекомендуемое, Файлы, ИИ, Мультитул, Приватность",
         "Games": "RPG, Шутер, Online, Co-op, Стратегия, Симмулятор, Выживание, Зомби, Гонки, Открытый мир, Бесплатно, Для слабых ПК"
-    }
+    },
+    "dateupdate": "21.01.2026 15:54"
 }

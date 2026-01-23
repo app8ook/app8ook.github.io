@@ -40,9 +40,16 @@
                 [
                     "Google",
                     "Популярный браузер",
-                    "https://u.to/UMLWGw",
+                    "https://www.google.com/chrome/",
                     "Интернет, Кроссплатформа",
-                    "21.01.2026 12:24"
+                    "23.01.2026 14:05"
+                ],
+                [
+                    "Brave",
+                    "Хороший браузер на базе Firefox'a с уклоном в приватность",
+                    "https://brave.com/ru/download/",
+                    "Интернет, Приватность, Кроссплатформа",
+                    "23.01.2026 13:41"
                 ],
                 [
                     "Falkon",
@@ -56,7 +63,7 @@
                     "Анонимный браузер",
                     "https://www.torproject.org/download/",
                     "Интернет, Приватность, Кроссплатформа",
-                    "21.01.2026 12:18"
+                    "23.01.2026 13:44"
                 ],
                 [
                     "Яндекс",
@@ -68,11 +75,11 @@
             ],
             "Медиаплееры": [
                 [
-                    "AIMP",
-                    "Популярный аудиоплеер",
-                    "https://www.aimp.ru",
-                    "Аудио, Файлы, Кроссплатформа",
-                    "21.01.2026 14:50"
+                    "VLC",
+                    "Популярный локальный медиаплеер",
+                    "https://www.videolan.org/vlc/index.ru.html",
+                    "Аудио, Видео, Файлы, Кроссплатформа",
+                    "23.01.2026 15:17"
                 ],
                 [
                     "Media Player Classic",
@@ -82,11 +89,25 @@
                     "21.01.2026 15:54"
                 ],
                 [
+                    "PotPlayer",
+                    "Популярный локальный медиаплеер",
+                    "https://potplayer.tv",
+                    "Аудио, Видео, Файлы",
+                    "23.01.2026 15:21"
+                ],
+                [
                     "GOM player",
                     "Простой и красивый медиаплеер",
                     "https://mega.nz/file/R0IAxbDZ#GOhvZnQC3zhyoFFEESBuVwnanXJgnphFat5dWgHvrVw",
                     "Аудио, Видео, Crack, Файлы",
                     "21.01.2026 15:11"
+                ],
+                [
+                    "AIMP",
+                    "Популярный локальный аудиоплеер",
+                    "https://www.aimp.ru",
+                    "Аудио, Файлы, Кроссплатформа",
+                    "23.01.2026 15:22"
                 ],
                 [
                     "Pear",
@@ -134,8 +155,8 @@
                     "Stremio",
                     "Медиацентр с аддонами",
                     "https://www.stremio.com/",
-                    "Аудио, Видео, Развлечения, Интернет, Файлы, Кроссплатформа",
-                    "21.01.2026 15:53"
+                    "Видео, Развлечения, Интернет, Файлы, Кроссплатформа",
+                    "23.01.2026 15:16"
                 ]
             ],
             "Медиаредакторы": [
@@ -436,13 +457,6 @@
                     "https://flameshot.org/#download",
                     "OpenSource, Изображения",
                     "21.01.2026 12:41"
-                ],
-                [
-                    "Nekoray",
-                    "Открытый клиент VPN для добавления и настройки своих конфигов (Поддерживаются различные протоколы)",
-                    "https://github.com/MatsuriDayo/nekoray",
-                    "OpenSource, Интернет, Приватность, Кроссплатформа",
-                    "21.01.2026 17:46"
                 ],
                 [
                     "Keepassxc",
@@ -747,28 +761,28 @@
                     "Официальный десктопный клиент Телеграм",
                     "https://desktop.telegram.org/",
                     "Развлечения, Block, Интернет, Файлы, Кроссплатформа",
-                    "21.01.2026 17:38"
+                    "23.01.2026 14:06"
                 ],
                 [
                     "Kotatogram",
                     "Неофициальный десктопный, настраиваемый мод Телеграм",
-                    "https://mega.nz/file/o4BjAQZD#pUcpbFH4HHv9yOnyuIe_GpCvZL_ffTv_XjBfJfd2_Jw",
-                    "Развлечения, Block, Интернет, Файлы",
-                    "21.01.2026 17:38"
+                    "https://kotatogram.github.io",
+                    "OpenSource, Развлечения, Block, Интернет, Файлы",
+                    "23.01.2026 14:09"
                 ],
                 [
                     "AyuGram",
                     "Неофициальный кроссплатформенный, настраиваемый мод Телеграм",
                     "https://github.com/AyuGram/AyuGramDesktop",
-                    "Развлечения, Block, Интернет, Файлы, Кроссплатформа",
-                    "21.01.2026 17:39"
+                    "OpenSource, Развлечения, Block, Интернет, Файлы, Кроссплатформа",
+                    "23.01.2026 14:09"
                 ],
                 [
                     "Discord",
                     "Мессенджер для гейминга",
-                    "https://discordapp.com/api/download",
+                    "https://discord.com/download",
                     "Развлечения, Block, Интернет, Кроссплатформа",
-                    "21.01.2026 17:40"
+                    "23.01.2026 14:19"
                 ],
                 [
                     "VenCord",
@@ -776,6 +790,13 @@
                     "https://vencord.dev",
                     "Развлечения, Интернет, Кастомизация",
                     "21.01.2026 17:40"
+                ],
+                [
+                    "Stoat",
+                    "Мессенеджер, Аналог Discord",
+                    "https://stoat.chat/download",
+                    "OpenSource, Развлечения, Интернет, Файлы, Кроссплатформа",
+                    "23.01.2026 14:13"
                 ],
                 [
                     "WhatsApp",
@@ -1358,29 +1379,50 @@
                     "Vivaldi",
                     "Хороший браузер от ребят из компании Opera",
                     "https://vivaldi.com/ru/android/",
-                    "Рекомендуемое, Интернет, Приватность",
-                    "19.01.2026 19:36"
-                ],
-                [
-                    "Opera GX",
-                    "Удобный, настраиваемый простой браузер",
-                    "https://www.opera.com/ru/download",
-                    "Интернет",
-                    "19.01.2026 19:36"
-                ],
-                [
-                    "Google",
-                    "Самый прожорливый и самый популярный браузер",
-                    "https://www.google.com/chrome/browser/mobile/",
-                    "Интернет",
-                    "19.01.2026 19:36"
+                    "Рекомендуемое, Интернет, Приватность, Кроссплатформа",
+                    "23.01.2026 13:42"
                 ],
                 [
                     "Firefox",
                     "Популярный опенсорс браузер на движке Quantum",
                     "https://www.mozilla.org/ru/firefox/browsers/mobile/",
-                    "OpenSource, Интернет, Приватность",
-                    "19.01.2026 19:36"
+                    "OpenSource, Интернет, Приватность, Кроссплатформа",
+                    "23.01.2026 13:43"
+                ],
+                [
+                    "Opera",
+                    "Удобный, настраиваемый простой браузер",
+                    "https://www.opera.com/ru/download",
+                    "Интернет",
+                    "23.01.2026 13:42"
+                ],
+                [
+                    "XBrowser",
+                    "Очень быстрый, настраеваемый и легкий браузер",
+                    "https://4pda.to/forum/index.php?showtopic=725717",
+                    "Интернет, Легковесное, 4PDA",
+                    "23.01.2026 14:03"
+                ],
+                [
+                    "Google",
+                    "Популярный браузер",
+                    "https://www.google.com/chrome/",
+                    "Интернет, Кроссплатформа",
+                    "23.01.2026 14:05"
+                ],
+                [
+                    "Brave",
+                    "Хороший браузер на базе Firefox'a с уклоном в приватность",
+                    "https://brave.com/ru/download/",
+                    "Интернет, Приватность, Кроссплатформа",
+                    "23.01.2026 13:41"
+                ],
+                [
+                    "Tor",
+                    "Анонимный браузер",
+                    "https://www.torproject.org/download/",
+                    "Интернет, Приватность, Кроссплатформа",
+                    "23.01.2026 14:01"
                 ],
                 [
                     "Яндекс",
@@ -1388,349 +1430,347 @@
                     "https://mobile.yandex.ru/apps/android/browser/",
                     "Интернет",
                     "19.01.2026 19:36"
-                ],
-                [
-                    "Brave",
-                    "Хороший браузер на базе Firefox'a",
-                    "https://brave.com/ru/download/",
-                    "Интернет, Легковесное",
-                    "19.01.2026 19:37"
-                ],
-                [
-                    "TorBrowser",
-                    "Анонимный и безопасный серфинг в сети",
-                    "https://mega.nz/file/UkQSBDwI#cv_rHPzasKC7vastID4CwN30hm50LRTlKOuTXXabajc",
-                    "Block, Интернет, Приватность",
-                    "19.01.2026 19:43"
-                ],
-                [
-                    "XBrowser",
-                    "Очень быстрый, настраеваемый и легкий браузер",
-                    "https://mega.nz/file/g0BCRLYI#1n5H7z8v-G1cmYIsbnREc1PXHU5dcaYNbX5N_KZsCxs",
-                    "Интернет, Легковесное",
-                    "19.01.2026 19:38"
                 ]
             ],
             "Социальное": [
                 [
                     "Telegram",
-                    "Официальная клиент Telegram",
-                    "https://telegram.org/android?setln=ru",
-                    "Block, Интернет",
-                    "19.01.2026 19:43"
+                    "Официальный клиент Телеграм",
+                    "https://telegram.org/android",
+                    "Развлечения, Block, Интернет, Файлы, Кроссплатформа",
+                    "23.01.2026 14:07"
                 ],
                 [
                     "Turbotel",
-                    "Неофициальный и настраиваемый мод Telegram",
-                    "https://mega.nz/file/9h5jhaTS#ixYpxxneRXjm5xd7KJ2rJZKx1vuS8JGYxWIE7vDkLTU",
-                    "Mod, Block, Интернет",
-                    "19.01.2026 19:43"
+                    "Неофициальный и настраиваемый мод Telegram (Рекомендуется мод от Strannik)",
+                    "https://4pda.to/forum/index.php?showtopic=820264&st=3480",
+                    "Развлечения, Mod, Block, Интернет, Файлы, 4PDA",
+                    "23.01.2026 14:17"
                 ],
                 [
                     "VKmp3",
                     "Неофициальный и настраиваемый мод вконтакте",
-                    "https://mega.nz/file/ghJ2kKRS#tOre-qYF3WmHUWYzFumSjvno1v_HuvG1jJKM89UT2BM",
-                    "Mod, Интернет",
-                    "19.01.2026 19:41"
+                    "https://4pda.to/forum/index.php?showtopic=913037",
+                    "Развлечения, Mod, Интернет, Файлы, 4PDA",
+                    "23.01.2026 14:17"
                 ],
                 [
                     "Discord",
                     "Мессенджер для гейминга",
                     "https://discord.com/download",
-                    "Развлечения, Block, Интернет",
-                    "19.01.2026 19:43"
+                    "Развлечения, Block, Интернет, Кроссплатформа",
+                    "23.01.2026 14:18"
+                ],
+                [
+                    "Stoat",
+                    "Мессенеджер, Аналог Discord",
+                    "https://stoat.chat/download",
+                    "OpenSource, Развлечения, Интернет, Файлы, Кроссплатформа",
+                    "23.01.2026 14:13"
                 ],
                 [
                     "Steam",
-                    "Коды для входа в игровой лаунчер и отслеживание своего аккаунта",
+                    "Приложение игрового лаунчера с SteamGuard и побочный функционал с десктопной версии",
                     "https://media.steampowered.com/steamlink/android/latest/steamlink-android.apk",
                     "Развлечения, Интернет",
-                    "19.01.2026 19:42"
+                    "23.01.2026 14:20"
                 ],
                 [
                     "Whatsapp",
                     "Официальный клиент Whatsapp",
                     "https://www.whatsapp.com/download?lang=ru",
-                    "Block, Интернет",
-                    "19.01.2026 19:43"
-                ]
-            ],
-            "Медиаплееры (Локал)": [
-                [
-                    "VLC",
-                    "Медиаплеер",
-                    "https://mega.nz/file/Mh4lEabL#lSyt8E7vevLocdVWACAqrhoZJXcqKr20HnKt_R-l6QY",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "Block, Интернет, Файлы",
+                    "23.01.2026 14:20"
                 ],
                 [
-                    "MXplayer",
-                    "Видеоплеер (Mod)",
-                    "https://mega.nz/file/1hBjXJ5K#OhulRaXzqts06guGpE8UlLy-qzdQ7mfOhVP-VbhjnqA",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "Facebook",
+                    "Популярная соцсеть",
+                    "https://www.facebook.com/android_upgrade/",
+                    "Развлечения, Block, Интернет",
+                    "23.01.2026 14:25"
+                ],
+                [
+                    "X",
+                    "Бывший твиттер",
+                    "https://help.x.com/en/using-x/download-the-x-app",
+                    "Условно бесплатно, Развлечения, Block, Интернет",
+                    "23.01.2026 14:24"
+                ]
+            ],
+            "Медиаплееры": [
+                [
+                    "VLC",
+                    "Популярный локальный медиаплеер",
+                    "https://www.videolan.org/vlc/index.ru.html",
+                    "Аудио, Видео, Файлы, Кроссплатформа",
+                    "23.01.2026 15:17"
                 ],
                 [
                     "AIMP",
-                    "Аудиооплеер",
+                    "Популярный локальный аудиоплеер",
                     "http://www.aimp.ru/index.php",
-                    "",
-                    "18.01.2026 00:46:14"
-                ]
-            ],
-            "Медиаплееры (Онлайн)": [
-                [
-                    "YT ReVanced",
-                    "Модифицированный клиент Youtube (Mod) (Block)",
-                    "https://mega.nz/file/Z8hShZob#sDRCfKmOVvv93LNezTJ9wQ2JOApSzxobddZeKoc8X8Q",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "Аудио, Файлы, Кроссплатформа",
+                    "23.01.2026 15:18"
                 ],
                 [
-                    "MicroG",
-                    "Программа необходимая для корректной работы YTRevanced и YTMRevanced",
-                    "https://mega.nz/file/c9hCGaRY#MDrw76ICVTdkshJf_F4CffLoUfCkMmj-rX_y1F_0CAw",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "MXplayer",
+                    "Видеоплеер",
+                    "https://4pda.to/forum/index.php?showtopic=253883",
+                    "Видео, Файлы, 4PDA",
+                    "23.01.2026 14:34"
+                ],
+                [
+                    "YT ReVanced",
+                    "Модифицированный клиент Youtube",
+                    "https://4pda.to/forum/index.php?showtopic=1050118",
+                    "Аудио, Видео, Развлечения, Mod, Block, Интернет, 4PDA",
+                    "23.01.2026 14:40"
                 ],
                 [
                     "YTM ReVanced",
-                    "Модифицированный клиент YoutubeMusic (Mod)",
-                    "https://mega.nz/file/9hRCkaRI#As6QeigChzSKY2hK7c8UGLy0FIBKUqDM6zi-Grns94g",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "Модифицированный клиент Youtube Music",
+                    "https://4pda.to/forum/index.php?showtopic=1052417",
+                    "Аудио, Развлечения, Mod, Block, Интернет, 4PDA",
+                    "23.01.2026 14:45"
                 ],
                 [
-                    "YaMusic",
-                    "Ломаная Яндех музыка (Mod) (Block)",
-                    "https://mega.nz/file/spZCDYJA#1lNprqaXOW2WfP-YFMGJRJZ5sBBgLO84jnA7guTAn0M",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "YandexMusic",
+                    "Модифицированный клиент Яндекс музыка",
+                    "https://github.com/Stephanzion/YandexMusicBetaMod",
+                    "OpenSource, Аудио, Развлечения, Mod, Интернет",
+                    "23.01.2026 15:13"
                 ],
                 [
                     "ShikimoriApp",
                     "Удобный способ просмотра аниме с сайта Shikimori",
-                    "https://mega.nz/file/BpgyzYqR#xq25B9Y1m8e-RPQ2N-K6tT5UCec3kheOKNx9AEz3Y_U",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "https://4pda.to/forum/index.php?showtopic=903970",
+                    "Видео, Развлечения, Интернет, 4PDA",
+                    "23.01.2026 15:06"
                 ],
                 [
                     "Tachiyomi",
                     "Удобный и настраиваемый мангаридер",
-                    "https://tachiyomi.org/download/",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "https://4pda.to/forum/index.php?showtopic=805780",
+                    "Изображения, Интернет, Файлы, 4PDA",
+                    "23.01.2026 15:12"
                 ],
                 [
                     "LMD",
-                    "Программа для скачивания или просмотра фильмов (Mod)",
-                    "https://mega.nz/file/xgADFJpL#ezKz6gb4W8zRvmTQbJmm266LMu_p_-ATZ2TzmbzfKr8",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "Программа для скачивания или просмотра фильмов и сериалов (А так же TV)",
+                    "https://4pda.to/forum/index.php?showtopic=848635",
+                    "Видео, Развлечения, Интернет, Файлы, 4PDA",
+                    "23.01.2026 15:15"
                 ],
                 [
                     "OneSpot",
-                    "Кроссплатформенный opensource музыкальный сервис, аналог Spotify",
+                    "Музыкальный сервис, аналог Spotify",
                     "https://github.com/BlackHatDevX/openspot-music-app",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "OpenSource, Аудио, Развлечения, Интернет, Файлы, Кроссплатформа",
+                    "23.01.2026 15:15"
                 ],
                 [
                     "Stremio",
-                    "Кроссплатформенный медиацентр с аддонами",
+                    "Медиацентр с аддонами",
                     "https://www.stremio.com/",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "Видео, Развлечения, Интернет, Файлы, Кроссплатформа",
+                    "23.01.2026 15:16"
                 ],
                 [
                     "Musify",
                     "Музыкальный сервис обьединяющий популярные стриминговые платформы в одном плеере",
                     "https://github.com/gokadzev/Musify",
                     "OpenSource, Аудио, Интернет",
-                    "21.01.2026 15:44"
+                    "23.01.2026 15:16"
                 ]
             ],
             "Медиаредакторы": [
                 [
                     "MStudio",
-                    "Редактор музыки (Mod)",
-                    "https://mega.nz/file/opA11DZb#zhnND4ooKiZ5ooFrNCbqqUIrTJvPEeIblorIMxJTLnY",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "Простой редактор аудиофайлов",
+                    "https://4pda.to/forum/index.php?showtopic=899377",
+                    "Аудио, Файлы, 4PDA",
+                    "23.01.2026 15:25"
                 ],
                 [
                     "Camly",
-                    "Редактор картинок и фото (Mod)",
-                    "https://mega.nz/file/d5J23bBR#2Wx0PFnpfXly3SsLrH4LJ5dPFdlsPnXZA8ci0ao-UqU",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "Редактор изображений",
+                    "https://4pda.to/forum/index.php?showtopic=611707",
+                    "Изображения, Файлы, 4PDA",
+                    "23.01.2026 15:26"
                 ],
                 [
                     "VivaCut",
-                    "Редактор видео (Mod)",
-                    "https://mega.nz/file/54RBRQbC#sKj4aHfwiEbX0R8eT3BovKEPjnwBHhrMaITInKpoxnQ",
-                    "",
-                    "18.01.2026 00:46:14"
-                ]
-            ],
-            "Инструменты": [
-                [
-                    "SDmaid",
-                    "Программа для чистки системы (Mod)",
-                    "https://mega.nz/file/cpJEXbLS#AAYemUp785rU9rmZGH8dAsgP3zi32iBe9pTexcP4Hw0",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "Редактор видеофайлов",
+                    "https://4pda.to/forum/index.php?showtopic=963411",
+                    "Видео, Файлы, 4PDA",
+                    "23.01.2026 15:26"
                 ],
                 [
-                    "LuckyPatcher",
-                    "Программа патчер для множества программ и игр",
-                    "https://www.luckypatchers.com",
-                    "",
-                    "18.01.2026 00:46:14"
-                ],
-                [
-                    "AVG",
-                    "Антивирусная программа",
-                    "https://mega.nz/file/0sQxFQjQ#eN8vbjH2VYAfzBc6-KflT3hPpESaH5lJZjICHyC1EUo",
-                    "",
-                    "18.01.2026 00:46:14"
-                ],
-                [
-                    "AIDA64",
-                    "Программа для вывода технической информации об устройстве (Mod)",
-                    "https://mega.nz/file/xhQTzC4K#FNCI4yri4UEYxDBMZXcUjE6QkHssqq_WoQe9v7jn3VM",
-                    "",
-                    "18.01.2026 00:46:14"
-                ],
-                [
-                    "Equalizer",
-                    "Настройка звука на вашем устройстве (Mod)",
-                    "https://mega.nz/file/RthE1ZAJ#ucqfgw4AeMzJMebaLIL8umfBvtVtiBQMu5O8x6jAS58",
-                    "",
-                    "18.01.2026 00:46:14"
-                ],
-                [
-                    "4pda App&Game",
-                    "Удобный способ обновления программ с 4pda по типу GP",
-                    "https://mega.nz/file/l4ARDA6Q#K7q8H83G2dhhZNT6t2HFFLgZPtdKrh670kfPD6TZmis",
-                    "",
-                    "18.01.2026 00:46:14"
-                ],
-                [
-                    "MacroDroid",
-                    "Приложение для автоматизации задач и конфигурации",
-                    "https://mega.nz/file/w84iiahT#lZdIM7Ffk8cy08YMpiVYkPjut4JTCJmHr35zQ1j884g",
-                    "",
-                    "18.01.2026 00:46:14"
-                ],
-                [
-                    "Dr.Fone",
-                    "Восстановление данных на телефоне",
-                    "https://mega.nz/file/osgFnRQY#FCwUhT42f8xCPpXF4fc9lNmfapLcxceJbgGKoq0D1h4",
-                    "",
-                    "18.01.2026 00:46:14"
-                ],
-                [
-                    "Nekobox",
-                    "Opensource клиент для изменения трафика или IP через конфиги",
-                    "https://github.com/MatsuriDayo/NekoBoxForAndroid",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "FL Studio",
+                    "Монтаж и создание музыки",
+                    "https://4pda.to/forum/index.php?showtopic=1010050",
+                    "Аудио, Развлечения, Файлы, Кроссплатформа, 4PDA",
+                    "23.01.2026 15:27"
                 ]
             ],
             "Кастомизация": [
                 [
                     "Nova",
-                    "Широкий в настройке лаунчер (Mod)",
-                    "https://mega.nz/file/Apg2AB4B#EGNaYcUoD9on6nEhIi2R6w5Nev0_ZPwI9TcUlFsqmVo",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "Широкий в настройке лаунчер",
+                    "https://4pda.to/forum/index.php?showtopic=297970",
+                    "Система, Кастомизация, 4PDA",
+                    "23.01.2026 15:42"
                 ],
                 [
                     "Evie Launcher",
-                    "Облегченный и простой лаунчер (Mod)",
-                    "https://mega.nz/file/1txyFAwD#-xKcS-kc7v0lrffcWj6Pm-bn6i-jRAvgptq6mXFZUpU",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "Облегченный и простой лаунчер",
+                    "https://4pda.to/forum/index.php?showtopic=779417",
+                    "Легковесное, Система, Кастомизация, 4PDA",
+                    "23.01.2026 15:43"
                 ],
                 [
                     "Flud",
-                    "Торрент клиент (Mod)",
-                    "https://mega.nz/file/hox3SA7S#J8bzJNP0ZfR2rq04Pm7O0lfH6ZO7Y8Q3ylHBqCQEpDw",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "Торрент клиент",
+                    "https://4pda.to/forum/index.php?showtopic=543358",
+                    "Интернет, Файлы, 4PDA",
+                    "23.01.2026 15:43"
                 ],
                 [
-                    "SimpleKeyboard",
-                    "Кастомная легкая клавиатура с KitKat",
-                    "https://mega.nz/file/skBz1ZCJ#A0M4A0wKRl9lkhDhxFm3PN6hNPBxAT4gtfGDJUtZUrA",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "Simple Keyboard",
+                    "Форк клавиатуры AOSP",
+                    "https://4pda.to/forum/index.php?showtopic=906364",
+                    "OpenSource, Легковесное, Система, Кастомизация, 4PDA",
+                    "23.01.2026 15:45"
                 ],
                 [
                     "Solid Explorer",
-                    "Удобный файловый менеджер с множеством функций (Mod)",
-                    "https://mega.nz/file/whY1VCaA#wRMo1q2a_i9Zis_hDpyGqBhNl6ddRiCq4a6-txy4ifk",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "Удобный файловый менеджер с множеством функций",
+                    "https://4pda.to/forum/index.php?showtopic=325553",
+                    "Файлы, Система, Мультитул, Кастомизация, 4PDA",
+                    "23.01.2026 15:46"
                 ],
                 [
                     "OfficeSuite",
-                    "Программа имеющая в себе сразу Word, PowerPoint, Exel (Mod)",
-                    "https://mega.nz/file/VxomFKLD#utMvWkTlZcABuVsW_LFL1UtZk04Y5SDsdOLe6plxdHo",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "Программа имеющая в себе сразу Word, PowerPoint, Exel",
+                    "https://4pda.to/forum/index.php?showtopic=134551",
+                    "Файлы, Мультитул, 4PDA",
+                    "23.01.2026 15:46"
+                ],
+                [
+                    "Equalizer",
+                    "Настройка звука на вашем устройстве",
+                    "https://4pda.to/forum/index.php?showtopic=1021501&st=0",
+                    "Аудио, Система, Кастомизация, 4PDA",
+                    "23.01.2026 15:34"
                 ],
                 [
                     "WeNote",
-                    "Простой и полезный менеджер заметок, списков дел, напоминаний (Mod)",
-                    "https://mega.nz/file/MxoQmQqa#WDjrbRhLYnT0Fw1N74ngCo2N4zy0bI3DbH-YKNtnTz0",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "Простой и полезный менеджер заметок, списков дел, напоминаний",
+                    "https://4pda.to/forum/index.php?showtopic=940003",
+                    "Развлечения, Файлы, Легковесное, Мультитул, 4PDA",
+                    "23.01.2026 15:47"
                 ]
             ],
-            "Прочее": [
+            "Инструменты": [
+                [
+                    "SDmaid",
+                    "Программа для чистки и оптимиации системы",
+                    "https://4pda.to/forum/index.php?showtopic=230839",
+                    "Файлы, Система, Мультитул, 4PDA",
+                    "23.01.2026 15:30"
+                ],
+                [
+                    "LuckyPatcher",
+                    "Программа патчер для множества программ и игр",
+                    "https://4pda.to/forum/index.php?showtopic=298302",
+                    "Развлечения, Файлы, Система, Мультитул, 4PDA",
+                    "23.01.2026 15:49"
+                ],
+                [
+                    "AVG",
+                    "Антивирусная программа",
+                    "https://4pda.to/forum/index.php?showtopic=211746",
+                    "Безопасность, Файлы, Система, Кроссплатформа, 4PDA",
+                    "23.01.2026 15:31"
+                ],
+                [
+                    "AIDA64",
+                    "Программа для вывода технической информации об устройстве",
+                    "https://www.aida64.com/downloads",
+                    "Условно бесплатно, Система, Кроссплатформа",
+                    "23.01.2026 15:33"
+                ],
+                [
+                    "4pda App&Game",
+                    "Удобный способ обновления программ с 4pda по типу GP",
+                    "https://4pda.to/forum/index.php?showtopic=275433",
+                    "Условно бесплатно, Развлечения, Рекомендуемое, Интернет, Файлы, 4PDA",
+                    "23.01.2026 15:35"
+                ],
+                [
+                    "MacroDroid",
+                    "Приложение для автоматизации задач и конфигурации",
+                    "https://4pda.to/forum/index.php?showtopic=374521",
+                    "Файлы, Система, Мультитул, Кастомизация, 4PDA",
+                    "23.01.2026 15:36"
+                ],
+                [
+                    "Dr.Fone",
+                    "Восстановление данных на телефоне",
+                    "https://4pda.to/forum/index.php?showtopic=769489",
+                    "Файлы, Система, Мультитул, 4PDA",
+                    "23.01.2026 15:37"
+                ]
+            ],
+            "Прочие инструменты": [
                 [
                     "IddleDaddy",
                     "Получение карточек и накручивание часов в Steam",
-                    "https://mega.nz/file/90A2WKiQ#A8wxRBl03gqIDouj6AMDdcQkn5AfpOZrvdLm9p2C6lM",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "https://4pda.to/forum/index.php?showtopic=879210&st=100",
+                    "OpenSource, Развлечения, Интернет, Легковесное, 4PDA",
+                    "23.01.2026 15:53"
                 ],
                 [
                     "Game Hunters",
                     "Сравнение цен на игры в разных интернет-магазинах",
-                    "https://mega.nz/file/pwhlEJ6R#gQGJabbbYt5IsK89Lr5GTwXaHE4nctbPC91_8uyHsxc",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "https://4pda.to/forum/index.php?showtopic=975498",
+                    "Развлечения, Интернет, 4PDA",
+                    "23.01.2026 15:54"
+                ],
+                [
+                    "Duolingo",
+                    "Изучение языков в увлекательном стиле",
+                    "https://4pda.to/forum/index.php?showtopic=550226",
+                    "Развлечения, Интернет, Мультитул",
+                    "23.01.2026 15:57"
                 ],
                 [
                     "Simpler",
                     "Изучение английского языка",
                     "https://simpler.link",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "Развлечения, Интернет",
+                    "23.01.2026 15:57"
                 ],
                 [
                     "J2ME",
                     "Эмулятор java для Андроид",
-                    "https://4pda.to/forum/index.php?s=&showtopic=824201&view=findpost&p=61369440",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "https://4pda.to/forum/index.php?showtopic=824201",
+                    "Файлы, Система, 4PDA",
+                    "23.01.2026 15:58"
                 ],
                 [
                     "Winlator",
                     "Эмулятор Windows на Андроид",
                     "https://github.com/brunodev85/winlator",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "OpenSource, Файлы, Система",
+                    "23.01.2026 15:58"
                 ],
                 [
                     "OpenGapps",
                     "Пакет программ Google для китайских прошивок ОС Android",
                     "https://opengapps.org",
-                    "",
-                    "18.01.2026 00:46:14"
+                    "Система",
+                    "23.01.2026 15:58"
                 ]
             ]
         },
@@ -3201,13 +3241,13 @@
     },
     "TAGS": {
         "Windows": "OpenSource, Условно бесплатно, Аудио, Видео, Изображения, Безопасность, Развлечения, Default, Crack, Block, Рекомендуемое, Интернет, Файлы, Приватность, Легковесное, Программирование, Система, Мультитул, Кастомизация, Кроссплатформа",
-        "Android": "OpenSource, Условно бесплатно, Аудио, Видео, Изображения, Безопасность, Развлечения, Mod, Block, Рекомендуемое, Интернет, Файлы, Приватность, Легковесное, Система, Мультитул, Кастомизация, Кроссплатформа",
+        "Android": "OpenSource, Условно бесплатно, Аудио, Видео, Изображения, Безопасность, Развлечения, Mod, Block, Рекомендуемое, Интернет, Файлы, Приватность, Легковесное, Система, Мультитул, Кастомизация, Кроссплатформа, 4PDA",
         "Links": "Условно бесплатно, Аудио, Видео, Изображения, Безопасность, Развлечения, Block, Рекомендуемое, Файлы, ИИ, Мультитул, Приватность",
         "Games": "RPG, Шутер, Online, Co-op, Стратегия, Симмулятор, Выживание, Зомби, Гонки, Открытый мир, Бесплатно, Для слабых ПК"
     },
     "MDs": {
-        "index": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/index.md",
+        "/": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/index.md",
         "info": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/info.md"
     },
-    "dateupdate": "21.01.2026 20:53"
+    "dateupdate": "23.01.2026 16:23"
 }

@@ -119,20 +119,13 @@ function checkDevice() {
 
 // Добавление Header
 function AddDisclaimer() {
-
-  const disc = document.createElement('div')
-  disc.classList.add('bglf')
-
-  disc.innerHTML = `
-  <br>
-  <div class="textbox">Автор сайта не несет ответственности за нарушение авторских прав пользователями сайта, а так же за программы изменяющие систему или сами сборки ОС, вы устанавливаете и пользуетесь ими на свой страх и риск</div><br>
+  document.querySelector('footer').innerHTML = `
+  <div class="textbox">Разработчики сайта не несут ответственность за нарушение авторских прав пользователями сайта, а так же за программы изменяющие систему или сами сборки ОС, вы устанавливаете и пользуетесь ими на свой страх и риск</div><br>
   <div class="footer-links">
     <a href="https://t.me/blobx" class="halfbutt" target="_blank">Вопросы и предложения</a>
     <a href="https://t.me/s/app8ook" class="halfbutt" target="_blank">App8ook | 2018-2025</a><br>
   </div>
   `
-
-  document.querySelector('div.content').append(disc)
 }
 
 // Добавление Footer
@@ -660,11 +653,12 @@ async function applyPageFilter() {
 }
 
 
+
+
 // Внешние функции HTML-JS
 function copy(el) {
   navigator.clipboard.writeText(el.textContent);
   alert("Текст скопирован!")
 }
-
 
 

@@ -408,7 +408,7 @@
    color: var(--text);
    padding: 7px 14px;
    border-radius: 20px;
-   font-size: 18px;
+   font-size: 22px;
    cursor: pointer;
    transition: all 0.2s ease;
    user-select: none;
@@ -586,13 +586,11 @@
    flex-grow: 1;
  }
 
- .bglf {
-   width: 100%;
-   padding: 2%;
+ footer {
+   flex-shrink: 0;
+   padding: 30px;
    background: var(--bg);
-   position: relative;
-   left: 0;
-   height: auto;
+   font-size: 95%;
  }
 
  .textbox {

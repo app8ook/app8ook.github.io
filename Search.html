@@ -1,70 +1,45 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-<title>SEARCH</title>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="data/style.css">
-<link rel="shortcut icon" href="pics/Kosou.png" type="image/x-icon">
+  <title>SEARCH</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="data/style.css">
+  <link rel="shortcut icon" href="pics/Kosou.png" type="image/x-icon">
 </head>
+
 <body>
 
-<div class="content">
-<div class="text">
-<div class="bgl" align="center">
+  <div class="content">
+        <div class="text">
+    </div>
+    <br>
 
-<div class="container">
-<nav id="nav" class="nav">
-<ul><li><a href="index.html"><img src="pics/home.png" class="pic" width="25" height="25" style="vertical-align: middle"> Меню</a>
-<ul class="second">
-  <li><a href="Games.html"><img src="pics/games.png" class="pic" width="25" height="25" style="vertical-align: middle"> Игры</a></li>
-  <li><a href="Windows.html"><img src="pics/windows.png" class="pic" width="25" height="25" style="vertical-align: middle"> Windows</a></li>
-  <li><a href="Android.html"><img src="pics/android.png" class="pic" width="25" height="25" style="vertical-align: middle"> Android</a></li>
-  <li><a href="Links.html"><img src="pics/links.png" class="pic" width="25" height="25" style="vertical-align: middle"> Cсылки</a></li>
-  <li><a href="Info.html"><img src="pics/info.png" class="pic" width="25" height="25" style="vertical-align: middle"> Инфо</a></li>
-</ul></li></ul></nav>
+    <!-- Плашка фильтрации по тегам страницы -->
+    <div id="page-tags-filter" class="page-tags-filter" style="display: none;">
+      <div class="filter-title"></div>
+      <div id="page-tags-container"></div>
+      <div id="filter-status"></div>
+    </div>
 
-<form id="search-form">
-  <div class="search-container">
-    <input type="text" name="text" class="search" label="Найти" placeholder="Поиск по сайту">
-    <span class="clear-btn">&times;</span>
+    <div class="bg" align="center">
+
+      <br>
+      <div class="textbox">Результаты поиска:</div>
+      <br>
+      <div id="search-results">
+        <!-- Сюда добавляются таблицы по категориям -->
+      </div><br><br>
+    </div>
+
+    <br>
   </div>
-</form>
+  <br>
+  </div>
+  <br>
 
-<div class="checkbox-container">
+  </div>
+  <script src="data/script.js"></script>
+</body>
 
-<label class="toggle">
-    <input type="checkbox">
-    <span class="slider"></span>
-    <span class="labels" data-on="Light" data-off="Dark"></span>
-</label>
-
-</div></div>
-<br>
-</div></div>
-<br><br><br>
-
-<div class="bg" align="center">
-
-<br><div class="textbox">Результаты поиска:</div>
-<br><div id="search-results">
-  <!-- Сюда добавляются таблицы по категориям -->
-</div><br><br>
-</div>
-
-<br>
-</div>
-<br>
-</div>
-<br>
-
-<div class="bglf"><br>
-  <div class="textbox">Автор сайта не несет ответственности за нарушение авторских прав пользователями сайта, а так же за программы изменяющие систему или сами сборки ОС, вы устанавливаете и пользуетесь ими на свой страх и риск</div><br>
-  <div class="footer-links">
-    <a href="https://t.me/blobx" class="halfbutt" target="_blank">Вопросы и предложения</a>
-    <a href="https://t.me/s/app8ook" class="halfbutt" target="_blank">App8ook | 2018-2025</a><br>
-</div>
-</div>
-
-</div>
-<script src="data/script.js"></script>
-</body></html>
+</html>

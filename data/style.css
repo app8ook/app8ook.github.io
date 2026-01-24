@@ -62,20 +62,22 @@
    --scrollbar-track-color: #FF6666;
    --scrollbar-thumb-color: #333333;
    --scrollbar-thumb-hover-color: #555555;
+   --tagsdateonblocks: #111111;
  }
 
  .light-theme {
    --bgimg: url(/pics/bgl.png);
-   --bg: #ffffff;
-   --bg-2: #FFA566;
-   --bg-3: #ffbe8f;
+   --bg: #E5D5D5;
+   --bg-2: #E6A493;
+   --bg-3: #EBBEB3;
    --text: #500000;
    --active-text: #6b0000;
-   --border: #9e0505;
-   --active-hover: #ff8d3b;
-   --scrollbar-track-color: #500000;
-   --scrollbar-thumb-color: #FFA566;
-   --scrollbar-thumb-hover-color: #ffbb66;
+   --border: #9E0505;
+   --active-hover: #E57566;
+   --scrollbar-track-color: #FF6666;
+   --scrollbar-thumb-color: #EABDB7;
+   --scrollbar-thumb-hover-color: #C38686;
+   --tagsdateonblocks: #FF6666;
  }
 
  /*_________________________________________________________________________________________________________________*/
@@ -120,6 +122,7 @@
  #nav ul {
    list-style: none;
    width: 100%;
+   z-index: 30;
  }
 
  #nav>ul>li {
@@ -163,47 +166,44 @@
  /* Поиск */
 
  form {
-  position: fixed;
-  width: 45%;
-  margin-top: 1%;
-  left: 30%;
-  right: 25%;
-}
+   width: 50%;
+   margin-top: 1%;
+ }
 
-input {
-  background-color: var(--bg-2);
-  padding: 12px 8px;
-  border: 3px solid var(--active-hover);
-  border-radius: 9px;
-  font-size: 26px;
-  font-family: Montserrat Alternates;
-  color: var(--text);
-  outline: var(--active-hover);
-  width: 100%;
-}
+ input {
+   background-color: var(--bg-2);
+   padding: 12px 8px;
+   border: 3px solid var(--active-hover);
+   border-radius: 9px;
+   font-size: 24px;
+   font-family: Montserrat Alternates;
+   color: var(--text);
+   outline: var(--active-hover);
+   width: 100%;
+ }
 
-.search-container {
-  position: relative;
-}
+ .search-container {
+   position: relative;
+ }
 
-.clear-btn {
-  position: absolute;
-  top: 50%;
-  right: 1%;
-  transform: translateY(-50%);
-  font-size: 50px;
-  color: var(--text);
-  cursor: pointer;
-  display: none;
-}
+ .clear-btn {
+   position: absolute;
+   top: 50%;
+   right: 1%;
+   transform: translateY(-50%);
+   font-size: 50px;
+   color: var(--text);
+   cursor: pointer;
+   display: none;
+ }
 
  /* Кнопка смены темы */
 
-.checkbox-container {
-  width: 20%;
-  margin-right: 1%;
-  margin-top: 1.5%;
-}
+ .checkbox-container {
+   width: 20%;
+   margin-right: 1%;
+   margin-top: 1.5%;
+ }
 
  .toggle {
    --width: 160px;
@@ -290,75 +290,237 @@ input {
    opacity: 1;
  }
 
- /* Спойлер */
+ .container {
+   display: flex;
+   /* ✅ Flexbox для выравнивания */
+   align-items: center;
+   /* ✅ Вертикальное центрирование */
+   justify-content: space-between;
+   /* ✅ Равномерное распределение */
+   width: 95%;
+   gap: 15px;
+   /* ✅ Расстояние между элементами */
+ }
 
- .spoiler {
-   /* Спойлер / заголовок */
-   border-radius: 6px;
-   width: 100%;
-   padding: 1%;
-   margin-right: auto;
-   margin-left: auto;
+
+ /* Дата внизу блока */
+ .tblcol {
+   position: relative;
+ }
+
+ /* Отступы спойлеров */
+ details {
+   margin-bottom: 25px;
+ }
+
+ /* Дата выплывающая СНИЗУ */
+ .tblcol .element-date-hover {
+   position: absolute;
+   align-self: center;
+   width: auto;
+   bottom: 8px;
+   left: 2px;
+   right: -1px;
+   background: var(--tagsdateonblocks);
+   color: var(--active-text);
+   padding: 6px 10px;
+   border-radius: 0 0 9px 9px;
+   font-size: 11px;
+   font-weight: 500;
+   opacity: 0;
+   transform: translateY(5px);
+   transition: all 0.25s ease;
+   text-align: center;
+   z-index: 2;
+ }
+
+ .tblcol:hover .element-date-hover {
+   opacity: 1;
+   transform: translateY(0);
+ }
+
+ /* Теги при наведении             flex-wrap: wrap;      gap: 5px;  display: flex; */
+ .tblcol .element-tags-hover {
+   position: absolute;
+   align-self: center;
+   width: auto;
+   top: 2px;
+   left: 2px;
+   right: -1px;
+   background: var(--tagsdateonblocks);
+   color: var(--active-text);
+   padding: 6px 10px;
+   border-radius: 9px 9px 0 0;
+   font-size: 11px;
+   opacity: 0;
+   transform: translateY(-5px);
+   transition: all 0.25s ease;
+   text-align: center;
+   z-index: 2;
+ }
+
+ .tblcol:hover .element-tags-hover {
+   opacity: 1;
+   transform: translateY(0);
+ }
+
+ .tag-chip {
+   display: inline-block;
+   margin: 2px 4px;
+   /* верх, право, низ, Лево*/
+   background: var(--text);
+   color: var(--tagsdateonblocks);
+   padding: 3px 8px;
+   border-radius: 10px;
+   font-size: 10px;
+   cursor: default;
+ }
+
+ .tag-chip {
+   background: var(--text);
+   padding: 3px 8px;
+   border-radius: 10px;
+   font-size: 10px;
+   cursor: default;
+ }
+
+ /* Плашка фильтрации */
+ .page-tags-filter {
+   background: var(--bg);
+   border-radius: 8px;
+   padding: 20px;
+   margin: 0% 3% 2% 3%;
+   display: flex;
+   align-items: center;
+ }
+
+ #page-tags-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px 8px;
+   /* 12px вертикаль, 16px горизонталь */
+   flex: 1;
+   align-items: center;
+ }
+
+ .page-tag-filter {
    background: var(--bg-2);
    color: var(--text);
-   opacity: 100%;
+   padding: 7px 14px;
+   border-radius: 20px;
+   font-size: 18px;
+   cursor: pointer;
+   transition: all 0.2s ease;
+   user-select: none;
+   flex-shrink: 0;
+   white-space: nowrap;
  }
 
- details summary::-webkit-details-marker {
-   /* Скрытие стрелочки и анимация */
+ .page-tag-filter:hover,
+ .page-tag-filter.active {
+   background: var(--active-hover);
+   color: var(--active-text);
+   transition: all 0.4s ease-in-out;
+ }
+
+ #filter-status {
+   margin-left: auto;
+   font-size: 13px;
+   color: var(--active-text);
+   font-style: italic;
    display: none;
+   white-space: nowrap;
  }
 
- details :focus {
-   outline: 0;
+
+ .cline {
+   user-select: none;
+   background: var(--bg-2);
+   color: var(--text);
+   padding: 20px;
+   border-radius: 8px;
+   font-family: monospace;
+   font-size: 16px;
+   overflow: auto;
+   transition: all 0.4s ease-in-out;
+ }
+
+ .cline:hover,
+ .cline:active {
+   background: var(--active-hover);
+ }
+
+ .smablock,
+ .smblock {
+   display: block;
+   /* Позволяет элементу занимать только необходимое пространство  inline-block*/
+   padding: 12px;
+   /* Внутренние отступы для создания пространства вокруг текста */
+   margin-right: 3%;
+   margin-left: 3%;
+   margin-bottom: 1%;
+   margin-top: 0%;
+   width: auto;
+   text-indent: 10px;
+   background-color: var(--bg-2);
+   /* Цвет фона блока */
+   border: 2px solid var(--bg-2);
+   /* Серый обвод */
+   border-radius: 9px;
+   /* Скругление углов (по желанию) */
+ }
+
+ .smablock:hover,
+ .smablock:active {
+   background-color: var(--active-hover);
+   /* Цвет фона блока */
+   border: 2px solid var(--active-hover);
+   /* Серый обвод */
+ }
+
+
+ /* Спойлер */
+
+ /* ✅ ОПТИМИЗИРОВАННЫЙ спойлер */
+ .spoiler {
+   width: 90%;
+   padding: 1%;
+   margin: 0 auto;
+   background: var(--bg-2);
+   color: var(--text);
+   border-radius: 9px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   border: 3px solid var(--bg-2);
+   transition: all 0.3s ease;
+   /* Быстрее анимация */
+ }
+
+ .spoiler:hover,
+ .spoiler:active {
+   border-color: var(--border);
+   opacity: 1;
+ }
+
+ /* ✅ Убираем лишние стили */
+ details summary::-webkit-details-marker,
+ details summary::-moz-list-bullet {
+   display: none;
  }
 
  details,
  summary {
    display: block;
+   outline: none;
  }
 
- details summary:before {
-   content: "";
+ details summary {
+   list-style: none;
  }
 
- details[open] summary:before {
-   content: "";
- }
 
- details summary,
- details summary:focus {
-   /* Спойлер / Стилизация */
-   cursor: pointer;
-   border: 3px solid var(--bg-2);
-   width: 90%;
-   height: 10%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 9px;
-   transition: 1s;
- }
-
- details summary:hover,
- details summary:active {
-   opacity: 100%;
-   border: 3px solid var(--border);
- }
-
- /* ------Выделение важного из текста------ */
-.smablock, .smblock {
-    display: inline-block; /* Позволяет элементу занимать только необходимое пространство */
-    padding: 3px 3px; /* Внутренние отступы для создания пространства вокруг текста */
-    background-color: var(--bg-2); /* Цвет фона блока */
-    border: 2px solid var(--bg-2); /* Серый обвод */
-    border-radius: 9px; /* Скругление углов (по желанию) */
-}
- .smablock:hover,
- .smablock:active {
-    background-color: var(--active-hover); /* Цвет фона блока */
-    border: 2px solid var(--active-hover); /* Серый обвод */
- }
  /* ------Таблица------ */
  .tblcol {
    width: 100%;
@@ -378,11 +540,13 @@ input {
    text-align: left;
  }
 
- a.butt, a.buttinf {
+ a.butt,
+ a.buttinf {
    display: inline-block;
    border-radius: 9px;
    border: 2px solid var(--bg-2);
    padding: 5%;
+   padding-top: 8%;
    background: var(--bg-2);
    text-decoration: none;
    user-select: none;
@@ -396,21 +560,23 @@ input {
 
  a.butt {
    width: 90%;
-   height: 190px;
-}
+   height: 330px;
+ }
 
  a.buttinf {
    width: 90%;
    height: 180px;
  }
 
- a.butt:hover, a.buttinf:hover {
+ a.butt:hover,
+ a.buttinf:hover {
    background: var(--active-hover);
    color: var(--active-text);
    border: 2px solid var(--border);
  }
 
- a.butt:active, a.buttinf:active {
+ a.butt:active,
+ a.buttinf:active {
    background: var(--bg);
  }
 
@@ -505,10 +671,22 @@ input {
    padding: 2%;
  }
 
- .container {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+ /*_________________________________________________________________________________________________________________*/
+
+
+ /* Временное отключение transition */
+ .no-transition,
+ .no-transition *,
+ .no-transition .slider,
+ .no-transition .slider::before,
+ .no-transition .labels,
+ .no-transition .labels::before,
+ .no-transition .labels::after {
+   transition: none !important;
  }
 
- /*_________________________________________________________________________________________________________________*/
+ #info-container>div {
+   align-self: left;
+   align-content: left;
+   text-align: left;
+ }

@@ -660,12 +660,11 @@ async function applyPageFilter() {
 }
 
 
-
-
 // Внешние функции HTML-JS
 function copy(el) {
   navigator.clipboard.writeText(el.textContent);
   alert("Текст скопирован!")
 }
+
 
 

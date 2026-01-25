@@ -73,7 +73,7 @@ function isMobileDevice() {
 // Проверяем устройство [Телефон/ПК]
 function checkDevice() {
   // Получаем элементы меню
-  const navMenu = document.querySelector('#nav')
+  const navMenu = document.querySelector('nav')
   const navToggle = navMenu?.querySelector('a')
   const navItems = navMenu?.querySelectorAll('li .second')
 
@@ -132,23 +132,31 @@ function AddDisclaimer() {
 function AddHeader() {
   const header = document.createElement('div')
 
-  header.setAttribute('align', 'center')
   header.classList.add('bgl')
   header.innerHTML = `
         <div class="container">
           <nav id="nav" class="nav">
             <ul>
-              <li><a href="/"><img src="pics/home.png" class="pic" width="25" height="25"
-                    style="vertical-align: middle"> Меню</a>
+              <li><a href="/" class="first"><img src="pics/home.png" class="pic" width="25" height="25"> <p>Меню</p></a>
                 <ul class="second">
-                  <li><a href="Games.html"><img src="pics/games.png" class="pic" width="25" height="25"
-                        style="vertical-align: middle"> Игры</a></li>
                   <li><a href="Windows.html"><img src="pics/windows.png" class="pic" width="25" height="25"
                         style="vertical-align: middle"> Windows</a></li>
+
                   <li><a href="Android.html"><img src="pics/android.png" class="pic" width="25" height="25"
                         style="vertical-align: middle"> Android</a></li>
+
+                  <li><a href="Apple.html"><img src="pics/apple.png" class="pic" width="25" height="25"
+                        style="vertical-align: middle"> Apple</a></li>
+
+                  <li><a href="Linux.html"><img src="pics/linux.png" class="pic" width="25" height="25"
+                        style="vertical-align: middle"> Linux</a></li>
+
+                  <li><a href="Games.html"><img src="pics/games.png" class="pic" width="25" height="25"
+                        style="vertical-align: middle"> Игры</a></li>
+
                   <li><a href="Links.html"><img src="pics/links.png" class="pic" width="25" height="25"
                         style="vertical-align: middle"> Cсылки</a></li>
+
                   <li><a href="Info.html"><img src="pics/info.png" class="pic" width="25" height="25"
                         style="vertical-align: middle"> Инфо</a></li>
                 </ul>
@@ -156,7 +164,7 @@ function AddHeader() {
             </ul>
           </nav>
 
-          <form id="search-form">
+          <form>
             <div class="search-container">
               <input type="text" name="text" class="search" label="Найти" placeholder="Поиск по сайту">
               <span class="clear-btn">&times;</span>
@@ -197,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // loadMD(CurrentPageName)
 
   const searchInput = document.querySelector('.search');
-  const searchForm = document.getElementById('search-form');
+  const searchForm = document.querySelector('form');
 
   if (searchInput && searchForm) {
     const performSearch = () => {

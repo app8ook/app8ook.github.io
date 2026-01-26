@@ -86,9 +86,13 @@
 
  .bg {
    /* Фон-блок */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 25px;
+   padding: 2% 1%;
    border-radius: 9px;
    width: 92%;
-   padding: 1%;
    background: var(--bg);
    margin-right: auto;
    margin-left: auto;
@@ -158,6 +162,12 @@
 
  nav li li {
    width: 100%;
+ }
+
+ nav img {
+   align-self: center;
+   width: 25px;
+   height: 25px;
  }
 
  /* Поиск */
@@ -301,9 +311,6 @@
  }
 
  /* Отступы спойлеров */
- details {
-   margin-bottom: 25px;
- }
 
  /* Дата выплывающая СНИЗУ */
  .tblcol .element-date-hover {
@@ -482,12 +489,12 @@
    color: var(--text);
    border-radius: 9px;
    display: flex;
+   text-align: center;
    align-items: center;
    justify-content: center;
    cursor: pointer;
    border: 3px solid var(--bg-2);
    transition: all 0.3s ease;
-   /* Быстрее анимация */
  }
 
  .spoiler:hover,
@@ -504,8 +511,15 @@
 
  details,
  summary {
-   display: block;
+   width: 100%;
+   user-select: none;
    outline: none;
+ }
+
+ details {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
  }
 
  details summary {
@@ -519,24 +533,16 @@
    height: 100%;
  }
 
- table {
-   width: 99%;
-   height: 100%;
-   margin-right: 1%;
-   margin-left: 1%;
- }
-
  td {
    padding: 9px;
    width: 33.33%;
    text-align: left;
  }
 
- a.butt,
- a.buttinf {
+ a.butt {
    display: inline-block;
    border-radius: 9px;
-   border: 2px solid var(--bg-2);
+   /* border: 2px solid var(--bg-2); */
    padding: 5%;
    padding-top: 8%;
    background: var(--bg-2);
@@ -547,6 +553,9 @@
    color: var(--text);
    font-weight: 800;
    overflow: hidden;
+   hyphens: auto;
+   word-break: break-word;
+   overflow-wrap: break-word;
    transition: 1s;
  }
 
@@ -555,20 +564,13 @@
    height: 330px;
  }
 
- a.buttinf {
-   width: 90%;
-   height: 180px;
- }
-
- a.butt:hover,
- a.buttinf:hover {
+ a.butt:hover {
    background: var(--active-hover);
    color: var(--active-text);
-   border: 2px solid var(--border);
+   border-color: var(--border);
  }
 
- a.butt:active,
- a.buttinf:active {
+ a.butt:active {
    background: var(--bg);
  }
 
@@ -579,18 +581,22 @@
  }
 
  footer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
    flex-shrink: 0;
-   padding: 30px;
+   padding: 20px;
    background: var(--bg);
    font-size: 95%;
    bottom: -1%;
  }
 
  .textbox {
+   text-align: center;
    border-radius: 9px;
    width: 92%;
-   margin-right: 1%;
-   margin-left: 1%;
    padding: 2%;
    background: var(--bg-3);
    color: var(--text);
@@ -598,23 +604,23 @@
  }
 
  .footer-links {
-   text-align: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   gap: 4%;
  }
 
  .footer-links a.halfbutt {
-   display: inline-block;
+   display: block;
+   text-align: center;
    border-radius: 9px;
    border: 3px solid var(--bg-2);
    width: 40%;
-   margin-left: 1%;
-   margin-right: 5%;
-   margin-top: 0%;
    padding: 1%;
    background: var(--bg-2);
-   text-decoration: none;
    user-select: none;
-   outline: none;
-   transition: 0.2s;
    color: var(--text);
    overflow: hidden;
    transition: 1s;
@@ -648,10 +654,11 @@
  }
 
 
- .first, .second li a{
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
+ .first,
+ .second li a {
+   display: flex;
+   flex-direction: row;
+   gap: 30px;
  }
 
  /*_________________________________________________________________________________________________________________*/

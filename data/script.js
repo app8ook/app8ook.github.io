@@ -37,14 +37,12 @@ const categories = [
   { key: "Links", path: "data.Links", id: "resource-table-Links", alname: "Ссылки" }
 ];
 
-// Функция для переключения темы
 function toggleTheme() {
   const isLight = localStorage.getItem('theme') === 'light';
   document.documentElement.classList.toggle('light-theme', !isLight)
   localStorage.setItem('theme', !isLight ? 'light' : 'dark')
 }
 
-// Устанавливаем начальную тему при загрузке страницы
 function setInitialTheme() {
   const themeToggle = document.querySelector('.toggle input[type="checkbox"]')
   const toggle = document.querySelector('.toggle')
@@ -70,7 +68,6 @@ function isMobileDevice() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
-// Проверяем устройство [Телефон/ПК]
 function checkDevice() {
   // Получаем элементы меню
   const navMenu = document.querySelector('nav')
@@ -117,92 +114,19 @@ function checkDevice() {
   }
 }
 
-// Добавление Header
-function AddDisclaimer() {
-  document.querySelector('footer').innerHTML = `
-  <div class="textbox">Разработчики сайта не несут ответственность за нарушение авторских прав пользователями сайта, а так же за программы изменяющие систему или сами сборки ОС, вы устанавливаете и пользуетесь ими на свой страх и риск</div><br>
-  <div class="footer-links">
-    <a href="https://t.me/blobx" class="halfbutt" target="_blank">Вопросы и предложения</a>
-    <a href="https://t.me/s/app8ook" class="halfbutt" target="_blank">App8ook | 2018-2025</a><br>
-  </div>
-  `
-}
+// Предзагрузочное выполнение функций
+document.addEventListener('DOMContentLoaded', async () => {
+  const CurrentPageName = window.location.pathname.replace(/^(\/pages\/|\/)(.*)(.html)$/g, '$2')
 
-// Добавление Footer
-function AddHeader() {
-  const header = document.createElement('div')
-
-  header.classList.add('bgl')
-  header.innerHTML = `
-        <div class="container">
-          <nav id="nav" class="nav">
-            <ul>
-              <li><a href="/" class="first"><img src="pics/home.png" class="pic" width="25" height="25"> <p>Меню</p></a>
-                <ul class="second">
-                  <li><a href="Windows.html"><img src="pics/windows.png" class="pic" width="25" height="25"
-                        style="vertical-align: middle"> Windows</a></li>
-
-                  <li><a href="Android.html"><img src="pics/android.png" class="pic" width="25" height="25"
-                        style="vertical-align: middle"> Android</a></li>
-
-                  <li><a href="Apple.html"><img src="pics/apple.png" class="pic" width="25" height="25"
-                        style="vertical-align: middle"> Apple</a></li>
-
-                  <li><a href="Linux.html"><img src="pics/linux.png" class="pic" width="25" height="25"
-                        style="vertical-align: middle"> Linux</a></li>
-
-                  <li><a href="Games.html"><img src="pics/games.png" class="pic" width="25" height="25"
-                        style="vertical-align: middle"> Игры</a></li>
-
-                  <li><a href="Links.html"><img src="pics/links.png" class="pic" width="25" height="25"
-                        style="vertical-align: middle"> Cсылки</a></li>
-
-                  <li><a href="Info.html"><img src="pics/info.png" class="pic" width="25" height="25"
-                        style="vertical-align: middle"> Инфо</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-
-          <form>
-            <div class="search-container">
-              <input type="text" name="text" class="search" label="Найти" placeholder="Поиск по сайту">
-              <span class="clear-btn">&times;</span>
-            </div>
-          </form>
-
-          <div class="checkbox-container">
-
-            <label class="toggle">
-              <input type="checkbox">
-              <span class="slider"></span>
-              <span class="labels" data-on="Light" data-off="Dark"></span>
-            </label>
-
-          </div>
-        </div>
-        <br>
-      `
-
-  document.querySelector('div.text').append(header)
+  if (CurrentPageName !== 'Stop') await loadFromHTML('../module.html')
 
   const themeToggle = document.querySelector('.toggle input[type="checkbox"]')
-  setInitialTheme() // Устанавливаем начальную тему
-  themeToggle.addEventListener('change', toggleTheme) // Добавляем обработчик события на переключатель
-}
-
-// Предзагрузочное выполнение функций
-document.addEventListener('DOMContentLoaded', () => {
-  const CurrentPageName = window.location.pathname.replace(/^\/(.*)(.html)$/, '$1') // Текущая страница (без "/" & ".html")
-
-  AddHeader() // Добавление Header
-  AddDisclaimer() // Добавление Footer
-  checkDevice() // Проверяем устройство [Телефон/ПК]
+  setInitialTheme()
+  themeToggle.addEventListener('change', toggleTheme)
 
   if (CurrentPageName == 'Search') showResults();
 
   loadJsonData(CurrentPageName)
-  // loadMD(CurrentPageName)
 
   const searchInput = document.querySelector('.search');
   const searchForm = document.querySelector('form');
@@ -210,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (searchInput && searchForm) {
     const performSearch = () => {
       const value = searchInput.value.trim();
-      if (value.length >= 2) window.location.href = '/Search.html?query=' + encodeURIComponent(value)
+      if (value.length >= 2) window.location.href = 'Search.html?query=' + encodeURIComponent(value)
     };
 
     searchForm.addEventListener('submit', function (e) {
@@ -240,19 +164,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function showResults() {
-  const query = getQueryParam('query');
-  const container = document.getElementById('search-results');
+  const query = getQueryParam('query')
+  const container = document.getElementById('categories-container')
 
-  if (!query || query.length < 2) return container.innerHTML = '<div class="textbox">Введите запрос (минимум 2 символа)</div>';
+  if (!query || query.length < 2) return container.innerHTML = '<div class="textbox">Введите запрос (минимум 2 символа)</div>'
 
-  container.innerHTML = '<div class="textbox">Ищем...</div>';
+  container.innerHTML = '<div class="textbox">Ищем...</div>'
 
-  const jsonData = await fetchJsonData();
-  if (!jsonData || !jsonData.data) return container.innerHTML = '<div class="textbox">Ошибка загрузки данных</div>';
+  const jsonData = await fetchJsonData()
+  if (!jsonData || !jsonData.data) return container.innerHTML = '<div class="textbox">Ошибка загрузки данных</div>'
 
-  container.innerHTML = '';
-  let foundAny = false;
-  const searchWords = query.toLowerCase().trim().split(/\s+/);
+  container.innerHTML = `<div class="textbox">Результаты поиска "${query}":</div>`
+  let foundAny = false
+  const searchWords = query.toLowerCase().trim().split(/\s+/)
 
 
   let List = {}
@@ -286,11 +210,11 @@ async function showResults() {
         if (cat.key == category.key) category_name = category.alname == undefined ? cat.key : category.alname
       }
 
-      summary.innerHTML = `<div class="spoiler" align="center">${category_name}</div>`;
+      summary.innerHTML = `<div class="spoiler">${category_name}</div>`;
       details.append(summary, document.createElement('br'))
 
       const table = document.createElement('table');
-      table.innerHTML = `<col width="33%"><col width="33%"><col width="33%"><tbody></tbody>`;
+      table.innerHTML = `<tbody></tbody>`;
       const tbody = table.querySelector('tbody');
 
       for (let i = 0; i < List[cat.key].length; i += 3) {
@@ -324,7 +248,7 @@ async function loadJsonData(pageName) {
     const jsonData = await response.json();
     window.jsonData = jsonData; // ✅ Глобальная переменная для тегов
 
-    const container = document.getElementById('categories-container') == undefined ? document.getElementById('search-results') : document.getElementById('categories-container')
+    const container = document.getElementById('categories-container')
 
     if (pageName === '/') {
       isIndexPage = true;
@@ -339,13 +263,12 @@ async function loadJsonData(pageName) {
           details.setAttribute('data-page', categoryName.toLowerCase());
 
           const summary = document.createElement('summary');
-          summary.innerHTML = `<div class="spoiler" align="center">${categoryName}</div>`;
+          summary.innerHTML = `<div class="spoiler">${categoryName}</div>`;
           details.appendChild(summary);
           details.appendChild(document.createElement('br'));
 
           const table = document.createElement('table');
-          table.setAttribute('align', 'center');
-          table.innerHTML = `<col width="33%"><col width="33%"><col width="33%"><tbody id="resource-table-${categoryName.toLowerCase()}"></tbody>`;
+          table.innerHTML = `<tbody id="resource-table-${categoryName.toLowerCase()}"></tbody>`;
 
           const tbody = table.querySelector('tbody');
           for (let i = 0; i < categoryData.length; i += 3) {
@@ -378,13 +301,12 @@ async function loadJsonData(pageName) {
         details.setAttribute('data-page', categoryName.toLowerCase());
 
         const summary = document.createElement('summary');
-        summary.innerHTML = `<div class="spoiler" align="center">${categoryName}</div>`;
+        summary.innerHTML = `<div class="spoiler">${categoryName}</div>`;
         details.appendChild(summary);
         details.appendChild(document.createElement('br'));
 
         const table = document.createElement('table');
-        table.setAttribute('align', 'center');
-        table.innerHTML = `<col width="33%"><col width="33%"><col width="33%"><tbody id="resource-table-${categoryName.toLowerCase()}"></tbody>`;
+        table.innerHTML = `<tbody id="resource-table-${categoryName.toLowerCase()}"></tbody>`;
 
         const tbody = table.querySelector('tbody');
         for (let i = 0; i < categoryData.length; i += 3) {
@@ -409,7 +331,7 @@ async function loadJsonData(pageName) {
 
 
 async function loadMD(PageName) {
-  const ContentContainer = document.getElementById('info-container')
+  const ContentContainer = document.getElementById('categories-container')
 
   try {
     const DataResponse = await fetch(DATA_URL);
@@ -448,7 +370,7 @@ async function loadMD(PageName) {
         details.open = false;
 
         const summary = document.createElement('summary');
-        summary.innerHTML = `<div class="spoiler" align="center">${title?.replace(RegExp, '$1')}</div>`;
+        summary.innerHTML = `<div class="spoiler">${title?.replace(RegExp, '$1')}</div>`;
 
         details.appendChild(summary);
         details.appendChild(document.createElement('br'));
@@ -465,7 +387,6 @@ async function loadMD(PageName) {
     })
   } catch (error) {
     console.error(`MD [${PageName}]:`, error);
-    ContentContainer.innerHTML = `MD [${PageName}] временно недоступен`;
   }
 }
 
@@ -480,15 +401,25 @@ function createLinksBlock(chunk) {
     if (chunk[j] && chunk[j].length >= 3) {
       const [title, desc, url] = chunk[j];
 
-      if (isIndexPage) {
-        linkDiv.innerHTML = `<a href="${url || '#'}" target="_blank" class="butt">${title}<br><br>${desc || ''}</a>`; // БЕЗ тегов/дат для index
-      } else if (chunk[j].length >= 5) {
-        const [_, __, ___, tags, date] = chunk[j]; // С тегами/датами для обычных страниц
-        linkDiv.innerHTML = `
-              <div class="element-tags-hover">${tags ? tags.split(', ').map(tag => `<span class="tag-chip">${tag.trim()}</span>`).join('') : 'нет тегов'}</div>
-              <a href="${url || '#'}" target="_blank" class="butt">${title}<br><br>${desc || ''}</a>
-                <div class="element-date-hover">${date || 'без даты'}</div>
-                `;
+      const element_link = document.createElement('a')
+      element_link.className = 'butt'; element_link.target = '_blank'
+      element_link.href = url || '#'
+      element_link.innerHTML = `${title}<br><br>${desc || ''}`
+
+      if (isIndexPage) { // БЕЗ тегов/дат для index
+        linkDiv.appendChild(element_link) 
+      } else if (chunk[j].length >= 5) { // С тегами/датами для всех страниц
+        const [_, __, ___, tags, date] = chunk[j];
+
+        const element_tags = document.createElement('div')
+        element_tags.className = 'element-tags-hover'
+        element_tags.innerHTML = tags ? tags.split(', ').map(tag => `<span class="tag-chip">${tag.trim()}</span>`).join('') : 'нет тегов'
+
+        const element_date = document.createElement('div')
+        element_date.className = 'element-date-hover'
+        element_date.innerHTML = date || 'без даты'
+
+        linkDiv.append(element_tags, element_link, element_date)
         linkDiv.dataset.tags = tags || '';
       }
     }
@@ -502,7 +433,6 @@ function createLinksBlock(chunk) {
 // Плашка тегов страницы
 function createPageTagsFilter() {
   const filterContainer = document.getElementById('page-tags-filter');
-
 
   function GetCountTags() {
     let tag_counts = {}
@@ -583,7 +513,7 @@ async function togglePageTagFilter(tag) {
 }
 
 async function applyPageFilter() {
-  const container = document.getElementById('categories-container') == undefined ? document.getElementById('search-results') : document.getElementById('categories-container')
+  const container = document.getElementById('categories-container')
   const status = document.getElementById('filter-status');
 
 
@@ -597,7 +527,11 @@ async function applyPageFilter() {
       ItemsList[cat_name] = []
 
       category.querySelectorAll('.butt').forEach(el => {
-        ItemsList[cat_name].push([el.innerHTML.split('<br><br>')[0], el.innerHTML.split('<br><br>')[1], el.href, el.parentElement.getAttribute('data-tags') == '' ? '' : el.parentElement.getAttribute('data-tags'), el.parentElement.querySelector('.element-date-hover').innerHTML])
+        ItemsList[cat_name].push([el.innerHTML.split('<br><br>')[0],
+        el.innerHTML.split('<br><br>')[1],
+        el.href,
+        el.parentElement.getAttribute('data-tags') == '' ? '' : el.parentElement.getAttribute('data-tags'),
+        el.parentElement.querySelector('.element-date-hover').innerHTML])
       })
     })
 
@@ -631,13 +565,12 @@ async function applyPageFilter() {
       else details.open = activePageTags.length > 0 && filteredData.length > 0;
 
       const summary = document.createElement('summary');
-      summary.innerHTML = `<div class="spoiler" align="center">${categoryName}</div>`;
+      summary.innerHTML = `<div class="spoiler">${categoryName}</div>`;
       details.appendChild(summary);
       details.appendChild(document.createElement('br'));
 
       const table = document.createElement('table');
-      table.align = 'center';
-      table.innerHTML = `<col width="33%"><col width="33%"><col width="33%"><tbody></tbody>`;
+      table.innerHTML = `<tbody></tbody>`;
       const tbody = table.querySelector('tbody');
 
       // Строим таблицу из отфильтрованных данных
@@ -670,3 +603,23 @@ function copy(el) {
 }
 
 
+// Загрузка HTML и вставка в DOM
+async function loadFromHTML(url) {
+  try {
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const html = await response.text();
+    document.querySelector('body').innerHTML = html
+    if (!document.querySelector('script')) {
+      let script = document.createElement('script')
+      script.setAttribute('src', 'data/script.js')
+      document.querySelector('body').appendChild(script)
+    }
+  } catch (error) {
+    console.error('Error loading HTML:', error);
+  }
+}

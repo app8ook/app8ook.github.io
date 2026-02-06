@@ -153,6 +153,7 @@ nav li a {
     text-align: left;
     text-decoration: none;
     transition: 0.5s;
+    overflow: hidden;
 }
 
 nav li a:hover {
@@ -546,6 +547,7 @@ footer {
     border-radius: 9px;
     width: 92%;
     padding: 2%;
+    margin: 1%;
     background: var(--bg-3);
     color: var(--text);
     opacity: 100%;
@@ -591,14 +593,16 @@ footer {
 
 /* Ячейки */
 .textbox {
-    text-align: center;
-    border-radius: 9px;
-    width: 92%;
-    padding: 2%;
-    background: var(--bg-3);
-    color: var(--text);
     opacity: 100%;
     justify-self: center;
+    line-height: 1.4;
+    width: 92%;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 9px;
+    background: var(--bg-3);
+    color: var(--text);
+    text-align: left;
 }
 
 .textbox .cline {

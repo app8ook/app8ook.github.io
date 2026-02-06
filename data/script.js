@@ -211,7 +211,6 @@ async function loadJsonData(pageName) {
 
                     const contentDiv = document.createElement('div')
                     contentDiv.className = 'textbox'
-                    contentDiv.style.cssText = 'margin:10px;line-height:1.4;text-align:left;'
 
                     contentDiv.innerHTML = LinesSlices(lines)
 
@@ -420,8 +419,8 @@ async function toggleTag(tag) {
         const data = currentPageData[categoryName]
 
         const filteredData = data.filter(item => {
-            const tags = (item[3] || 0).split(', ').map(t => t.trim())
-            return activeTags.every(tag => tags.includes(tag))
+                const tags = (item[3] == '' ? '' : item[3]).split(', ').map(t => t.trim())
+                return activeTags.every(tag => tags.includes(tag))
         })
 
         if (filteredData.length > 0) {

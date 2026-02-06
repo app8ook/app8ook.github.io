@@ -2,16 +2,65 @@
 <html>
 
 <head>
-  <title>APP8OOK</title>
-  <meta name="description" content="Каталог полезных программ и ссылок от Kosou">
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="data/style.css">
-  <link rel="shortcut icon" href="/pics/Kosou.png" type="image/x-icon">
-  <link rel="canonical" href="app8ook.github.io">
+    <title>APP8OOK</title>
+    <meta name="description" content="Каталог полезных программ и ссылок от Kosou">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="data/style.css">
+    <link rel="shortcut icon" href="/pics/Kosou.png" type="image/x-icon">
+    <link rel="canonical" href="app8ook.github.io">
 </head>
 
 <body>
-  <script src="data/script.js"></script>
-  <!-- ВАСЯ ПИСЯ -->
+    <header>
+        <nav id="nav" class="nav">
+            <ul>
+                <li><a onclick="loadJsonData('/')" class="first"><img src="pics/home.png">Меню</a>
+                    <ul class="second">
+                        <li><a onclick="loadJsonData('Windows')"><img src="pics/windows.png">Windows</a></li>
+                        <li><a onclick="loadJsonData('Android')"><img src="pics/android.png">Android</a></li>
+                        <li><a onclick="loadJsonData('Apple')"><img src="pics/apple.png">Apple</a></li>
+                        <li><a onclick="loadJsonData('Linux')"><img src="pics/linux.png">Linux</a></li>
+                        <li><a onclick="loadJsonData('Games')"><img src="pics/games.png">Игры</a></li>
+                        <li><a onclick="loadJsonData('Links')"><img src="pics/links.png">Cсылки</a></li>
+                        <li><a onclick="loadJsonData('Info')"><img src="pics/info.png">Инфо</a></li>
+                </li>
+            </ul>
+        </nav>
+
+        <form>
+            <input type="text" name="text" id="search" label="Найти" placeholder="Поиск по сайту">
+            <span class="clear-btn">&times;</span>
+        </form>
+
+        <div class="checkbox-container">
+            <label class="toggle">
+                <input type="checkbox">
+                <span class="slider"></span>
+                <span class="labels" data-on="Light" data-off="Dark"></span>
+            </label>
+        </div>
+    </header>
+
+    <section id="tags">
+        <div id="tags-container"></div>
+        <div id="filter-status"></div>
+    </section>
+
+    <section id="main">
+    </section>
+
+    <footer>
+        <div class="footer-warn">Разработчики сайта не несут ответственность за нарушение авторских прав пользователями
+            сайта, а
+            так же за программы изменяющие систему или сами сборки ОС, вы устанавливаете и пользуетесь ими на свой страх
+            и
+            риск</div>
+        <div class="footer-links">
+            <a href="https://t.me/blobx" class="halfbutt" target="_blank">Вопросы и предложения</a>
+            <a href="https://t.me/s/app8ook" class="halfbutt" target="_blank">App8ook | 2018-2026</a>
+        </div>
+    </footer>
+    <script src="data/script.js"></script>
 </body>
+
 </html>

@@ -1,625 +1,445 @@
 const DATA_URL = 'https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/data.json';
-let isIndexPage = false;
 
-// Глобальные переменные фильтрации
-let activePageTags = [];
-let currentPageData = {};
-let originalPageData = {};
+const section_main = document.querySelector('#main')
+const section_tags = document.querySelector('#tags')
 
-function getQueryParam(name) {
-  const params = new URLSearchParams(window.location.search);
-  return params.get(name) || '';
-}
+let activeTags = []
+let currentPageData = {}
 
 async function fetchJsonData() {
-  try {
-    const response = await fetch(DATA_URL);
-    return await response.json();
-  } catch (error) {
-    console.error('Ошибка загрузки JSON:', error);
-    return null;
-  }
+    try {
+        const response = await fetch(DATA_URL);
+        return await response.json();
+    } catch (error) {
+        console.error('Ошибка загрузки JSON:', error);
+        return null;
+    }
+}
+
+
+function containsAllWords(text, words) {
+    const normText = normalizeRus(text);
+    return words.every(word => normText.includes(normalizeRus(word)));
 }
 
 function normalizeRus(str) {
-  return str.toLowerCase().replace(/[ьъ]/g, '').replace(/[ёе]/g, 'е');
+    return str.toLowerCase().replace(/[ьъ]/g, '').replace(/[ёе]/g, 'е');
 }
 
-function containsAllWords(text, words) {
-  const normText = normalizeRus(text);
-  return words.every(word => normText.includes(normalizeRus(word)));
+
+async function showResults() {
+    activeTags = []
+    const query = localStorage.getItem('query')
+
+    window.location.hash = `search=${query.split(' ').join('+').toLocaleLowerCase()}`
+
+    if (!query || query?.length < 2) return section_main.innerHTML = '<div class="textbox">Введите запрос (минимум 2 символа)</div>'
+
+    document.querySelector('#search').value = query
+    document.querySelector('.clear-btn').style.display = 'block'
+
+    section_main.innerHTML = '<div class="textbox">Ищем...</div>'
+
+    const jsonData = await fetchJsonData()
+    if (!jsonData || !jsonData.data) return section_main.innerHTML = '<div class="textbox">Ошибка загрузки данных</div>'
+
+
+    section_main.innerHTML = `<div class="textbox">Результаты поиска "${query}":</div>`
+    let foundAny = false
+    const searchWords = query.toLowerCase().trim().split(/\s+/)
+
+    let List = {}
+
+
+    const categories = [
+        { key: "Windows", path: "data.Windows", id: "resource-table-Windows" },
+        { key: "Android", path: "data.Android", id: "resource-table-Android" },
+        { key: "Games", path: "data.Games", id: "resource-table-Games", alname: "Игры" },
+        { key: "Links", path: "data.Links", id: "resource-table-Links", alname: "Ссылки" }
+    ];
+
+    for (const cat of categories) {
+        const topLevel = jsonData.data[cat.key];
+        if (!topLevel || typeof topLevel !== 'object') continue;
+
+        List[cat.key] = []
+
+        for (const subcatName in topLevel) {
+            const subcatData = topLevel[subcatName];
+            if (!Array.isArray(subcatData)) continue;
+
+            const matches = subcatData.filter(row =>
+                row.slice(0, 3).some(cell => containsAllWords(cell || '', searchWords))
+            );
+
+            if (matches.length != 0) matches.forEach((el) => List[cat.key].push(el))
+        }
+
+        if (List[cat.key].length > 0) {
+            foundAny = true;
+
+            const details = document.createElement('details');
+            details.open = true;
+            const summary = document.createElement('summary');
+
+            let category_name
+            for (let category of categories) {
+                if (cat.key == category.key) category_name = category.alname == undefined ? cat.key : category.alname
+            }
+
+            summary.textContent = `${category_name}`;
+            details.append(summary, document.createElement('br'))
+
+            const table = document.createElement('table');
+            table.innerHTML = `<tbody></tbody>`;
+            const tbody = table.querySelector('tbody');
+
+            for (let i = 0; i < List[cat.key].length; i += 3) {
+                const chunk = List[cat.key].slice(i, i + 3)
+                tbody.appendChild(createLinksBlock(chunk));
+            }
+            details.appendChild(table);
+            section_main.appendChild(details);
+        }
+
+        currentPageData = List
+    }
+
+    if (!foundAny)
+        section_main.innerHTML = `<div class="textbox">Ничего не найдено по запросу "${query}"</div>`
+
+    createTags()
 }
 
-const categories = [
-  { key: "Windows", path: "data.Windows", id: "resource-table-Windows" },
-  { key: "Android", path: "data.Android", id: "resource-table-Android" },
-  { key: "Games", path: "data.Games", id: "resource-table-Games", alname: "Игры" },
-  { key: "Links", path: "data.Links", id: "resource-table-Links", alname: "Ссылки" }
-];
 
 function toggleTheme() {
-  const isLight = localStorage.getItem('theme') === 'light';
-  document.documentElement.classList.toggle('light-theme', !isLight)
-  localStorage.setItem('theme', !isLight ? 'light' : 'dark')
+    const isLight = localStorage.getItem('theme') === 'light';
+    document.documentElement.classList.toggle('light-theme', !isLight)
+    localStorage.setItem('theme', !isLight ? 'light' : 'dark')
 }
 
 function setInitialTheme() {
-  const themeToggle = document.querySelector('.toggle input[type="checkbox"]')
-  const toggle = document.querySelector('.toggle')
+    const themeToggle = document.querySelector('.toggle input[type="checkbox"]')
+    const toggle = document.querySelector('.toggle')
 
-  const isLight = localStorage.getItem('theme') === 'light';
+    const isLight = localStorage.getItem('theme') === 'light';
 
-  toggle.classList.add('no-transition')
-  document.documentElement.classList.add('no-transition')
+    toggle.classList.add('no-transition')
+    document.documentElement.classList.add('no-transition')
 
-  document.documentElement.classList.toggle('light-theme', isLight);
-  themeToggle.checked = isLight
+    document.documentElement.classList.toggle('light-theme', isLight);
+    themeToggle.checked = isLight
 
-  setTimeout(() => {
-    toggle.classList.remove('no-transition')
-    document.documentElement.classList.remove('no-transition')
-  }, 10);
+    setTimeout(() => {
+        toggle.classList.remove('no-transition')
+        toggle.style.display = 'inline-block'
+        document.documentElement.classList.remove('no-transition')
+
+        document.body.style.opacity = 1
+    }, 100);
 }
 
-// FIX меню на мобилках
 
-// Функция для проверки, открыт ли сайт на мобильном устройстве
-function isMobileDevice() {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-}
-
-function checkDevice() {
-  // Получаем элементы меню
-  const navMenu = document.querySelector('nav')
-  const navToggle = navMenu?.querySelector('a')
-  const navItems = navMenu?.querySelectorAll('li .second')
-
-  if (!navMenu || !navToggle) return;
-
-  // Проверяем, открыт ли сайт на мобильном устройстве
-  if (isMobileDevice()) {
-    navToggle.addEventListener('click', (event) => {
-      event.preventDefault(); // Отменяем стандартное поведение ссылки
-      navMenu.classList.toggle('open'); // Добавляем/удаляем класс 'open' для меню
-      const isMenuOpen = navMenu.classList.contains('open') // Проверка navMenu на наличие класса 'open'
-      if (!isMenuOpen) window.location.href = navToggle.href // Если меню закрыто, переходим на главную страницу
-    });
-
-    navItems?.forEach((item) => {
-      item.addEventListener('click', (event) => {
-        event.stopPropagation(); // Останавливаем всплытие события
-        const link = item.querySelector('a');
-        if (link) {
-          navMenu.classList.remove('open'); // Закрываем меню
-          window.location.href = link.href; // Переходим по ссылке
-        }
-      });
-    });
-
-    document.addEventListener('click', (event) => {
-      if (!navMenu.contains(event.target)) navMenu.classList.remove('open'); // Закрываем меню, если клик произошел вне меню
-    });
-  } else {
-    // Оставляем стандартную функциональность меню для ПК
-    navMenu.addEventListener('mouseover', () => navMenu.classList.add('open'))
-    navMenu.addEventListener('mouseout', () => navMenu.classList.remove('open'))
-
-    navItems?.forEach((item) => {
-      item.addEventListener('click', (event) => {
-        event.stopPropagation(); // Останавливаем всплытие события
-        const link = item.querySelector('a');
-        if (link) window.location.href = link.href; // Переходим по ссылке
-      });
-    });
-  }
-}
-
-// Предзагрузочное выполнение функций
-document.addEventListener('DOMContentLoaded', async () => {
-  const CurrentPageName = window.location.pathname.replace(/^(\/pages\/|\/)(.*)(.html)$/g, '$2')
-
-  if (CurrentPageName !== 'Stop') await loadFromHTML('../module.html')
-
-  const themeToggle = document.querySelector('.toggle input[type="checkbox"]')
-  setInitialTheme()
-  themeToggle.addEventListener('change', toggleTheme)
-
-  if (CurrentPageName == 'Search') showResults();
-
-  loadJsonData(CurrentPageName)
-
-  const searchInput = document.querySelector('.search');
-  const searchForm = document.querySelector('form');
-
-  if (searchInput && searchForm) {
-    const performSearch = () => {
-      const value = searchInput.value.trim();
-      if (value.length >= 2) window.location.href = 'Search.html?query=' + encodeURIComponent(value)
-    };
-
-    searchForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      performSearch()
-    });
-
-    searchInput.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter') {
-        e.preventDefault();
-        performSearch()
-      }
-    });
-  }
-
-  // Крестик
-  const clearBtn = document.querySelector('.clear-btn');
-  if (searchInput && clearBtn) {
-    searchInput.addEventListener('input', () => {
-      clearBtn.style.display = searchInput.value.length > 0 ? 'block' : 'none';
-    });
-    clearBtn.addEventListener('click', () => {
-      searchInput.value = '';
-      clearBtn.style.display = 'none';
-    });
-  }
-});
-
-async function showResults() {
-  const query = getQueryParam('query')
-  const container = document.getElementById('categories-container')
-
-  if (!query || query.length < 2) return container.innerHTML = '<div class="textbox">Введите запрос (минимум 2 символа)</div>'
-
-  container.innerHTML = '<div class="textbox">Ищем...</div>'
-
-  const jsonData = await fetchJsonData()
-  if (!jsonData || !jsonData.data) return container.innerHTML = '<div class="textbox">Ошибка загрузки данных</div>'
-
-  container.innerHTML = `<div class="textbox">Результаты поиска "${query}":</div>`
-  let foundAny = false
-  const searchWords = query.toLowerCase().trim().split(/\s+/)
-
-
-  let List = {}
-
-  for (const cat of categories) {
-    const topLevel = jsonData.data[cat.key];
-    if (!topLevel || typeof topLevel !== 'object') continue;
-
-    List[cat.key] = []
-
-    for (const subcatName in topLevel) {
-      const subcatData = topLevel[subcatName];
-      if (!Array.isArray(subcatData)) continue;
-
-      const matches = subcatData.filter(row =>
-        row.slice(0, 3).some(cell => containsAllWords(cell || '', searchWords))
-      );
-
-      if (matches.length != 0) matches.forEach((el) => List[cat.key].push(el))
-    }
-
-    if (List[cat.key].length > 0) {
-      foundAny = true;
-
-      const details = document.createElement('details');
-      details.open = true;
-      const summary = document.createElement('summary');
-
-      let category_name
-      for (let category of categories) {
-        if (cat.key == category.key) category_name = category.alname == undefined ? cat.key : category.alname
-      }
-
-      summary.innerHTML = `<div class="spoiler">${category_name}</div>`;
-      details.append(summary, document.createElement('br'))
-
-      const table = document.createElement('table');
-      table.innerHTML = `<tbody></tbody>`;
-      const tbody = table.querySelector('tbody');
-
-      for (let i = 0; i < List[cat.key].length; i += 3) {
-        const chunk = List[cat.key].slice(i, i + 3)
-        tbody.appendChild(createLinksBlock(chunk));
-      }
-      details.appendChild(table);
-      container.appendChild(details);
-    }
-  }
-
-  if (!foundAny) {
-    container.innerHTML = `<div class="textbox">Ничего не найдено по запросу "${query}"</div>`;
-  }
-}
-
-function getCategoryData(jsonData, path) {
-  const categoryPath = path.split('.');
-  let categoryData = jsonData;
-  for (const key of categoryPath.slice(1)) {
-    categoryData = categoryData?.[key];
-    if (!categoryData || !Array.isArray(categoryData)) return [];
-  }
-  return categoryData || [];
-}
-
-// Получение тегов страницы
 async function loadJsonData(pageName) {
-  try {
+    pageName = pageName.replace('#', '')
+    if (pageName.toLocaleLowerCase() == 'pagenotfound') document.querySelector('title').innerHTML = 'ERROR 404'
+    else document.querySelector('title').innerHTML = pageName.toLocaleUpperCase() == '/' ? 'APP8OOK' : pageName.toLocaleUpperCase()
+    window.location.hash = pageName
+
+    if (localStorage.getItem('query')
+        && window.location.hash.toLocaleLowerCase().startsWith('#search')) return showResults()
+
+    document.querySelector('#search').value = '';
+    document.querySelector('.clear-btn').style.display = 'none'
+
     const response = await fetch(DATA_URL);
     const jsonData = await response.json();
-    window.jsonData = jsonData; // ✅ Глобальная переменная для тегов
 
-    const container = document.getElementById('categories-container')
+    section_main.innerHTML = ''
 
-    if (pageName === '/') {
-      isIndexPage = true;
-      const myData = jsonData.mydata;
+    // Загрузка data файлов
+    const pageData = jsonData?.data[pageName] ?
+        jsonData?.data[pageName] : jsonData?.mydata[pageName == '/' ? 'index' : pageName]
 
-      Object.keys(myData).forEach(sectionName => {
-        const sectionData = myData[sectionName];
-        Object.keys(sectionData).forEach(categoryName => {
-          const categoryData = sectionData[categoryName];
+    if (pageData) {
+        currentPageData = pageData
 
-          const details = document.createElement('details'); // Создаем спойлер
-          details.setAttribute('data-page', categoryName.toLowerCase());
+        Object.keys(pageData).forEach(categoryName => {
+            const categoryData = pageData[categoryName];
 
-          const summary = document.createElement('summary');
-          summary.innerHTML = `<div class="spoiler">${categoryName}</div>`;
-          details.appendChild(summary);
-          details.appendChild(document.createElement('br'));
-
-          const table = document.createElement('table');
-          table.innerHTML = `<tbody id="resource-table-${categoryName.toLowerCase()}"></tbody>`;
-
-          const tbody = table.querySelector('tbody');
-          for (let i = 0; i < categoryData.length; i += 3) {
-            const chunk = categoryData.slice(i, i + 3);
-            const row = createLinksBlock(chunk);
-            tbody.appendChild(row);
-          }
-
-          details.appendChild(table);
-          container.appendChild(details);
+            createPageData(categoryData, categoryName)
         });
-      });
-      isIndexPage = false;
-    } else {
-      // страницы Windows, Android...
-      const pageData = jsonData?.data[pageName];
-      if (!pageData) {
-        createPageTagsFilter(pageName);
-        loadMD(pageName)
-        return
-      }
+    }
 
-      currentPageData = pageData;
-      originalPageData = JSON.parse(JSON.stringify(pageData));
+    // Загрузка MDs файлов
+    const pageMDs = jsonData?.MDs[pageName.toLocaleLowerCase()]
 
-      Object.keys(pageData).forEach(categoryName => {
-        const categoryData = pageData[categoryName];
+    if (pageMDs) {
+        try {
+            const response = await fetch(pageMDs);
+            const markdown = await response.text();
 
-        const details = document.createElement('details');
-        details.setAttribute('data-page', categoryName.toLowerCase());
+            const sections = markdown.split(/_{10,}/).filter(s => s.trim().length > 10)
 
-        const summary = document.createElement('summary');
-        summary.innerHTML = `<div class="spoiler">${categoryName}</div>`;
-        details.appendChild(summary);
-        details.appendChild(document.createElement('br'));
+            sections.forEach((sec, index) => {
+                const lines = sec.trim().split('\n');
+                const RegExp = /^@(.*)@$/gm;
 
-        const table = document.createElement('table');
-        table.innerHTML = `<tbody id="resource-table-${categoryName.toLowerCase()}"></tbody>`;
+                const title = lines.find(line => RegExp.exec(line.trim()))
 
-        const tbody = table.querySelector('tbody');
-        for (let i = 0; i < categoryData.length; i += 3) {
-          const chunk = categoryData.slice(i, i + 3);
-          const row = createLinksBlock(chunk);
-          tbody.appendChild(row);
+                function LinesSlices(lines) {
+                    return lines.slice(RegExp.test(title) ? 1 : 0).join('\n')
+                        .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank" class="smablock">$1</a>')
+                        .replace(/```([^\`]+)```/gs, '<div onclick="copy(this)" class="cline">$1</div><br>')
+                        .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
+                        .replace(/\*(.*?)\*/g, '<i>$1</i>')
+                        .replace(/(.*)\n$/gm, '$1<br>')
+                        .replace(/^(\s{12,})(.*)$/gm, '<div style="text-indent:150px;">$2</div>')
+                        .replace(/^(\s{8,})(.*)$/gm, '<div style="text-indent:100px;">$2</div>')
+                        .replace(/^(\s{4,})(.*)$/gm, '<div style="text-indent:50px;">$2</div>')
+                        .replace(/^(.*)$/gm, '<div>$1</div>')
+                }
+
+                if (title) {
+                    const details = document.createElement('details')
+                    details.open = activeTags[0]
+
+                    const summary = document.createElement('summary')
+                    summary.textContent = `${title?.replace(RegExp, '$1')}`
+
+                    details.appendChild(summary)
+
+                    const contentDiv = document.createElement('div')
+                    contentDiv.className = 'textbox'
+                    contentDiv.style.cssText = 'margin:10px;line-height:1.4;text-align:left;'
+
+                    contentDiv.innerHTML = LinesSlices(lines)
+
+                    details.appendChild(contentDiv)
+                    setTimeout(() => {
+                        section_main.appendChild(details)
+                    }, 10);
+                } else section_main.innerHTML += LinesSlices(lines)
+
+            })
+        } catch (error) {
+            console.error(`MD [${pageName}]:`, error);
+        }
+    }
+
+
+    document.querySelectorAll('details').forEach(detail => {
+        detail.open = activeTags[0]
+    })
+
+
+    // 404 Not Found
+    setTimeout(() => {
+        if (section_main.innerHTML == '') {
+            const warn = document.createElement('div')
+            warn.className = 'textbox'
+            warn.innerHTML = 'Ошибка 404<br>Страница не найдена'
+
+            const box_img = document.createElement('div')
+            box_img.className = 'textbox'
+            const warn_img = document.createElement('img')
+            warn_img.src = 'pics/Stop.png';
+            warn_img.width = "800"
+            warn_img.height = "200"
+
+            box_img.appendChild(warn_img)
+            section_main.append(warn, box_img)
+            return
+        }
+    }, 20);
+
+    createTags()
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.querySelector('.toggle input[type="checkbox"]')
+    setInitialTheme()
+    themeToggle.addEventListener('change', toggleTheme)
+
+    const CurrentPageName = window.location.pathname.replace(/^(\/pages\/|\/)(.*)(.html)$/g, '$2')
+    const CurrentHash = window.location.hash ? window.location.hash.split('=')[0] : false
+
+    loadJsonData(CurrentHash || CurrentPageName)
+
+    const searchInput = document.querySelector('#search')
+    const searchForm = document.querySelector('form')
+    const clearBtn = document.querySelector('.clear-btn')
+
+    if (searchInput && searchForm && clearBtn) {
+        const performSearch = () => {
+            const value = searchInput.value.trim();
+            if (value.length >= 2) {
+                localStorage.setItem('query', value)
+                showResults()
+            } else {
+                localStorage.removeItem('query')
+                loadJsonData('/')
+            }
         }
 
-        details.appendChild(table);
-        container.appendChild(details);
-      });
+        searchForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            performSearch()
+        });
 
-      createPageTagsFilter(pageName);
+        searchInput.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                performSearch()
+            }
+        })
+
+        searchInput.addEventListener('input', () => {
+            clearBtn.style.display = searchInput.value.trim() !== '' ? 'block' : 'none';
+        });
+
+        clearBtn.addEventListener('click', (e) => {
+            searchInput.value = '';
+            clearBtn.style.display = 'none';
+            localStorage.removeItem('query')
+            showResults()
+        });
+    }
+})
+
+
+async function createPageData(Data, Name) {
+    const details = document.createElement('details')
+
+    const summary = document.createElement('summary')
+    summary.textContent = `${Name}`
+    details.appendChild(summary)
+
+    const table = document.createElement('table')
+    const tbody = document.createElement('tbody')
+    table.append(tbody)
+
+    for (let i = 0; i < Data.length; i += 3) {
+        const chunk = Data.slice(i, i + 3)
+        tbody.appendChild(createLinksBlock(chunk))
     }
 
-    loadMD(pageName)
-
-  } catch (error) {
-    console.error('Ошибка загрузки JSON:', error);
-  }
+    details.appendChild(table)
+    section_main.appendChild(details)
 }
-
-
-async function loadMD(PageName) {
-  const ContentContainer = document.getElementById('categories-container')
-
-  try {
-    const DataResponse = await fetch(DATA_URL);
-    const jsonData = await DataResponse.json();
-
-    let CurrentURL = jsonData.MDs[`${PageName.toLowerCase()}`]
-
-    if (!CurrentURL) return
-
-    const response = await fetch(CurrentURL);
-    const markdown = await response.text();
-
-    const sections = markdown.split(/_{10,}/).filter(s => s.trim().length > 10)
-
-    sections.forEach((section, index) => {
-      const lines = section.trim().split('\n');
-      const RegExp = /^@(.*)@$/gm;
-
-      const title = lines.find(line => RegExp.exec(line.trim()))
-
-      function LinesSlices(lines) {
-        return lines.slice(RegExp.test(title) ? 1 : 0).join('\n')
-          .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank" class="smablock">$1</a>')
-          .replace(/```([^\`]+)```/gs, '<div onclick="copy(this)" class="cline">$1</div><br>')
-          .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
-          .replace(/\*(.*?)\*/g, '<i>$1</i>')
-          .replace(/(.*)\n$/gm, '$1<br>')
-          .replace(/^(\s{12,})(.*)$/gm, '<div style="text-indent:150px;">$2</div>')
-          .replace(/^(\s{8,})(.*)$/gm, '<div style="text-indent:100px;">$2</div>')
-          .replace(/^(\s{4,})(.*)$/gm, '<div style="text-indent:50px;">$2</div>')
-          .replace(/^(.*)$/gm, '<div>$1</div>')
-      }
-
-      if (title) {
-        const details = document.createElement('details'); // Создаем спойлер
-        details.open = false;
-
-        const summary = document.createElement('summary');
-        summary.innerHTML = `<div class="spoiler">${title?.replace(RegExp, '$1')}</div>`;
-
-        details.appendChild(summary);
-        details.appendChild(document.createElement('br'));
-
-        const contentDiv = document.createElement('div'); // Контент
-        contentDiv.className = 'textbox';
-        contentDiv.style.cssText = 'margin:10px;line-height:1.4;text-align:left;';
-
-        contentDiv.innerHTML = LinesSlices(lines)
-
-        details.appendChild(contentDiv)
-        ContentContainer.appendChild(details)
-      } else ContentContainer.innerHTML += LinesSlices(lines)
-    })
-  } catch (error) {
-    console.error(`MD [${PageName}]:`, error);
-  }
-}
-
 
 function createLinksBlock(chunk) {
-  const row = document.createElement('tr');
-  for (let j = 0; j < 3; j++) {
-    const cell = document.createElement('td');
-    const linkDiv = document.createElement('div');
-    linkDiv.className = 'tblcol';
+    const row = document.createElement('tr');
+    for (let j = 0; j < 3; j++) {
+        const cell = document.createElement('td');
+        if (chunk[j]) {
+            const [title, desc, url, tags, date] = chunk[j];
 
-    if (chunk[j] && chunk[j].length >= 3) {
-      const [title, desc, url] = chunk[j];
+            const element_tags = document.createElement('div')
+            element_tags.className = 'element-tags'
+            element_tags.innerHTML = tags.split(', ').map(tag => `<span class="tag-chip">${tag.trim()}</span>`).join('')
 
-      const element_link = document.createElement('a')
-      element_link.className = 'butt'; element_link.target = '_blank'
-      element_link.href = url || '#'
-      element_link.innerHTML = `${title}<br><br>${desc || ''}`
 
-      if (isIndexPage) { // БЕЗ тегов/дат для index
-        linkDiv.appendChild(element_link) 
-      } else if (chunk[j].length >= 5) { // С тегами/датами для всех страниц
-        const [_, __, ___, tags, date] = chunk[j];
+            const element_date = document.createElement('div')
+            element_date.className = 'element-date'
+            element_date.innerHTML = date
 
-        const element_tags = document.createElement('div')
-        element_tags.className = 'element-tags-hover'
-        element_tags.innerHTML = tags ? tags.split(', ').map(tag => `<span class="tag-chip">${tag.trim()}</span>`).join('') : 'нет тегов'
+            const link = document.createElement('a')
+            link.innerHTML = `<p>${title}<br><br>${desc || ''}</p>`
+            link.className = 'cell'
+            link.target = '_blank'
+            link.href = `${url == 'Stop.html' ? "#PageNotFound" : url}`
 
-        const element_date = document.createElement('div')
-        element_date.className = 'element-date-hover'
-        element_date.innerHTML = date || 'без даты'
-
-        linkDiv.append(element_tags, element_link, element_date)
-        linkDiv.dataset.tags = tags || '';
-      }
+            if (tags != '') {
+                link.prepend(element_tags)
+                link.appendChild(element_date)
+            }
+            cell.append(link)
+        }
+        row.appendChild(cell);
     }
-    cell.appendChild(linkDiv);
-    row.appendChild(cell);
-  }
-  return row;
+    return row;
 }
 
 
-// Плашка тегов страницы
-function createPageTagsFilter() {
-  const filterContainer = document.getElementById('page-tags-filter');
 
-  function GetCountTags() {
-    let tag_counts = {}
+async function createTags() {
+    function GetListTags() {
+        let tag_counts = {}
 
-    document.querySelectorAll('div [class="tblcol"]').forEach(el => {
-      if (el.innerHTML != '' && el.getAttribute('data-tags') != '')
-        el.getAttribute('data-tags').split(', ').forEach(tag => {
-          tag_counts[tag] = (tag_counts[tag] || 0) + 1
+        section_main?.querySelectorAll('.cell').forEach(cell => {
+            cell?.querySelector('.element-tags')
+                ?.querySelectorAll('.tag-chip').forEach(tag => {
+                    const tagName = tag.textContent
+                    tag_counts[tagName] = (tag_counts[tagName] || 0) + 1
+                })
         })
+
+        return tag_counts || undefined
+    }
+
+    function GetTags() {
+        const tags = Object.entries(GetListTags())
+            .sort((a, b) => b[1] - a[1])
+            .map(entry => `${entry[0]} (${entry[1]})`);
+
+        return tags.join(', ') || undefined
+    }
+
+
+    section_tags.querySelector('#tags-container').innerHTML = ''
+
+    GetTags()?.split(', ').forEach(tag => {
+        const tagSpan = document.createElement('span');
+        tagSpan.className = 'tag';
+        tagSpan.textContent = tag.trim()
+        tagSpan.onclick = () => toggleTag(tagSpan);
+
+        if (activeTags.includes(re_tag(tag.trim()))) {
+            tagSpan.classList.add('active')
+            section_tags.querySelector('#tags-container').prepend(tagSpan);
+        }
+        else section_tags.querySelector('#tags-container').appendChild(tagSpan);
     })
 
-    return tag_counts
-  }
-
-  function GetTags() {
-    const tags = Object.entries(GetCountTags())
-      .sort((a, b) => b[1] - a[1])
-      .map(entry => `${entry[0]} (${entry[1]})`);
-
-    return tags.join(', ')
-  }
-
-  const tagsData = GetTags()
-
-  if (!tagsData) return filterContainer.style.display = 'none'
-
-  const container = document.getElementById('page-tags-container');
-
-  let tags = []
-
-  container.querySelectorAll('span').forEach(tag => {
-    const tagContent = tag.textContent.split(/ \(\d+\),?/g)[0]
-    if (activePageTags.indexOf(tagContent) != -1) {
-      tag.textContent = `${tagContent} (${GetCountTags()[tagContent]})`
-      tags.push(tag)
-    }
-  })
-
-  container.innerHTML = ''
-
-  tags.forEach(tag => container.appendChild(tag))
-
-  tagsData.split(', ').forEach(tag => {
-    if (!container.innerHTML.includes(tag.trim())) {
-      const tagSpan = document.createElement('span');
-      tagSpan.className = 'page-tag-filter';
-      tagSpan.textContent = tag.trim()
-      tagSpan.onclick = () => togglePageTagFilter(tag.trim());
-      container.appendChild(tagSpan);
-    }
-  });
-
-  filterContainer.style.display = 'flex';
+    section_tags.style.display = GetTags() ? 'flex' : 'none'
 }
 
-// Фильтрация по тегам страницы
-async function togglePageTagFilter(tag) {
-  const tagName = tag.split(/ \(\d+\),?/g)[0]
+async function toggleTag(tag) {
+    if (activeTags.indexOf(re_tag(tag.textContent)) == -1) {
+        activeTags.push(re_tag(tag.textContent))
+        tag.classList.add('active')
+    } else {
+        activeTags.splice(activeTags.indexOf(re_tag(tag.textContent)), 1)
+        tag.classList.remove('active')
+    }
 
-  const tagElement = Array.from(document.querySelectorAll('.page-tag-filter')).find(el =>
-    el.textContent.trim() === tag
-  );
+    section_main.innerHTML = ''
 
-  const index = activePageTags.indexOf(tagName);
+    Object.keys(currentPageData).forEach(categoryName => {
+        const data = currentPageData[categoryName]
 
-  if (index != -1) {
-    activePageTags.splice(index, 1);
-    if (tagElement) tagElement.classList.remove('active');
-  } else {
-    activePageTags.push(tagName);
-    if (tagElement) tagElement.classList.add('active');
-  }
+        const filteredData = data.filter(item => {
+            const tags = (item[3] || 0).split(', ').map(t => t.trim())
+            return activeTags.every(tag => tags.includes(tag))
+        })
 
-  applyPageFilter()
-  setTimeout(() => {
-    createPageTagsFilter()
-  }, 100);
-}
-
-async function applyPageFilter() {
-  const container = document.getElementById('categories-container')
-  const status = document.getElementById('filter-status');
-
-
-  if (window.location.href.includes('Search') && getQueryParam('query') != '') await showResults()
-
-  function SearchPageData() {
-    let ItemsList = {}
-
-    document.querySelectorAll('details').forEach(category => {
-      const cat_name = category.querySelector('.spoiler').innerHTML
-      ItemsList[cat_name] = []
-
-      category.querySelectorAll('.butt').forEach(el => {
-        ItemsList[cat_name].push([el.innerHTML.split('<br><br>')[0],
-        el.innerHTML.split('<br><br>')[1],
-        el.href,
-        el.parentElement.getAttribute('data-tags') == '' ? '' : el.parentElement.getAttribute('data-tags'),
-        el.parentElement.querySelector('.element-date-hover').innerHTML])
-      })
+        if (filteredData.length > 0) {
+            createPageData(filteredData, categoryName)
+            createTags()
+        }
     })
 
-    return ItemsList
-  }
-
-  const PageData = !originalPageData || Object.keys(originalPageData).length === 0 ? SearchPageData() : originalPageData
-
-  let totalVisible = 0;
-
-  container.innerHTML = '';
-
-  Object.keys(PageData).forEach(categoryName => {
-    const categoryData = PageData[categoryName];
-
-    // ФИЛЬТРУЕМ элементы по тегам
-    const filteredData = categoryData.filter(item => {
-      const tags = (item[3] || '').split(', ').map(t => t.trim());
-      return activePageTags.every(tag => tags.includes(tag));
-    });
-
-    // ПОКАЗЫВАЕМ спойлер если есть данные ИЛИ фильтр снят
-    if (filteredData.length > 0 || activePageTags.length === 0) {
-      totalVisible += filteredData.length;
-
-      const details = document.createElement('details');
-      details.setAttribute('data-page', categoryName.toLowerCase());
-
-      // ОТКРЫВАЕМ если фильтр активен И есть данные
-      if (window.location.href.includes('Search')) details.open = true
-      else details.open = activePageTags.length > 0 && filteredData.length > 0;
-
-      const summary = document.createElement('summary');
-      summary.innerHTML = `<div class="spoiler">${categoryName}</div>`;
-      details.appendChild(summary);
-      details.appendChild(document.createElement('br'));
-
-      const table = document.createElement('table');
-      table.innerHTML = `<tbody></tbody>`;
-      const tbody = table.querySelector('tbody');
-
-      // Строим таблицу из отфильтрованных данных
-      for (let i = 0; i < filteredData.length; i += 3) {
-        const chunk = filteredData.slice(i, i + 3);
-        tbody.appendChild(createLinksBlock(chunk));
-      }
-
-      details.appendChild(table);
-      container.appendChild(details);
-    }
-  });
-
-  // Статус
-  if (status) {
-    const statusText = activePageTags.length === 0 ? '' :
-      totalVisible === 0 ? 'Ничего не найдено' : `Найдено: ${totalVisible}`;
-    status.textContent = statusText;
-    status.style.display = statusText ? 'block' : 'none';
-  }
+    section_main.querySelectorAll('details').forEach(detail => detail.open = activeTags[0] ? true : window.location.hash.includes('search') ? true : false)
 }
 
 
-
-
-// Внешние функции HTML-JS
-function copy(el) {
-  navigator.clipboard.writeText(el.textContent);
-  alert("Текст скопирован!")
+function re_tag(t) {
+    return t.replace(/(.*) \(.*\)$/g, '$1')
 }
 
 
-// Загрузка HTML и вставка в DOM
-async function loadFromHTML(url) {
-  try {
-    const response = await fetch(url);
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    const html = await response.text();
-    document.querySelector('body').innerHTML = html
-    if (!document.querySelector('script')) {
-      let script = document.createElement('script')
-      script.setAttribute('src', 'data/script.js')
-      document.querySelector('body').appendChild(script)
-    }
-  } catch (error) {
-    console.error('Error loading HTML:', error);
-  }
+function copy(element) {
+    navigator.clipboard.writeText(element.textContent);
+    alert("Текст скопирован!")
 }

@@ -1,682 +1,656 @@
- /*_________________________________________________________________________________________________________________*/
-
- /* Сток */
-
- @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:600&subset=cyrillic');
-
- html {
-   font-family: Montserrat Alternates;
-   overflow-y: scroll;
-   /*для вертикального*/
-   overflow-x: hidden;
-   /*для горизонтального*/
-   background-image: var(--bgimg);
-   background-size: 100%;
-   background-repeat: repeat;
- }
-
- html,
- body {
-   height: 100%;
-   margin: 0;
-   padding: 0;
-   display: flex;
-   flex-direction: column;
-   font-size: 125%;
- }
-
- .text {
-   color: var(--text);
- }
-
- A {
-   color: var(--text);
-   text-decoration: none;
-   font-family: Montserrat Alternates;
- }
-
- A:visited {
-   color: var(--text);
- }
-
- A:active {
-   color: var(--text);
- }
-
- * {
-   margin: 0;
-   padding: 0;
- }
-
- /* Цвета */
-
- :root {
-   --bgimg: url(/pics/bgd.png);
-   --bg: #444444;
-   --bg-2: #2b2b2b;
-   --bg-3: #333333;
-   --text: #FF6666;
-   --active-text: #ffbb66;
-   --border: #FF6666;
-   --active-hover: #1e1e1e;
-   --scrollbar-track-color: #FF6666;
-   --scrollbar-thumb-color: #333333;
-   --scrollbar-thumb-hover-color: #555555;
-   --tagsdateonblocks: #111111;
- }
-
- .light-theme {
-   --bgimg: url(/pics/bgl.png);
-   --bg: #E5D5D5;
-   --bg-2: #E6A493;
-   --bg-3: #EBBEB3;
-   --text: #500000;
-   --active-text: #6b0000;
-   --border: #9E0505;
-   --active-hover: #E57566;
-   --scrollbar-track-color: #FF6666;
-   --scrollbar-thumb-color: #EABDB7;
-   --scrollbar-thumb-hover-color: #C38686;
-   --tagsdateonblocks: #FF6666;
- }
-
- /*_________________________________________________________________________________________________________________*/
-
- /* Основное */
-
- .bg {
-   /* Фон-блок */
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 25px;
-   padding: 2% 1%;
-   border-radius: 9px;
-   width: 92%;
-   background: var(--bg);
-   margin-right: auto;
-   margin-left: auto;
- }
-
- .bgl {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   /* Фон-блок-лента */
-   width: 100%;
-   background: var(--bg);
-   position: relative;
-   top: -1%;
-   left: 0;
- }
-
- /* ------Выпадающее меню------ */
-
- nav {
-   display: inline-block;
-   width: 25%;
-   border: 3px solid var(--active-hover);
-   border-radius: 9px 9px 9px 9px;
- }
-
- nav ul {
-   list-style: none;
-   width: 100%;
-   z-index: 30;
- }
-
- nav>ul>li {
-   position: relative;
- }
-
- nav li a {
-   display: block;
-   background: var(--bg-2);
-   color: var(--text);
-   padding: 3%;
-   text-align: left;
-   text-decoration: none;
-   overflow: hidden;
- }
-
- nav li a:hover {
-   background: var(--active-hover);
-   color: var(--active-text);
-   transition: 0.5s;
- }
-
- nav li .second {
-   display: none;
-   position: absolute;
-   top: 100%;
- }
-
- nav li:hover .second {
-   display: block;
-   border: 2px solid var(--active-hover);
-   border-radius: 0 0 9px 9px;
-   width: 98%;
-   left: 0.35%;
-   right: auto;
- }
-
- nav li li {
-   width: 100%;
- }
-
- nav img {
-   align-self: center;
-   width: 25px;
-   height: 25px;
- }
-
- /* Поиск */
-
- form {
-   width: 50%;
- }
-
- input {
-   width: 100%;
-   box-sizing: border-box;
-   padding: 12px 8px;
-   background-color: var(--bg-2);
-   border: 3px solid var(--active-hover);
-   border-radius: 9px;
-   font-size: 24px;
-   font-family: Montserrat Alternates;
-   color: var(--text);
-   outline: var(--active-hover);
- }
-
- .clear-btn {
-   position: absolute;
-   top: 50%;
-   right: 1%;
-   transform: translateY(-50%);
-   font-size: 50px;
-   color: var(--text);
-   cursor: pointer;
-   display: none;
- }
-
- /* Кнопка смены темы */
-
- .checkbox-container {
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
-
- .toggle {
-   --width: 160px;
-   --height: calc(var(--width) / 3);
-   position: relative;
-   display: inline-block;
-   width: var(--width);
-   height: var(--height);
-   border-radius: var(--height);
-   cursor: pointer;
-   right: 1%;
-   border: 3px solid var(--active-hover);
- }
-
- .toggle input {
-   display: none;
- }
-
- .toggle .slider {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   border-radius: var(--height);
-   background-color: var(--bg-2);
-   transition: all 0.4s ease-in-out;
- }
-
- .toggle .slider::before {
-   content: '';
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: calc(var(--height));
-   height: calc(var(--height));
-   border-radius: calc(var(--height) / 2);
-   background-color: var(--text);
-   transition: all 0.4s ease-in-out;
- }
-
- .toggle input:checked+.slider {
-   background-color: var(--bg-2);
- }
-
- .toggle input:checked+.slider::before {
-   transform: translateX(calc(var(--width) - var(--height)));
- }
-
- .toggle .labels {
-   position: absolute;
-   top: 12px;
-   left: 2px;
-   right: 2px;
-   width: 100%;
-   height: 100%;
-   font-size: 20px;
-   transition: all 0.4s ease-in-out;
- }
-
- .toggle .labels::after {
-   content: attr(data-off);
-   position: absolute;
-   right: 20%;
-   color: var(--text);
-   opacity: 1;
-   transition: all 0.4s ease-in-out;
- }
-
- .toggle .labels::before {
-   content: attr(data-on);
-   position: absolute;
-   left: 20%;
-   color: var(--text);
-   opacity: 0;
-   transition: all 0.4s ease-in-out;
- }
-
- .toggle input:checked~.labels::after {
-   opacity: 0;
- }
-
- .toggle input:checked~.labels::before {
-   opacity: 1;
- }
-
- .container {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-between;
-   width: 95%;
-   padding: 35px;
-   gap: 15px;
- }
-
-
-
- /* Дата внизу блока */
- .tblcol {
-   position: relative;
- }
-
- /* Отступы спойлеров */
-
- /* Дата выплывающая СНИЗУ */
- .tblcol .element-date-hover {
-   position: absolute;
-   align-self: center;
-   width: auto;
-   bottom: 8px;
-   left: 2px;
-   right: -1px;
-   background: var(--tagsdateonblocks);
-   color: var(--active-text);
-   padding: 6px 10px;
-   border-radius: 0 0 9px 9px;
-   font-size: 11px;
-   font-weight: 500;
-   opacity: 0;
-   transform: translateY(5px);
-   transition: all 0.25s ease;
-   text-align: center;
-   z-index: 2;
- }
-
- .tblcol:hover .element-date-hover {
-   opacity: 1;
-   transform: translateY(0);
- }
-
- /* Теги при наведении             flex-wrap: wrap;      gap: 5px;  display: flex; */
- .tblcol .element-tags-hover {
-   position: absolute;
-   align-self: center;
-   width: auto;
-   top: 2px;
-   left: 2px;
-   right: -1px;
-   background: var(--tagsdateonblocks);
-   color: var(--active-text);
-   padding: 6px 10px;
-   border-radius: 9px 9px 0 0;
-   font-size: 11px;
-   opacity: 0;
-   transform: translateY(-5px);
-   transition: all 0.25s ease;
-   text-align: center;
-   z-index: 2;
- }
-
- .tblcol:hover .element-tags-hover {
-   opacity: 1;
-   transform: translateY(0);
- }
-
- .tag-chip {
-   display: inline-block;
-   margin: 2px 4px;
-   /* верх, право, низ, Лево*/
-   background: var(--text);
-   color: var(--tagsdateonblocks);
-   padding: 3px 8px;
-   border-radius: 10px;
-   font-size: 10px;
-   cursor: default;
- }
-
- .tag-chip {
-   background: var(--text);
-   padding: 3px 8px;
-   border-radius: 10px;
-   font-size: 10px;
-   cursor: default;
- }
-
- /* Плашка фильтрации */
- .page-tags-filter {
-   background: var(--bg);
-   border-radius: 8px;
-   padding: 20px;
-   margin: 0% 3% 2% 3%;
-   display: flex;
-   align-items: center;
- }
-
- #page-tags-container {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 10px 8px;
-   /* 12px вертикаль, 16px горизонталь */
-   flex: 1;
-   align-items: center;
- }
-
- .page-tag-filter {
-   background: var(--bg-2);
-   color: var(--text);
-   padding: 7px 14px;
-   border-radius: 20px;
-   font-size: 22px;
-   cursor: pointer;
-   transition: all 0.2s ease;
-   user-select: none;
-   flex-shrink: 0;
-   white-space: nowrap;
- }
-
- .page-tag-filter:hover,
- .page-tag-filter.active {
-   background: var(--active-hover);
-   color: var(--active-text);
-   transition: all 0.4s ease-in-out;
- }
-
- #filter-status {
-   margin-left: auto;
-   font-size: 13px;
-   color: var(--active-text);
-   font-style: italic;
-   display: none;
-   white-space: nowrap;
- }
-
-
- .cline {
-   user-select: none;
-   background: var(--bg-2);
-   color: var(--text);
-   padding: 20px;
-   border-radius: 8px;
-   font-family: monospace;
-   font-size: 16px;
-   overflow: auto;
-   transition: all 0.4s ease-in-out;
- }
-
- .cline:hover,
- .cline:active {
-   background: var(--active-hover);
- }
-
- .smablock,
- .smblock {
-   display: block;
-   /* Позволяет элементу занимать только необходимое пространство  inline-block*/
-   padding: 12px;
-   /* Внутренние отступы для создания пространства вокруг текста */
-   margin-right: 3%;
-   margin-left: 3%;
-   margin-bottom: 1%;
-   margin-top: 0%;
-   width: auto;
-   text-indent: 10px;
-   background-color: var(--bg-2);
-   /* Цвет фона блока */
-   border: 2px solid var(--bg-2);
-   /* Серый обвод */
-   border-radius: 9px;
-   /* Скругление углов (по желанию) */
- }
-
- .smablock:hover,
- .smablock:active {
-   background-color: var(--active-hover);
-   /* Цвет фона блока */
-   border: 2px solid var(--active-hover);
-   /* Серый обвод */
- }
-
-
- /* Спойлер */
-
- /* ✅ ОПТИМИЗИРОВАННЫЙ спойлер */
- .spoiler {
-   width: 90%;
-   padding: 1%;
-   margin: 0 auto;
-   background: var(--bg-2);
-   color: var(--text);
-   border-radius: 9px;
-   display: flex;
-   text-align: center;
-   align-items: center;
-   justify-content: center;
-   cursor: pointer;
-   border: 3px solid var(--bg-2);
-   transition: all 0.3s ease;
- }
-
- .spoiler:hover,
- .spoiler:active {
-   border-color: var(--border);
-   opacity: 1;
- }
-
- /* ✅ Убираем лишние стили */
- details summary::-webkit-details-marker,
- details summary::-moz-list-bullet {
-   display: none;
- }
-
- details,
- summary {
-   width: 100%;
-   user-select: none;
-   outline: none;
- }
-
- details {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
- }
-
- details summary {
-   list-style: none;
- }
-
-
- /* ------Таблица------ */
- .tblcol {
-   width: 100%;
-   height: 100%;
- }
-
- td {
-   padding: 9px;
-   width: 33.33%;
-   text-align: left;
- }
-
- a.butt {
-   display: inline-block;
-   border-radius: 9px;
-   /* border: 2px solid var(--bg-2); */
-   padding: 5%;
-   padding-top: 8%;
-   background: var(--bg-2);
-   text-decoration: none;
-   user-select: none;
-   outline: none;
-   transition: 0.2s;
-   color: var(--text);
-   font-weight: 800;
-   overflow: hidden;
-   hyphens: auto;
-   word-break: break-word;
-   overflow-wrap: break-word;
-   transition: 1s;
- }
-
- a.butt {
-   width: 90%;
-   height: 330px;
- }
-
- a.butt:hover {
-   background: var(--active-hover);
-   color: var(--active-text);
-   border-color: var(--border);
- }
-
- a.butt:active {
-   background: var(--bg);
- }
-
- /* Футер */
-
- .content {
-   flex-grow: 1;
- }
-
- footer {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   gap: 20px;
-   flex-shrink: 0;
-   padding: 20px;
-   background: var(--bg);
-   font-size: 95%;
-   bottom: -1%;
- }
-
- .textbox {
-   text-align: center;
-   border-radius: 9px;
-   width: 92%;
-   padding: 2%;
-   background: var(--bg-3);
-   color: var(--text);
-   opacity: 100%;
- }
-
- .footer-links {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   gap: 4%;
- }
-
- .footer-links a.halfbutt {
-   display: block;
-   text-align: center;
-   border-radius: 9px;
-   border: 3px solid var(--bg-2);
-   width: 40%;
-   padding: 1%;
-   background: var(--bg-2);
-   user-select: none;
-   color: var(--text);
-   overflow: hidden;
-   transition: 1s;
- }
-
- .footer-links a.halfbutt:hover {
-   background: var(--active-hover);
-   border: 3px solid var(--border);
- }
-
- .footer-links a.halfbutt:active {
-   background: var(--bg);
- }
-
- /* Прочее */
-
- body::-webkit-scrollbar {
-   /* Скролбар */
-   width: 20px;
-   background-color: var(--scrollbar-track-color);
- }
-
- body::-webkit-scrollbar-thumb {
-   width: 20px;
-   background-color: var(--scrollbar-thumb-color);
-   border-radius: 15px;
- }
-
- body::-webkit-scrollbar-thumb:hover {
-   background-color: var(--scrollbar-thumb-hover-color);
- }
-
-
- .first,
- .second li a {
-   display: flex;
-   flex-direction: row;
-   gap: 30px;
- }
-
- /*_________________________________________________________________________________________________________________*/
-
-
- /* Временное отключение transition */
- .no-transition,
- .no-transition *,
- .no-transition .slider,
- .no-transition .slider::before,
- .no-transition .labels,
- .no-transition .labels::before,
- .no-transition .labels::after {
-   transition: none !important;
- }
-
- #info-container>div {
-   align-self: left;
-   align-content: left;
-   text-align: left;
- }
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:600&subset=cyrillic');
+
+:root {
+    --background_img: url(/pics/bgd.png);
+    --bg: #444444;
+    --bg-2: #2b2b2b;
+    --bg-3: #333333;
+    --text: #FF6666;
+    --active-text: #ffbb66;
+    --border: #FF6666;
+    --active-hover: #1e1e1e;
+    --scrollbar-track-color: #FF6666;
+    --scrollbar-thumb-color: #333333;
+    --scrollbar-thumb-hover-color: #555555;
+    --tagsdateonblocks: #111111;
+}
+
+.light-theme {
+    --background_img: url(/pics/bgl.png);
+    --bg: #E5D5D5;
+    --bg-2: #E6A493;
+    --bg-3: #EBBEB3;
+    --text: #500000;
+    --active-text: #6b0000;
+    --border: #9E0505;
+    --active-hover: #E57566;
+    --scrollbar-track-color: #500000;
+    --scrollbar-thumb-color: #EABDB7;
+    --scrollbar-thumb-hover-color: #C38686;
+    --tagsdateonblocks: #FF6666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat Alternates;
+    user-select: none;
+}
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-image: var(--background_img);
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
+    height: 100%;
+    width: 100%;
+    font-size: 125%;
+}
+
+body {
+    opacity: 0;
+    transition: 0.5s all;
+}
+
+/* Scroll-bar */
+body::-webkit-scrollbar {
+    width: 20px;
+    background-color: var(--scrollbar-track-color);
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 20px;
+    background-color: var(--scrollbar-thumb-color);
+    border-radius: 15px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-hover-color);
+}
+
+
+/* Глобальные свойства */
+/* Глобальные свойства */
+/* Глобальные свойства */
+
+A {
+    color: var(--text);
+    text-decoration: none;
+    font-family: Montserrat Alternates;
+}
+
+A:visited {
+    color: var(--text);
+}
+
+A:active {
+    color: var(--text);
+}
+
+
+/* Header */
+/* Header */
+/* Header */
+
+header {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    padding: 2% 1%;
+    border-radius: 9px;
+    width: 92%;
+    background: var(--bg);
+    transition: 0.5s all;
+    z-index: 2;
+}
+
+
+/* Nav-menu */
+
+nav {
+    cursor: pointer;
+    display: inline-block;
+    width: 25%;
+    border: 3px solid var(--active-hover);
+    border-radius: 9px;
+    color: var(--text);
+}
+
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    background: var(--bg-2);
+}
+
+nav>ul>li {
+    position: relative;
+    width: 100%;
+}
+
+.first,
+.second li a {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+nav li a {
+    display: block;
+    padding: 3%;
+    text-align: left;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav li a:hover {
+    background: var(--active-hover);
+    color: var(--active-text);
+}
+
+nav li .second {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+nav li:hover .second {
+    display: block;
+    border: 2px solid var(--active-hover);
+    border-radius: 0 0 9px 9px;
+    width: 98%;
+    left: 0.35%;
+    right: auto;
+}
+
+nav img {
+    align-self: center;
+    width: 25px;
+    height: 25px;
+}
+
+
+/* Searcher */
+form {
+    position: relative;
+    width: 50%;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 8px;
+    background-color: var(--bg-2);
+    border: 3px solid var(--active-hover);
+    border-radius: 9px;
+    font-size: 24px;
+    color: var(--text);
+    outline: none
+}
+
+.clear-btn {
+    cursor: pointer;
+    position: absolute;
+    display: none;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    color: var(--text);
+
+    transition: 0.5s all;
+}
+
+.clear-btn:is(:hover, :focus) {
+    color: var(--active-text);
+}
+
+
+/* Кнопка смены темы */
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle {
+    --width: 160px;
+    --height: calc(var(--width) / 3);
+    position: relative;
+    display: inline-block;
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--height);
+    cursor: pointer;
+    right: 1%;
+    border: 3px solid var(--active-hover);
+}
+
+.toggle input {
+    display: none;
+}
+
+.toggle .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--height);
+    background-color: var(--bg-2);
+    transition: all 0.4s ease-in-out;
+}
+
+.toggle .slider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(var(--height));
+    height: calc(var(--height));
+    border-radius: calc(var(--height) / 2);
+    background-color: var(--text);
+    transition: all 0.4s ease-in-out;
+}
+
+.toggle input:checked+.slider {
+    background-color: var(--bg-2);
+}
+
+.toggle input:checked+.slider::before {
+    transform: translateX(calc(var(--width) - var(--height)));
+}
+
+.toggle .labels {
+    position: absolute;
+    top: 12px;
+    left: 2px;
+    right: 2px;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.toggle .labels::after {
+    content: attr(data-off);
+    position: absolute;
+    right: 20%;
+    color: var(--text);
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.toggle .labels::before {
+    content: attr(data-on);
+    position: absolute;
+    left: 20%;
+    color: var(--text);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.toggle input:checked~.labels::after {
+    opacity: 0;
+}
+
+.toggle input:checked~.labels::before {
+    opacity: 1;
+}
+
+
+
+
+/* Section */
+/* Section */
+/* Section */
+
+
+section {
+    flex: 1;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 2%;
+    gap: 20px;
+    border-radius: 9px;
+    background: var(--bg);
+    transition: 0.5s all;
+}
+
+#tags {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 88%;
+    border-radius: 8px;
+    background: var(--bg);
+    transition: 0.5s all;
+}
+
+#tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 8px;
+}
+
+#tags #tags-container .tag {
+    cursor: pointer;
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding: 7px 14px;
+    font-size: 22px;
+    color: var(--text);
+    border-radius: 20px;
+    background: var(--bg-2);
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+#tags #tags-container .tag:hover,
+#tags #tags-container .tag.active {
+    color: var(--active-text);
+    background: var(--active-hover);
+    transition: all 0.4s ease-in-out;
+}
+
+#filter-status {
+    display: none;
+    white-space: nowrap;
+    margin-left: auto;
+    font-size: 13px;
+    color: var(--active-text);
+    font-style: italic;
+}
+
+
+
+/* details */
+details summary::-webkit-details-marker,
+details summary::-moz-list-bullet {
+    display: none;
+}
+
+details,
+summary {
+    z-index: 1;
+    width: 100%;
+    user-select: none;
+    outline: none;
+}
+
+details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+details summary {
+    width: 90%;
+    padding: 1%;
+    margin: 0 auto;
+    background: var(--bg-2);
+    color: var(--text);
+    border-radius: 9px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 3px solid var(--bg-2);
+    transition: all 0.3s ease;
+}
+
+details summary:hover,
+details summary:active {
+    border-color: var(--border);
+    opacity: 1;
+}
+
+
+/* Ячейки */
+table,
+table tbody {
+    border-spacing: 20px;
+    color: var(--text);
+    width: 100%;
+}
+
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+}
+
+td {
+    position: relative;
+    width: 33.33%;
+    text-align: left;
+}
+
+.cell {
+    position: relative;
+    display: block;
+    border-radius: 9px;
+    padding: 5%;
+    padding-top: 8%;
+    background: var(--bg-2);
+    text-decoration: none;
+    user-select: none;
+    outline: none;
+    transition: 0.2s;
+    color: var(--text);
+    font-weight: 800;
+    overflow: hidden;
+    hyphens: auto;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    transition: 1s;
+    height: 330px;
+    box-sizing: border-box;
+}
+
+.cell:hover {
+    background: var(--active-hover);
+    color: var(--active-text);
+}
+
+.cell .element-tags {
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    bottom: auto;
+    align-self: center;
+    text-align: center;
+    width: auto;
+    padding: 6px 10px;
+    color: var(--active-text);
+    background: var(--tagsdateonblocks);
+    font-size: 11px;
+    border-radius: 9px 9px 0 0;
+    transition: all 0.25s ease;
+    z-index: 2;
+}
+
+.cell .element-tags .tag-chip {
+    cursor: default;
+    display: inline-block;
+    padding: 3px 8px;
+    margin: 2px 4px;
+    border-radius: 10px;
+    background: var(--text);
+    color: var(--tagsdateonblocks);
+    font-size: 10px;
+}
+
+.cell .element-date {
+    opacity: 0;
+    position: absolute;
+    align-self: center;
+    text-align: center;
+    inset: 0;
+    top: auto;
+    width: auto;
+    padding: 6px 10px;
+    border-radius: 0 0 9px 9px;
+    background: var(--tagsdateonblocks);
+    color: var(--active-text);
+    font-size: 11px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    z-index: 2;
+}
+
+
+.cell:hover>* {
+    opacity: 1;
+}
+
+
+/* Footer */
+/* Footer */
+/* Footer */
+
+footer {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 1%;
+    border-radius: 9px;
+    width: 92%;
+    background: var(--bg);
+    transition: 0.5s all;
+}
+
+.footer-warn {
+    text-align: center;
+    border-radius: 9px;
+    width: 92%;
+    padding: 2%;
+    background: var(--bg-3);
+    color: var(--text);
+    opacity: 100%;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 4%;
+}
+
+.footer-links a.halfbutt {
+    display: block;
+    text-align: center;
+    border-radius: 9px;
+    border: 3px solid var(--bg-2);
+    width: 40%;
+    padding: 1%;
+    background: var(--bg-2);
+    user-select: none;
+    color: var(--text);
+    overflow: hidden;
+    transition: 1s;
+}
+
+.footer-links a.halfbutt:hover {
+    background: var(--active-hover);
+    border: 3px solid var(--border);
+}
+
+.footer-links a.halfbutt:active {
+    background: var(--bg);
+}
+
+
+
+/* Прочее */
+/* Прочее */
+/* Прочее */
+
+/* Ячейки */
+.textbox {
+    text-align: center;
+    border-radius: 9px;
+    width: 92%;
+    padding: 2%;
+    background: var(--bg-3);
+    color: var(--text);
+    opacity: 100%;
+    justify-self: center;
+}
+
+.textbox .cline {
+    color: red;
+    user-select: none;
+    background: var(--bg-2);
+    color: var(--text);
+    padding: 20px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 16px;
+    overflow: auto;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.textbox .cline:hover,
+.textbox .cline:active {
+    background: var(--active-hover);
+}
+
+.textbox .smablock {
+    display: block;
+    padding: 12px;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 1%;
+    margin-top: 0%;
+    width: auto;
+    text-indent: 10px;
+    background-color: var(--bg-2);
+    border: 2px solid var(--bg-2);
+    border-radius: 9px;
+    transition: 0.5s all;
+}
+
+.textbox .smablock:hover,
+.textbox .smablock:active {
+    background-color: var(--active-hover);
+    border: 2px solid var(--active-hover);
+}
+
+
+
+/* Временное отключение transition */
+.no-transition,
+.no-transition *,
+.no-transition .slider,
+.no-transition .slider::before,
+.no-transition .labels,
+.no-transition .labels::before,
+.no-transition .labels::after {
+    transition: none !important;
+    /* animation: none !important; */
+}

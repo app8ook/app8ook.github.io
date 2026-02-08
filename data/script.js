@@ -349,10 +349,8 @@ function createLinksBlock(chunk) {
             link.target = '_blank'
             link.href = `${url == 'Stop.html' ? "#PageNotFound" : url}`
 
-            if (tags != '') {
-                link.prepend(element_tags)
-                link.appendChild(element_date)
-            }
+            if (tags != '') link.prepend(element_tags)
+            if (date != '') link.appendChild(element_date)
             cell.append(link)
         }
         row.appendChild(cell);
@@ -419,8 +417,8 @@ async function toggleTag(tag) {
         const data = currentPageData[categoryName]
 
         const filteredData = data.filter(item => {
-                const tags = (item[3] == '' ? '' : item[3]).split(', ').map(t => t.trim())
-                return activeTags.every(tag => tags.includes(tag))
+            const tags = (item[3] == '' ? '' : item[3]).split(', ').map(t => t.trim())
+            return activeTags.every(tag => tags.includes(tag))
         })
 
         if (filteredData.length > 0) {

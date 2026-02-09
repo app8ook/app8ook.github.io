@@ -260,61 +260,12 @@ function isMobileDevice() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
-const navMenu = document.querySelector('nav');
-const navToggle = navMenu.querySelector('a');
-const navItems = navMenu.querySelectorAll('.second');
-
-// if (isMobileDevice()) {
-//     let isMenuOpen = false
-
-//     navToggle.addEventListener('click', (event) => {
-//         event.preventDefault()
-//         navMenu.classList.toggle('open')
-//         isMenuOpen = !isMenuOpen
-
-//         if (!isMenuOpen) window.location.href = navToggle.href
-//     });
-
-//     navItems.forEach((item) => {
-//         item.addEventListener('click', (event) => {
-//             event.stopPropagation()
-//             const link = item.querySelector('a')
-//             if (link) {
-//                 navMenu.classList.remove('open')
-//                 window.location.href = link.href
-//             }
-//         });
-//     });
-
-//     document.addEventListener('click', (event) => {
-//         if (!navMenu.contains(event.target) && navMenu.classList.contains('open')) {
-//             navMenu.classList.remove('open')
-//             isMenuOpen = false
-//         }
-//     });
-// } else {
-//     navMenu.addEventListener('mouseover', () => {
-//         navMenu.classList.add('open')
-//         console.log('open')
-//     });
-
-//     navMenu.addEventListener('mouseout', () => {
-//         navMenu.classList.remove('open')
-//         console.log('close')
-//     });
-
-//     navItems.forEach((item) => {
-//         item.addEventListener('click', (event) => {
-//             event.stopPropagation()
-//             const link = item.querySelector('a')
-//             if (link) window.location.href = link.href
-//         });
-//     });
-
-// }
-
 
 function navMobile() {
+    const navMenu = document.querySelector('nav');
+    const navToggle = navMenu.querySelector('a');
+    const navItems = navMenu.querySelectorAll('.second');
+
     let isMenuOpen = false
     let links = {}
 
@@ -357,7 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.addEventListener('change', toggleTheme)
 
 
-    if(isMobileDevice()) navMobile()
+    if (isMobileDevice()) navMobile()
 
 
     const CurrentPageName = window.location.pathname.replace(/^(\/pages\/|\/)(.*)(.html)$/g, '$2')

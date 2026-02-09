@@ -32,18 +32,18 @@ async function showResults() {
 
     window.location.hash = `search=${query.split(' ').join('+').toLocaleLowerCase()}`
 
-    if (!query || query?.length < 2) return section_main.innerHTML = '<div class="textbox">Введите запрос (минимум 2 символа)</div>'
+    if (!query || query?.length < 2) return section_main.innerHTML = '<div class="searchbox">Введите запрос (минимум 2 символа)</div>'
 
     document.querySelector('#search').value = query
     document.querySelector('.clear-btn').style.display = 'block'
 
-    section_main.innerHTML = '<div class="textbox">Ищем...</div>'
+    section_main.innerHTML = '<div class="searchbox">Ищем...</div>'
 
     const jsonData = await fetchJsonData()
-    if (!jsonData || !jsonData.data) return section_main.innerHTML = '<div class="textbox">Ошибка загрузки данных</div>'
+    if (!jsonData || !jsonData.data) return section_main.innerHTML = '<div class="searchbox">Ошибка загрузки данных</div>'
 
 
-    section_main.innerHTML = `<div class="textbox">Результаты поиска "${query}":</div>`
+    section_main.innerHTML = `<div class="searchbox">Результаты поиска "${query}":</div>`
     let foundAny = false
     const searchWords = query.toLowerCase().trim().split(/\s+/)
 
@@ -479,6 +479,9 @@ async function toggleTag(tag) {
     })
 
     section_main.querySelectorAll('details').forEach(detail => detail.open = activeTags[0] ? true : window.location.hash.includes('search') ? true : false)
+
+    if(activeTags[0]) document.querySelector('#filter-status').textContent = `найдено: ${section_main.querySelectorAll('.cell').length}`
+    else document.querySelector('#filter-status').textContent = ''
 }
 
 

@@ -372,7 +372,6 @@ section {
 }
 
 #filter-status {
-    display: none;
     white-space: nowrap;
     margin-left: auto;
     font-size: 13px;
@@ -380,6 +379,20 @@ section {
     font-style: italic;
 }
 
+
+
+.searchbox {
+    opacity: 100%;
+    justify-self: center;
+    line-height: 1.4;
+    width: 92%;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 9px;
+    background: var(--bg-3);
+    color: var(--text);
+    text-align: center;
+}
 
 
 /* details */

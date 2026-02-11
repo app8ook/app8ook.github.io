@@ -398,7 +398,7 @@ function createLinksBlock(chunk) {
             link.innerHTML = `<p>${title}<br><br>${desc || ''}</p>`
             link.className = 'cell'
             link.target = '_blank'
-            link.href = `${url == 'Stop.html' ? "#PageNotFound" : url}`
+            link.href = `${url == 'Stop' ? "#PageNotFound" : url}`
 
             if (tags != '') link.prepend(element_tags)
             if (date != '') link.appendChild(element_date)
@@ -494,3 +494,4 @@ function copy(element) {
     navigator.clipboard.writeText(element.textContent);
     alert("Текст скопирован!")
 }
+

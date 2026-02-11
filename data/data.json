@@ -534,6 +534,13 @@
                     "https://mega.nz/file/4koxXZrJ#Nj9OHHf_NPDf4_aHxHBUBiWHqCNoP4SIsI4YrifdVmU",
                     "Безопасность, Crack, Файлы, Система",
                     "21.01.2026 17:55"
+                ],
+                [
+                    "Alt-sendme",
+                    "P2P-инструмент для безопасного обмена файлами",
+                    "https://github.com/tonyantony300/alt-sendme",
+                    "OpenSource, Файлы, Легковесное, Кроссплатформа",
+                    "11.02.2026 15:19"
                 ]
             ],
             "Прочие инструменты": [
@@ -788,6 +795,34 @@
                     "https://github.com/Pianeerjkee/Polyglot-One/",
                     "OpenSource, Изображения, Развлечения, Интернет",
                     "24.01.2026 12:16"
+                ],
+                [
+                    "USB Raptor",
+                    "Превращаем флешку в физический ключ для ПК",
+                    "https://sourceforge.net/projects/usbraptor/",
+                    "OpenSource, Безопасность, Файлы, Легковесное, Система",
+                    "11.02.2026 13:57"
+                ],
+                [
+                    "Technitium DNS",
+                    "Собственный DNS-сервер с открытым кодом",
+                    "https://technitium.com/dns/",
+                    "OpenSource, Безопасность, Интернет, Приватность, Программирование, Система, Кроссплатформа",
+                    "11.02.2026 14:25"
+                ],
+                [
+                    "Handy",
+                    "Полностью локальный голосовой ввод",
+                    "https://github.com/cjpais/Handy",
+                    "OpenSource, Аудио, Кроссплатформа",
+                    "11.02.2026 15:40"
+                ],
+                [
+                    "Сlipy",
+                    "Приложение для скачивания и редактирования видео с YouTube",
+                    "https://github.com/BankkRoll/clipy",
+                    "OpenSource, Аудио, Видео, Интернет, Файлы",
+                    "11.02.2026 15:56"
                 ]
             ],
             "Социальное/Игровое": [
@@ -1142,6 +1177,27 @@
                     "https://mega.nz/file/0whywbIC#FozjUgkWtJUlv2dVrv5xuT_dPqaqYdEElurXaRzjG4s",
                     "Файлы, Легковесное, Система",
                     "21.01.2026 20:08"
+                ],
+                [
+                    "Deletor",
+                    "Менеджер для удаления файлов и очистки кэша",
+                    "https://github.com/pashkov256/deletor",
+                    "OpenSource, Файлы, Легковесное, Система, Кроссплатформа",
+                    "11.02.2026 15:29"
+                ],
+                [
+                    "Windows Cleaner Utility",
+                    "Простой пакетный скрипт для очистки временных файлов и системного мусора в Windows",
+                    "https://github.com/chainski/WindowsCleanerUtility",
+                    "OpenSource, Файлы, Легковесное, Система",
+                    "11.02.2026 15:34"
+                ],
+                [
+                    "PowerToys",
+                    "Утилита от Microsoft, предназначенная для внесения некоторых изменений в функционал Windows",
+                    "https://github.com/microsoft/PowerToys",
+                    "OpenSource, Легковесное, Система, Мультитул, Кастомизация",
+                    "11.02.2026 15:37"
                 ]
             ],
             "Ремонт/Восстановление": [
@@ -1924,6 +1980,20 @@
                     "https://github.com/Axorax/awesome-free-apps?tab=readme-ov-file",
                     "Мультитул",
                     "23.01.2026 17:54"
+                ],
+                [
+                    "Awesome Privacy",
+                    "Каталог приватных программ собранных энтузиастами на github",
+                    "https://github.com/pluja/awesome-privacy",
+                    "Мультитул, Приватность",
+                    "11.02.2026 14:22"
+                ],
+                [
+                    "Clone Wars",
+                    "Коллекция сотен opensource-клонов",
+                    "https://github.com/gorvgoyl/clone-wars",
+                    "Мультитул, Приватность",
+                    "11.02.2026 15:16"
                 ]
             ],
             "AI чаты": [
@@ -2138,6 +2208,20 @@
                     "https://ai-icon.top/",
                     "Изображения, Файлы, ИИ, Работа",
                     "24.01.2026 12:45"
+                ],
+                [
+                    "Ramp Sheets AI",
+                    "Инструмент для работы с таблицами, который превращает ваш текстовый запрос в готовую структурированную таблицу",
+                    "https://labs.ramp.com/sheets",
+                    "Файлы, ИИ, Работа",
+                    "11.02.2026 15:14"
+                ],
+                [
+                    "Screenshot to Code",
+                    "Мощный AI-инструмент, который генерирует готовый код интерфейса из простого скриншота",
+                    "https://screenshottocode.com",
+                    "ИИ, Программирование",
+                    "11.02.2026 15:48"
                 ]
             ],
             "AI медиа инструменты": [
@@ -2482,6 +2566,13 @@
                     "https://gamesfrog.com/games/emulator",
                     "Развлечения, Мультитул, Система",
                     "24.01.2026 12:41"
+                ],
+                [
+                    "Gidd",
+                    "Игровая платформа, где можно играть в популярные социальные игры большой компанией",
+                    "https://gidd.io",
+                    "Развлечения, Мультитул",
+                    "11.02.2026 15:14"
                 ]
             ],
             "Прочие инструменты": [
@@ -2673,6 +2764,27 @@
                     "https://www.mcstumble.com/tools",
                     "Аудио, Видео, Изображения, Развлечения, Файлы, Мультитул",
                     "24.01.2026 12:25"
+                ],
+                [
+                    "Learn Git Branching",
+                    "Визуальный тренажёр для освоения Git через интерактив",
+                    "https://learngitbranching.js.org/?locale=ru_RU",
+                    "Файлы, Программирование, Система",
+                    "11.02.2026 13:55"
+                ],
+                [
+                    "Jotti",
+                    "Удобный онлайн-сервис, который проверяет загруженные файлы на вирусы с использованием сразу нескольких антивирусных движков",
+                    "https://virusscan.jotti.org/",
+                    "Безопасность, Файлы",
+                    "11.02.2026 15:43"
+                ],
+                [
+                    "Supabase",
+                    "Бесплатная серверная БД",
+                    "https://supabase.com",
+                    "Безопасность, Программирование",
+                    "11.02.2026 15:53"
                 ]
             ],
             "Расширения для браузеров": [
@@ -2731,6 +2843,13 @@
                     "https://chromewebstore.google.com/detail/switchsearch/fmhncjaheleephdddbbjondoglignpfd",
                     "Мультитул",
                     "23.01.2026 18:58"
+                ],
+                [
+                    "Consent-O-Matic",
+                    "Автоматически закрываем окна с cookie",
+                    "https://chromewebstore.google.com/detail/consent-o-matic/mdjildafknihdffpkfmmpnpoiajfjnjd?pli=1",
+                    "Приватность",
+                    "11.02.2026 15:45"
                 ]
             ]
         },
@@ -2949,6 +3068,13 @@
                     "23.01.2026 21:03"
                 ],
                 [
+                    "Watch Dogs",
+                    "Хакеры, сюжет, аналог GTA (Только одиночная игра)",
+                    "https://mega.nz/folder/M1J2mZpI#8JspzXywdrYO7GzuvD3Rjg",
+                    "RPG, Шутер, Симулятор, Гонки, Открытый мир",
+                    "11.02.2026 13:45"
+                ],
+                [
                     "The Last Of Us",
                     "Приключенческая Action/RPG с открытым миром и интересным сюжетом",
                     "https://mega.nz/folder/o9IilDSL#bIl8yxH96CRXaCBAi-ShQA",
@@ -2990,21 +3116,21 @@
                     "И еще один сайт с репаками игр",
                     "https://thelastgame.ru",
                     "",
-                    "18.01.2026 00:56:54"
+                    "11.02.2026 13:37"
                 ],
                 [
                     "Pleogame",
                     "Еще сайтик с репаками игр",
                     "https://pleogame.ru",
                     "",
-                    "18.01.2026 00:56:54"
+                    "11.02.2026 13:37"
                 ],
                 [
                     "SteamUnlocked",
                     "Сайт с репаками стимовских игр",
                     "https://steamunlocked.net/",
                     "",
-                    "18.01.2026 00:56:54"
+                    "11.02.2026 13:37"
                 ],
                 [
                     "Online-fix",
@@ -3032,14 +3158,14 @@
                     "Торрент трекер",
                     "http://rutracker-net.ru",
                     "",
-                    "18.01.2026 00:56:54"
+                    "11.02.2026 13:37"
                 ],
                 [
                     "Rezi",
                     "Пиратский поисковик сразу выдающий торренты с провереных сайтов",
                     "https://rezi.one/",
                     "",
-                    "18.01.2026 00:56:54"
+                    "11.02.2026 13:37"
                 ],
                 [
                     "Thepiratebay",
@@ -3074,63 +3200,63 @@
                     "Сюда писать по ремонту или по сайту",
                     "https://t.me/blobx",
                     "",
-                    "16.01.2026 18:03"
+                    ""
                 ],
                 [
                     "Файлы",
                     "Папка на меге для быстрой передачи файлов",
                     "https://mega.nz/folder/d5ghXbTK#Pzg2aOpz5rt5EOZHuDYxuA",
                     "",
-                    "14.01.2026 17:30:45"
+                    ""
                 ],
                 [
                     "Discord",
                     "Мой сервер в дискорде Age of Autists",
                     "https://discord.gg/DSWQjTq",
                     "",
-                    "16.01.2026 18:03"
+                    ""
                 ],
                 [
                     "Steam",
                     "Мой профиль в стим",
                     "https://steamcommunity.com/id/ko5ou/",
                     "",
-                    "16.01.2026 18:03"
+                    ""
                 ],
                 [
                     "Youtube",
                     "Мой канал Ютуб",
                     "https://www.youtube.com/@ko5ou/videos",
                     "",
-                    "16.01.2026 18:03"
+                    ""
                 ],
                 [
                     "Youtube Music",
                     "Моя коллекция музыки",
                     "https://music.youtube.com/channel/UCOUCWEVlXXF_JTxlRPI39ww",
                     "",
-                    "16.01.2026 18:03"
+                    ""
                 ],
                 [
                     "Telegram",
                     "Мой личный телеграм",
                     "https://t.me/ko5ou",
                     "",
-                    "16.01.2026 12:00:00"
+                    ""
                 ],
                 [
                     "Творчество",
                     "Группа в тг с моими проектами и творчеством",
                     "https://t.me/kosou_creation",
                     "",
-                    "16.01.2026 18:03"
+                    ""
                 ],
                 [
                     "4pda",
                     "Мой профиль на форуме 4pda",
                     "https://4pda.to/forum/index.php?showuser=5455872",
                     "",
-                    "16.01.2026 18:03"
+                    ""
                 ]
             ],
             "Мой софт": [
@@ -3139,49 +3265,49 @@
                     "Код этого сайта",
                     "https://github.com/app8ook/app8ook.github.io",
                     "",
-                    "16.01.2026 12:00:00"
+                    ""
                 ],
                 [
                     "App8ook_BOT",
                     "У сайта есть бот в Телеграм для быстрого поиска (by MikeMartison)",
                     "https://t.me/app8ook_search_bot",
                     "",
-                    "18.01.2026 22:08"
+                    ""
                 ],
                 [
                     "BIBA bot",
                     "Бот с множеством возможностей и мини-игр для Discord",
                     "https://top.gg/bot/1256597159126630470",
                     "",
-                    "16.01.2026 12:00:00"
+                    ""
                 ],
                 [
                     "MyMediaTracker",
                     "Десктопный медиатрекер (заметки) в виде удобной Kanban",
                     "https://github.com/app8ook/MyMediaTracker",
                     "",
-                    "16.01.2026 12:00:00"
+                    ""
                 ],
                 [
                     "PYTDL",
                     "Загрузчик видео/музыки с ютуба (+поддержка плейлистов)",
                     "https://github.com/app8ook/PYTDL",
                     "",
-                    "16.01.2026 12:00:00"
+                    ""
                 ],
                 [
                     "SimpleScripts",
                     "Несколько скриптов для оптимизации работы с данными в одной программе",
                     "https://github.com/app8ook/SimpleScripts",
                     "",
-                    "16.01.2026 12:00:00"
+                    ""
                 ],
                 [
                     "Splayer",
                     "Простой десктопный медиаплеер (В разработке)",
-                    "Stop.html",
+                    "Stop",
                     "",
-                    "16.01.2026 12:00:00"
+                    ""
                 ]
             ],
             "Сборки модов": [
@@ -3190,51 +3316,35 @@
                     "Сбалансированная сборка с множеством контента (Steam)",
                     "https://mega.nz/folder/c8Bk2IwS#TD9yn3BluaLCdgry95zJiA",
                     "",
-                    "18.01.2026 22:00"
+                    ""
                 ],
                 [
                     "Minecraft",
                     "Сборки от меня и Credo, в комплекте есть Tlaucher",
                     "https://mega.nz/folder/lxYEmRTQ#w4KS8FUjF2Eo8hSxm89Rmg",
                     "",
-                    "18.01.2026 22:00"
+                    ""
                 ],
                 [
                     "ESO",
                     "Плагин Пак для The Elder Scrolls Online (+2 моих плагина)",
                     "https://mega.nz/folder/Y85yCDbK#JYqGk8E9gAb9J3lpzlyNqA",
                     "",
-                    "18.01.2026 22:03"
+                    ""
                 ],
                 [
                     "Kenshi",
                     "Сборка модов для Kenshi",
                     "https://mega.nz/folder/MlAWFYDL#1-Rmh7XQtVSOJrZXa0dlpA",
                     "",
-                    "18.01.2026 22:04"
+                    ""
                 ],
                 [
                     "CS:S",
                     "МодельПак для Counter Strike Source",
                     "https://mega.nz/folder/RxxzhDaQ#Er7O1AFffCiTmt50sjlxJQ",
                     "",
-                    "18.01.2026 22:05"
-                ]
-            ],
-            "Поддержка": [
-                [
-                    "",
-                    "Поддержать Тбанк",
-                    "https://www.tinkoff.ru/rm/andrushko.vasiliy2/AbxsX58567",
-                    "",
-                    "16.01.2026 12:00:00"
-                ],
-                [
-                    "",
-                    "Поддержать Donationalerts",
-                    "https://www.donationalerts.com/r/bi6a",
-                    "",
-                    "16.01.2026 12:00:00"
+                    ""
                 ]
             ]
         }
@@ -3249,5 +3359,5 @@
         "/": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/index.md",
         "info": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/info.md"
     },
-    "dateupdate": "24.01.2026 12:50"
+    "dateupdate": "11.02.2026 16:10"
 }

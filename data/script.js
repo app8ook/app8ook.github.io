@@ -30,9 +30,8 @@ async function showResults() {
     activeTags = []
     const query = localStorage.getItem('query')
 
-    window.location.hash = `search=${query.split(' ').join('+').toLocaleLowerCase()}`
-
-    if (!query || query?.length < 2) return section_main.innerHTML = '<div class="searchbox">Введите запрос (минимум 2 символа)</div>'
+    window.location.hash = `search`
+    document.querySelector('title').innerHTML = 'SEARCH'
 
     document.querySelector('#search').value = query
     document.querySelector('.clear-btn').style.display = 'block'
@@ -48,7 +47,6 @@ async function showResults() {
     const searchWords = query.toLowerCase().trim().split(/\s+/)
 
     let List = {}
-
 
     const categories = [
         { key: "Windows", path: "data.Windows", id: "resource-table-Windows" },
@@ -104,8 +102,9 @@ async function showResults() {
         currentPageData = List
     }
 
+
     if (!foundAny)
-        section_main.innerHTML = `<div class="textbox">Ничего не найдено по запросу "${query}"</div>`
+        section_main.innerHTML = `<div class="searchbox">Ничего не найдено по запросу "${query}"</div>`
 
     createTags()
 }
@@ -145,8 +144,9 @@ async function loadJsonData(pageName) {
     else document.querySelector('title').innerHTML = pageName.toLocaleUpperCase() == '/' ? 'APP8OOK' : pageName.toLocaleUpperCase()
     window.location.hash = pageName
 
-    if (localStorage.getItem('query')
-        && window.location.hash.toLocaleLowerCase().startsWith('#search')) return showResults()
+    if (pageName.startsWith('search')) return showResults()
+
+    localStorage.setItem('pastPage', pageName)
 
     document.querySelector('#search').value = '';
     document.querySelector('.clear-btn').style.display = 'none'
@@ -249,7 +249,7 @@ async function loadJsonData(pageName) {
 
             box_img.appendChild(warn_img)
             section_main.append(warn, box_img)
-            return
+            return '404'
         }
     }, 20);
 
@@ -279,7 +279,7 @@ function navMobile() {
         navMenu.classList.toggle('open')
         isMenuOpen = !isMenuOpen
 
-        if (!isMenuOpen) eval(links[event.target.textContent])
+        if (isMenuOpen) eval(links[event.target.textContent])
     })
 
     navItems.forEach((item) => {
@@ -290,8 +290,8 @@ function navMobile() {
                 navMenu.classList.remove('open')
                 eval(links[event.target.textContent])
             }
-        });
-    });
+        })
+    })
 
     document.addEventListener('click', (event) => {
         if (!navMenu.contains(event.target) && navMenu.classList.contains('open')) {
@@ -307,52 +307,50 @@ document.addEventListener('DOMContentLoaded', () => {
     setInitialTheme()
     themeToggle.addEventListener('change', toggleTheme)
 
-
     if (isMobileDevice()) navMobile()
 
-
     const CurrentPageName = window.location.pathname.replace(/^(\/pages\/|\/)(.*)(.html)$/g, '$2')
-    const CurrentHash = window.location.hash ? window.location.hash.split('=')[0] : false
+    const CurrentHash = window.location.hash ? window.location.hash : false
 
     loadJsonData(CurrentHash || CurrentPageName)
 
-    const searchInput = document.querySelector('#search')
+    const searchInput = document.querySelector('input')
     const searchForm = document.querySelector('form')
     const clearBtn = document.querySelector('.clear-btn')
 
     if (searchInput && searchForm && clearBtn) {
-        const performSearch = () => {
-            const value = searchInput.value.trim();
-            if (value.length >= 2) {
+        const performSearch = async () => {
+            const value = searchInput.value
+            if (value.length <= 0) {
+                localStorage.removeItem('query')
+                const pastPage = localStorage.getItem('pastPage')
+                loadJsonData(pastPage || '/')
+            } else {
                 localStorage.setItem('query', value)
                 showResults()
-            } else {
-                localStorage.removeItem('query')
-                loadJsonData('/')
             }
         }
 
         searchForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            performSearch()
         });
 
         searchInput.addEventListener('keydown', function (e) {
-            if (e.key === 'Enter') {
-                e.preventDefault();
-                performSearch()
-            }
+            if (e.key === 'Enter') e.preventDefault()
         })
 
-        searchInput.addEventListener('input', () => {
-            clearBtn.style.display = searchInput.value.trim() !== '' ? 'block' : 'none';
-        });
+        searchInput.addEventListener('input', function (e) {
+            e.preventDefault()
+            performSearch()
+            searchInput.value = e.target.value.toLocaleLowerCase()
+
+            clearBtn.style.display = searchInput.value.trim() !== '' ? 'block' : 'none'
+        })
 
         clearBtn.addEventListener('click', (e) => {
             searchInput.value = '';
             clearBtn.style.display = 'none';
-            localStorage.removeItem('query')
-            showResults()
+            performSearch()
         });
     }
 })
@@ -480,7 +478,7 @@ async function toggleTag(tag) {
 
     section_main.querySelectorAll('details').forEach(detail => detail.open = activeTags[0] ? true : window.location.hash.includes('search') ? true : false)
 
-    if(activeTags[0]) document.querySelector('#filter-status').textContent = `найдено: ${section_main.querySelectorAll('.cell').length}`
+    if (activeTags[0]) document.querySelector('#filter-status').textContent = `найдено: ${section_main.querySelectorAll('.cell').length}`
     else document.querySelector('#filter-status').textContent = ''
 }
 
@@ -495,3 +493,75 @@ function copy(element) {
     alert("Текст скопирован!")
 }
 
+
+async function stats() {
+    const dialog = document.querySelector('dialog')
+    const info = document.querySelector('#stats_block')
+
+    const response = await fetch(DATA_URL);
+    const jsonData = await response.json();
+
+    let counts = {}
+
+    Object.keys(jsonData).forEach(js => {
+        if (typeof jsonData[js] === 'object' && js.includes('data')) {
+            Object.keys(jsonData[js]).forEach(sec => {
+                counts[sec] = []
+                Object.keys(jsonData[js][sec]).forEach(cat => {
+                    jsonData[js][sec][cat].forEach(cell => {
+                        counts[sec].push(cell)
+                    })
+                })
+            })
+        }
+    })
+
+    info.innerHTML = ''
+
+    let total = 0
+
+    Object.keys(counts).forEach(section => {
+        const sec = document.createElement('div')
+        sec.style = 'text-indent: 10px'
+        sec.innerHTML = `• ${section}: ${counts[section].length}`
+        info.appendChild(sec)
+        total += counts[section].length
+    })
+
+    const el_total = document.createElement('div')
+    el_total.innerHTML = `- Total: ${total}`
+    el_total.style.color = `var(--active-text)`
+    info.appendChild(el_total)
+
+    dialog.showModal()
+
+    const clickDialog = dialog.addEventListener('click', (e) => {
+        if (e.target == dialog) {
+            dialog.close()
+            dialog.removeEventListener('click', clickDialog)
+        }
+    })
+}
+
+
+
+const scrollToUp = document.getElementById('scrollToUp')
+
+scrollToUp.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+})
+
+function checkScrollPosition() {
+    const scrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+
+    const scrollPercent = Math.floor(((scrollY / (documentHeight - windowHeight)) * 100).toFixed(1))
+
+    if (!isMobileDevice()) scrollToUp.style.display = scrollPercent >= 25 ? 'flex' : 'none'
+}
+
+window.addEventListener('scroll', checkScrollPosition);

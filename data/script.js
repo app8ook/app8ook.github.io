@@ -390,6 +390,7 @@ async function createPageData(Data, Name) {
 }
 
 async function createGays(Data) {
+    console.log('Page of GiveAways')
     Data.forEach(gay => {
         const title = `${gay.title}`
             .replaceAll('(Steam)', '')

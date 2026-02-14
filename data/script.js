@@ -1,5 +1,5 @@
 const DATA_API = 'https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/data.json'
-const GIVEAWAYS_API = 'https://www.gamerpower.com/api/giveaways'
+const GIVEAWAYS_API = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://www.gamerpower.com/api/giveaways');
 
 const section_main = document.querySelector('#main')
 const section_tags = document.querySelector('#tags')
@@ -233,9 +233,6 @@ async function loadJsonData(pageName) {
 
     if (pageName == 'giveaways') {
         const response = await fetch(GIVEAWAYS_API)
-
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`)
-
         currentPageData = await response.json()
 
         createGays(currentPageData)

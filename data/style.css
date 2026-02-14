@@ -575,6 +575,12 @@ td {
 }
 
 
+
+
+
+
+
+
 /* Footer */
 /* Footer */
 /* Footer */
@@ -733,4 +739,90 @@ dialog::backdrop {
     color: var(--text);
     overflow: hidden;
     transition: 1s;
+}
+
+
+
+
+
+
+
+.gay {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 9px;
+    background: var(--bg-2);
+    color: var(--text);
+    padding: 2%;
+    overflow: hidden;
+    hyphens: auto;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    transition: 1s;
+}
+
+.gay img {
+    border-radius: 9px;
+    width: 250px;
+    height: 150px
+}
+
+.gay:hover {
+    background: var(--active-hover);
+    color: var(--active-text);
+}
+
+
+.gay .element-tags {
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    bottom: auto;
+    align-self: center;
+    text-align: center;
+    width: auto;
+    padding: 6px 10px;
+    color: var(--active-text);
+    background: var(--tagsdateonblocks);
+    font-size: 11px;
+    border-radius: 9px 9px 0 0;
+    transition: all 0.25s ease;
+    z-index: 2;
+}
+
+.gay .element-tags .tag-chip {
+    cursor: default;
+    display: inline-block;
+    padding: 3px 8px;
+    margin: 2px 4px;
+    border-radius: 10px;
+    background: var(--text);
+    color: var(--tagsdateonblocks);
+    font-size: 10px;
+}
+
+.gay .element-date {
+    opacity: 0;
+    position: absolute;
+    align-self: center;
+    text-align: center;
+    inset: 0;
+    top: auto;
+    width: auto;
+    padding: 6px 10px;
+    border-radius: 0 0 9px 9px;
+    background: var(--tagsdateonblocks);
+    color: var(--active-text);
+    font-size: 11px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    z-index: 2;
+}
+
+
+.gay:hover>* {
+    opacity: 1;
 }

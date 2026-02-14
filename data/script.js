@@ -1,14 +1,16 @@
-const DATA_URL = 'https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/data.json';
+const DATA_API = 'https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/data.json'
+const GIVEAWAYS_API = 'https://www.gamerpower.com/api/giveaways'
 
 const section_main = document.querySelector('#main')
 const section_tags = document.querySelector('#tags')
 
 let activeTags = []
 let currentPageData = {}
+let GiveAwayData = []
 
 async function fetchJsonData() {
     try {
-        const response = await fetch(DATA_URL);
+        const response = await fetch(DATA_API);
         return await response.json();
     } catch (error) {
         console.error('Ошибка загрузки JSON:', error);
@@ -110,6 +112,7 @@ async function showResults() {
 }
 
 
+
 function toggleTheme() {
     const isLight = localStorage.getItem('theme') === 'light';
     document.documentElement.classList.toggle('light-theme', !isLight)
@@ -153,7 +156,7 @@ async function loadJsonData(pageName) {
 
     activeTags = []
 
-    const response = await fetch(DATA_URL);
+    const response = await fetch(DATA_API);
     const jsonData = await response.json();
 
     section_main.innerHTML = ''
@@ -228,6 +231,17 @@ async function loadJsonData(pageName) {
     }
 
 
+    if (pageName == 'giveaways') {
+        const response = await fetch(GIVEAWAYS_API)
+
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`)
+
+        currentPageData = await response.json()
+
+        createGays(currentPageData)
+    }
+
+
     document.querySelectorAll('details').forEach(detail => {
         detail.open = activeTags[0]
     })
@@ -249,6 +263,8 @@ async function loadJsonData(pageName) {
 
             box_img.appendChild(warn_img)
             section_main.append(warn, box_img)
+
+            currentPageData = {}
             return '404'
         }
     }, 20);
@@ -376,6 +392,45 @@ async function createPageData(Data, Name) {
     section_main.appendChild(details)
 }
 
+async function createGays(Data) {
+    Data.forEach(gay => {
+        const title = `${gay.title}`
+            .replaceAll('(Steam)', '')
+            .replaceAll('(Epic Games)', '').replaceAll('(Epic games)', '').replaceAll('(Epic)', '').replaceAll('(epic)', '')
+            .replaceAll('Giveaway', '').replaceAll('(Giveaway)', '')
+            .replaceAll('Free', '')
+        const desc = gay.description
+        const tn = gay.thumbnail
+        const price = gay.worth
+        const date_start = gay.published_date
+        const date_end = gay.end_date
+        const tags = gay.platforms
+        const url = gay.open_giveaway
+
+
+        const element_tags = document.createElement('div')
+        element_tags.className = 'element-tags'
+        element_tags.innerHTML = tags.split(', ').map(tag => `<span class="tag-chip">${tag.trim()}</span>`).join('')
+
+        const element_date = document.createElement('div')
+        element_date.className = 'element-date'
+        element_date.innerHTML = `${date_start} - ${date_end}`
+
+        const thegay = document.createElement('a')
+        thegay.className = 'gay'
+        thegay.href = url
+
+        const thegay_img = document.createElement('img')
+        thegay_img.src = tn
+
+        const thegay_info = document.createElement('p')
+        thegay_info.innerHTML = `${title} <br><br> ${desc}`
+
+        thegay.append(element_tags, thegay_img, thegay_info, element_date)
+        section_main.appendChild(thegay)
+    })
+}
+
 function createLinksBlock(chunk) {
     const row = document.createElement('tr');
     for (let j = 0; j < 3; j++) {
@@ -413,7 +468,7 @@ async function createTags() {
     function GetListTags() {
         let tag_counts = {}
 
-        section_main?.querySelectorAll('.cell').forEach(cell => {
+        section_main?.querySelectorAll('[class="cell"], [class="gay"]').forEach(cell => {
             cell?.querySelector('.element-tags')
                 ?.querySelectorAll('.tag-chip').forEach(tag => {
                     const tagName = tag.textContent
@@ -462,26 +517,43 @@ async function toggleTag(tag) {
 
     section_main.innerHTML = ''
 
-    Object.keys(currentPageData).forEach(categoryName => {
-        const data = currentPageData[categoryName]
 
-        const filteredData = data.filter(item => {
-            const tags = (item[3] == '' ? '' : item[3]).split(', ').map(t => t.trim())
-            return activeTags.every(tag => tags.includes(tag))
+    if (Array.isArray(currentPageData)) { // GiveAways
+        let filteredData = []
+
+
+        currentPageData.forEach(data => {
+            const tags = (data.platforms == '' ? '' : data.platforms).split(', ').map(t => t.trim())
+            if (activeTags.every(tag => tags.includes(tag))) filteredData.push(data)
         })
 
         if (filteredData.length > 0) {
-            createPageData(filteredData, categoryName)
+            createGays(filteredData)
             createTags()
         }
-    })
 
-    section_main.querySelectorAll('details').forEach(detail => detail.open = activeTags[0] ? true : window.location.hash.includes('search') ? true : false)
+    } else { // Datы
 
-    if (activeTags[0]) document.querySelector('#filter-status').textContent = `найдено: ${section_main.querySelectorAll('.cell').length}`
-    else document.querySelector('#filter-status').textContent = ''
+        Object.keys(currentPageData).forEach(categoryName => {
+            const data = currentPageData[categoryName]
+
+            const filteredData = data.filter(item => {
+                const tags = (item[3] == '' ? '' : item[3]).split(', ').map(t => t.trim())
+                return activeTags.every(tag => tags.includes(tag))
+            })
+
+            if (filteredData.length > 0) {
+                createPageData(filteredData, categoryName)
+                createTags()
+            }
+        })
+
+        section_main.querySelectorAll('details').forEach(detail => detail.open = activeTags[0] ? true : window.location.hash.includes('search') ? true : false)
+
+        if (activeTags[0]) document.querySelector('#filter-status').textContent = `найдено: ${section_main.querySelectorAll('.cell').length}`
+        else document.querySelector('#filter-status').textContent = ''
+    }
 }
-
 
 function re_tag(t) {
     return t.replace(/(.*) \(.*\)$/g, '$1')
@@ -498,7 +570,7 @@ async function stats() {
     const dialog = document.querySelector('dialog')
     const info = document.querySelector('#stats_block')
 
-    const response = await fetch(DATA_URL);
+    const response = await fetch(DATA_API);
     const jsonData = await response.json();
 
     let counts = {}

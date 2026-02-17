@@ -1,5 +1,24 @@
 const DATA_API = 'https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/data.json'
-const GIVEAWAYS_API = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://www.gamerpower.com/api/giveaways');
+const GIVEAWAYS_URL = 'https://www.gamerpower.com/api/giveaways'
+
+const PROXIES = [
+    'https://api.codetabs.com/v1/proxy?quest=',
+    'https://thingproxy.freeboard.io/fetch/',
+    'https://corsproxy.io/?url=',
+];
+
+async function getGiveAways() {
+    for (const proxy of PROXIES) {
+        try {
+            const response = await fetch(proxy + encodeURIComponent(GIVEAWAYS_URL))
+            if (response.ok) return currentPageData = await response.json()
+        } catch (e) {
+            console.log('Не работает:', proxy)
+        }
+    }
+    throw new Error('Все прокси недоступны')
+}
+
 
 const section_main = document.querySelector('#main')
 const section_tags = document.querySelector('#tags')
@@ -232,8 +251,8 @@ async function loadJsonData(pageName) {
 
 
     if (pageName == 'giveaways') {
-        const response = await fetch(GIVEAWAYS_API)
-        currentPageData = await response.json()
+        await getGiveAways()
+            .catch(err => console.error(err))
 
         createGays(currentPageData)
     }

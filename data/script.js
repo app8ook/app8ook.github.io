@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInitialTheme()
     themeToggle.addEventListener('change', toggleTheme)
 
-    if (isMobileDevice()) navMobile()
+    // if (isMobileDevice()) navMobile()
 
     const CurrentPageName = window.location.pathname.replace(/^(\/pages\/|\/)(.*)(.html)$/g, '$2')
     const CurrentHash = window.location.hash ? window.location.hash : false
@@ -654,3 +654,4 @@ function checkScrollPosition() {
 }
 
 window.addEventListener('scroll', checkScrollPosition);
+

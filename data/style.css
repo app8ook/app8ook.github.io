@@ -184,19 +184,6 @@ nav {
     color: var(--active-text);
 }
 
-/* .nav-trigger {
-    display: flex;
-    cursor: pointer;
-    user-select: none;
-    transition: all 0.3s ease;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: 12px 8px;
-    overflow: hidden;
-    gap: 30px;
-} */
-
 .dropdown {
     position: absolute;
     top: 100%;

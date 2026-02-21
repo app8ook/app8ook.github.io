@@ -13,9 +13,11 @@
 <body>
     <header>
         <nav id="nav">
-            <ul>
-                <li><a onclick="loadJsonData('/')" class="first"><img src="pics/home.png">Меню</a>
-                    <ul class="second">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <span class="nav-trigger"><img src="pics/home.png">Меню</span>
+                    <ul class="dropdown">
+                        <li><a onclick="loadJsonData('/')"><img src="pics/home.png">Домой</a></li>
                         <li><a onclick="loadJsonData('Windows')"><img src="pics/windows.png">Windows</a></li>
                         <li><a onclick="loadJsonData('Android')"><img src="pics/android.png">Android</a></li>
                         <li><a onclick="loadJsonData('Apple')"><img src="pics/apple.png">Apple</a></li>
@@ -24,6 +26,7 @@
                         <li><a onclick="loadJsonData('Links')"><img src="pics/links.png">Cсылки</a></li>
                         <li><a onclick="loadJsonData('Info')"><img src="pics/info.png">Инфо</a></li>
                         <li><a onclick="loadJsonData('giveaways')"><img src="pics/free.png">Раздачи</a></li>
+                    </ul>
                 </li>
             </ul>
         </nav>

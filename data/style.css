@@ -158,65 +158,93 @@ header {
 
 nav {
     cursor: pointer;
-    display: inline-block;
+    display: flex;
     width: 25%;
     border: 3px solid var(--active-hover);
     border-radius: 9px;
     color: var(--text);
 }
 
-
-nav ul {
+.nav-list {
+    display: flex;
     list-style: none;
     width: 100%;
-    background: var(--bg-2);
 }
 
-nav>ul>li {
+.nav-item {
     position: relative;
-    width: 100%;
+    flex: 1;
+    color: var(--text);
+    background: var(--bg-2);
+    transition: all 0.3s ease;
 }
 
-.first,
-.second li a {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
-
-nav li a {
-    display: block;
-    padding: 3%;
-    text-align: left;
-    text-decoration: none;
-    transition: 0.5s;
-    overflow: hidden;
-}
-
-nav li a:hover {
+.nav-item:hover {
     background: var(--active-hover);
     color: var(--active-text);
 }
 
-nav li .second {
-    display: none;
+/* .nav-trigger {
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 12px 8px;
+    overflow: hidden;
+    gap: 30px;
+} */
+
+.dropdown {
     position: absolute;
     top: 100%;
-}
-
-nav li:hover .second {
-    display: block;
+    left: 0;
+    right: 0;
     border: 2px solid var(--active-hover);
     border-radius: 0 0 9px 9px;
-    width: 98%;
-    left: 0.35%;
-    right: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    list-style: none;
+    overflow: hidden;
+    background: var(--bg-2);
+}
+
+.nav-item:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+nav span,
+nav .dropdown a {
+    display: flex;
+    padding: 3%;
+    flex-direction: row;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.2s;
+    gap: 30px;
 }
 
 nav img {
     align-self: center;
     width: 25px;
     height: 25px;
+}
+
+.dropdown a:hover {
+    background: var(--active-hover);
+    color: var(--active-text);
+}
+
+.dropdown a:last-child {
+    border-bottom: none;
 }
 
 

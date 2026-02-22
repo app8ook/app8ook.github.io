@@ -3,7 +3,7 @@
 [ТБанк](https://www.tinkoff.ru/rm/andrushko.vasiliy2/AbxsX58567)
 [DonationAlerts](https://www.donationalerts.com/r/bi6a)
 
-<a><img src="pics/qr_da.png"></a>
+<div class="footer-warn"><img src="pics/qr_da.png" width="500" height="500"></div>
 
 ___________________________________________________________________________________________________
 
@@ -32,3 +32,4 @@ A: Сайт является хобби авторов, а не работой. 
     Mod - Модифицированные, неофициальные программы с расширенным функционалом
 
     Block - Сайты под блокировками (Варианты обходов имеются на нашем сайте)
+

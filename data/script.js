@@ -55,8 +55,8 @@ async function showResults() {
     let List = {}
 
     const categories = [
-        { key: "Windows", path: "data.Windows", id: "resource-table-Windows" },
-        { key: "Android", path: "data.Android", id: "resource-table-Android" },
+        { key: "Desktop", path: "data.Desktop", id: "resource-table-Desktop" },
+        { key: "Smartphone", path: "data.Smartphone", id: "resource-table-Smartphone" },
         { key: "Games", path: "data.Games", id: "resource-table-Games", alname: "Игры" },
         { key: "Links", path: "data.Links", id: "resource-table-Links", alname: "Ссылки" }
     ];
@@ -655,3 +655,4 @@ function checkScrollPosition() {
 }
 
 window.addEventListener('scroll', checkScrollPosition);
+

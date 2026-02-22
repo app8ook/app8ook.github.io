@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
 
@@ -15,17 +16,21 @@
         <nav id="nav">
             <ul class="nav-list">
                 <li class="nav-item">
-                    <span class="nav-trigger"><img src="pics/Menu.png">Меню</span>
+                    <span class="nav-trigger"><img src="pics/Menu.png"><p id="nav-header">Меню</p></span>
                     <ul class="dropdown">
-                        <li><a onclick="loadJsonData('/')"><img src="pics/home.png">Домой</a></li>
-                        <li><a onclick="loadJsonData('Windows')"><img src="pics/windows.png">Windows</a></li>
-                        <li><a onclick="loadJsonData('Android')"><img src="pics/android.png">Android</a></li>
-                        <li><a onclick="loadJsonData('Apple')"><img src="pics/apple.png">Apple</a></li>
-                        <li><a onclick="loadJsonData('Linux')"><img src="pics/linux.png">Linux</a></li>
-                        <li><a onclick="loadJsonData('Games')"><img src="pics/games.png">Игры</a></li>
-                        <li><a onclick="loadJsonData('Links')"><img src="pics/links.png">Cсылки</a></li>
-                        <li><a onclick="loadJsonData('Info')"><img src="pics/info.png">Инфо</a></li>
-                        <li><a onclick="loadJsonData('giveaways')"><img src="pics/free.png">Раздачи</a></li>
+                        <li><a onclick="loadJsonData('/', this)"><img src="pics/home.png">Домой</a></li>
+                        <li><a onclick="loadJsonData('Desktop', this)"><img src="pics/windows.png">Десктоп</a></li>
+                        <li><a onclick="loadJsonData('Smartphone', this)"><img src="pics/android.png">Смартфоны</a></li>
+                        <li><a onclick="loadJsonData('Links', this)"><img src="pics/links.png">Ссылки</a></li>
+                        <li class="li-submenu">
+                            <span><img src="pics/other.png">Прочее</span>
+                            <ul class="sub-dropdown">
+                                <li><a onclick="loadJsonData('Games', this)"><img src="pics/games.png">Игры</a></li>
+                                <li><a onclick="loadJsonData('GameAssist', this)"><img src="pics/gameassist.png">Игро-ассистент</a></li>
+                                <li><a onclick="loadJsonData('Giveaways', this)"><img src="pics/free.png">Раздачи</a></li>
+                                <li><a onclick="loadJsonData('Info', this)"><img src="pics/info.png">Инфо</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
             </ul>

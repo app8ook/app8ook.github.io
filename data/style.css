@@ -153,17 +153,16 @@ header {
     z-index: 2;
 }
 
-
 /* Nav-menu */
-
 nav {
     cursor: pointer;
     display: flex;
-    width: 25%;
+    width: 30%;
     border: 3px solid var(--active-hover);
     border-radius: 9px;
     color: var(--text);
 }
+
 
 .nav-list {
     display: flex;
@@ -171,7 +170,8 @@ nav {
     width: 100%;
 }
 
-.nav-item {
+.nav-item,
+.li-submenu {
     position: relative;
     flex: 1;
     color: var(--text);
@@ -179,11 +179,32 @@ nav {
     transition: all 0.3s ease;
 }
 
-.nav-item:hover {
+.nav-item:hover,
+.li-submenu:hover {
     background: var(--active-hover);
     color: var(--active-text);
 }
 
+/* Стрелка для сабменю */
+.li-submenu span {
+    position: relative;
+}
+
+.li-submenu span::after {
+    content: '▶';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text);
+    transition: transform 0.3s ease;
+}
+
+.li-submenu:hover span::after {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+/* Основное меню */
 .dropdown {
     position: absolute;
     top: 100%;
@@ -196,27 +217,44 @@ nav {
     transform: translateY(-10px);
     transition: all 0.3s ease;
     list-style: none;
-    overflow: hidden;
     background: var(--bg-2);
 }
 
-.nav-item:hover .dropdown {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
+/* Сабменю */
+.sub-dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--active-hover);
+    border-radius: 0 9px 9px 9px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    list-style: none;
+    background: var(--bg-2);
 }
 
+/* Остальное для меню */
+.nav-item:hover .dropdown,
+.li-submenu:hover .sub-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+
 nav span,
-nav .dropdown a {
+nav a {
     display: flex;
-    padding: 3%;
     flex-direction: row;
-    text-decoration: none;
-    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
     transition: all 0.2s;
-    gap: 30px;
+    gap: 15px;
+    padding: 10px;
+    white-space: nowrap;
 }
 
 nav img {
@@ -235,6 +273,7 @@ nav img {
 }
 
 
+
 /* Searcher */
 form {
     position: relative;
@@ -243,6 +282,7 @@ form {
 
 input {
     width: 100%;
+    justify-self: center;
     box-sizing: border-box;
     padding: 12px 8px;
     background-color: var(--bg-2);
@@ -590,12 +630,6 @@ td {
 }
 
 
-
-
-
-
-
-
 /* Footer */
 /* Footer */
 /* Footer */
@@ -755,11 +789,6 @@ dialog::backdrop {
     overflow: hidden;
     transition: 1s;
 }
-
-
-
-
-
 
 
 .gay {

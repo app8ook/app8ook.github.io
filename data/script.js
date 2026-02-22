@@ -1,27 +1,12 @@
-const DATA_API = 'https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/data.json'
-const GIVEAWAYS_URL = 'https://www.gamerpower.com/api/giveaways'
+// const DATA_API = 'https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/data.json'
+const DATA_API = './data/data.json'
 
-const PROXIES = [
-    'https://api.codetabs.com/v1/proxy?quest=',
-    'https://thingproxy.freeboard.io/fetch/',
-    'https://corsproxy.io/?url=',
-];
-
-async function getGiveAways() {
-    for (const proxy of PROXIES) {
-        try {
-            const response = await fetch(proxy + encodeURIComponent(GIVEAWAYS_URL))
-            if (response.ok) return currentPageData = await response.json()
-        } catch (e) {
-            console.log('Не работает:', proxy)
-        }
-    }
-    throw new Error('Все прокси недоступны')
-}
+const GIVEAWAYS_URL = 'https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/giveaways.json'
 
 
 const section_main = document.querySelector('#main')
 const section_tags = document.querySelector('#tags')
+
 
 let activeTags = []
 let currentPageData = {}
@@ -160,7 +145,16 @@ function setInitialTheme() {
 }
 
 
-async function loadJsonData(pageName) {
+async function loadJsonData(pageName, el) {
+    const nh = document.querySelector('#nav-header')
+    console.log(el?.textContent)
+    const namePage = el?.textContent || localStorage.getItem('namePastPage')
+    if (namePage) {
+        localStorage.setItem('namePastPage', namePage)
+        nh.textContent = namePage == 'Домой' ? 'Меню' : localStorage.getItem('namePastPage')
+    }
+
+
     pageName = pageName.replace('#', '')
     if (pageName.toLocaleLowerCase() == 'pagenotfound') document.querySelector('title').innerHTML = 'ERROR 404'
     else document.querySelector('title').innerHTML = pageName.toLocaleUpperCase() == '/' ? 'APP8OOK' : pageName.toLocaleUpperCase()
@@ -250,11 +244,18 @@ async function loadJsonData(pageName) {
     }
 
 
-    if (pageName == 'giveaways') {
-        await getGiveAways()
-            .catch(err => console.error(err))
+    if (pageName == 'Giveaways') {
+        try {
+            const response = await fetch(GIVEAWAYS_URL)
+            console.log(response)
 
-        createGays(currentPageData)
+            if (response.ok) return currentPageData = await response.json()
+
+
+            createGays(currentPageData)
+        } catch (error) {
+            console.log("Ошибка загрузки страницы раздач: ", error)
+        }
     }
 
 
@@ -339,7 +340,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInitialTheme()
     themeToggle.addEventListener('change', toggleTheme)
 
-    // if (isMobileDevice()) navMobile()
+    if (isMobileDevice()) navMobile()
 
     const CurrentPageName = window.location.pathname.replace(/^(\/pages\/|\/)(.*)(.html)$/g, '$2')
     const CurrentHash = window.location.hash ? window.location.hash : false
@@ -654,4 +655,3 @@ function checkScrollPosition() {
 }
 
 window.addEventListener('scroll', checkScrollPosition);
-

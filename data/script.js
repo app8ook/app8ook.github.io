@@ -244,7 +244,7 @@ async function loadJsonData(pageName, el) {
     }
 
 
-    if (pageName == 'Giveaways') {
+    if (pageName == 'giveaways') {
         try {
             const response = await fetch(GIVEAWAYS_URL)
             console.log(response)
@@ -655,4 +655,5 @@ function checkScrollPosition() {
 }
 
 window.addEventListener('scroll', checkScrollPosition);
+
 

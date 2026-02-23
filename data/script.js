@@ -1,7 +1,7 @@
 // const DATA_API = 'https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/data.json'
 const DATA_API = './data/data.json'
 
-const GIVEAWAYS_URL = 'https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/giveaways.json'
+const GIVEAWAYS_URL = './data/giveaways.json'
 
 
 const section_main = document.querySelector('#main')
@@ -655,5 +655,6 @@ function checkScrollPosition() {
 }
 
 window.addEventListener('scroll', checkScrollPosition);
+
 
 

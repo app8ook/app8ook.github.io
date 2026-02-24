@@ -1,7 +1,5 @@
-// const DATA_API = 'https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/data.json'
-const DATA_API = './data/data.json'
-
-const GIVEAWAYS_URL = './data/giveaways.json'
+const DATA_URL = '/data/data.json'
+const GIVEAWAYS_URL = '/data/giveaways.json'
 
 
 const section_main = document.querySelector('#main')
@@ -12,12 +10,13 @@ let activeTags = []
 let currentPageData = {}
 let GiveAwayData = []
 
-async function fetchJsonData() {
+async function fetchJsonData(data, type) {
     try {
-        const response = await fetch(DATA_API);
-        return await response.json();
+        const response = await fetch(`${data}`);
+        if (type && type == 'text') return await response.text();
+        else return await response.json();
     } catch (error) {
-        console.error('Ошибка загрузки JSON:', error);
+        console.error(`Ошибка загрузки JSON [${data}]:`, error);
         return null;
     }
 }
@@ -44,7 +43,8 @@ async function showResults() {
 
     section_main.innerHTML = '<div class="searchbox">Ищем...</div>'
 
-    const jsonData = await fetchJsonData()
+    const jsonData = await fetchJsonData(DATA_URL)
+
     if (!jsonData || !jsonData.data) return section_main.innerHTML = '<div class="searchbox">Ошибка загрузки данных</div>'
 
 
@@ -169,8 +169,7 @@ async function loadJsonData(pageName, el) {
 
     activeTags = []
 
-    const response = await fetch(DATA_API);
-    const jsonData = await response.json();
+    const jsonData = await fetchJsonData(DATA_URL)
 
     section_main.innerHTML = ''
 
@@ -193,8 +192,7 @@ async function loadJsonData(pageName, el) {
 
     if (pageMDs) {
         try {
-            const response = await fetch(pageMDs);
-            const markdown = await response.text();
+            const markdown = await fetchJsonData(pageMDs, 'text')
 
             const sections = markdown.split(/_{10,}/).filter(s => s.trim().length > 10)
 
@@ -246,11 +244,7 @@ async function loadJsonData(pageName, el) {
 
     if (pageName == 'giveaways') {
         try {
-            const response = await fetch(GIVEAWAYS_URL)
-            console.log(response)
-
-            if (response.ok) return currentPageData = await response.json()
-
+            currentPageData = await fetchJsonData(GIVEAWAYS_URL)
 
             createGays(currentPageData)
         } catch (error) {
@@ -588,8 +582,7 @@ async function stats() {
     const dialog = document.querySelector('dialog')
     const info = document.querySelector('#stats_block')
 
-    const response = await fetch(DATA_API);
-    const jsonData = await response.json();
+    const jsonData = await fetchJsonData(DATA_URL)
 
     let counts = {}
 

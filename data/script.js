@@ -10,6 +10,16 @@ let activeTags = []
 let currentPageData = {}
 let GiveAwayData = []
 
+async function test() {
+    const warf = await fetchJsonData('https://api.warframestat.us/pc/')
+    // arbitration, archimedeas, alerts??, archonHunt, events, invasions, sentientOutposts, simaris, sortie, steelPath, vaultTrader
+    // TIMERS: cambionCycle, cetusCycle, duviriCycle, earthCycle, vallisCycle, zarimanCycle, voidTrader
+    // RELIC: fissures
+    console.log(warf)
+}
+
+test()
+
 async function fetchJsonData(data, type) {
     try {
         const response = await fetch(`${data}`);
@@ -115,6 +125,41 @@ async function showResults() {
     createTags()
 }
 
+function DuneAwakingTimer() {
+    const now = new Date(),
+        currentDay = now.getDay(),
+        currentHours = now.getHours()
+
+    let daysUntilTuesday;
+
+    if (currentDay < 2) daysUntilTuesday = 2 - currentDay
+    else if (currentDay === 2) {
+        if (currentHours < 7) daysUntilTuesday = 0
+        else daysUntilTuesday = 7
+    } else daysUntilTuesday = 7 - (currentDay - 2)
+
+    const nextTuesday = new Date(
+        now.getFullYear(),
+        now.getMonth(),
+        now.getDate() + daysUntilTuesday,
+        7, 0, 0, 0
+    );
+
+    const diff = nextTuesday - now,
+        days = Math.floor(diff / (1000 * 60 * 60 * 24)),
+        hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
+
+    return {
+        totalMilliseconds: diff,
+        days: days,
+        hours: hours,
+        minutes: minutes,
+        formatted: `${days} дней ${hours} часов ${minutes} минут`,
+        targetDate: nextTuesday
+    };
+}
+
 
 
 function toggleTheme() {
@@ -213,6 +258,9 @@ async function loadJsonData(pageName, el) {
                         .replace(/^(\s{8,})(.*)$/gm, '<div style="text-indent:100px;">$2</div>')
                         .replace(/^(\s{4,})(.*)$/gm, '<div style="text-indent:50px;">$2</div>')
                         .replace(/^(.*)$/gm, '<div>$1</div>')
+                        .replaceAll('&WF_TIMER&', 'Warframe Timer Macros')
+                        .replaceAll('&WF_RELIC&', 'Warframe Relic Macros')
+                        .replaceAll('&DUNE_TIMER&', `<div style="color: var(--active-text); font-size: 130%">${DuneAwakingTimer().formatted}</div>`)
                 }
 
                 if (title) {

@@ -38,6 +38,8 @@ ________________________________________________________________________________
 [Вики (RU)(Чуть менее сыро)](https://tesonline.org/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0)
 [ESO-HUB (EN/RU)(Торг/Билдер/Различные тулы)](https://eso-hub.com/ru)
 [TTC - Самая обширная трейд площадка](https://eu.tamrieltradecentre.com/pc/Trade)
+[Новости и гайды по игре - SR Games (Boosty)](https://boosty.to/srgames)
+[Новости и гайды по игре - SteiNet (Youtube)](https://www.youtube.com/@SteiNet)
 [Команды чата](https://elderscrolls.net/tes-online/chat/#1)
 [Карта (EN)](https://gamemap.uesp.net/eso/)
 [Карта (RU)(Попроще)](https://elderscrolls.net/tes-online/interactive-map/#top-map)
@@ -45,4 +47,5 @@ ________________________________________________________________________________
 
 [Наш плагинпак](https://mega.nz/folder/Y85yCDbK#JYqGk8E9gAb9J3lpzlyNqA)
     *Все папки аддонов поместить в 
+
 ```C:\Users\%USER%\Documents\Elder Scrolls Online\live\AddOns\```

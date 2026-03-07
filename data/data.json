@@ -392,6 +392,13 @@
                     "https://mega.nz/file/YxxTAZqR#TKJDTkdAYQKhgKpNenBpCPg4L1j6URAzAozcBkJCYdQ",
                     "Crack, Файлы, Windows",
                     "22.02.2026 18:13"
+                ],
+                [
+                    "Readest",
+                    "Это современный ридер на Next.js и Tauri",
+                    "https://readest.com",
+                    "OpenSource, Развлечения, Рекомендуемое, Файлы, Windows, Linux, MacOS",
+                    "07.03.2026 21:45"
                 ]
             ],
             "Важные инструменты": [
@@ -858,6 +865,13 @@
                     "https://github.com/BankkRoll/clipy",
                     "OpenSource, Аудио, Видео, Интернет, Файлы, Windows, Linux, MacOS",
                     "22.02.2026 16:59"
+                ],
+                [
+                    "Bruno",
+                    "Инструмент для работы с API (Аналог Postman)",
+                    "https://www.usebruno.com",
+                    "OpenSource, Интернет, Программирование, Windows, Linux, MacOS",
+                    "07.03.2026 21:58"
                 ]
             ],
             "Социальное/Игровое": [
@@ -909,6 +923,13 @@
                     "https://stoat.chat/download",
                     "OpenSource, Развлечения, Интернет, Файлы, Windows, Linux, MacOS",
                     "22.02.2026 18:19"
+                ],
+                [
+                    "Fluxer",
+                    "Замена Discord без слежки и платных подписок",
+                    "https://fluxer.app",
+                    "OpenSource, Развлечения, Интернет, Windows",
+                    "07.03.2026 21:47"
                 ],
                 [
                     "Steam",
@@ -1035,6 +1056,13 @@
                     "https://r2modman.com",
                     "OpenSource, Развлечения, Рекомендуемое, Файлы, Кастомизация, Windows, Linux",
                     "22.02.2026 16:30"
+                ],
+                [
+                    "Keet",
+                    "P2P-мессенджер с полным шифрованием, где сообщения идут напрямую между устройствами",
+                    "https://keet.io",
+                    "OpenSource, Безопасность, Развлечения, Интернет, Приватность, Windows, Linux, MacOS",
+                    "07.03.2026 21:50"
                 ]
             ],
             "Оптимизация": [
@@ -1118,9 +1146,9 @@
                 [
                     "Quick CPU",
                     "Утилита для точной настройки и мониторинга производительности процессора",
-                    "https://www.coderbag.com/product/quickcpu",
-                    "Система, Кастомизация, Windows",
-                    "22.02.2026 15:48"
+                    "https://mega.nz/file/I4xCUbCK#FWKP3Q_u7bsREh8AVZYFH2ffKrG5jjrT_ctF1xZGoOQ",
+                    "Crack, Система, Кастомизация, Windows",
+                    "07.03.2026 21:53"
                 ],
                 [
                     "Glary Utilities",
@@ -1226,6 +1254,13 @@
                     "https://github.com/microsoft/PowerToys",
                     "OpenSource, Легковесное, Система, Мультитул, Кастомизация, Windows",
                     "22.02.2026 15:51"
+                ],
+                [
+                    "Hone",
+                    "Ускоритель для игр и системы с бустом FPS",
+                    "https://hone.gg",
+                    "OpenSource, Развлечения, Система, Windows",
+                    "07.03.2026 21:38"
                 ]
             ],
             "Ремонт/Восстановление": [
@@ -1614,6 +1649,13 @@
                     "https://help.x.com/en/using-x/download-the-x-app",
                     "Условно бесплатно, Развлечения, Block, Интернет, Android, IPhone",
                     "22.02.2026 14:42"
+                ],
+                [
+                    "Keet",
+                    "P2P-мессенджер с полным шифрованием, где сообщения идут напрямую между устройствами",
+                    "https://keet.io",
+                    "OpenSource, Безопасность, Развлечения, Интернет, Приватность, Android, IPhone",
+                    "07.03.2026 21:51"
                 ]
             ],
             "Медиаплееры": [
@@ -1867,6 +1909,13 @@
                     "https://keepassxc.org/docs/#faq-platform-mobile",
                     "OpenSource, Безопасность, Рекомендуемое, Легковесное, Android, IPhone",
                     "22.02.2026 17:32"
+                ],
+                [
+                    "Readest",
+                    "Это современный ридер на Next.js и Tauri",
+                    "https://readest.com",
+                    "OpenSource, Развлечения, Рекомендуемое, Файлы, Android, IPhone",
+                    "07.03.2026 21:45"
                 ]
             ],
             "Прочие инструменты": [
@@ -2066,6 +2115,13 @@
                     "https://www.jan.ai",
                     "ИИ, Мультитул",
                     "24.01.2026 11:49"
+                ],
+                [
+                    "Perplexica",
+                    "Локальный open-source клон Perplexity без API и облака",
+                    "https://github.com/ItzCrazyKns/Perplexica",
+                    "Файлы, ИИ, Мультитул, Приватность",
+                    "07.03.2026 21:41"
                 ]
             ],
             "AI инструменты": [
@@ -3386,6 +3442,13 @@
                     "https://mega.nz/folder/RxxzhDaQ#Er7O1AFffCiTmt50sjlxJQ",
                     "",
                     ""
+                ],
+                [
+                    "Starbound",
+                    "Коллекция модов в Workshop (Steam)",
+                    "https://steamcommunity.com/sharedfiles/filedetails/?id=2121527747",
+                    "",
+                    ""
                 ]
             ]
         }
@@ -3401,5 +3464,5 @@
         "info": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/info.md",
         "gameassist": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/gameassist.md"
     },
-    "dateupdate": "22.02.2026 19:03"
+    "dateupdate": "07.03.2026 22:32"
 }

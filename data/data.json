@@ -1044,6 +1044,13 @@
                     "22.02.2026 16:29"
                 ],
                 [
+                    "Keet",
+                    "P2P-мессенджер с полным шифрованием, где сообщения идут напрямую между устройствами",
+                    "https://keet.io",
+                    "OpenSource, Безопасность, Развлечения, Интернет, Приватность, Windows, Linux, MacOS",
+                    "07.03.2026 21:50"
+                ],
+                [
                     "Wabbajack",
                     "Менеджер модов для игр",
                     "https://www.wabbajack.org/",
@@ -1058,11 +1065,11 @@
                     "22.02.2026 16:30"
                 ],
                 [
-                    "Keet",
-                    "P2P-мессенджер с полным шифрованием, где сообщения идут напрямую между устройствами",
-                    "https://keet.io",
-                    "OpenSource, Безопасность, Развлечения, Интернет, Приватность, Windows, Linux, MacOS",
-                    "07.03.2026 21:50"
+                    "Minion",
+                    "Аддон менеджер для MMO",
+                    "https://minion.mmoui.com",
+                    "Развлечения, Файлы, Кастомизация, Windows, Linux, MacOS",
+                    "13.03.2026 13:24"
                 ]
             ],
             "Оптимизация": [
@@ -2883,6 +2890,20 @@
                     "https://supabase.com",
                     "Безопасность, Программирование",
                     "11.02.2026 15:53"
+                ],
+                [
+                    "Emailrep",
+                    "Репутация почты по запросу (Доступно API)",
+                    "https://emailrep.io",
+                    "Условно бесплатно, Программирование, Работа",
+                    "13.03.2026 13:21"
+                ],
+                [
+                    "Kody",
+                    "Коды стран с доп. информацией (Доступно API)",
+                    "https://www.kody.su",
+                    "Условно бесплатно, Программирование, Работа",
+                    "13.03.2026 13:23"
                 ]
             ],
             "Расширения для браузеров": [
@@ -3425,7 +3446,7 @@
                 [
                     "ESO",
                     "Плагин Пак для The Elder Scrolls Online (+2 моих плагина)",
-                    "https://mega.nz/folder/Y85yCDbK#JYqGk8E9gAb9J3lpzlyNqA",
+                    "https://mega.nz/folder/Y0BF0DjS#dGYdU2633x6J9sT7tylE2w",
                     "",
                     ""
                 ],
@@ -3464,5 +3485,5 @@
         "info": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/info.md",
         "gameassist": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/gameassist.md"
     },
-    "dateupdate": "07.03.2026 22:32"
+    "dateupdate": "13.03.2026 13:25"
 }

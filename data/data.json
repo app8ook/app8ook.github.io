@@ -583,6 +583,13 @@
                     "https://github.com/tonyantony300/alt-sendme",
                     "OpenSource, Файлы, Легковесное, Windows, Linux, MacOS",
                     "22.02.2026 17:35"
+                ],
+                [
+                    "GitHub Store",
+                    "Магазин приложений прямо из репозиториев",
+                    "https://github.com/OpenHub-Store/GitHub-Store",
+                    "OpenSource, Безопасность, Рекомендуемое, Интернет, Файлы, Windows, Linux, MacOS",
+                    "28.03.2026 16:44"
                 ]
             ],
             "Прочие инструменты": [
@@ -872,6 +879,20 @@
                     "https://www.usebruno.com",
                     "OpenSource, Интернет, Программирование, Windows, Linux, MacOS",
                     "07.03.2026 21:58"
+                ],
+                [
+                    "Appcontrol",
+                    "Диспетчер задач с историей и мониторингом приватности",
+                    "https://www.appcontrol.com",
+                    "Легковесное, Система, Windows",
+                    "28.03.2026 17:07"
+                ],
+                [
+                    "FluentTaskScheduler",
+                    "Современная замена планировщика задач на WinUI3",
+                    "https://github.com/TRGamer-tech/FluentTaskScheduler",
+                    "OpenSource, Файлы, Система, Мультитул, Windows",
+                    "28.03.2026 17:10"
                 ]
             ],
             "Социальное/Игровое": [
@@ -1070,6 +1091,20 @@
                     "https://minion.mmoui.com",
                     "Развлечения, Файлы, Кастомизация, Windows, Linux, MacOS",
                     "13.03.2026 13:24"
+                ],
+                [
+                    "RohanKar Launcher",
+                    "Классические игры в одном лаунчере",
+                    "https://github.com/Kilted-Kraken/-RohanKar-Launcher",
+                    "OpenSource, Развлечения, Мультитул, Windows",
+                    "28.03.2026 16:47"
+                ],
+                [
+                    "Delta Chat",
+                    "Децентрализованный и безопасный мессенджер",
+                    "https://delta.chat/",
+                    "OpenSource, Безопасность, Развлечения, Интернет, Приватность, Windows, Linux, MacOS",
+                    "28.03.2026 16:57"
                 ]
             ],
             "Оптимизация": [
@@ -1268,6 +1303,13 @@
                     "https://hone.gg",
                     "OpenSource, Развлечения, Система, Windows",
                     "07.03.2026 21:38"
+                ],
+                [
+                    "DLSS-Updater",
+                    "Автоматическое обновление апскейлеров в играх (заменяет DLL DLSS, XeSS и FSR на актуальные версии)",
+                    "https://github.com/Recol/DLSS-Updater/",
+                    "OpenSource, Развлечения, Система, Windows, Linux",
+                    "28.03.2026 17:04"
                 ]
             ],
             "Ремонт/Восстановление": [
@@ -1396,6 +1438,13 @@
                     "https://mega.nz/file/R4BEzb4Y#EHQynydoOoMtWkm3DFAdlpIF4KTAaBmV15z9ySt1QLA",
                     "Crack, Файлы, Система, Windows",
                     "22.02.2026 15:00"
+                ],
+                [
+                    "h2testw",
+                    "Проверка флешек и карт памяти на реальный объём",
+                    "https://h2testw.org/",
+                    "Файлы, Легковесное, Система, Windows",
+                    "28.03.2026 16:52"
                 ]
             ],
             "Переустановка Windows": [
@@ -1616,6 +1665,13 @@
                     "22.02.2026 18:39"
                 ],
                 [
+                    "AyuGram",
+                    "Неофициальный кроссплатформенный, настраиваемый мод Телеграм",
+                    "https://t.me/s/AyuGramReleases",
+                    "Развлечения, Block, Интернет, Файлы, Android",
+                    "28.03.2026 17:15"
+                ],
+                [
                     "VKmp3",
                     "Неофициальный и настраиваемый мод вконтакте",
                     "https://4pda.to/forum/index.php?showtopic=913037",
@@ -1663,6 +1719,13 @@
                     "https://keet.io",
                     "OpenSource, Безопасность, Развлечения, Интернет, Приватность, Android, IPhone",
                     "07.03.2026 21:51"
+                ],
+                [
+                    "Delta Chat",
+                    "Децентрализованный и безопасный мессенджер",
+                    "https://delta.chat/",
+                    "OpenSource, Безопасность, Развлечения, Интернет, Приватность, Android, IPhone",
+                    "28.03.2026 16:57"
                 ]
             ],
             "Медиаплееры": [
@@ -1923,6 +1986,13 @@
                     "https://readest.com",
                     "OpenSource, Развлечения, Рекомендуемое, Файлы, Android, IPhone",
                     "07.03.2026 21:45"
+                ],
+                [
+                    "GitHub Store",
+                    "Магазин приложений прямо из репозиториев",
+                    "https://github.com/OpenHub-Store/GitHub-Store",
+                    "OpenSource, Безопасность, Рекомендуемое, Интернет, Файлы, Android",
+                    "28.03.2026 16:44"
                 ]
             ],
             "Прочие инструменты": [
@@ -1981,6 +2051,13 @@
                     "https://opengapps.org",
                     "Система, Android",
                     "22.02.2026 14:40"
+                ],
+                [
+                    "Web to App",
+                    "Превращаем сайт в нативное Android-приложение",
+                    "https://github.com/shiahonb777/web-to-app",
+                    "OpenSource, Файлы, Android",
+                    "28.03.2026 17:06"
                 ]
             ]
         },
@@ -2520,6 +2597,13 @@
                     "https://nookchat.vercel.app/",
                     "Безопасность, Рекомендуемое, Приватность",
                     "22.02.2026 18:51"
+                ],
+                [
+                    "FileSync",
+                    "Передача файлов с помощью протокола WebRTC",
+                    "https://github.com/polius/FileSync",
+                    "Файлы, Работа",
+                    "28.03.2026 16:40"
                 ]
             ],
             "Медиа инструменты": [
@@ -2592,6 +2676,13 @@
                     "https://xikipedia.org/",
                     "Изображения, Развлечения",
                     "22.02.2026 18:55"
+                ],
+                [
+                    "Opencut",
+                    "Бесплатный видеоредактор в браузере",
+                    "https://opencut.app",
+                    "Видео, Развлечения, Файлы, Работа",
+                    "28.03.2026 17:09"
                 ]
             ],
             "Игровые инструменты": [
@@ -2678,6 +2769,13 @@
                     "https://gidd.io",
                     "Развлечения, Мультитул",
                     "11.02.2026 15:14"
+                ],
+                [
+                    "Dos",
+                    "Сотни классических игр доступных прямо в браузере (Включая CS 1.6, HF:DM и прочие)",
+                    "https://dos.zone",
+                    "Развлечения, Мультитул",
+                    "28.03.2026 16:49"
                 ]
             ],
             "Прочие инструменты": [
@@ -2904,6 +3002,13 @@
                     "https://www.kody.su",
                     "Условно бесплатно, Программирование, Работа",
                     "13.03.2026 13:23"
+                ],
+                [
+                    "Master OSINT Toolkit",
+                    "Сборщик данных из открытых источников",
+                    "https://github.com/techenthusiast167/Master-OSINT-Toolkit-",
+                    "Безопасность, Мультитул, Приватность, Программирование",
+                    "28.03.2026 17:00"
                 ]
             ],
             "Расширения для браузеров": [
@@ -3485,5 +3590,5 @@
         "info": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/info.md",
         "gameassist": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/gameassist.md"
     },
-    "dateupdate": "13.03.2026 13:25"
+    "dateupdate": "28.03.2026 17:15"
 }

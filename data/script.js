@@ -18,8 +18,6 @@ async function test() {
     console.log(warf)
 }
 
-test()
-
 async function fetchJsonData(data, type) {
     try {
         const response = await fetch(`${data}`);
@@ -191,10 +189,13 @@ function setInitialTheme() {
 
 
 async function loadJsonData(pageName, el) {
-    console.log(el?.textContent)
     const namePage = el?.textContent || localStorage.getItem('namePastPage')
-    if (namePage) {
-        localStorage.setItem('namePastPage', namePage)
+    if (namePage) localStorage.setItem('namePastPage', namePage)
+
+
+    if (navMenu.classList.contains('open') && overlay.classList.contains('active')) {
+        navMenu.classList.toggle('open');
+        overlay.classList.toggle('active');
     }
 
 
@@ -202,6 +203,20 @@ async function loadJsonData(pageName, el) {
     if (pageName.toLocaleLowerCase() == 'pagenotfound') document.querySelector('title').textContent = 'ERROR 404'
     else document.querySelector('title').textContent = pageName.toLocaleUpperCase() == '/' ? 'APP8OOK' : pageName.toLocaleUpperCase()
     window.location.hash = pageName
+
+
+    const el_page = document.getElementById('page')
+    el_page.style.display = pageName == '/' ? 'none' : 'flex'
+    if (pageName != '/' && el) el_page.textContent = el?.textContent
+    else {
+        const navs = document.querySelector('nav').querySelectorAll('span')
+        for (const nav of navs) {
+            if (`${nav.onclick}`.toLocaleLowerCase().includes(pageName.toLocaleLowerCase())) {
+                el_page.textContent = nav.textContent
+                break
+            }
+        }
+    }
 
     if (pageName.startsWith('search')) return showResults()
 
@@ -294,7 +309,7 @@ async function loadJsonData(pageName, el) {
 
             createGays(currentPageData)
         } catch (error) {
-            console.log("Ошибка загрузки страницы раздач: ", error)
+            console.error("Ошибка загрузки страницы раздач: ", error)
         }
     }
 

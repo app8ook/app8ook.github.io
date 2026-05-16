@@ -303,8 +303,8 @@ input {
 
 img.toggle {
     align-self: center;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 
@@ -332,6 +332,22 @@ section {
     background: var(--bg);
     transition: 0.5s all;
 }
+
+#page {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 88%;
+    height: 0;
+    flex: 0;
+
+    font-size: 30px;
+    border-radius: 8px;
+    background: var(--bg);
+    transition: 0.5s all;
+    color: var(--text);
+}
+
 
 #tags {
     display: none;

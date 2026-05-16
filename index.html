@@ -13,26 +13,27 @@
 <body>
     <overlay onclick="toggleMenu()"></overlay>
     <nav>
-        <h2>Меню</h2>
         <span onclick="loadJsonData('/', this)"><img src="pics/home.png">Домой</span>
+        <hr>
         <span onclick="loadJsonData('Desktop', this)"><img src="pics/desktop.png">Десктоп</span>
         <span onclick="loadJsonData('Smartphone', this)"><img src="pics/smartphone.png">Смартфоны</span>
-        <span onclick="loadJsonData('Links', this)"><img src="pics/links.png">Ссылки</span>
+        <hr>
         <span onclick="loadJsonData('Games', this)"><img src="pics/games.png">Игры</span>
         <span onclick="loadJsonData('gameassist', this)"><img src="pics/gameassist.png">Игро-ассистент</span>
         <span onclick="loadJsonData('giveaways', this)"><img src="pics/free.png">Раздачи</span>
+        <hr>
+        <span onclick="loadJsonData('Links', this)"><img src="pics/links.png">Ссылки</span>
         <span onclick="loadJsonData('info', this)"><img src="pics/info.png">Инфо</span>
-
     </nav>
     <header>
-        <p id="menu-toggle" onclick="toggleMenu()">Меню</p>
+        <div id="menu-toggle" onclick="toggleMenu()"><img src="pics/Menu.png" class="toggle"></div>
 
         <form>
             <input type="text" name="text" id="search" label="Найти" placeholder="Поиск по сайту">
             <span class="clear-btn">&times;</span>
         </form>
 
-        <p id="theme-toggle" onclick="toggleTheme()" dark-on="🌑🌑" dark-off="☀️☀️">☀️🌑</p>
+        <p id="theme-toggle" onclick="toggleTheme()"><img src="pics/theme.png" class="toggle"></p>
     </header>
 
     <section id="tags">

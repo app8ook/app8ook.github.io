@@ -167,14 +167,14 @@ function toggleTheme() {
     document.documentElement.classList.toggle('light-theme', !isLight)
     localStorage.setItem('theme', !isLight ? 'light' : 'dark')
 
-    const toggleTheme = document.getElementById('theme-toggle')
-    toggleTheme.textContent = localStorage.getItem('theme') === 'light' ? toggleTheme.getAttribute('dark-off') : toggleTheme.getAttribute('dark-on')
+    const toggleTheme = document.getElementById('theme-toggle').querySelector('img')
+    toggleTheme.classList.toggle('active')
 }
 
 function setInitialTheme() {
     const isLight = localStorage.getItem('theme') === 'light';
-    const toggleTheme = document.getElementById('theme-toggle')
-    toggleTheme.textContent = isLight ? toggleTheme.getAttribute('dark-off') : toggleTheme.getAttribute('dark-on')
+    const toggleTheme = document.getElementById('theme-toggle').querySelector('img')
+    if (isLight) toggleTheme.classList.toggle('active')
 
     document.documentElement.classList.add('no-transition')
 
@@ -186,7 +186,7 @@ function setInitialTheme() {
         document.body.style.opacity = 1
     }, 100);
 
-    
+
 }
 
 
@@ -195,7 +195,7 @@ async function loadJsonData(pageName, el) {
     const namePage = el?.textContent || localStorage.getItem('namePastPage')
     if (namePage) {
         localStorage.setItem('namePastPage', namePage)
-    }   
+    }
 
 
     pageName = pageName.replace('#', '')
@@ -336,7 +336,7 @@ function isMobileDevice() {
 const navMenu = document.querySelector('nav')
 const overlay = document.querySelector('overlay')
 
-function toggleMenu(){
+function toggleMenu() {
     navMenu.classList.toggle('open');
     overlay.classList.toggle('active');
 }

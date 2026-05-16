@@ -218,13 +218,21 @@ overlay.active {
 }
 
 #menu-toggle {
-    padding: 12px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 24px;
+    padding: 12px 8px;
     color: var(--text);
     background: var(--bg-2);
     border: 3px solid var(--active-hover);
     border-radius: 9px;
     cursor: pointer;
+}
+
+hr {
+    width: 100%;
+    border-color: transparent;
 }
 
 
@@ -269,6 +277,7 @@ input {
 /* Кнопка смены темы */
 
 #theme-toggle {
+    display: flex;
     padding: 12px 8px;
     font-size: 22px;
     color: var(--text);
@@ -278,6 +287,28 @@ input {
     cursor: pointer;
     white-space: nowrap;
 }
+
+#theme-toggle img {
+    transform: rotate(-90deg);
+    transition: 0.2s all ease-in-out;
+}
+
+#theme-toggle img.active {
+    transform: rotate(90deg);
+    transition: 0.2s all ease-in-out;
+}
+
+
+/* Переключатели header */
+
+img.toggle {
+    align-self: center;
+    width: 30px;
+    height: 30px;
+}
+
+
+
 
 
 

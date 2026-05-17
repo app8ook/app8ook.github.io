@@ -6,24 +6,24 @@
     <meta name="description" content="Каталог полезных программ и ссылок от Kosou">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="data/style.css">
-    <link rel="shortcut icon" href="/pics/Kosou.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/png/main.png" type="image/x-icon">
     <link rel="canonical" href="app8ook.github.io">
 </head>
 
 <body>
     <overlay onclick="toggleMenu()"></overlay>
     <nav>
-        <span onclick="loadJsonData('/', this)"><img src="pics/home.png">Домой</span>
+        <span onclick="loadJsonData('/', this)"><div class="icon" data-svg="png/icons/home.svg"></div><p>Домой</p></span>
         <hr>
-        <span onclick="loadJsonData('Desktop', this)"><img src="pics/desktop.png">Десктоп</span>
-        <span onclick="loadJsonData('Smartphone', this)"><img src="pics/smartphone.png">Смартфоны</span>
+        <span onclick="loadJsonData('Desktop', this)"><div class="icon" data-svg="png/icons/desktop.svg"></div><p>Десктоп</p></span>
+        <span onclick="loadJsonData('Smartphone', this)"><div class="icon" data-svg="png/icons/smartphone.svg"></div><p>Смартфоны</p></span>
         <hr>
-        <span onclick="loadJsonData('Games', this)"><img src="pics/games.png">Игры</span>
-        <span onclick="loadJsonData('gameassist', this)"><img src="pics/gameassist.png">Игро-ассистент</span>
-        <span onclick="loadJsonData('giveaways', this)"><img src="pics/free.png">Раздачи</span>
+        <span onclick="loadJsonData('Games', this)"><div class="icon" data-svg="png/icons/games.svg"></div><p>Игры</p></span>
+        <span onclick="loadJsonData('gameassist', this)"><div class="icon" data-svg="png/icons/gameassist.svg"></div><p>Игро-ассистент</p></span>
+        <span onclick="loadJsonData('giveaways', this)"><div class="icon" data-svg="png/icons/free.svg"></div><p>Раздачи</p></span>
         <hr>
-        <span onclick="loadJsonData('Links', this)"><img src="pics/links.png">Ссылки</span>
-        <span onclick="loadJsonData('info', this)"><img src="pics/info.png">Инфо</span>
+        <span onclick="loadJsonData('Links', this)"><div class="icon" data-svg="png/icons/links.svg"></div><p>Ссылки</p></span>
+        <span onclick="loadJsonData('info', this)"><div class="icon" data-svg="png/icons/info.svg"></div><p>Инфо</p></span>
     </nav>
     <header>
         <div id="menu-toggle" onclick="toggleMenu()"><img src="pics/Menu.png" class="toggle"></div>
@@ -43,8 +43,10 @@
         <div id="filter-status"></div>
     </section>
 
+
     <section id="main">
     </section>
+
 
     <footer>
         <div class="footer-warn">Разработчики сайта не несут ответственность за нарушение авторских прав пользователями

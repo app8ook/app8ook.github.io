@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:600&subset=cyrillic');
 
 :root {
-    --background_img: url(/png/bg_dark.png);
+    --background_img: url(/pics/bg_dark.png);
     --bg: #444444;
     --bg-2: #2b2b2b;
     --bg-3: #333333;
@@ -16,7 +16,7 @@
 }
 
 .light-theme {
-    --background_img: url(/png/bg_light.png);
+    --background_img: url(/pics/bg_light.png);
     --bg: #E5D5D5;
     --bg-2: #E6A493;
     --bg-3: #EBBEB3;

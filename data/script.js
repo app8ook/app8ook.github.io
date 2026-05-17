@@ -10,6 +10,7 @@ let activeTags = []
 let currentPageData = {}
 let GiveAwayData = []
 
+
 async function test() {
     const warf = await fetchJsonData('https://api.warframestat.us/pc/')
     // arbitration, archimedeas, alerts??, archonHunt, events, invasions, sentientOutposts, simaris, sortie, steelPath, vaultTrader
@@ -183,8 +184,6 @@ function setInitialTheme() {
 
         document.body.style.opacity = 1
     }, 100);
-
-
 }
 
 
@@ -194,6 +193,7 @@ async function loadJsonData(pageName, el) {
 
 
     if (navMenu.classList.contains('open') && overlay.classList.contains('active')) {
+        menuToggle.classList.toggle('active');
         navMenu.classList.toggle('open');
         overlay.classList.toggle('active');
     }
@@ -207,12 +207,12 @@ async function loadJsonData(pageName, el) {
 
     const el_page = document.getElementById('page')
     el_page.style.display = pageName == '/' ? 'none' : 'flex'
-    if (pageName != '/' && el) el_page.textContent = el?.textContent
+    if (pageName != '/' && el) el_page.textContent = el.querySelector('p').textContent
     else {
         const navs = document.querySelector('nav').querySelectorAll('span')
         for (const nav of navs) {
             if (`${nav.onclick}`.toLocaleLowerCase().includes(pageName.toLocaleLowerCase())) {
-                el_page.textContent = nav.textContent
+                el_page.textContent = nav.querySelector('p').textContent
                 break
             }
         }
@@ -348,10 +348,12 @@ function isMobileDevice() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
+const menuToggle = document.querySelector('#menu-toggle')
 const navMenu = document.querySelector('nav')
 const overlay = document.querySelector('overlay')
 
 function toggleMenu() {
+    menuToggle.classList.toggle('active');
     navMenu.classList.toggle('open');
     overlay.classList.toggle('active');
 }
@@ -679,3 +681,13 @@ window.addEventListener('scroll', checkScrollPosition);
 
 
 
+document.querySelectorAll('[data-svg]').forEach(async (container) => {
+    try {
+        const response = await fetch(container.dataset.svg);
+        if (!response.ok) throw new Error('Не загрузилось');
+        const svgText = await response.text();
+        container.innerHTML = svgText;
+    } catch (err) {
+        console.error('Ошибка SVG:', err);
+    }
+});

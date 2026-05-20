@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>APP8OOK</title>
+    <meta name="description" content="Каталог полезных программ и ссылок от Kosou">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="data/style.css">
+    <link rel="shortcut icon" href="pics/main.png" type="image/x-icon">
+    <link rel="canonical" href="app8ook.github.io">
+</head>
+
+<body>
+    <overlay onclick="toggleMenu()"></overlay>
+    <nav>
+        <span onclick="loadJsonData('/', this)">
+            <div class="icon" data-svg="pics/icons/home.svg"></div>
+            <p>Домой</p>
+        </span>
+        <hr>
+        <span onclick="loadJsonData('Desktop', this)">
+            <div class="icon" data-svg="pics/icons/desktop.svg"></div>
+            <p>Десктоп</p>
+        </span>
+        <span onclick="loadJsonData('Smartphone', this)">
+            <div class="icon" data-svg="pics/icons/smartphone.svg"></div>
+            <p>Смартфоны</p>
+        </span>
+        <hr>
+        <span onclick="loadJsonData('Games', this)">
+            <div class="icon" data-svg="pics/icons/games.svg"></div>
+            <p>Игры</p>
+        </span>
+        <span onclick="loadJsonData('gameassist', this)">
+            <div class="icon" data-svg="pics/icons/gameassist.svg"></div>
+            <p>Игро-ассистент</p>
+        </span>
+        <span onclick="loadJsonData('giveaways', this)">
+            <div class="icon" data-svg="pics/icons/free.svg"></div>
+            <p>Раздачи</p>
+        </span>
+        <hr>
+        <span onclick="loadJsonData('Links', this)">
+            <div class="icon" data-svg="pics/icons/links.svg"></div>
+            <p>Ссылки</p>
+        </span>
+        <span onclick="loadJsonData('info', this)">
+            <div class="icon" data-svg="pics/icons/info.svg"></div>
+            <p>Инфо</p>
+        </span>
+    </nav>
+    <header>
+        <div id="menu-toggle" onclick="toggleMenu()"><img src="pics/Menu.png" class="toggle"></div>
+
+        <form>
+            <input type="text" name="text" id="search" label="Найти" placeholder="Поиск по сайту..">
+            <span class="clear-btn">&times;</span>
+        </form>
+
+        <p id="theme-toggle" onclick="toggleTheme()"><img src="pics/theme.png" class="toggle"></p>
+    </header>
+
+    <section id="page"></section>
+
+    <section id="tags">
+        <div id="tags-container"></div>
+        <div id="filter-status"></div>
+    </section>
+
+
+    <section>
+        <div class="block">
+            <div class="blockLabel" onclick="openLink(this)">Браузеры</div>
+            <div class="links">
+                <div class="link_row">
+                    <div class="link">Браузерная информация</div>
+                    <div class="link">Браузерная информация</div>
+                    <div class="link">Браузерная информация</div>
+                </div>
+                <div class="link_row">
+                    <div class="link">Браузерная информация</div>
+                    <div class="link">Браузерная информация</div>
+                    <div class="link">Браузерная информация</div>
+                </div>
+                <div class="link_row">
+                    <div class="link">Браузерная информация</div>
+                    <div class="link">Браузерная информация</div>
+                    <div class="link"></div>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="blockLabel" onclick="openLink(this)">Социальное</div>
+            <div class="links">
+                <div class="link_row">
+                    <div class="link">Социалная информация</div>
+                    <div class="link">Социалная информация</div>
+                    <div class="link">Социалная информация</div>
+                </div>
+                <div class="link_row">
+                    <div class="link">Социалная информация</div>
+                    <div class="link"></div>
+                    <div class="link"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="main">
+    </section>
+
+
+
+    <footer>
+        <div class="footer-warn">Разработчики сайта не несут ответственность за нарушение авторских прав пользователями
+            сайта,
+            а так же за программы изменяющие ОС, вы устанавливаете и пользуетесь ими на свой страх и риск</div>
+        <div class="footer-links">
+            <a href="https://t.me/blobx" class="halfbutt" target="_blank">Вопросы и предложения</a>
+            <a id="stats" onclick="stats()">i</a>
+            <a href="https://t.me/s/app8ook" class="halfbutt" target="_blank">App8ook | 2018-2026</a>
+        </div>
+    </footer>
+    <dialog>
+        <h3>Статистика сайта</h3>
+        <div id="stats_block">
+        </div>
+    </dialog>
+
+    <div id="scrollToUp">▲</div>
+    <script src="data/script.js"></script>
+</body>
+
+
+
+</html>

@@ -16,7 +16,7 @@ async function test() {
     // arbitration, archimedeas, alerts??, archonHunt, events, invasions, sentientOutposts, simaris, sortie, steelPath, vaultTrader
     // TIMERS: cambionCycle, cetusCycle, duviriCycle, earthCycle, vallisCycle, zarimanCycle, voidTrader
     // RELIC: fissures
-    console.log(warf)
+    // console.log(warf)
 }
 
 async function fetchJsonData(data, type) {
@@ -44,20 +44,24 @@ async function showResults() {
     activeTags = []
     const query = localStorage.getItem('query')
 
+
     window.location.hash = `search`
     document.querySelector('title').innerHTML = 'SEARCH'
 
     document.querySelector('#search').value = query
     document.querySelector('.clear-btn').style.display = 'block'
 
-    section_main.innerHTML = '<div class="searchbox">Ищем...</div>'
+    section_main.innerHTML = '<div class="searchbox"></div>'
+
+    const searchbox = document.querySelector('div.searchbox')
+
+    searchbox.textContent = 'Ищем...'
 
     const jsonData = await fetchJsonData(DATA_URL)
 
-    if (!jsonData || !jsonData.data) return section_main.innerHTML = '<div class="searchbox">Ошибка загрузки данных</div>'
+    if (!jsonData || !jsonData.data) return section_main.innerHTML = 'Ошибка загрузки данных'
 
-
-    section_main.textContent = `<div class="searchbox">Результаты поиска "${query}":</div>`
+    searchbox.textContent = `Результаты поиска "${query}":`
     let foundAny = false
     const searchWords = query.toLowerCase().trim().split(/\s+/)
 
@@ -119,8 +123,9 @@ async function showResults() {
 
 
     if (!foundAny)
-        section_main.textContent = `<div class="searchbox">Ничего не найдено по запросу "${query}"</div>`
+        searchbox.textContent = `Ничего не найдено по запросу "${query}"`
 
+    changeLabel()
     createTags()
 }
 
@@ -186,9 +191,28 @@ function setInitialTheme() {
     }, 100);
 }
 
+function changeLabel() {
+    const pastPage = localStorage.getItem('pastPage')
+    const query = localStorage.getItem('query')
+    const el_page = document.getElementById('page')
+
+    const canChange = pastPage != '/' && !query
+
+    if (canChange) {
+        el_page.classList.add('show')
+        const navs = document.querySelector('nav').querySelectorAll('span')
+        for (const nav of navs) {
+            if (`${nav.onclick}`.toLocaleLowerCase().includes(pastPage.toLocaleLowerCase())) {
+                el_page.textContent = nav.querySelector('p').textContent
+                break
+            }
+        }
+    } else el_page.classList.remove('show')
+}
+
 
 async function loadJsonData(pageName, el) {
-    const namePage = el?.textContent || localStorage.getItem('namePastPage')
+    const namePage = el?.querySelector('p')?.textContent || localStorage.getItem('namePastPage')
     if (namePage) localStorage.setItem('namePastPage', namePage)
 
 
@@ -205,20 +229,8 @@ async function loadJsonData(pageName, el) {
     window.location.hash = pageName
 
 
-    const el_page = document.getElementById('page')
-    el_page.style.display = pageName == '/' ? 'none' : 'flex'
-    if (pageName != '/' && el) el_page.textContent = el.querySelector('p').textContent
-    else {
-        const navs = document.querySelector('nav').querySelectorAll('span')
-        for (const nav of navs) {
-            if (`${nav.onclick}`.toLocaleLowerCase().includes(pageName.toLocaleLowerCase())) {
-                el_page.textContent = nav.querySelector('p').textContent
-                break
-            }
-        }
-    }
-
     if (pageName.startsWith('search')) return showResults()
+
 
     localStorage.setItem('pastPage', pageName)
 
@@ -342,6 +354,7 @@ async function loadJsonData(pageName, el) {
     }, 20);
 
     createTags()
+    changeLabel()
 }
 
 function isMobileDevice() {
@@ -539,7 +552,9 @@ async function createTags() {
         else section_tags.querySelector('#tags-container').appendChild(tagSpan);
     })
 
-    section_tags.style.display = GetTags() ? 'flex' : 'none'
+
+    if (GetTags()) section_tags.classList.add('show')
+    else section_tags.classList.remove('show')
 }
 
 async function toggleTag(tag) {
@@ -552,7 +567,6 @@ async function toggleTag(tag) {
     }
 
     section_main.innerHTML = ''
-
 
     if (Array.isArray(currentPageData)) { // GiveAways
         let filteredData = []
@@ -584,7 +598,10 @@ async function toggleTag(tag) {
             }
         })
 
-        section_main.querySelectorAll('details').forEach(detail => detail.open = activeTags[0] ? true : window.location.hash.includes('search') ? true : false)
+
+        section_main.querySelectorAll('details').forEach(detail => {
+            detail.open = activeTags[0] ? true : window.location.hash.includes('search') ? true : false
+        })
 
         if (activeTags[0]) document.querySelector('#filter-status').textContent = `найдено: ${section_main.querySelectorAll('.cell').length}`
         else document.querySelector('#filter-status').textContent = ''

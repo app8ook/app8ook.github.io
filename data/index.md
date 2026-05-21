@@ -1,12 +1,3 @@
-@Поддержка@
-
-[ТБанк](https://www.tinkoff.ru/rm/andrushko.vasiliy2/AbxsX58567)
-[DonationAlerts](https://www.donationalerts.com/r/bi6a)
-
-<div class="footer-warn"><img src="pics/qr_da.png" width="300" height="300"></div>
-
-___________________________________________________________________________________________________
-
 @FAQ@
 
 Q: Почему на сайте нет программы [Name]?

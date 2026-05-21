@@ -3594,6 +3594,20 @@
                     "https://4pda.to/forum/index.php?showuser=5455872",
                     "",
                     ""
+                ],
+                [
+                    "Поддержать",
+                    "TBank",
+                    "https://www.tinkoff.ru/rm/andrushko.vasiliy2/AbxsX58567",
+                    "",
+                    ""
+                ],
+                [
+                    "Поддержать",
+                    "DonationAlerts",
+                    "https://www.donationalerts.com/r/bi6a",
+                    "",
+                    ""
                 ]
             ],
             "MikeMartison": [
@@ -3748,5 +3762,5 @@
         "info": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/info.md",
         "gameassist": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/gameassist.md"
     },
-    "dateupdate": "21.05.2026 11:33"
+    "dateupdate": "21.05.2026 11:49"
 }

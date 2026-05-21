@@ -178,6 +178,13 @@
                     "https://zetflix.app",
                     "Видео, Развлечения, Windows",
                     "22.02.2026 17:44"
+                ],
+                [
+                    "Snowify",
+                    "Десктопный плеер с открытым кодом без рекламы и подписок",
+                    "https://snowify.cc/",
+                    "OpenSource, Аудио, Интернет, Файлы, Windows, Linux, MacOS",
+                    "21.05.2026 10:28"
                 ]
             ],
             "Медиаредакторы": [
@@ -893,6 +900,13 @@
                     "https://github.com/TRGamer-tech/FluentTaskScheduler",
                     "OpenSource, Файлы, Система, Мультитул, Windows",
                     "28.03.2026 17:10"
+                ],
+                [
+                    "Google Play Games на ПК",
+                    "Эмулятор андроид от Google, быстрее и чище BlueStacks",
+                    "https://developer.android.com/games/playgames/emulator?hl=ru",
+                    "Развлечения, Интернет, Файлы, Windows",
+                    "21.05.2026 10:35"
                 ]
             ],
             "Социальное/Игровое": [
@@ -1310,6 +1324,20 @@
                     "https://github.com/Recol/DLSS-Updater/",
                     "OpenSource, Развлечения, Система, Windows, Linux",
                     "28.03.2026 17:04"
+                ],
+                [
+                    "FanControl",
+                    "Утилита оптимизирующая работу кулеров компьютера",
+                    "https://github.com/Rem0o/FanControl.Releases",
+                    "OpenSource, Система, Windows",
+                    "21.05.2026 10:32"
+                ],
+                [
+                    "GTweak",
+                    "Активируем и вычищаем весь «мусор» из Windows",
+                    "https://github.com/Greedeks/GTweak",
+                    "OpenSource, Рекомендуемое, Легковесное, Система, Мультитул, Windows",
+                    "21.05.2026 11:16"
                 ]
             ],
             "Ремонт/Восстановление": [
@@ -1445,6 +1473,13 @@
                     "https://h2testw.org/",
                     "Файлы, Легковесное, Система, Windows",
                     "28.03.2026 16:52"
+                ],
+                [
+                    "iTop Data Recovery Pro",
+                    "Программа для восстановления удалённых файлов",
+                    "https://mega.nz/file/JgIlRSiA#eKvKoLld1zaHOBeYeHMP-sEZT1jU4eqSZVLkw12Jyak",
+                    "Crack, Файлы, Система, Windows",
+                    "21.05.2026 11:13"
                 ]
             ],
             "Переустановка Windows": [
@@ -2206,6 +2241,27 @@
                     "https://github.com/ItzCrazyKns/Perplexica",
                     "Файлы, ИИ, Мультитул, Приватность",
                     "07.03.2026 21:41"
+                ],
+                [
+                    "Opencode",
+                    "Бесплатный открытый ИИ-агент для разработки",
+                    "https://github.com/anomalyco/opencode",
+                    "Файлы, ИИ, Мультитул, Приватность, Программирование",
+                    "21.05.2026 10:25"
+                ],
+                [
+                    "Qwen3.5-9B-Uncensored",
+                    "Полностью разблокированная языковая модель",
+                    "https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+                    "Развлечения, Файлы, ИИ, Мультитул, Приватность",
+                    "21.05.2026 10:29"
+                ],
+                [
+                    "SafeClaw",
+                    "Локальный ИИ-ассистент без подписок и облаков",
+                    "https://github.com/princezuda/safeclaw",
+                    "Файлы, ИИ, Мультитул, Приватность, Программирование",
+                    "21.05.2026 10:38"
                 ]
             ],
             "AI инструменты": [
@@ -2390,6 +2446,20 @@
                     "https://screenshottocode.com",
                     "ИИ, Программирование",
                     "11.02.2026 15:48"
+                ],
+                [
+                    "CADAM",
+                    "Генерация 3D-моделей из текста и изображений",
+                    "https://adam.new/cadam/",
+                    "Условно бесплатно, Изображения, Программирование",
+                    "21.05.2026 10:43"
+                ],
+                [
+                    "TranslateBooksWithLLMs",
+                    "Перевод книг с ИИ — локально и без ограничений",
+                    "https://github.com/hydropix/TranslateBooksWithLLMs",
+                    "Файлы, ИИ, Приватность",
+                    "21.05.2026 10:45"
                 ]
             ],
             "AI медиа инструменты": [
@@ -2522,11 +2592,25 @@
                     "23.01.2026 18:35"
                 ],
                 [
+                    "Fake Email",
+                    "Временная почта без регистрации и пароля",
+                    "https://email-fake.com/",
+                    "Приватность",
+                    "21.05.2026 10:41"
+                ],
+                [
                     "VCCgenerator",
                     "Генератор кредитных карт (Естественно без денег)",
                     "https://www.vccgenerator.org/ru/",
                     "Безопасность",
                     "23.01.2026 18:36"
+                ],
+                [
+                    "Receive SMS Online",
+                    "Бесплатный приём SMS без регистрации",
+                    "https://www.receive-sms-online.info/",
+                    "Безопасность, Приватность",
+                    "21.05.2026 10:42"
                 ],
                 [
                     "U.to",
@@ -2683,6 +2767,20 @@
                     "https://opencut.app",
                     "Видео, Развлечения, Файлы, Работа",
                     "28.03.2026 17:09"
+                ],
+                [
+                    "GameDev-Resources",
+                    "Универсальная база для разработчиков игр",
+                    "https://github.com/Kavex/GameDev-Resources",
+                    "Аудио, Видео, Изображения, Файлы, Мультитул, Программирование",
+                    "21.05.2026 10:30"
+                ],
+                [
+                    "icones",
+                    "Мощный поиск иконок из 300+ коллекций",
+                    "https://icones.js.org/",
+                    "Изображения, Файлы, Программирование",
+                    "21.05.2026 10:37"
                 ]
             ],
             "Игровые инструменты": [
@@ -3009,6 +3107,20 @@
                     "https://github.com/techenthusiast167/Master-OSINT-Toolkit-",
                     "Безопасность, Мультитул, Приватность, Программирование",
                     "28.03.2026 17:00"
+                ],
+                [
+                    "Monocraft",
+                    "Моноширинный шрифт в стиле Minecraft",
+                    "https://github.com/IdreesInc/Monocraft",
+                    "Развлечения, Файлы, Программирование, Система",
+                    "21.05.2026 10:46"
+                ],
+                [
+                    "Syncthing",
+                    "Приватная синхронизация без облаков",
+                    "https://syncthing.net/",
+                    "Безопасность, Рекомендуемое, Файлы, Мультитул, Приватность, Система",
+                    "21.05.2026 11:15"
                 ]
             ],
             "Расширения для браузеров": [
@@ -3417,7 +3529,7 @@
     },
     "mydata": {
         "index": {
-            "Мои ссылки": [
+            "Наши ссылки": [
                 [
                     "Рабочая ТГ",
                     "Сюда писать по ремонту или по сайту",
@@ -3434,11 +3546,13 @@
                 ],
                 [
                     "Discord",
-                    "Мой сервер в дискорде Age of Autists",
+                    "Наш сервер в дискорде Age of Autists",
                     "https://discord.gg/DSWQjTq",
                     "",
                     ""
-                ],
+                ]
+            ],
+            "Kosou": [
                 [
                     "Steam",
                     "Мой профиль в стим",
@@ -3482,7 +3596,37 @@
                     ""
                 ]
             ],
-            "Мой софт": [
+            "MikeMartison": [
+                [
+                    "Discord",
+                    "Мой сервер Mike's World",
+                    "https://discord.gg/Umnr6BTyy5",
+                    "",
+                    ""
+                ],
+                [
+                    "Steam",
+                    "Мой профиль в стим",
+                    "https://steamcommunity.com/id/mikemartison/",
+                    "",
+                    ""
+                ],
+                [
+                    "Twitch",
+                    "Мой твич канал",
+                    "https://www.twitch.tv/mikemartison",
+                    "",
+                    ""
+                ],
+                [
+                    "Youtube",
+                    "Мой ютуб канал",
+                    "https://www.youtube.com/channel/UC3u17rZehSBGfoml1q88V_Q",
+                    "",
+                    ""
+                ]
+            ],
+            "Наш софт": [
                 [
                     "App8ook",
                     "Код этого сайта",
@@ -3492,42 +3636,56 @@
                 ],
                 [
                     "App8ook_BOT",
-                    "У сайта есть бот в Телеграм для быстрого поиска (by MikeMartison)",
+                    "Бот для работы с сайтом (MikeMartison)",
                     "https://t.me/app8ook_search_bot",
                     "",
                     ""
                 ],
                 [
-                    "BIBA bot",
-                    "Бот с множеством возможностей и мини-игр для Discord",
+                    "Nexus",
+                    "Штаб квартира AOA (MikeMartison)",
+                    "https://dolorpaid.github.io/auth.html",
+                    "",
+                    ""
+                ],
+                [
+                    "Lotor Bot",
+                    "Удобная Discord-утилита для вашего сервера (MikeMartison)",
+                    "https://discord.com/oauth2/authorize?client_id=1096010089959268413",
+                    "",
+                    ""
+                ],
+                [
+                    "BIBA Bot",
+                    "Бот с множеством возможностей и мини-игр для Discord (Kosou)",
                     "https://top.gg/bot/1256597159126630470",
                     "",
                     ""
                 ],
                 [
                     "MyMediaTracker",
-                    "Медиатрекер (заметки) в виде удобной Kanban",
+                    "Медиатрекер (заметки) в виде удобной Kanban (Kosou)",
                     "https://github.com/app8ook/MyMediaTracker",
                     "",
                     ""
                 ],
                 [
                     "PYTDL",
-                    "Загрузчик видео/музыки с ютуба (+поддержка плейлистов)",
+                    "Загрузчик видео/музыки с ютуба (+поддержка плейлистов) (Kosou)",
                     "https://github.com/app8ook/PYTDL",
                     "",
                     ""
                 ],
                 [
                     "SimpleScripts",
-                    "Несколько скриптов для оптимизации работы с данными в одной программе",
+                    "Пачка скриптов в одном GUI, для работы в IP телефонии (Kosou)",
                     "https://github.com/app8ook/SimpleScripts",
                     "",
                     ""
                 ],
                 [
                     "Splayer",
-                    "Простой медиаплеер (В разработке)",
+                    "Простой медиаплеер (В разработке) (Kosou)",
                     "Stop",
                     "",
                     ""
@@ -3590,5 +3748,5 @@
         "info": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/info.md",
         "gameassist": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/gameassist.md"
     },
-    "dateupdate": "28.03.2026 17:15"
+    "dateupdate": "21.05.2026 11:33"
 }

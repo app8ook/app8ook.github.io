@@ -262,7 +262,8 @@ async function loadJsonData(pageName, el) {
 
     if (pageMDs) {
         try {
-            const markdown = await fetchJsonData(pageMDs, 'text')
+            // const markdown = await fetchJsonData(pageMDs, 'text')
+            const markdown = await fetchJsonData('/data/info.md', 'text')
 
             const sections = markdown.split(/_{10,}/).filter(s => s.trim().length > 10)
 
@@ -273,20 +274,55 @@ async function loadJsonData(pageName, el) {
                 const title = lines.find(line => RegExp.exec(line.trim()))
 
                 function LinesSlices(lines) {
-                    return lines.slice(RegExp.test(title) ? 1 : 0).join('\n')
+                    const blocks = [];
+                    let blockIndex = 0;
+
+                    let text = lines.slice(RegExp.test(title) ? 1 : 0).join('\n');
+
+                    text = text.replace(/```([\s\S]*?)```/g, (match, content) => {
+                        const placeholder = `__BLOCK_${blockIndex++}__`;
+                        const escaped = content
+                            .replace(/&/g, '&amp;')
+                            .replace(/</g, '&lt;')
+                            .replace(/>/g, '&gt;');
+                        const raw = content.replace(/"/g, '&quot;');
+                        blocks.push(`<div onclick="copy(this)" class="cline" data-raw="${raw}"><pre>${escaped}</pre></div><br>`);
+                        return placeholder;
+                    });
+
+                    text = text.replace(/`([^`]+)`/g, (match, content) => {
+                        const placeholder = `__INLINE_${blockIndex++}__`;
+                        const escaped = content
+                            .replace(/&/g, '&amp;')
+                            .replace(/</g, '&lt;')
+                            .replace(/>/g, '&gt;');
+                        blocks.push(`<code>${escaped}</code>`);
+                        return placeholder;
+                    });
+
+                    text = text
                         .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank" class="smablock">$1</a>')
-                        .replace(/```([^\`]+)```/gs, '<div onclick="copy(this)" class="cline">$1</div><br>')
                         .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
                         .replace(/\*(.*?)\*/g, '<i>$1</i>')
                         .replace(/(.*)\n$/gm, '$1<br>')
                         .replace(/^(\s{12,})(.*)$/gm, '<div style="text-indent:150px;">$2</div>')
                         .replace(/^(\s{8,})(.*)$/gm, '<div style="text-indent:100px;">$2</div>')
                         .replace(/^(\s{4,})(.*)$/gm, '<div style="text-indent:50px;">$2</div>')
-                        .replace(/^(.*)$/gm, '<div>$1</div>')
+                        .replace(/^(.+)$/gm, '<pre>$1</pre>')
                         .replaceAll('&WF_TIMER&', 'Warframe Timer Macros')
                         .replaceAll('&WF_RELIC&', 'Warframe Relic Macros')
-                        .replaceAll('&DUNE_TIMER&', `<div style="color: var(--active-text); font-size: 130%">${DuneAwakingTimer().formatted}</div>`)
+                        .replaceAll('&DUNE_TIMER&', `<div style="color: var(--active-text); font-size: 130%">${DuneAwakingTimer().formatted}</div>`);
+
+                    text = text.replace(/__(BLOCK|INLINE)_(\d+)__/g, (match, type, index) => {
+                        return blocks[parseInt(index)];
+                    });
+
+                    return text;
                 }
+
+                
+
+
 
                 if (title) {
                     const details = document.createElement('details')
@@ -300,7 +336,12 @@ async function loadJsonData(pageName, el) {
                     const contentDiv = document.createElement('div')
                     contentDiv.className = 'textbox'
 
-                    contentDiv.innerHTML = LinesSlices(lines)
+                    const test = LinesSlices(lines)
+
+                    contentDiv.innerHTML = test
+
+                    console.log(test)
+
 
                     details.appendChild(contentDiv)
                     setTimeout(() => {
@@ -614,7 +655,7 @@ function re_tag(t) {
 
 
 function copy(element) {
-    navigator.clipboard.writeText(element.textContent);
+    navigator.clipboard.writeText(element.innerText);
     alert("Текст скопирован!")
 }
 

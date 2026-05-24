@@ -870,3 +870,12 @@ dialog::backdrop {
 .gay:hover>* {
     opacity: 1;
 }
+
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-family: inherit;
+    margin: 0;
+}

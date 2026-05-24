@@ -262,8 +262,7 @@ async function loadJsonData(pageName, el) {
 
     if (pageMDs) {
         try {
-            // const markdown = await fetchJsonData(pageMDs, 'text')
-            const markdown = await fetchJsonData('/data/info.md', 'text')
+            const markdown = await fetchJsonData(pageMDs, 'text')
 
             const sections = markdown.split(/_{10,}/).filter(s => s.trim().length > 10)
 
@@ -336,11 +335,7 @@ async function loadJsonData(pageName, el) {
                     const contentDiv = document.createElement('div')
                     contentDiv.className = 'textbox'
 
-                    const test = LinesSlices(lines)
-
-                    contentDiv.innerHTML = test
-
-                    console.log(test)
+                    contentDiv.innerHTML = LinesSlices(lines)
 
 
                     details.appendChild(contentDiv)

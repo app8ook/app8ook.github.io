@@ -790,7 +790,7 @@ dialog::backdrop {
     transition: 1s;
 }
 
-
+/* Элементы GiveAways */
 .gay {
     position: relative;
     display: flex;
@@ -872,6 +872,7 @@ dialog::backdrop {
 }
 
 
+/* Форматы MD */
 pre {
     white-space: pre-wrap;
     word-wrap: break-word;

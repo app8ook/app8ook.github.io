@@ -1,0 +1,238 @@
+:root {
+    --bg: rgb(29, 29, 50);
+    --bg-2: rgb(43, 43, 67, 60%);
+    --bg-2-border: rgb(43, 43, 67);
+    --bg-3-p: rgba(47, 47, 63, 0.6);
+    --bg-3-p-hover: rgb(30, 30, 45);
+    --text: rgb(138, 138, 140);
+    font-family: cursive;
+}
+
+* {
+
+    user-select: none;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+
+    background: var(--bg);
+    color: var(--text);
+}
+
+
+
+section {
+    padding: 40px;
+    overflow: hidden;
+    text-wrap: wrap;
+}
+
+
+
+#nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 1%;
+
+    background: var(--bg-2);
+    border: 4px solid var(--bg-2-border);
+    border-radius: 0 25px 25px 0;
+
+    transition: .5s all;
+}
+
+#nav>span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    font-size: 45px;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+#nav>span.active {
+    transform: rotateY(-180deg);
+}
+
+#nav.open {
+    width: 20%;
+}
+
+#nav:is(:not(.open))>*:is(:not(span)) {
+    opacity: 0;
+    pointer-events: none;
+    transition: .2s all;
+}
+
+#nav>div {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#nav>div>span {
+    position: absolute;
+    font-size: 30px;
+    opacity: 0;
+    transition: .3s all;
+}
+
+#nav>div>p {
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+
+    font-size: 25px;
+    border-radius: 15px;
+    background: var(--bg-3-p);
+    cursor: pointer;
+
+    transition: .3s all;
+}
+
+#nav>div:hover>p {
+    background: var(--bg-3-p-hover);
+    transform: translateX(15px);
+}
+
+#nav div:hover>span {
+    opacity: 1;
+}
+
+
+
+
+
+
+#main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+
+#main header {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#main header h1 {
+    width: 30%;
+}
+
+
+#main header #search {
+    position: relative;
+    appearance: none;
+    outline: none;
+    width: 100%;
+
+    color: var(--text);
+    font-family: cursive;
+    padding: 15px;
+    font-size: 25px;
+    background-color: transparent;
+    border: 2px solid var(--bg-2-border);
+    border-radius: 15px;
+
+    transition: .2s all;
+}
+
+#main header #search:is(:hover, :focus) {
+    border-width: 6px;
+}
+
+#main header #submit {
+    cursor: pointer;
+    position: relative;
+    appearance: none;
+    outline: none;
+
+
+    color: var(--text);
+    font-family: cursive;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 15px;
+    border: 6px solid var(--bg-2-border);
+
+    background: transparent;
+    width: 0%;
+    opacity: 0;
+    pointer-events: none;
+    padding: 0;
+
+    transition: .7s all;
+}
+
+#main header #submit:is(:hover, :focus) {
+    background: var(--bg-2-border);
+}
+
+#main header #submit.active {
+    opacity: 1;
+    width: 15%;
+    pointer-events: all;
+}
+
+
+
+
+
+#main #info {
+    display: flex;
+    gap: 45px;
+    height: 100%;
+}
+
+#main #info .block {
+    background: var(--bg-2);
+    border: 4px solid var(--bg-2-border);
+    border-radius: 15px;
+    padding: 12px;
+    font-size: 20px;
+    overflow: hidden;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+#main #info .block_s {
+    width: 25%;
+    height: 25%;
+}
+
+#main #info .block_m {
+    width: 30%;
+    height: 30%;
+}
+
+#main #info .block_b {
+    width: 45%;
+    height: 33%;
+}
+
+
+
+hr {
+    border: 0;
+    height: 0;
+    margin: 0;
+    appearance: none;
+    outline: none;
+    border: 1px solid var(--text);
+    border-radius: 15px;
+}

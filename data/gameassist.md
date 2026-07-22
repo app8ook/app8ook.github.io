@@ -1,12 +1,7 @@
 @Warframe@
 
-Таймеры:
-&WF_TIMER&
-
-Реликвии:
-&WF_RELIC&
-
 Заметки:
+[Таймеры](https://browse.wf/live)
 [Фандом Вики (RU)](https://warframe.fandom.com/ru/wiki/)
 [Фандом Вики (EN)](https://warframe.fandom.com/wiki/)
 [Маркет](https://warframe.market/)

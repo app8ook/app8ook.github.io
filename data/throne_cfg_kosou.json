@@ -1,137 +1,153 @@
-[
-    {
-        "action": "route",
-        "domain": [
-            "remontka.pro",
-            "ggsel.net",
-            "steamcommunity.com",
-            "vk.com"
-        ],
-        "domain_regex": [
-            "(^|\\\\.)i-test\\\\.net$"
-        ],
-        "ip_cidr": [
-            "178.209.127.58"
-        ],
-        "outbound": "direct",
-        "rule_set": [
-            "geosite-ru",
-            "geosite-instagram"
-        ]
-    },
-    {
-        "action": "route",
-        "outbound": "direct",
-        "process_name": [
-            "DyingLightGame_x64_rwdi.exe",
-            "EOSOverlayRenderer-Win64-Shipping.exe",
-            "Steam.exe",
-            "qbittorrent.exe",
-            "cod.exe",
-            "YouTube Music.exe"
-        ]
-    },
-    {
-        "action": "route",
-        "domain": [
-            "lomont.site",
-            "online-fix.me",
-            "freetp.org",
-            "www.nexusmods.com",
-            "www.translate.ru",
-            "s6.lomont.site",
-            "s8.lomont.site",
-            "f8.werberk.pro",
-            "cdn8.lomont.site",
-            "videoroll.net",
-            "thunderstore.io",
-            "ntc.party",
-            "www.perplexity.ai",
-            "pplx-next-static-public.perplexity.ai",
-            "jutsu.tv",
-            "web.telegram.org",
-            "voipmanager.zorra.com",
-            "app.testelium.com",
-            "support-tlm.zendesk.com",
-            "api.testelium.com",
-            "wordpress.com",
-            "messente.com",
-            "dune.gaming.tools",
-            "cdn-hosted.gaming.tools",
-            "web.whatsapp.com",
-            "static.cloudflareinsights.com",
-            "challenges.cloudflare.com",
-            "memedepot.com",
-            "api2.amplitude.com",
-            "sr-client-cfg.amplitude.com",
-            "www.googletagmanager.com",
-            "auth.privy.io",
-            "outpost.dyinglightgame.com",
-            "files.nexus-cdn.com",
-            "cryptpad.fr",
-            "admin.zorra.com",
-            "wiresock.net",
-            "zfilm-hd.org",
-            "steamdb.com",
-            "raw.githubusercontent.com",
-            "www.splayer.org",
-            "splayer.imsyy.top",
-            "dev.to",
-            "repositorystats.com",
-            "hunted.space",
-            "www.esoui.com",
-            "static.xx.fbcdn.net",
-            "www.voipmonitor.org"
-        ],
-        "domain_keyword": [
-            "test",
-            "whatsapp"
-        ],
-        "domain_regex": [
-            "(^|\\\\.)facebook\\\\.com$",
-            "(^|\\\\.)cryptpad\\\\.info$",
-            "(^|\\\\.)cryptpad\\\\.org$",
-            "(^|\\\\.)nexusmods\\\\.com$",
-            "(^|\\\\.)asana\\\\.com$",
-            "(^|\\\\.)mod\\\\.io$",
-            "(^|\\\\.)amd\\\\.com$",
-            "(^|\\\\.)jit\\\\.si$",
-            "(^|\\\\.)zorra\\\\.com$",
-            "(^|\\\\.)gram\\\\.ax$"
-        ],
-        "ip_cidr": [
-            "185.109.48.233",
-            "185.34.106.103",
-            "104.26.9.219",
-            "185.34.106.0/24",
-            "23.201.43.0/24",
-            "23.47.124.0/24",
-            "23.197.162.0/24",
-            "3.164.247.0/24",
-            "2.17.144.0/24",
-            "95.101.61.0/24",
-            "52.17.66.114",
-            "108.132.125.123",
-            "54.173.19.247",
-            "34.232.55.66",
-            "44.217.113.149"
-        ],
-        "outbound": "proxy"
-    },
-    {
-        "action": "route",
-        "outbound": "proxy",
-        "process_name": [
-            "Telegram.exe",
-            "AyuGram.exe",
-            "Discord.exe",
-            "Minion.exe",
-            "cod22-cod.exe",
-            "cod.exe"
-        ]
-    },
-    {
-        "action": "hijack-dns",
-        "protocol": "dns"
-    }
-]
+{
+    "default_outbound": "proxy",
+    "kind": "throne-route-profile",
+    "name": "cfg_by_Kosou",
+    "rules": [
+        {
+            "action": "route",
+            "domain": [
+                "remontka.pro",
+                "ggsel.net",
+                "steamcommunity.com",
+                "vk.com"
+            ],
+            "domain_regex": [
+                "(^|\\\\.)i-test\\\\.net$"
+            ],
+            "ip_cidr": [
+                "178.209.127.58"
+            ],
+            "name": "direct",
+            "outbound": "direct",
+            "rule_set": [
+                "geosite-ru",
+                "geosite-instagram"
+            ],
+            "type": "custom"
+        },
+        {
+            "action": "route",
+            "name": "direct",
+            "outbound": "direct",
+            "process_name": [
+                "DyingLightGame_x64_rwdi.exe",
+                "EOSOverlayRenderer-Win64-Shipping.exe",
+                "Steam.exe",
+                "qbittorrent.exe",
+                "cod.exe",
+                "YouTube Music.exe"
+            ],
+            "type": "custom"
+        },
+        {
+            "action": "route",
+            "domain": [
+                "lomont.site",
+                "online-fix.me",
+                "freetp.org",
+                "www.nexusmods.com",
+                "www.translate.ru",
+                "s6.lomont.site",
+                "s8.lomont.site",
+                "f8.werberk.pro",
+                "cdn8.lomont.site",
+                "videoroll.net",
+                "thunderstore.io",
+                "ntc.party",
+                "www.perplexity.ai",
+                "pplx-next-static-public.perplexity.ai",
+                "jutsu.tv",
+                "web.telegram.org",
+                "voipmanager.zorra.com",
+                "app.testelium.com",
+                "support-tlm.zendesk.com",
+                "api.testelium.com",
+                "wordpress.com",
+                "messente.com",
+                "dune.gaming.tools",
+                "cdn-hosted.gaming.tools",
+                "web.whatsapp.com",
+                "static.cloudflareinsights.com",
+                "challenges.cloudflare.com",
+                "memedepot.com",
+                "api2.amplitude.com",
+                "sr-client-cfg.amplitude.com",
+                "www.googletagmanager.com",
+                "auth.privy.io",
+                "outpost.dyinglightgame.com",
+                "files.nexus-cdn.com",
+                "cryptpad.fr",
+                "admin.zorra.com",
+                "wiresock.net",
+                "zfilm-hd.org",
+                "steamdb.com",
+                "raw.githubusercontent.com",
+                "www.splayer.org",
+                "splayer.imsyy.top",
+                "dev.to",
+                "repositorystats.com",
+                "hunted.space",
+                "www.esoui.com",
+                "static.xx.fbcdn.net",
+                "www.voipmonitor.org"
+            ],
+            "domain_keyword": [
+                "test",
+                "whatsapp"
+            ],
+            "domain_regex": [
+                "(^|\\\\.)facebook\\\\.com$",
+                "(^|\\\\.)cryptpad\\\\.info$",
+                "(^|\\\\.)cryptpad\\\\.org$",
+                "(^|\\\\.)nexusmods\\\\.com$",
+                "(^|\\\\.)asana\\\\.com$",
+                "(^|\\\\.)mod\\\\.io$",
+                "(^|\\\\.)amd\\\\.com$",
+                "(^|\\\\.)jit\\\\.si$",
+                "(^|\\\\.)zorra\\\\.com$",
+                "(^|\\\\.)gram\\\\.ax$"
+            ],
+            "ip_cidr": [
+                "185.109.48.233",
+                "185.34.106.103",
+                "104.26.9.219",
+                "185.34.106.0/24",
+                "23.201.43.0/24",
+                "23.47.124.0/24",
+                "23.197.162.0/24",
+                "3.164.247.0/24",
+                "2.17.144.0/24",
+                "95.101.61.0/24",
+                "52.17.66.114",
+                "108.132.125.123",
+                "54.173.19.247",
+                "34.232.55.66",
+                "44.217.113.149"
+            ],
+            "name": "proxy",
+            "outbound": "proxy",
+            "type": "custom"
+        },
+        {
+            "action": "route",
+            "name": "proxy",
+            "outbound": "proxy",
+            "process_name": [
+                "Telegram.exe",
+                "AyuGram.exe",
+                "Discord.exe",
+                "Minion.exe",
+                "cod22-cod.exe",
+                "cod.exe"
+            ],
+            "type": "custom"
+        },
+        {
+            "action": "hijack-dns",
+            "name": "dns",
+            "protocol": "dns",
+            "type": "custom"
+        }
+    ],
+    "v": 1
+}

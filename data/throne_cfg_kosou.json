@@ -17,7 +17,7 @@
             "ip_cidr": [
                 "178.209.127.58"
             ],
-            "name": "direct",
+            "name": "Simple Address Bypass",
             "outbound": "direct",
             "rule_set": [
                 "geosite-ru",
@@ -27,7 +27,7 @@
         },
         {
             "action": "route",
-            "name": "direct",
+            "name": "Simple Process Name Bypass",
             "outbound": "direct",
             "process_name": [
                 "DyingLightGame_x64_rwdi.exe",
@@ -124,13 +124,13 @@
                 "34.232.55.66",
                 "44.217.113.149"
             ],
-            "name": "proxy",
+            "name": "Simple Address Proxy",
             "outbound": "proxy",
             "type": "custom"
         },
         {
             "action": "route",
-            "name": "proxy",
+            "name": "Simple Process Name Proxy",
             "outbound": "proxy",
             "process_name": [
                 "Telegram.exe",
@@ -144,7 +144,7 @@
         },
         {
             "action": "hijack-dns",
-            "name": "dns",
+            "name": "Route DNS",
             "protocol": "dns",
             "type": "custom"
         }

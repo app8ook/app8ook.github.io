@@ -85,6 +85,13 @@
                     "https://github.com/zhom/donutbrowser",
                     "OpenSource, Безопасность, Интернет, Приватность, Windows, Linux, MacOS",
                     "07.07.2026 21:50"
+                ],
+                [
+                    "Zen",
+                    "Приватный браузер, на базе Firefox",
+                    "https://zen-browser.app",
+                    "OpenSource, Интернет, Приватность, Windows, Linux, MacOS",
+                    "07.09.2026 12:10"
                 ]
             ],
             "Медиаплееры": [
@@ -329,11 +336,11 @@
                     "07.07.2026 20:42"
                 ],
                 [
-                    "Every-PDF",
-                    "Бесплатный редактор для работы с PDF",
-                    "https://github.com/DDULDDUCK/every-pdf",
-                    "OpenSource, Изображения, Файлы, Windows, MacOS",
-                    "07.07.2026 22:27"
+                    "Shotcut",
+                    "Бесплатный кроссплатформенный видеоредактор",
+                    "https://github.com/mltframework/shotcut",
+                    "OpenSource, Видео, Развлечения, Файлы, Мультитул, Windows, Linux, MacOS",
+                    "07.09.2026 11:24"
                 ]
             ],
             "Офис/текст": [
@@ -427,6 +434,20 @@
                     "https://readest.com",
                     "OpenSource, Развлечения, Рекомендуемое, Файлы, Windows, Linux, MacOS",
                     "07.03.2026 21:45"
+                ],
+                [
+                    "Every-PDF",
+                    "Бесплатный редактор для работы с PDF",
+                    "https://github.com/DDULDDUCK/every-pdf",
+                    "OpenSource, Изображения, Файлы, Windows, MacOS",
+                    "07.07.2026 22:27"
+                ],
+                [
+                    "KillerPDF",
+                    "Легкий и открытый PDF-редактор",
+                    "https://github.com/SteveTheKiller/KillerPDF",
+                    "OpenSource, Файлы, Windows",
+                    "07.09.2026 11:21"
                 ]
             ],
             "Важные инструменты": [
@@ -471,6 +492,13 @@
                     "https://sourceforge.net/projects/framework-3-offline/",
                     "Default, Рекомендуемое, Система, Windows",
                     "22.02.2026 17:19"
+                ],
+                [
+                    "Captail",
+                    "Инструмент для записи или создания клипов, простой, настраиваемый, лучше альтернатив",
+                    "https://github.com/FaulMit/captail",
+                    "OpenSource, Развлечения, Рекомендуемое, Файлы, Легковесное, Windows",
+                    "07.09.2026 12:17"
                 ],
                 [
                     "Java",
@@ -618,6 +646,13 @@
                     "https://github.com/OpenHub-Store/GitHub-Store",
                     "OpenSource, Безопасность, Рекомендуемое, Интернет, Файлы, Windows, Linux, MacOS",
                     "28.03.2026 16:44"
+                ],
+                [
+                    "Kudu",
+                    "Бесплатный набор для обслуживания системы",
+                    "https://usekudu.com/",
+                    "OpenSource, Безопасность, Рекомендуемое, Система, Мультитул, Windows",
+                    "07.09.2026 10:30"
                 ]
             ],
             "Прочие инструменты": [
@@ -935,6 +970,62 @@
                     "https://github.com/localsend/localsend",
                     "OpenSource, Рекомендуемое, Файлы, Windows, Linux, MacOS",
                     "07.07.2026 22:15"
+                ],
+                [
+                    "ActivityWatch",
+                    "Приватный трекер активности с открытым кодом",
+                    "https://github.com/ActivityWatch/activitywatch",
+                    "OpenSource, Развлечения, Приватность, Система, Windows, Linux, MacOS",
+                    "07.09.2026 09:53"
+                ],
+                [
+                    "WinPodX",
+                    "Запуск Windows-приложений на Linux как нативных окон",
+                    "https://github.com/kernalix7/winpodx",
+                    "OpenSource, Система, Linux",
+                    "07.09.2026 09:57"
+                ],
+                [
+                    "DbGate",
+                    "Универсальный менеджер баз данных",
+                    "https://github.com/dbgate/dbgate",
+                    "OpenSource, Файлы, Программирование, Система, Windows, Linux, MacOS",
+                    "07.09.2026 10:10"
+                ],
+                [
+                    "witr",
+                    "Трассировка причин запуска процессов, портов и контейнеров",
+                    "https://github.com/pranshuparmar/witr",
+                    "OpenSource, Безопасность, Программирование, Система, Windows, Linux, MacOS",
+                    "07.09.2026 10:33"
+                ],
+                [
+                    "Netronome",
+                    "Мониторинг производительности сети",
+                    "https://github.com/autobrr/netronome",
+                    "Безопасность, Интернет, Система, Windows, Linux",
+                    "07.09.2026 11:12"
+                ],
+                [
+                    "Portmaster",
+                    "Межсетевой экран с открытым исходным кодом для защиты приватности",
+                    "https://github.com/safing/portmaster",
+                    "OpenSource, Безопасность, Интернет, Приватность, Система, Windows, Linux",
+                    "07.09.2026 11:54"
+                ],
+                [
+                    "AlterSend",
+                    "Безопасная P2P-передача файлов без облачных хранилищ",
+                    "https://github.com/denislupookov/altersend",
+                    "OpenSource, Безопасность, Интернет, Файлы, Windows, Linux, MacOS",
+                    "07.09.2026 12:01"
+                ],
+                [
+                    "MicroSIP",
+                    "Простая и удобная SIP звонилка",
+                    "https://www.microsip.org/downloads",
+                    "OpenSource, Интернет, Легковесное, Windows, Linux, MacOS",
+                    "07.09.2026 12:21"
                 ]
             ],
             "Социальное/Игровое": [
@@ -946,11 +1037,11 @@
                     "22.02.2026 18:39"
                 ],
                 [
-                    "Kotatogram",
-                    "Неофициальный, настраиваемый мод Телеграм",
-                    "https://kotatogram.github.io",
-                    "OpenSource, Развлечения, Block, Интернет, Файлы, Windows, Linux, MacOS",
-                    "22.02.2026 18:16"
+                    "ZaStoGram",
+                    "Неофициальный адаптивный к блокировкам мод телеграм (от команды Zapret)",
+                    "https://git.zapret.moe/zastogram/ZaStoGram_desktop/releases",
+                    "OpenSource, Block, Интернет, Файлы, Приватность, Windows",
+                    "07.09.2026 09:44"
                 ],
                 [
                     "AyuGram",
@@ -972,6 +1063,13 @@
                     "https://vencord.dev",
                     "Развлечения, Интернет, Мультитул, Кастомизация, Windows",
                     "22.02.2026 18:17"
+                ],
+                [
+                    "Vesktop",
+                    "Модификация Discord базирующаяся на Vencord, но без поверхностного наложения, а полноценный отдельный клиент",
+                    "https://vesktop.dev",
+                    "OpenSource, Развлечения, Интернет, Кастомизация, Windows, Linux, MacOS",
+                    "07.09.2026 13:15"
                 ],
                 [
                     "DiscordQuestCompleter",
@@ -1128,6 +1226,13 @@
                     "22.02.2026 16:30"
                 ],
                 [
+                    "Gale",
+                    "Новый модменеджер с совместимостью профилей R2modman и Thunderstore",
+                    "https://github.com/Kesomannen/gale",
+                    "OpenSource, Развлечения, Файлы, Мультитул, Windows, Linux",
+                    "07.09.2026 11:58"
+                ],
+                [
                     "Minion",
                     "Аддон менеджер для MMO",
                     "https://minion.mmoui.com",
@@ -1161,6 +1266,20 @@
                     "https://github.com/Midrags/SFF",
                     "OpenSource, Развлечения, Интернет, Мультитул, Кастомизация, Windows",
                     "07.07.2026 22:34"
+                ],
+                [
+                    "Porthole",
+                    "Удобная утилита для совместных LAN-игр через интернет из Steam",
+                    "https://store.steampowered.com/app/4963920/Porthole__Local_Port_Sharing/",
+                    "Безопасность, Развлечения, Интернет, Windows, Linux, MacOS",
+                    "07.09.2026 10:39"
+                ],
+                [
+                    "Vortex",
+                    "Модменеджер от NexusMods",
+                    "https://www.nexusmods.com/vortex",
+                    "Условно бесплатно, Файлы, Windows",
+                    "07.09.2026 12:23"
                 ]
             ],
             "Оптимизация": [
@@ -1394,6 +1513,27 @@
                     "https://github.com/itsfatduck/optimizerDuck",
                     "OpenSource, Система, Мультитул, Кастомизация, Windows",
                     "07.07.2026 22:32"
+                ],
+                [
+                    "WinUtil",
+                    "Утилита для настройки Windows 11",
+                    "https://github.com/christitustech/winutil",
+                    "OpenSource, Файлы, Система, Мультитул, Кастомизация, Windows",
+                    "07.09.2026 10:12"
+                ],
+                [
+                    "privacy.sexy",
+                    "Инструмент для усиления приватности и безопасности",
+                    "https://privacy.sexy",
+                    "OpenSource, Безопасность, Приватность, Система, Windows",
+                    "07.09.2026 10:14"
+                ],
+                [
+                    "Game Compressor",
+                    "Утилита для сжатия размера игр",
+                    "https://store.steampowered.com/app/4339880/Game_Compressor/",
+                    "Условно бесплатно, Развлечения, Файлы, Windows",
+                    "07.09.2026 10:21"
                 ]
             ],
             "Ремонт/Восстановление": [
@@ -1756,11 +1896,11 @@
                     "22.02.2026 18:39"
                 ],
                 [
-                    "Turbotel",
-                    "Неофициальный и настраиваемый мод Telegram (Рекомендуется мод от Strannik)",
-                    "https://4pda.to/forum/index.php?showtopic=820264&st=3480",
-                    "Развлечения, Mod, Block, Интернет, Файлы, 4PDA, Android",
-                    "22.02.2026 18:39"
+                    "ZaStoGram",
+                    "Неофициальный адаптивный к блокировкам мод телеграм (от команды Zapret)",
+                    "https://git.zapret.moe/zastogram/ZaStoGram/releases",
+                    "OpenSource, Block, Интернет, Файлы, Приватность, Android",
+                    "07.09.2026 09:45"
                 ],
                 [
                     "AyuGram",
@@ -2091,6 +2231,13 @@
                     "https://github.com/OpenHub-Store/GitHub-Store",
                     "OpenSource, Безопасность, Рекомендуемое, Интернет, Файлы, Android",
                     "28.03.2026 16:44"
+                ],
+                [
+                    "AlterSend",
+                    "Безопасная P2P-передача файлов без облачных хранилищ",
+                    "https://github.com/denislupookov/altersend",
+                    "OpenSource, Безопасность, Интернет, Файлы, Android, IPhone",
+                    "07.09.2026 12:02"
                 ]
             ],
             "Прочие инструменты": [
@@ -2171,9 +2318,9 @@
                 [
                     "Zfilm",
                     "Самый обширный сайт с сериалами и фильмами",
-                    "https://kinoland.biz",
+                    "https://ru7.zfilm-hd.com",
                     "Видео, Развлечения, Block, Рекомендуемое",
-                    "23.01.2026 16:56"
+                    "07.09.2026 12:14"
                 ],
                 [
                     "LordFilm",
@@ -2192,9 +2339,9 @@
                 [
                     "Zetflix",
                     "Просмотр фильмов и сериалов NetFlix и не только",
-                    "https://23jan.zet-flix.online",
+                    "https://zetflix.my",
                     "Видео, Развлечения, Block",
-                    "23.01.2026 17:00"
+                    "07.09.2026 12:15"
                 ],
                 [
                     "Anwap",
@@ -2544,6 +2691,27 @@
                     "https://whatmodelscanirun.com/",
                     "Файлы, ИИ, Система",
                     "07.07.2026 22:39"
+                ],
+                [
+                    "img2threejs",
+                    "Генерация 3D-моделей из изображений в код",
+                    "https://github.com/hoainho/img2threejs",
+                    "Изображения, Файлы, ИИ, Работа",
+                    "07.09.2026 10:31"
+                ],
+                [
+                    "freeLLM",
+                    "Каталог бесплатных API для языковых моделей",
+                    "https://freellm.sh/",
+                    "Условно бесплатно, ИИ, Программирование, Система, Работа",
+                    "07.09.2026 11:51"
+                ],
+                [
+                    "WanGP",
+                    "Универсальная платформа для генерации мультимедиа",
+                    "https://github.com/deepbeepmeep/Wan2GP",
+                    "Аудио, Видео, Изображения, Файлы, ИИ, Мультитул, Система, Работа",
+                    "07.09.2026 12:07"
                 ]
             ],
             "AI медиа инструменты": [
@@ -2644,6 +2812,20 @@
                     "https://github.com/supertone-inc/supertonic",
                     "Аудио, Файлы",
                     "07.07.2026 22:38"
+                ],
+                [
+                    "Happy Shrimp",
+                    "Генерация музыки с помощью ИИ",
+                    "https://www.happyshrimp.ai/",
+                    "Аудио, Развлечения, ИИ",
+                    "07.09.2026 11:59"
+                ],
+                [
+                    "Xpade Dry Rag",
+                    "Инструмент для удаления водяных знаков из видео",
+                    "https://xpade.dothome.co.kr/watermark/",
+                    "Условно бесплатно, Видео, Изображения, Работа",
+                    "07.09.2026 12:13"
                 ]
             ],
             "Важные инструменты": [
@@ -2676,18 +2858,18 @@
                     "24.01.2026 12:38"
                 ],
                 [
+                    "Footrue",
+                    "200+ бесплатных и приватных инструментов онлайн",
+                    "https://footrue.com/",
+                    "Файлы, Мультитул, Приватность, Работа",
+                    "07.09.2026 10:27"
+                ],
+                [
                     "Telegraph",
                     "Сервис для быстрого создания своей страницы в интернете",
                     "https://telegra.ph/",
                     "Развлечения, Файлы",
                     "23.01.2026 18:35"
-                ],
-                [
-                    "Onecompiler",
-                    "Онлайн компилятор кода на различных языках программирования",
-                    "https://onecompiler.com",
-                    "Файлы, Программирование",
-                    "23.01.2026 18:36"
                 ],
                 [
                     "MailGW",
@@ -2702,6 +2884,13 @@
                     "https://email-fake.com/",
                     "Приватность",
                     "21.05.2026 10:41"
+                ],
+                [
+                    "Internxt Temporary Email",
+                    "Временная почта для приватности",
+                    "https://internxt.com/temporary-email",
+                    "Приватность",
+                    "07.09.2026 10:23"
                 ],
                 [
                     "VCCgenerator",
@@ -2722,6 +2911,13 @@
                     "Сервис сокращения ссылок",
                     "https://u.to/",
                     "Файлы",
+                    "23.01.2026 18:36"
+                ],
+                [
+                    "Onecompiler",
+                    "Онлайн компилятор кода на различных языках программирования",
+                    "https://onecompiler.com",
+                    "Файлы, Программирование",
                     "23.01.2026 18:36"
                 ],
                 [
@@ -2793,6 +2989,13 @@
                     "https://github.com/polius/FileSync",
                     "Файлы, Работа",
                     "28.03.2026 16:40"
+                ],
+                [
+                    "PairDrop",
+                    "Мгновенная передача файлов в браузере",
+                    "https://pairdrop.net/",
+                    "Безопасность, Файлы, Работа",
+                    "07.09.2026 10:28"
                 ]
             ],
             "Медиа инструменты": [
@@ -2949,6 +3152,20 @@
                     "https://welib.st/",
                     "Развлечения, Файлы",
                     "07.07.2026 22:40"
+                ],
+                [
+                    "Social Media Hacker List",
+                    "Инструменты для расширения возможностей соцсетей",
+                    "https://github.com/MobileFirstLLC/social-media-hacker-list",
+                    "Развлечения, Файлы, Мультитул, Работа",
+                    "07.09.2026 10:32"
+                ],
+                [
+                    "ffmpeg-webCLI",
+                    "Локальный видеоредактор в браузере",
+                    "https://github.com/tejaswigowda/ffmpeg-webCLI",
+                    "Видео, Файлы, Работа",
+                    "07.09.2026 12:13"
                 ]
             ],
             "Игровые инструменты": [
@@ -3023,17 +3240,24 @@
                     "24.01.2026 12:41"
                 ],
                 [
+                    "Dos",
+                    "Сотни классических игр доступных прямо в браузере (Включая CS 1.6, HF:DM и прочие)",
+                    "https://dos.zone",
+                    "Развлечения, Мультитул",
+                    "28.03.2026 16:49"
+                ],
+                [
+                    "Fantasy-Map-Generator",
+                    "Веб-приложение для процедурной генерации детализированных карт",
+                    "https://azgaar.github.io/Fantasy-Map-Generator/",
+                    "Изображения, Развлечения",
+                    "07.07.2026 21:43"
+                ],
+                [
                     "MemePolice",
                     "Множество настольных игр для компании",
                     "https://meme-police.ru/bg",
                     "Развлечения, Мультитул",
-                    "24.01.2026 12:41"
-                ],
-                [
-                    "GamesFrog",
-                    "Эмулятор ретро-консолей в браузере",
-                    "https://gamesfrog.com/games/emulator",
-                    "Развлечения, Мультитул, Система",
                     "24.01.2026 12:41"
                 ],
                 [
@@ -3044,11 +3268,18 @@
                     "11.02.2026 15:14"
                 ],
                 [
-                    "Dos",
-                    "Сотни классических игр доступных прямо в браузере (Включая CS 1.6, HF:DM и прочие)",
-                    "https://dos.zone",
+                    "Board Game Arena",
+                    "Крупнейший онлайн-стол для настольных игр",
+                    "https://boardgamearena.com/",
                     "Развлечения, Мультитул",
-                    "28.03.2026 16:49"
+                    "07.07.2026 22:35"
+                ],
+                [
+                    "GamesFrog",
+                    "Эмулятор ретро-консолей в браузере",
+                    "https://gamesfrog.com/games/emulator",
+                    "Развлечения, Мультитул, Система",
+                    "24.01.2026 12:41"
                 ],
                 [
                     "FrameCoach",
@@ -3058,13 +3289,6 @@
                     "07.07.2026 21:38"
                 ],
                 [
-                    "Fantasy-Map-Generator",
-                    "Веб-приложение для процедурной генерации детализированных карт",
-                    "https://azgaar.github.io/Fantasy-Map-Generator/",
-                    "Изображения, Развлечения",
-                    "07.07.2026 21:43"
-                ],
-                [
                     "PlayHop ololoken",
                     "Классические шутеры и стратегии в браузере",
                     "https://playhop.com/ru/developer/117984",
@@ -3072,11 +3296,25 @@
                     "07.07.2026 22:25"
                 ],
                 [
-                    "Board Game Arena",
-                    "Крупнейший онлайн-стол для настольных игр",
-                    "https://boardgamearena.com/",
-                    "Развлечения, Мультитул",
-                    "07.07.2026 22:35"
+                    "hl2.slqnt.dev",
+                    "Half-Life 2 в браузере — полноценный веб-порт",
+                    "https://hl2.slqnt.dev/",
+                    "Развлечения",
+                    "07.09.2026 09:51"
+                ],
+                [
+                    "Murdoku",
+                    "Браузерная головоломка, которая объединяет строгую логику судоку с захватывающим сюжетом классического детектива.",
+                    "https://murdoku.com/play/?lang=ru",
+                    "Развлечения",
+                    "07.09.2026 10:04"
+                ],
+                [
+                    "Gidd.io",
+                    "Бесплатная платформа для совместных настольных онлайн-игр",
+                    "https://gidd.io/",
+                    "Безопасность, Развлечения",
+                    "07.09.2026 10:25"
                 ]
             ],
             "Прочие инструменты": [
@@ -3352,6 +3590,48 @@
                     "https://osint.juanmathewsrebellosantos.com/",
                     "Безопасность, Мультитул, Приватность",
                     "07.07.2026 22:20"
+                ],
+                [
+                    "API Mega List",
+                    "База более 10 000 готовых API для любых задач",
+                    "https://github.com/cporter202/API-mega-list",
+                    "Развлечения, Файлы, Мультитул, Программирование, Работа",
+                    "07.09.2026 09:48"
+                ],
+                [
+                    "OpenStock",
+                    "Бесплатная биржевая платформа с открытым кодом",
+                    "https://github.com/Open-Dev-Society/OpenStock",
+                    "Работа",
+                    "07.09.2026 09:49"
+                ],
+                [
+                    "PDFCraft",
+                    "Набор инструментов для работы с PDF",
+                    "https://github.com/PDFCraftTool/pdfcraft",
+                    "Файлы, Мультитул, Работа",
+                    "07.09.2026 10:15"
+                ],
+                [
+                    "ShipThatCode",
+                    "Образовательная платформа, которая учит программированию и системному дизайну через практику создания реальных систем",
+                    "https://shipthatcode.com/",
+                    "Развлечения, Мультитул, Программирование, Работа",
+                    "07.09.2026 10:18"
+                ],
+                [
+                    "PCAPviewer",
+                    "Онлайн инструмент для просмотра PCAP дампов",
+                    "https://pcapviewer.online",
+                    "Программирование, Система, Работа",
+                    "07.09.2026 12:18"
+                ],
+                [
+                    "openvpn-install",
+                    "Автоматизированный скрипт для развертывания VPN-сервера",
+                    "https://github.com/angristan/openvpn-install",
+                    "Безопасность, Файлы, Приватность, Программирование, Система, Работа",
+                    "07.09.2026 13:19"
                 ]
             ],
             "Расширения для браузеров": [
@@ -3431,6 +3711,20 @@
                     "https://github.com/yaolifeng0629/PickPic/",
                     "Видео, Изображения, Файлы, Мультитул",
                     "07.07.2026 21:37"
+                ],
+                [
+                    "WebVM",
+                    "Виртуальная машина с Linux прямо в браузере",
+                    "https://github.com/leaningtech/webvm",
+                    "Файлы, Мультитул, Программирование, Система, Работа",
+                    "07.09.2026 09:50"
+                ],
+                [
+                    "Selectext",
+                    "Копирование текста с видео",
+                    "https://chromewebstore.google.com/detail/selectext-copy-text-from/gkkdmjjodidppndkbkhhknakbeflbomf",
+                    "Условно бесплатно, Изображения, Работа",
+                    "07.09.2026 11:14"
                 ]
             ]
         },
@@ -3584,11 +3878,11 @@
                     "23.01.2026 19:47"
                 ],
                 [
-                    "Minecraft (TL-legacy)",
+                    "Minecraft (XLauncher)",
                     "Знакомый всем симулятор выживания в генерируемом мире",
-                    "https://legacylauncher.ru",
+                    "https://xmcl.app/",
                     "RPG, Симулятор, Выживание, Открытый мир, Для слабых ПК",
-                    "07.07.2026 22:44"
+                    "07.09.2026 10:03"
                 ]
             ],
             "Фавориты серии": [
@@ -3768,6 +4062,20 @@
                     "https://github.com/iMAboud/iMSteam",
                     "",
                     "23.01.2026 21:40"
+                ],
+                [
+                    "voices38",
+                    "Реддит профиль хакера, взломавшего Denuvo в множестве новых игр",
+                    "https://www.reddit.com/user/voices38/submitted/",
+                    "",
+                    "07.09.2026 11:55"
+                ],
+                [
+                    "Hiz Search",
+                    "Поисковик для видеоигр с интеграцией Steam",
+                    "https://hizsearch.pages.dev/",
+                    "",
+                    "07.09.2026 11:55"
                 ]
             ]
         }
@@ -4007,5 +4315,5 @@
         "info": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/info.md",
         "gameassist": "https://raw.githubusercontent.com/app8ook/app8ook.github.io/refs/heads/master/data/gameassist.md"
     },
-    "dateupdate": "07.07.2026 22:48"
+    "dateupdate": "07.09.2026 13:19"
 }

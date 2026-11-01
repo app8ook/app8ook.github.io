@@ -2,13 +2,13 @@
 
 :root {
     --background_img: url(/pics/bg_dark.png);
-    --bg: #444444;
-    --bg-2: #2b2b2b;
-    --bg-3: #333333;
+    --bg: #2b2b2b;
+    --bg-2: #222222;
+    --bg-3: #1e1e1e;
     --text: #FF6666;
-    --active-text: #ffbb66;
+    --active-text: #FF6666;
     --border: #FF6666;
-    --active-hover: #1e1e1e;
+    --active-hover: #111111;
     --scrollbar-track-color: #FF6666;
     --scrollbar-thumb-color: #333333;
     --scrollbar-thumb-hover-color: #555555;
@@ -23,7 +23,7 @@
     --text: #500000;
     --active-text: #6b0000;
     --border: #9E0505;
-    --active-hover: #E57566;
+    --active-hover: #e28579;
     --scrollbar-track-color: #500000;
     --scrollbar-thumb-color: #EABDB7;
     --scrollbar-thumb-hover-color: #C38686;
@@ -790,7 +790,7 @@ dialog::backdrop {
     transition: 1s;
 }
 
-/* Элементы GiveAways */
+
 .gay {
     position: relative;
     display: flex;
@@ -869,14 +869,4 @@ dialog::backdrop {
 
 .gay:hover>* {
     opacity: 1;
-}
-
-
-/* Форматы MD */
-pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    font-family: inherit;
-    margin: 0;
 }

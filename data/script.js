@@ -40,6 +40,28 @@ function normalizeRus(str) {
     return str.toLowerCase().replace(/[ьъ]/g, '').replace(/[ёе]/g, 'е');
 }
 
+// Парсит дату формата "DD.MM.YYYY HH:MM"
+function parseItemDate(str) {
+    if (!str) return null;
+    const m = String(str).match(/^(\d{2})\.(\d{2})\.(\d{4})(?:\s+(\d{2}):(\d{2}))?/);
+    if (!m) return null;
+    const [, d, mo, y, h = '0', mi = '0'] = m;
+    const dt = new Date(+y, +mo - 1, +d, +h, +mi);
+    return isNaN(dt) ? null : dt;
+}
+
+// Элемент "свежий", если его дата не старше 30 дней от текущего момента
+function isFresh(item, days = 30) {
+    const dt = parseItemDate(item[4]); // дата — 5-й элемент массива
+    if (!dt) return false;
+    return (Date.now() - dt.getTime()) <= days * 24 * 60 * 60 * 1000;
+}
+
+// Ключ для дедупликации — URL элемента
+function itemKey(item) {
+    return String(item[2] || '').trim().toLowerCase();
+}
+
 async function showResults() {
     activeTags = []
     const query = localStorage.getItem('query')
@@ -250,10 +272,45 @@ async function loadJsonData(pageName, el) {
     if (pageData) {
         currentPageData = pageData
 
-        Object.keys(pageData).forEach(categoryName => {
-            const categoryData = pageData[categoryName];
+        // 1) Собираем "свежие" элементы со всех категорий страницы
+        const freshItems = []
+        const freshKeys = new Set()
 
-            createPageData(categoryData, categoryName)
+        Object.keys(pageData).forEach(categoryName => {
+            const categoryData = pageData[categoryName]
+            if (!Array.isArray(categoryData)) return
+
+            categoryData.forEach(item => {
+                if (!Array.isArray(item)) return
+                if (isFresh(item) && !freshKeys.has(itemKey(item))) {
+                    freshKeys.add(itemKey(item))
+                    freshItems.push(item)
+                }
+            })
+        })
+
+        // 2) Сортируем свежие по дате (новые сверху)
+        freshItems.sort((a, b) => {
+            const da = parseItemDate(a[4])?.getTime() || 0
+            const db = parseItemDate(b[4])?.getTime() || 0
+            return db - da
+        })
+
+        // 3) Выводим спойлер "Новое" первым (если есть что выводить)
+        if (freshItems.length > 0) {
+            createPageData(freshItems, 'Новое', { open: true })
+        }
+
+        // 4) Выводим остальные категории, исключая уже показанные свежие элементы
+        Object.keys(pageData).forEach(categoryName => {
+            const categoryData = pageData[categoryName]
+            if (!Array.isArray(categoryData)) return
+
+            const rest = categoryData.filter(item =>
+                !Array.isArray(item) || !freshKeys.has(itemKey(item))
+            )
+
+            if (rest.length > 0) createPageData(rest, categoryName)
         });
     }
 
@@ -273,55 +330,20 @@ async function loadJsonData(pageName, el) {
                 const title = lines.find(line => RegExp.exec(line.trim()))
 
                 function LinesSlices(lines) {
-                    const blocks = [];
-                    let blockIndex = 0;
-
-                    let text = lines.slice(RegExp.test(title) ? 1 : 0).join('\n');
-
-                    text = text.replace(/```([\s\S]*?)```/g, (match, content) => {
-                        const placeholder = `__BLOCK_${blockIndex++}__`;
-                        const escaped = content
-                            .replace(/&/g, '&amp;')
-                            .replace(/</g, '&lt;')
-                            .replace(/>/g, '&gt;');
-                        const raw = content.replace(/"/g, '&quot;');
-                        blocks.push(`<div onclick="copy(this)" class="cline" data-raw="${raw}"><pre>${escaped}</pre></div><br>`);
-                        return placeholder;
-                    });
-
-                    text = text.replace(/`([^`]+)`/g, (match, content) => {
-                        const placeholder = `__INLINE_${blockIndex++}__`;
-                        const escaped = content
-                            .replace(/&/g, '&amp;')
-                            .replace(/</g, '&lt;')
-                            .replace(/>/g, '&gt;');
-                        blocks.push(`<code>${escaped}</code>`);
-                        return placeholder;
-                    });
-
-                    text = text
+                    return lines.slice(RegExp.test(title) ? 1 : 0).join('\n')
                         .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank" class="smablock">$1</a>')
+                        .replace(/```([^\`]+)```/gs, '<div onclick="copy(this)" class="cline">$1</div><br>')
                         .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
                         .replace(/\*(.*?)\*/g, '<i>$1</i>')
                         .replace(/(.*)\n$/gm, '$1<br>')
                         .replace(/^(\s{12,})(.*)$/gm, '<div style="text-indent:150px;">$2</div>')
                         .replace(/^(\s{8,})(.*)$/gm, '<div style="text-indent:100px;">$2</div>')
                         .replace(/^(\s{4,})(.*)$/gm, '<div style="text-indent:50px;">$2</div>')
-                        .replace(/^(.+)$/gm, '<pre>$1</pre>')
+                        .replace(/^(.*)$/gm, '<div>$1</div>')
                         .replaceAll('&WF_TIMER&', 'Warframe Timer Macros')
                         .replaceAll('&WF_RELIC&', 'Warframe Relic Macros')
-                        .replaceAll('&DUNE_TIMER&', `<div style="color: var(--active-text); font-size: 130%">${DuneAwakingTimer().formatted}</div>`);
-
-                    text = text.replace(/__(BLOCK|INLINE)_(\d+)__/g, (match, type, index) => {
-                        return blocks[parseInt(index)];
-                    });
-
-                    return text;
+                        .replaceAll('&DUNE_TIMER&', `<div style="color: var(--active-text); font-size: 130%">${DuneAwakingTimer().formatted}</div>`)
                 }
-
-                
-
-
 
                 if (title) {
                     const details = document.createElement('details')
@@ -336,7 +358,6 @@ async function loadJsonData(pageName, el) {
                     contentDiv.className = 'textbox'
 
                     contentDiv.innerHTML = LinesSlices(lines)
-
 
                     details.appendChild(contentDiv)
                     setTimeout(() => {
@@ -457,8 +478,11 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 
-async function createPageData(Data, Name) {
+async function createPageData(Data, Name, opts = {}) {
     const details = document.createElement('details')
+
+    // Спойлер "Новое" раскрыт по умолчанию
+    if (opts.open) details.open = true
 
     const summary = document.createElement('summary')
     summary.textContent = `${Name}`
@@ -650,7 +674,7 @@ function re_tag(t) {
 
 
 function copy(element) {
-    navigator.clipboard.writeText(element.innerText);
+    navigator.clipboard.writeText(element.textContent);
     alert("Текст скопирован!")
 }
 

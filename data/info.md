@@ -16,6 +16,7 @@
 [Github инструкция](https://github.com/ImMALWARE/bash-warp-generator/)
 [Зеркала WARP генераторов](https://warp-mirrors.vercel.app)
 [WARP генератор](https://warp-generation.github.io)
+[Бесплатные VPN конфиги](https://github.com/igareck/vpn-configs-for-russia)
 
     3. Скачиваем VPN клиент:
 
